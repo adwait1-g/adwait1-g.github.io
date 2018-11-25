@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: PWNTH3BOX!
+title: PWNTHEBOX!
 email: adwait.gautham@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome all! This is a Systems and Security Blog. I will probably be writing on topics related to Operating Systems, Computer Networks, Parallel Computing, Reverse Engineering, Binary Analysis, Cryptography etc., 
@@ -50,3 +50,9 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+jekyll_comments: 
+  show_comments: "yes"
+  allow_new_comments: "yes"
+  #comment_server: 
+  #service-token: <token>
