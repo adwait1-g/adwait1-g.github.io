@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why I started this blog?
-categories: Why I started this blog?
+categories: Why I started this blog.
 ---
 
 Hello all!
@@ -52,7 +52,7 @@ I felt that I have to start recording the stuff I read about, the new things I l
 
  
 
-**Conclusion: **
+**Conclusion:**
 
  
 
