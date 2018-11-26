@@ -63,7 +63,9 @@ Let us look at the overview of whole conversion process. Later, we will get into
 
 *   **code1** is the executable generated. Open it up in a text editor(Eg: **vi**) and see how it looks like. It looks all weird because it is direct machine code(**0s & 1s**), along with some **metadata** and few useful **strings**.
 
-*   Conversion of a C/C++ sourcefile (**.c / .cpp** files) to **executable file** is **not** a single step process, though it might feel like a single step process. Look at this flowchart. ![conversion_process][2]
+*   Conversion of a C/C++ sourcefile (**.c / .cpp** files) to **executable file** is **not** a single step process, though it might feel like a single step process. Look at this flowchart. 
+
+![conversion_image](/assets/2018-06-21-internals-of-compiling-:-Journey-from-C-program-to-an-executable/process_of_generating_executablefile-158x300.png)
 
 *   The conversion process constitutes of 4 **sub-processes**. They are **Preprocessing**, **Compiling**, **Assembling** and **Linking**. The objective of this post is to understand each of these sub-processes in detail.
 
@@ -554,4 +556,3 @@ There were many things related to Symbol table, Relocation table which we did no
 That is it for this post. I thoroughly enjoyed writing it. Hope you enjoyed reading it :)
 
  [1]: https://www.youtube.com/watch?v=GGorVpzZQwA
- [2]: ./images/process_of_generating_executablefile-158x300.png
