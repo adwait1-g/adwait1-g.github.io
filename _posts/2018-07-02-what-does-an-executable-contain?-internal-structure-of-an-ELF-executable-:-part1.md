@@ -2,6 +2,7 @@
 layout: post
 title: What does an Executable contain? - Internal Structure of an ELF Executable - Part1
 categories: Reverse Engineering and Binary Exploitation series
+comments: true
 ---
 
 Hello fellow pwners!

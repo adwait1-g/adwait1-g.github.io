@@ -2,6 +2,7 @@
 layout: post
 title: Memory Layout of a Process
 categories: Reverse Engineering and Binary Exploitation series
+comments: true
 --- 
 
 Hello fellow pwners!

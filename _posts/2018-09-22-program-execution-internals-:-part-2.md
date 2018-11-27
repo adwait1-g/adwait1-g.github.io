@@ -2,6 +2,7 @@
 layout: post
 title: Program Execution Internals - Part2
 categories: Reverse Engineering and Binary Exploitation series
+comments: true
 ---
 
 Hey fellow pwners!

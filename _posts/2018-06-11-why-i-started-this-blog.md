@@ -2,6 +2,7 @@
 layout: post
 title: Why I started this blog?
 categories: Why I started this blog.
+comments: true
 ---
 
 Hello all!
