@@ -30,9 +30,17 @@ Let us consider another example to get clarity.
 
 **Eg2** : To multiply 2 numbers, there is an instruction called **mul** .
 
-*   Architecture tells the programmer than he/she can make use of this instruction instead of repeated addition. It also defines the syntax of the instruction.
+* Consider there are 2 processors - X and Y and both of them have this instruction **mul Num1, Num2**. 
 
-*   Organization talks about the internal algorithms, hardware design used by Intel, AMD to make the instruction possible.
+* In X, Multiplication is implemented as Repeated Addition. So, X didn't have specialized hardware to multiply 2 numbers. It used the hardware built for addition to do multiplication.
+
+* In Y, Multiplication is implemented using some other very efficient Multiplication Algorithm. So, Y does have a specialized hardware to multiply 2 numbers. 
+
+* So, for a programmer, all that he knows is that there exist an instruction **mul Num1, Num2** in both the processor architectures. But internally, the scene is completely different. 
+
+* Architecture is about telling the programmer about the presence of such an instruction. But Organization deals with the internal hardware design used to design that instruction - Repeated Addition or Efficient Multiplication Algorithm. 
+
+* In Intel and AMD Processors, the Architecture is same - meaning the Instructions are the same. But Internally at hardware level, every instruction might be designed differently. 
 
 *   To compare the speed of **mul** instruction between the Intel and AMD processors, we have to study the Organization / Internal structure of the processors.
 
@@ -725,9 +733,9 @@ I hope you have got an idea of how Typecasting works.
 
 *   Each assembly instruction was fed into the machine now. Even this became a tedious job as programmers went to write bigger programs. Then came **Assembler** - A tool which converts a set of assembly level instructions into machine code.
 
-*   Major disadvantage of using assembly language was it was not portable across processors. Suppose I write a Database in x86 Assembly Language, then that can be run and used only on Intel Processors. It could not be run on any other processors like SPARC, PowerPC etc., So, programmers had to write the same software again and again in different assembly languages.
+*   Major disadvantage of using assembly language was it was not portable across processors. Suppose I write a Database in x86 Assembly Language, then that can be run and used only on Intel Processors. It could not be run on any other processors like SPARC, PowerPC etc., So, programmers had to write the same software again and again in different assembly languages to give support for different processors. 
 
-*   The UNIX Operating System was first written in Assembly Language. This was obviously not portable. Then the **C Programming Language** was invented and the whole OS was re-written in C. What we needed is a tool that converts C code to assembly code, which is the compiler. So, compiler was born.
+*   The UNIX Operating System was first written in Assembly Language. This was obviously not portable. Then the **C Programming Language** was invented and the whole OS was re-written in C. What we needed is a tool that converts C code to assembly code, which is the compiler.
 
 *   What we had to do is, develop different compilers for different architectures. Every architecture will have it's respective compiler. So, when a program is written in C, if I want it to run on Intel processors, I would use a Compiler that would convert C code to x86 assembly code. If I want it to run on a mips processor, I would a Compiler that would convert C code into mips assembly code. So, Compilers became very successful because code was becoming portable because of them.
 
