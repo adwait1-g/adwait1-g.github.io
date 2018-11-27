@@ -309,11 +309,38 @@ You can test this. When the URL is username.github.io, your website has TLS - **
 
 Once the last step is done, your website is always TLS enabled. 
 
-At this point, we have a website running. 
+
+There is just 2 last things I want to share with you. 
+
+1. Any post you write might have images, link to some files etc., So, you can store it this way: 
+
+    * In your root directory(**username.github.io**), create a directory of the name **assets**. 
+
+            username.github.io$ mkdir assets
+    
+    * This directory is where all the **assets** of a post like images, files etc., are stored. Suppose you wrote a post with name **yyyy-mm-dd-title-of-the-post.md**. Suppose you have a few images and files you want to use in that post. You can store those images, files etc., in the following way. 
+
+        * Inside the **assets** directory, create a directory with the same name as that of the post. 
+
+            username.github.io/assets$ mkdir yyyy-mm-dd-title-of-the-post
+        
+        * Enter that directory and store all those images and files or anything related to that post. 
+    
+    * You can use an image of name **name_of_image.png** in the post like this: 
+
+            ![name_of_image](/assets/yyyy-mm-dd-title-of-the-post/name_of_image.png)    
+        
+    * If it a file with name **name_of_file.xyz**, you can do this: 
+
+            [name_of_file.xyz](/assets/yyyy-mm-dd-title-of-the-post/name_of_file.xyz)
+
+
+2. At any cost, do not store anything manually in the **_site** directory. This is because Jekyll generates the content in the **_site** directory using everything else in the **username.github.io** directory. As Jekyll generates it, anything you store will be removed from it. So, whatever you want to store, it should be stored outside the **_site** directory. 
+    
+
+At this point, you will have a website running. 
 
 In the next post, We will see how we can make our website more effective by enabling comments section for each post using [disqus](https://disqus.com). 
-
-While I was migrating blog posts from WordPress to Jekyll, I faced a few problems which I have resolved. You can take a look at it [here](should_write_this_post!). Suppose you face similar issues, you can get help from it. 
 
 At any point, if you get stuck at any step discussed above, feel free to look at my [repository](https://github.com/adwait1-G/adwait1-g.github.io). 
 
