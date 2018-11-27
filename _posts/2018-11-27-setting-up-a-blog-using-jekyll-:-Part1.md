@@ -13,7 +13,7 @@ So, I would like to share what I did to migrate the complete site from WordPress
 
 The complete content has been divided into 2 posts. In the first post, I will be discussing how to create a website using Jekyll from creating a GitHub Repository till a working website. Along with that, I will also share the things I did while migrating from WordPress to GitHub Pages. 
 
-No blog is complete without the comments section. So, in the second post, I will write how I used [disqus](https://disqus.com/) to power my blog with the comments section. 
+No blog is complete without the comments section. So, in the [second post](/blogging/2018/11/27/setting-up-a-blog-using-jekyll-Part2.html), I will write how I used [disqus](https://disqus.com/) to power my blog with the comments section. 
 
 With content and comments, your blog is good to go!
 
@@ -347,3 +347,7 @@ At any point, if you get stuck at any step discussed above, feel free to look at
 That is it for this post. I hope you were able to create a website using jekyll.
 
 Thank you!
+
+[Link to Part 2](/blogging/2018/11/27/setting-up-a-blog-using-jekyll-Part2.html)
+
+
