@@ -742,4 +742,4 @@ That is it for this article. I learnt a lot while writing this post. I hope you 
  [1]: https://cs.stackexchange.com/questions/48769/why-cant-cpu-access-secondary-memory?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
  [2]: http://www.c-jump.com/CIS77/ASM/Instructions/I77_0070_eflags_bits.htm
  [3]: https://www.imada.sdu.dk/~kslarsen/Courses/dm18-2007-spring/Litteratur/IntelnATT.htm
- [4]: https://github.com/adwait1-G/Malware-Analysis/blob/master/Reverse_Engineering/x86_architecture/code_samples/hello2.asm
+ [4]: [/_posts/assets/2018-08-12-introduction-to-x86-assembly-programming/hello2.asm]
