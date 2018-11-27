@@ -18,7 +18,7 @@ title: Categories
 
 ## Blogging
 
-### Setting up a Blog using Jekyll
+#### Setting up a Blog using Jekyll
 
 1. [Setting up a Blog using Jekyll - Part1](/blogging/2018/11/27/setting-up-a-blog-using-jekyll-Part1.html)
-
+2. [Setting up a Blog using Jekyll - Part2](/blogging/2018/11/27/setting-up-a-blog-using-jekyll-Part2.html)
