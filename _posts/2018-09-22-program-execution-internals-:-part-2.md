@@ -48,7 +48,7 @@ a. **64-bit executables** :
 
 *   We have discussed the memory layout of an executable. Let us focus on the Stack Memory of 64-bit processes. The Stack is the part of the whole memory used to store local variables, used for Function calls etc., In 64-bit processes, stack is a huge pile of memory given to us in chunks of **8 bytes** . Look at the following diagram:
 
-<img src="http://www.pwnthebox.net/wp-content/uploads/2018/09/Stack_alignment1-300x211.png" alt="" width="300" height="211" class="alignnone size-medium wp-image-329" />
+![Stack Alignment 32 bit](/assets/2018-09-22-program-execution-internals-:-part-2/Stack_alignment1.png)
 
 *   So, whenever we execute **push Reg1** , the following happens:
     
@@ -82,7 +82,7 @@ b. **32-bit executables** :
 
 *   Consider the following diagram:
 
-<img src="http://www.pwnthebox.net/wp-content/uploads/2018/09/Stack_32bit-300x211.png" alt="" width="300" height="211" class="alignnone size-medium wp-image-328" />
+![Stack_Alignment_32_bit](/assets/2018-09-22-program-execution-internals-:-part-2/Stack_alignment2.png)
 
 *   There is the stack, a huge piece of memory in the form of a rectangle given to us to store Local variables, take care of functions calls and more. For 32-bit systems, the **width** of that rectangle is **4-bytes** (32-bits).
 
@@ -453,7 +453,7 @@ As we have seen how local variables are stored in stack, now let us straight jum
 
 *   Let us observe the **Stack** carefully. It is something like this:
 
-<img src="http://www.pwnthebox.net/wp-content/uploads/2018/09/Stack_after_functioncall_32-bit-2-300x211.png" alt="" width="300" height="211" class="alignnone size-medium wp-image-336" />
+![Stack_after_functioncall_32-bit](/assets/2018-09-22-program-execution-internals-:-part-2/Stack_after_functioncall_32-bit-1.png)
 
 *   Let us understand the above diagram carefully:
     
@@ -529,7 +529,7 @@ As we have seen how local variables are stored in stack, now let us straight jum
     
     *   Let us look at the stack again: The whole layout of the stack still remains the same. Let us look at the diagram once again:
 
-<img src="http://www.pwnthebox.net/wp-content/uploads/2018/09/Stack_after_functioncall_32-bit-2-300x211.png" alt="" width="300" height="211" class="alignnone size-medium wp-image-336" />
+![Stack_after_functioncall_32-bit](/assets/2018-09-22-program-execution-internals-:-part-2/Stack_after_functioncall_32-bit-1.png)
 
 *   Except for the 2 values inside StackFrame of **add**(which we don't care about because a function can do whatever it wants inside it's StackFrame - Private:P), the layout remains the same.
 
@@ -809,7 +809,7 @@ If you have made it till here, then you are just amazing!
 
 **1**. This diagram will summarize the Function Call Mechanism:
 
-Download from this [link][1]
+ ![Stack construction and destruction][1]
 
 *   This doesn't show how arguments are passed. It describes only Call and Ret mechanism. I have used 64-bit registers here, but it can be extended for 32-bit also.
 
@@ -863,7 +863,7 @@ Thank you!
 
 PS: I made those Stack Diagrams using this website [sketch.io][4] . Check it out!
 
- [1]: https://drive.google.com/open?id=1scoHRMcOtgiJNGQj-CeyNcW39_qUGP-X
+ [1]: /assets/2018-09-22-program-execution-internals-:-part-2/stackframe_construction_and_destruction.jpg
  [2]: https://www.uclibc.org/docs/psABI-x86_64.pdf
  [3]: https://stackoverflow.com/questions/672461/what-is-stack-alignment
  [4]: https://sketch.io/sketchpad

@@ -78,7 +78,7 @@ We said that a process is program under execution. We have seem how a program lo
 
 Now, let us look at the process. This is rough **Memory Layout** of any process. This is how a process lives in Main Memory.
 
-<img src="http://www.pwnthebox.net/wp-content/uploads/2018/08/memory_layout.jpeg" alt="" width="185" height="272" class="alignnone size-full wp-image-274" />
+![memory_layout](/assets/2018-08-18-memory-layout-of-a-process/memory_layout.jpeg)
 
 Let us start discussing from bottom to top of that image.
 

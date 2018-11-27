@@ -73,7 +73,7 @@ With the 32-bit support on 64-bit machines, we can run 32-bit programs on 64-bit
 
 It is very important to understand the **blueprint / architecture** (This architecture means the design) of a computer system (and not ISA), because it will help in understanding why a particular set of instructions are required. This is the famous **Von-Neumann Architecture** , which is the design of most of the modern systems.
 
-<img src="http://www.pwnthebox.net/wp-content/uploads/2018/08/von_neumann_arch-300x271.jpg" alt="" width="300" height="271" class="alignnone size-medium wp-image-249" />
+![Von-newmann-arch](/assets/2018-08-12-introduction-to-x86-assembly-programming/von_neumann_arch.jpg)
 
 This above image shows that
 
@@ -133,7 +133,7 @@ Along with these registers, there are 2 more special purpose registers known as 
 *   Then again when 32-bit processors came, the 16-bit Instruction Set was extended. The **e** in any of those 32-bit registers means **e**xtended. 
 *   The **r** simply stands for **r**egister. 
 
-<img src="http://www.pwnthebox.net/wp-content/uploads/2018/08/pseudo_registers-300x225.jpg" alt="" width="300" height="225" class="alignnone size-medium wp-image-252" />
+![Pseudo_registers](/assets/2018-08-12-introduction-to-x86-assembly-programming/pseudo_registers.jpg)
 
 *   There are instructions in x64 ISA (for legacy / backward compatibility) which are used to access the **lower 32-bits** , **lower 16-bits** and the **upper 16-bits of lower 32-bits** of all the registers.
 
@@ -742,4 +742,4 @@ That is it for this article. I learnt a lot while writing this post. I hope you 
  [1]: https://cs.stackexchange.com/questions/48769/why-cant-cpu-access-secondary-memory?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
  [2]: http://www.c-jump.com/CIS77/ASM/Instructions/I77_0070_eflags_bits.htm
  [3]: https://www.imada.sdu.dk/~kslarsen/Courses/dm18-2007-spring/Litteratur/IntelnATT.htm
- [4]: [/_posts/assets/2018-08-12-introduction-to-x86-assembly-programming/hello2.asm]
+ [4]: /assets/2018-08-12-introduction-to-x86-assembly-programming/hello2.asm

@@ -68,4 +68,4 @@ That's it for now. Thank you guys for reading!
 
 PS:
 
-Link to the Mcafee Report:  <https://www.mcafee.com/enterprise/en-us/assets/reports/rp-hacking-skills-shortage.pdf>
+[Link](/assets/2018-06-11-why-i-started-this-blog/rp-hacking-skills-shortage.pdf) to the Mcafee Report. 
