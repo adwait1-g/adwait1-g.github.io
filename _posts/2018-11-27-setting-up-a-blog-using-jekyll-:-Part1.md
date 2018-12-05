@@ -348,6 +348,8 @@ That is it for this post. I hope you were able to create a website using jekyll.
 
 Thank you!
 
-[Link to Part 2](/blogging/2018/11/27/setting-up-a-blog-using-jekyll-Part2.html)
+********************************************************************
+
+[Go to next post: Setting up a Blog using Jekyll - Part2](/blogging/2018/11/27/setting-up-a-blog-using-jekyll-Part2.html)
 
 

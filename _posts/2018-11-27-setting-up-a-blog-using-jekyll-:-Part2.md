@@ -187,3 +187,7 @@ We did something to make it happen, but never really thought what exactly we did
 
 
 With this, I hope you have understood why we did what we did to enable comments using disqus. 
+
+*******************************************************************************
+
+[Go to previous post: Setting up a Blog using Jekyll - Part1](/blogging/2018/11/27/setting-up-a-blog-using-jekyll-Part1.html)
