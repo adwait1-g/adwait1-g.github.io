@@ -864,6 +864,14 @@ Thank you!
 
 PS: I made those Stack Diagrams using this website [sketch.io][4] . Check it out!
 
+[Go to next post: Buffer Overflow Vulnerability - Part1](/reverse/engineering/and/binary/exploitation/series/2018/10/02/buffer-overflow-vulnerability-01.html)               
+[Go to previous post: Program Execution Internals - Part1](/reverse/engineering/and/binary/exploitation/series/2018/09/10/program-execution-internals-part-1.html)
+
+
+
+
+
+
  [1]: /assets/2018-09-22-program-execution-internals-:-part-2/stackframe_construction_and_destruction.jpg
  [2]: https://www.uclibc.org/docs/psABI-x86_64.pdf
  [3]: https://stackoverflow.com/questions/672461/what-is-stack-alignment

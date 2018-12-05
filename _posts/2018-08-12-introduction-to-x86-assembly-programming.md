@@ -745,7 +745,11 @@ I hope you have got an idea of how Typecasting works.
 
 This is how languages have evolved. You can observe that the level of abstraction has increased so much - From 0s and 1s to languages which compile to give sourcecode in other languages.
 
-That is it for this article. I learnt a lot while writing this post. I hope you have understood basics of assembly programming. Thank you!
+That is it for this article. I learnt a lot while writing this post. I hope you have understood basics of assembly programming. Thank you!          
+
+****************************************************************       
+[Go to next post: Memory Layout of a Process](/reverse/engineering/and/binary/exploitation/series/2018/08/18/memory-layout-of-a-process.html)                    
+[Go to previous post: What does an Executable contain? - Internal Structure of an ELF Executable - Part1](/reverse/engineering/and/binary/exploitation/series/2018/07/02/what-does-an-executable-contain-internal-structure-of-an-ELF-executable-part1.html)
 
  [1]: https://cs.stackexchange.com/questions/48769/why-cant-cpu-access-secondary-memory?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
  [2]: http://www.c-jump.com/CIS77/ASM/Instructions/I77_0070_eflags_bits.htm

@@ -426,7 +426,14 @@ c. Why are there different permissions for different address spaces? Can't all h
 
 d. To know more about **/proc** , best place is to visit it's man page.
 
-With this, I will end this post. I hope you learned something out of this post. Thank you!
+With this, I will end this post. I hope you learned something out of this post. 
+
+Thank you!
+
+*******************************************************************
+[Go to next post: Program Execution Internals - Part1](/reverse/engineering/and/binary/exploitation/series/2018/09/10/program-execution-internals-part-1.html)         
+[Go to previous post: Introduction to x86 Assembly Programming](/reverse/engineering/and/binary/exploitation/series/2018/08/12/introduction-to-x86-assembly-programming.html)    
+
 
  [1]: https://stackoverflow.com/questions/664744/what-is-the-direction-of-stack-growth-in-most-modern-systems/664779#664779
  [2]: https://www.ibm.com/support/knowledgecenter/en/ssw_aix_71/com.ibm.aix.performance/when_dyn_linking_static_linking.htm

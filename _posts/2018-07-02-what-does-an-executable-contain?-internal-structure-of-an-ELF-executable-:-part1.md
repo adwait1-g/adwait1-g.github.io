@@ -1065,4 +1065,10 @@ I learnt a lot while writing the tool and the post. I hope you also learnt somet
 
 That is it for now. Thank you for reading :)
 
+***********************************************************
+
+[Go to next post: Introduction to x86 Assembly Programming](/reverse/engineering/and/binary/exploitation/series/2018/08/12/introduction-to-x86-assembly-programming.html)                  
+[Go to previous post: Internals of Compiling - Journey from C/C++ program to an Executable](/reverse/engineering/and/binary/exploitation/series/2018/06/21/internals-of-compiling-Journey-from-C-program-to-an-executable.html)                     
+
+
  [1]: https://github.com/adwait1-G/parsemyelf
