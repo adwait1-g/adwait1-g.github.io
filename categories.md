@@ -16,6 +16,7 @@ title: Categories
 8. [Buffer Overflow Vulnerability - Part2](/reverse/engineering/and/binary/exploitation/series/2018/10/08/buffer-overflow-vulnerability-02.html)
 9. [Exploitation using Code Injection - Part1](/reverse/engineering/and/binary/exploitation/series/2018/10/20/exploitation-using-code-injection-part01.html)
 10. [Exploitation using Code Injection - Part2](/reverse/engineering/and/binary/exploitation/series/2018/12/02/exploitation-using-code-injection-part02.html)
+11. [Exploitation using Code Injection - Part3](/reverse/engineering/and/binary/exploitation/series/2018/12/07/exploitation-using-code-injection-part03.html)
 
 ## Blogging
 
