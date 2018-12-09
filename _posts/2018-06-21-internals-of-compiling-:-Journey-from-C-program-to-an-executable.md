@@ -64,9 +64,29 @@ Let us look at the overview of whole conversion process. Later, we will get into
 
 *   **code1** is the executable generated. Open it up in a text editor(Eg: **vi**) and see how it looks like. It looks all weird because it is direct machine code(**0s & 1s**), along with some **metadata** and few useful **strings**.
 
-*   Conversion of a C/C++ sourcefile (**.c / .cpp** files) to **executable file** is **not** a single step process, though it might feel like a single step process. Look at this flowchart. 
+*   Conversion of a C/C++ sourcefile (**.c / .cpp** files) to **executable file** is **not** a single step process, though it might feel like a single step process. Look at the following diagram: 
 
-![conversion_image](/assets/2018-06-21-internals-of-compiling-:-Journey-from-C-program-to-an-executable/process_of_generating_executablefile-158x300.png)
+                                                    Preprocessing
+                                                --------------------- 
+          C source code (hello.c)   ----------> |   Preprocessor    | ---------->   hello.i (Intermediate C sourcefile)
+                                                ---------------------
+
+                                                      Compiling
+                                                ---------------------            
+                         hello.i    ----------> |     Compiler      | ---------->   hello.s (Assembly code)
+                                                ---------------------
+
+                                                      Assembling
+                                                ---------------------
+                         hello.s    ----------> |     Assembler     | ---------->   hello.o (Object code)
+                                                ---------------------
+                        
+                                                        Linking
+                                                ---------------------
+             hello.o + Libraries    ----------> |       Linker      | ---------->   hello / a.out (Executable)     
+                                                ---------------------                
+
+
 
 *   The conversion process constitutes of 4 **sub-processes**. They are **Preprocessing**, **Compiling**, **Assembling** and **Linking**. The objective of this post is to understand each of these sub-processes in detail.
 
@@ -99,9 +119,12 @@ Go through the C program thoroughly. Let us start our analysis.
 
 *   CPP does a lot of work before sourcefile goes to next sub-process. They are
 
-**a**. Expand all the **#include** s (here, #include <stdio.h>) which are included in C sourcefile : Expand means simple copy contents of a header file into C sourcefile. A header file generally consists of
+**a**. Expand all the **#include** s (here, #include < stdio.h >) which are included in C sourcefile : Expand means simple copy contents of a header file into C sourcefile. A header file generally consists of
 
-**1**. Different **function declarations** related to the header file(Eg: stdio.h will have function declarations of standard input and output functions) **2**. Different macros defined **3**. **#include** of other related header files **4**. A bunch of **typedef** s of different datatypes.
+**1**. Different **function declarations** related to the header file(Eg: stdio.h will have function declarations of standard input and output functions).     
+**2**. Different macros defined.     
+**3**. **#include** of other related header files.           
+**4**. A bunch of **typedef** s of different datatypes.           
 
 **b**. Replace **MACROS**(here, #define NUMBER 100) with their actual values: Wherever macro **NUMBER** would be used in C sourcefile, it would be replaced by it's value.
 
@@ -146,7 +169,7 @@ And last line of **stdio.h** is
     #endif /* !_STDIO_H */
     
 
-Here, conditional compilation is used to make sure **stdio.h** is included **only** once. If \_STDIO\_H is not defined(#ifndef \_STDIO\_H), then define \_STDIO\_H as 1(#define \_STDIO\_H 1). \_STDIO\_H is a macro used which is defined to 1. When the second #include<stdio.h> is processed, it will first check whether \_STDIO\_H is defined or not. In this case, \_STDIO\_H is already defined to be 1. So, all contents after #ifndef is ignored. This way, only the first #include<stdio.h> is considered. The #ifndef is ended by **#endif** at the end of header file. If you checkout stdio.h (or any other header file for that matter) in detail, you will find a lot of conditional compilation used.
+Here, conditional compilation is used to make sure **stdio.h** is included **only** once. If **_STDIO_H** is not defined(#ifndef _STDIO_H), then define \_STDIO\_H as 1(#define _STDIO_H 1). _STDIO_H is a macro used which is defined to 1. When the second #include< stdio.h > is processed, it will first check whether _STDIO_H is defined or not. In this case, _STDIO_H is already defined to be 1. So, all contents after #ifndef is ignored. This way, only the first #include< stdio.h > is considered. The #ifndef is ended by **#endif** at the end of header file. If you checkout stdio.h (or any other header file for that matter) in detail, you will find a lot of conditional compilation used.
 
 *   All header files are located in **/usr/include** directory.
 
@@ -154,9 +177,9 @@ Here, conditional compilation is used to make sure **stdio.h** is included **onl
 
 ## 2\. Compiling :
 
-*   First thing to understand at this point is, Compiling is 1 of 4 sub-processes. But we generally call the whole conversion process as Compiling / Compilation. It is important to note this difference.
+*   First thing to understand at this point is, Compiling is 1 of 4 sub-processes. But we generally call the whole conversion process as Compiling / Compilation. It is important to note this.
 
-*   **Compiler** takes **code1.i** file as input, **compiles** it and gives **code1.s** file as output. **s** in code1.s stands for **source**. At the time when programmers were writing programs in assembly(before any compiled languages were invented), they used to name the assemblycode sourcefiles with **.s** extension. Now, the same convention is followed.
+*   **Compiler** takes **code1.i** file as input, **compiles** it and gives **code1.s** file as output. **s** in code1.s stands for **source**. At the time when programmers were writing programs in assembly(before any compiled languages were invented), they used to name the assembly code sourcefiles with **.s** extension. Now, the same convention is followed.
 
 *   **code1.s** is the **assembly** equivalent of **code1.c**. The machine I am using is a 64-bit Intel machine. Assembly language which can be understood by this machine is **x86_64 assembly language**. So, the compiler generates assembly code in x86_64 language. Take a look at **code1.s** .
     
@@ -201,7 +224,7 @@ Here, conditional compilation is used to make sure **stdio.h** is included **onl
             .section    .note.GNU-stack,"",@progbits
         
 
-*   **Unlike** the way we have 1 C programming language, every processor in the market has a different **architecture** and is designed to understand a specific assembly language. That way, there are many assembly languages, each present to run on a specific processor. There cannot be 2 entirely different assembly languages for the same processor. Few Examples of processors and their assembly languages are
+*   **Unlike** the way we have one C programming language, every processor in the market has a different **architecture** and is designed to understand a specific assembly language. That way, there are many assembly languages, each present to run on a specific processor. There cannot be 2 entirely different assembly languages for the same processor. Few Examples of processors and their assembly languages are
 
 **a.** Intel's core i7 - x86_64 assembly lang
 
@@ -215,13 +238,13 @@ Here, conditional compilation is used to make sure **stdio.h** is included **onl
 
 *   Compiler does a lot of processing to generate **.s** file from **.c/.cpp** file. Let us not get into Compiler design but we will understand what all a compiler does.
 
-**a**. Conversion of C/C++ programs to assembly language.
+    **a**. Conversion of C/C++ programs to assembly language.
 
-**b**. It does all the optimizations required(unless you don't want it).
+    **b**. It does all the optimizations required(unless you don't want it).
 
-**c**. It eliminates dead code. Sometimes, there will be pieces of code which will never get executed . Such pieces are identified and removed .
+    **c**. It eliminates dead code. Sometimes, there will be pieces of code which will never get executed . Such pieces are identified and removed .
 
-**d**. One of the most important one. It **strips** or **removes** names and datatypes of **local variables**. If you refer code1.c file, there were **3** local variables - **int c = 123**, **number = NUMBER** and **char d = 'x'**. If you search for these names **c, number, d** or their respective datatypes, you won't be able to find in **code1.s** file because it has been removed by the compiler. This is the default nature of gcc.
+    **d**. One of the most important one. It **strips** or **removes** names and datatypes of **local variables**. If you refer code1.c file, there were **3** local variables - **int c = 123**, **number = NUMBER** and **char d = 'x'**. If you search for these names **c, number, d** or their respective datatypes, you won't be able to find in **code1.s** file because it has been removed by the compiler.
 
 *   We have **code1.s**, the assembly lang equivalent with us after compilation sub-process.
 
@@ -229,7 +252,7 @@ Here, conditional compilation is used to make sure **stdio.h** is included **onl
 
 *   A system program called **Assembler** assembles **code1.s** to give **code1.o** file.
 
-*   **.o** in code1.o stands for **object**.
+*   The **.o** in code1.o stands for **object**.
 
 *   An **object file** has pure machine code(**0s & 1s**) along with some metadata useful for next sub-process.
 
@@ -441,9 +464,9 @@ We rectified a few issues mentioned in the NOTE, but not all. We still have to s
               40055b:       0f 1f 44 00 00          nop    DWORD PTR [rax+rax*1+0x0]
             
     
-    *   You can notice that every instruction has an absolute address. There is a **call 400400<puts@plt>** which is a call to **puts** function. You can go through the whole code1.objdump. Every byte has a unique address. All the sections .data , .rodata etc., have absolute addresses. There are a few new sections added by the linker to make it a working executable.
+    *   You can notice that every instruction has an absolute address. There is a **call 400400< puts@plt >** which is a call to **puts** function. You can go through the whole code1.objdump. Every byte has a unique address. All the sections .data , .rodata etc., have absolute addresses. There are new sections added by the linker to make it a working executable.
     
-    *   That was about Linking.If you do not get any linking errors, you will have an executable in the directory, which can be run in the following manner.
+    *   That was about Linking. If you do not get any linking errors, you will have an executable in the directory, which can be run in the following manner.
         
             ~/rev_eng_series/post_1$ /code1 
             Hello world!! 

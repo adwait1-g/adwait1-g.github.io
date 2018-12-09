@@ -40,7 +40,7 @@ Let us consider another example to get clarity.
 
 * Architecture is about telling the programmer about the presence of such an instruction. But Organization deals with the internal hardware design used to design that instruction - Repeated Addition or Efficient Multiplication Algorithm. 
 
-* In Intel and AMD Processors, the Architecture is same - meaning the Instructions are the same. But Internally at hardware level, every instruction might be designed differently. 
+* In Intel and AMD Processors, the Architecture is same - meaning the Instructions are the same. But at the Hardware level, there might be differences. 
 
 *   To compare the speed of **mul** instruction between the Intel and AMD processors, we have to study the Organization / Internal structure of the processors.
 
@@ -79,7 +79,7 @@ With the 32-bit support on 64-bit machines, we can run 32-bit programs on 64-bit
 
 ## 3\. Von-Neumann Architecture
 
-It is very important to understand the **blueprint / architecture** (This architecture means the design) of a computer system (and not ISA), because it will help in understanding why a particular set of instructions are required. This is the famous **Von-Neumann Architecture** , which is the design of most of the modern systems.
+It is very important to understand the **blueprint / architecture** (architecture here means the design) of a computer system (and not ISA), because it will help in understanding why a particular set of instructions are required. This is the famous **Von-Neumann Architecture** , which is the design of most of the modern systems.
 
 ![Von-newmann-arch](/assets/2018-08-12-introduction-to-x86-assembly-programming/von_neumann_arch.jpg)
 
@@ -180,7 +180,7 @@ Along with these registers, there are 2 more special purpose registers known as 
     
     *   There are many General Purpose Registers which are not visible to programmer / compiler, which are used to increase performance of the processor.
     
-    *   There are a huge number of Registers used for **system** purposes. One such set of registers is **Control Registers** . They are named **cro** , **cr1**, **cr2**, **cr3** . These registers help in implementing a **memory management technique** known as **paging** at the hardware level.
+    *   There are a huge number of Registers used for **system** purposes. One such set of registers is **Control Registers** . They are named **cr0** , **cr1**, **cr2**, **cr3** . These registers help in implementing a **memory management technique** known as **paging** at the hardware level.
 
 ## 5\. Different syntaxes of x86 Assembly Language
 
@@ -191,7 +191,7 @@ There are 2 syntaxes: **AT & T** and **Intel** Syntax.
     *   Instructions are of the form **Instruction Destination, Source** . 
     *   Eg: movl $101, %eax
     *   Every constant begins with a **$**
-    *   Every register is preceded with a **%** 
+    *   Every register is preceded with a **%**                
 
 *   **Intel Syntax** :
     
@@ -211,7 +211,7 @@ We will be using Intel Syntax throughout the post.
 
 *   As we are doing all this on a Linux machine, we will use the default Linker **ld** .
 
-*   TO install nasm on Ubuntu,
+*   To install nasm on Ubuntu,
     
         $ sudo apt-get install nasm
         
@@ -233,7 +233,7 @@ We will be using Intel Syntax throughout the post.
 
 ## 8\. DataTypes:
 
-This is very important part of the post. GO through this again and make sure you understand it properly.
+This is very important part of the post. Go through this again and make sure you understand it properly.
 
 At the assembly level, we will be dealing with bytes. Datatypes like **char** , **int** , **long int** etc., are not present at assembly level. So, these datatypes should be converted to assembly code. This is done by **accessing the specific number of bytes a particular datatype in C represents** .
 
@@ -276,7 +276,7 @@ Let us put these concepts in a more **formal** manner.
     *   **dword / double word** stands for **4 bytes** .
     *   **qword / quad word** stands for **8 bytes** . 
 
-2.  These are the data sizes supported by the hardware. **This is the reason** why datatypes in C are of the size **1 byte - char**, **2 bytes - short int**, **4 bytes - int** , **8 bytes - long int** .
+2.  These are the data sizes supported by the hardware. **This is the reason** why datatypes in C are of the size **1 byte**, **2 bytes**, **4 bytes**, **8 bytes**.
 
 3.  The following are the methods to access memory:
     
@@ -671,7 +671,7 @@ There was huge need to increase the maximum memory addressable because programme
 
 *   Addressing capacity was increased 16 fold. This became such a huge hit because programmers could use 16 times memory than what they were using before.
 
-*   Segment Registers were used when Segmentation was in business, but in modern machines, it is obselete.
+*   Segment Registers were used when Segmentation was in business, but now Segmentation is out of date. But Segment Registers are used for special purposes.
 
 ### Pointers and Typecasting
 
@@ -729,11 +729,11 @@ I hope you have got an idea of how Typecasting works.
 
 *   When the computers were first invented, there were no tools like compilers or assemblers or there was no Instruction Set for a processor for that matter. Instructions were fed in their binary form. Literally, **0**s and **1**s were being fed into the computer.
 
-*   It was too tedious and the number of errors made were really high. Then idea of Instruction Set came in.An Instruction Set was required because there was a need for a well-defined interface through which a processor could be programmed. So, for every processor, an Instruction Set was defined and Assembly Language was born.
+*   It was too tedious and the number of errors made were really high. Then idea of Instruction Set came in. An Instruction Set was required because there was a need for a well-defined interface through which a processor could be programmed. So, for every processor, an Instruction Set was defined and Assembly Language was born.
 
 *   Each assembly instruction was fed into the machine now. Even this became a tedious job as programmers went to write bigger programs. Then came **Assembler** - A tool which converts a set of assembly level instructions into machine code.
 
-*   Major disadvantage of using assembly language was it was not portable across processors. Suppose I write a Database in x86 Assembly Language, then that can be run and used only on Intel Processors. It could not be run on any other processors like SPARC, PowerPC etc., So, programmers had to write the same software again and again in different assembly languages to give support for different processors. 
+*   Major disadvantage of using assembly language is it is not portable across processors. Suppose I write a Database in x86 Assembly Language, then that can be run and thus used only on Intel Processors. It could not be run on any other processors like SPARC, PowerPC etc., So, programmers had to write the same software again and again in different assembly languages to give support for different processors. 
 
 *   The UNIX Operating System was first written in Assembly Language. This was obviously not portable. Then the **C Programming Language** was invented and the whole OS was re-written in C. What we needed is a tool that converts C code to assembly code, which is the compiler.
 

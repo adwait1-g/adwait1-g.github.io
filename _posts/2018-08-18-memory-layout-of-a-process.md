@@ -77,21 +77,23 @@ Sometimes, we use the words **Program** and **Process** interchangbly but they d
 
 We said that a process is program under execution. We have seem how a program looks like. It has ELF Header, Program Header Table, Section Header table, Segments, sections etc.,
 
+The Program Headers will decide the Memory Layout of a process.
+
 Now, let us look at the process. This is rough **Memory Layout** of any process. This is how a process lives in Main Memory.
 
 ![memory_layout](/assets/2018-08-18-memory-layout-of-a-process/memory_layout.jpeg)
 
 Let us start discussing from bottom to top of that image.
 
-a. **Text Segment** : This segment has pure machine code in it. It contains all the functions we would have written in the program in binary form. Note that starts from the **Lowest Address** .
+a. **Text Section** : This section has pure machine code in it. It contains all the functions we would have written in the program in binary form. Note that starts from the **Lowest Address** .
 
-b. **Data Segment** : This segment is where **Global Initialized Variables** are stored. It is right above the Text Segment.
+b. **Data section** : This section is where **Global Initialized Variables** are stored. It is right above the Text section.
 
-c. **BSS Segment** : BSS segment contains all **Global Uninitialized Variables**. As far as I know, BSS is know as **Better Save Space** because in the object file, it does not take any space except the name and size of the variable. It is given actual memory only when the program is executed - BSS variables come alive :P
+c. **BSS section** : BSS section contains all **Global Uninitialized Variables**. As far as I know, BSS is know as **Better Save Space** because in the object file, it does not take any space except the name and size of the variable. It is given actual memory only when the program is executed - BSS variables come alive :P
 
-d. **Heap** : First thing I want to clarify is that this Heap has no relation with the **Heap Data Structure** . This **Heap** refers to a **Heap of Memory** like **Heap of Clothes** . Just a huge pile of memory which we can allocate and use at runtime.
+d. **Heap** : First thing I want to clarify is that this Heap has no relation with the **Heap Data Structure** . This **Heap** refers to a **Heap of Memory** like **Heap of Clothes** . Just a huge pile of memory which we can allocate for our variables and use at runtime.
 
-*   If memory is allocated dynamically at runtime, then that memory belongs to **Heap** . **malloc()** , **calloc()** functions in C and **new** function in C++ allocate memory from this segment. 
+*   If memory is allocated dynamically at runtime, then that memory belongs to **Heap** . **malloc()** , **calloc()** functions in C and **new** function in C++ allocate memory from heap. 
 
 Eg: In code1.c program, **dyn** is a pointer to an integer. **malloc()** takes in an arguments of size of memory we want and returns a pointer to that memory. This memory is taken from Heap. You will understand this clearly when we go through the example.
 
@@ -174,7 +176,7 @@ a. This is the output of **code1** is something like this.
 
 b. Compare the Output of the code1.c with the diagram which we discussed earlier. Compare the Addresses of every segment. It should perfectly match what we have discussed.
 
-*   Address of lv(Local variable - Stack) > Value of dyn(Dynamically allocated - Heap) > Address of gv1(Uninitialized variable - BSS) > Address of gv2(Initialized variable - Data Segment) > Address of main(Machine code - Text Segment)
+*   Address of lv(Local variable - Stack) > Value of dyn(Dynamically allocated - Heap) > Address of gv1(Uninitialized variable - BSS) > Address of gv2(Initialized variable - Data Section) > Address of main(Machine code - Text Section)
 
 **NOTE :** The program comes to a still state because of that **while(1)** . This Infinite Loop is put just to keep the process alive in the main memory and we can do our analysis with ease. Open up a new terminal for further analysis.
 
@@ -294,21 +296,21 @@ b. Compare the Output of the code1.c with the diagram which we discussed earlier
 *   Entry 1:
     
     *   Address space : **0x400000 - 0x401000** 
-    *   The Text Segment of a program is mapped onto this address space.The Text Segment contains Header details and the C program we wrote in form of machine language. 
+    *   The Text Section of a program is mapped onto this address space.The Text Segment contains Header details and the C program we wrote in form of machine language. 
     *   Second column is **r-xp** . **r** stands for Read Permission, **w** stands for **Write Permission** and **x** stands for **Executable** Permission. This Address space has Read and Executable Permissions. It means, it can be read and it can be executed also. Generally, any segment which has Executable Permissions will also have Read Permissions because you have to read and process the segment to execute code in it.
 
 *   Entry 2:
     
     *   Address space : **0x600000 - 0x601000** 
-    *   The **read-only** Segment is mapped onto this address space. This Segment consists of Hard-coded strings etc., It's permissions is **r--p** as expected.
+    *   The **read-only** section is mapped onto this address space. This Section consists of Hard-coded strings etc., It's permissions is **r--p** as expected.
 
 *   Entry 3:
     
     *   Address space : **0x601000 - 0x602000** 
-    *   This is the Data Segment. It has all the global variables in it. Check out the addresses of **gv1** and **gv2** of **code1** . 
+    *   This is the Data Section. It has all the global variables in it. Check out the addresses of **gv1** and **gv2** of **code1** . 
     *   It's permissions is **rw-p** .
 
-*   The point to understand is, all these 3 segments belong to the same file - **/rev_eng_series/post_4/code1** . So, the same file is **not** being mapped thrice, but 3 different segments(Text, Read-Only, Data) of the **same** executable file are mapped to 3 different address spaces.
+*   The point to understand is, all these 3 sections belong to the same file - **/rev_eng_series/post_4/code1** . So, the same file is **not** being mapped thrice, but 3 different sections(Text, Read-Only, Data) of the **same** executable file are mapped to 3 different address spaces.
 
 *   Entry 4:
     
