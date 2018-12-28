@@ -13,6 +13,8 @@ BOFs are not new at all. They have been around from a really long time(first dis
 
 So, we will be talking about few very famous and quite effective security measures that the OS is empowered with to keep the system safe. 
 
+I think this is the right time to discuss these security techiques. You will be able to clearly understand what the security measure is, why it is designed the way it is designed, it's backdrops etc., because you know what BOFs and shellcode is.
+
 This is the 13th post. So, create a directory named **post_13** inside the **rev_eng_series** directory. 
 
  
