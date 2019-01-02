@@ -33,6 +33,12 @@ title: Categories
 
 These are a few articles which I found interesting
 
+## Network Programming
+
+1. [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/) - One of the best guides for Network Programming in C. 
+
+
+
 ### Kernel Bypass Techniques
 
 These articles (in this order) helped me understand Kernel Bypass techniques better
@@ -47,7 +53,7 @@ These articles (in this order) helped me understand Kernel Bypass techniques bet
 
 5. [netmap: a novel framework for fast packet I/O](https://www.usenix.org/system/files/conference/atc12/atc12-final186.pdf) - netmap's official paper. Just amazing!
 
-6. [DPDK - Data Plane Development Kit](https://www.dpdk.org/) - Official website of DPDK
+6. [DPDK - Data Plane Development Kit](https://www.dpdk.org/) - Official website of **DPDK**
 
 7. [Impressive Packet Processing Performance Enables Greater Workload Consolidation](http://media15.connectedsocialmedia.com/intel/06/13251/Intel_DPDK_Packet_Processing_Workload_Consolidation.pdf) - Paper explaining DPDK
 
