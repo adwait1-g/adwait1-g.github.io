@@ -2,6 +2,7 @@
 layout: post
 title: Introduction to x86 Assembly Programming
 categories: Reverse Engineering and Binary Exploitation series
+comments: true
 ---
 
 Hello fellow pwners!
