@@ -326,7 +326,7 @@ There are significant differences between WiFi and Ethernet and that will probab
 
 ### About the Address used
 
-The Unique Identifier given by the manufacturer was used to connect multiple devices. That is also known as **Physical Address**, **MAC Address**. 
+The Unique Identifier given by the manufacturer was used to connect multiple devices. That is also known as **Physical Address**, **MAC Address**. The Physical Address is **6-bytes** / **48-bits** long. 
 
 ### Can a single machine have multiple NICs?
 
