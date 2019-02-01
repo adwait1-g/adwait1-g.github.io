@@ -262,12 +262,12 @@ If A wants to send the file to any of the machines connected to SwitchN1, we kno
 
 From the diagram, we can tell that if we just connect SwitchN1 and SwitchN2, won't the problem be solved? 
 
-Yes. But this will need some extra logic put into the switches. A sends the Frames to SwitchN1. It looks at it's MAC Table and finds out there is no B in it. Now, the switch does not know what to do with that data frame. So, we have to write logic saying, if the destination address is not present in the MAC Table, send that data frame to SwitchN2 through their connection. So, it sends the Frames to SwitchN2. SwitchN2 looks at it's MAC Table and B is present there, so all frames are sent to B. 
+Yes. But this will need some extra logic put into the switches. A sends the Frames to SwitchN1. It looks at it's Table and finds out there is no B in it. Now, the switch does not know what to do with that data frame. So, we have to write logic saying, if the destination address is not present in it's Table, send that data frame to SwitchN2 through their connection. So, it sends the Frames to SwitchN2. SwitchN2 looks at it's Table and B is present there, so all frames are sent to B. 
 
 Suppose the file is divided into 100 data frames, a frame looked like this: 
 
     ---------------------------------------------------------------------------------
-    |   Data piece - 87 |  Source(A's MAC Address)  | Destination(B's MAC Address)  |
+    |   Data piece - 87 |  Source(A's Address)  | Destination(B's Address)  |
     ---------------------------------------------------------------------------------
 
 100 such frames travel from A to SwitchN1, then to SwitchN2 and finally reaching B. 
@@ -324,11 +324,15 @@ If you want to go wireless, you can use **WiFi**.
 
 There are significant differences between WiFi and Ethernet and that will probably take up one complete post. So, let us leave it here for now.
 
+### About the Address used
+
+The Unique Identifier given by the manufacturer was used to connect multiple devices. That is also known as **Physical Address**, **MAC Address**. 
+
 ### Can a single machine have multiple NICs?
 
 Yes. Absolutely. In today's world, every laptop, desktop has atleast 2 NICs: Ethernet and WiFi - 2 most common ways one can get connected to the network.
 
-So, it is important to understand that MAC Address doesn't identify a device. It identifies a **Networking Device**, which is basically a Network Interface Card. So, a MAC address should never be used to identify a device like laptop, phone etc., because each one can have multiple NICs and thus can have multiple MAC Addresses.
+So, it is important to understand that such an Address doesn't identify a device. It identifies a **Networking Device**, which is basically a Network Interface Card. So, a Physical Address should never be used to identify a device like laptop, phone etc., because each one can have multiple NICs and thus can have multiple Physical Addresses.
 
 ### Just something I remember
 
@@ -351,5 +355,5 @@ I hope you have got some idea on how networks work, the layered model of the Net
 Thank you for reading :)
 
 --------------------------------------------------------------
-[Go to next article: Operating System and Networking Stack - Part2](/404.html)             
+[Go to next article: Operating System and Networking Stack - Part2](/packet/overflow/2019/02/01/operating-system-and-networking-stack-part2.html)            
 [Go to previous article: Packet Overflow! - Introductory article](/packet/overflow/2019/01/27/packet-overflow.html)
