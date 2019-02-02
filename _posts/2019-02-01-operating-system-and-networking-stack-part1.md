@@ -304,7 +304,7 @@ Let us continue our discussion in the next article.
 
 ## A few interesting things
 
-### About Layer-2 protocols
+### 1. About Layer-2 protocols
 
 2 very popular Layer-2 protocols are **Ethernet** and **WiFi**. If you say your machine supports Ethernet as a Data-Link Layer protocol, it means your machine has a **Ethernet Card** or **Ethernet Network Interface Card**. So, the protocol is implemented in the hardware itself. This is what I meant when I told the Data-Link Layer is implemented in the hardware itself.
 
@@ -324,17 +324,17 @@ If you want to go wireless, you can use **WiFi**.
 
 There are significant differences between WiFi and Ethernet and that will probably take up one complete post. So, let us leave it here for now.
 
-### About the Address used
+### 2. About the Address used
 
 The Unique Identifier given by the manufacturer was used to connect multiple devices. That is also known as **Physical Address**, **MAC Address**. The Physical Address is **6-bytes** / **48-bits** long. 
 
-### Can a single machine have multiple NICs?
+### 3. Can a single machine have multiple NICs?
 
 Yes. Absolutely. In today's world, every laptop, desktop has atleast 2 NICs: Ethernet and WiFi - 2 most common ways one can get connected to the network.
 
 So, it is important to understand that such an Address doesn't identify a device. It identifies a **Networking Device**, which is basically a Network Interface Card. So, a Physical Address should never be used to identify a device like laptop, phone etc., because each one can have multiple NICs and thus can have multiple Physical Addresses.
 
-### Just something I remember
+### 4. Just something I remember
 
 When I was a little kid(~2005), my father bought a new laptop. That laptop didn't have any NIC in it by default. But it had a physical port where we could insert any NIC we want. So, we went to the store, bought a WiFi NIC. NIC was removable at that time. That laptop was not capable of networking by itself but it had given a provision to support networking. We had to insert this NIC, install the necessary software required and then we were ready to go!
 
