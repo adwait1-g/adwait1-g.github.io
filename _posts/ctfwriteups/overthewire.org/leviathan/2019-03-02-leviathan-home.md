@@ -11,7 +11,7 @@ This is a wargame by [overthewire.org](http://overthewire.org).
 
 To start, 
 
-	$ssh leviathan0@leviathan.labs.overthewire.org -p 2223
+	$ ssh leviathan0@leviathan.labs.overthewire.org -p 2223
 
 password: **leviathan0**
 
