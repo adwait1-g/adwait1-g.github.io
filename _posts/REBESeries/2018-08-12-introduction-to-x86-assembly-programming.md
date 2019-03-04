@@ -746,7 +746,9 @@ I hope you have got an idea of how Typecasting works.
 
 This is how languages have evolved. You can observe that the level of abstraction has increased so much - From 0s and 1s to languages which compile to give sourcecode in other languages.
 
-That is it for this article. I learnt a lot while writing this post. I hope you have understood basics of assembly programming. Thank you!          
+That is it for this article. I learnt a lot while writing this post. I hope you have understood basics of assembly programming. 
+
+Thank you for reading :)          
 
 ****************************************************************       
 [Go to next post: Memory Layout of a Process](/reverse/engineering/and/binary/exploitation/series/2018/08/18/memory-layout-of-a-process.html)                    

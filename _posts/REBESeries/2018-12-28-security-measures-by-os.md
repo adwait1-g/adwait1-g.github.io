@@ -1293,7 +1293,7 @@ So, that is it for this post. This turned out to be one more long post. I though
  Thank you for reading :)
 
  ----------------------------------------------------------
-[Go to next post: Return Oriented Programming - Part1](/reverse/engineering/and/binary/exploitation/series/2019/01/16/return-oriented-programming-part1.html)     
+[Go to next post: Defeating Write XOR Execute! - Ret2Libc - Part1](/reverse/engineering/and/binary/exploitation/series/2019/03/04/return-to-libc-part1.html)     
 [Go to previous post: Buffer Overflow Vulnerability - Part3](/reverse/engineering/and/binary/exploitation/series/2018/12/08/buffer-overflow-vulnerability-03.html)     
 
 

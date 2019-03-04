@@ -270,8 +270,8 @@ That is it for this post. I learnt a lot while writing this post. Hope you did t
 Thanks for reading :)
 
 -------------------------------------------------
-[Go to next post: Return Oriented Programming - Part2](/404.html)      
-[Go to previous post: How does the Operating System defend itself?](/reverse/engineering/and/binary/exploitation/series/2018/12/28/security-measures-by-os.html)
+[Go to next post: Return Oriented Programming - Part2](/404.html)       
+[Go to previous post: Defeating Write XOR Execute! - Ret2Libc - Part1](/reverse/engineering/and/binary/exploitation/series/2019/03/04/return-to-libc-part1.html)
 
 
 
