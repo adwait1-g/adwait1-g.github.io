@@ -461,6 +461,8 @@ We have the **complete address space** for ourself. Whatever address ranges we c
 
 Suppose the string **/bin/sh** is not found anywhere in the address space, we can take **.data** segment's help. Write **/bin/sh** into **.data** segment using the **write** function and then call **system** . 
 
+**Do not forget to enable ASLR**. 
+
 ## Conclusion
 
 With this, I would like to end this post. 
