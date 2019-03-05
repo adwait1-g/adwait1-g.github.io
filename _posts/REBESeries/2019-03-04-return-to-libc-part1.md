@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Defeating Write XOR Execute! - Ret2Libc - Part1
+title: Bypassing Write XOR Execute! - Ret2Libc - Part1
 categories: Reverse Engineering and Binary Exploitation Series
 comments: true
 ---
 
 Hey fellow pwners!
 
-In the [previous post](/reverse/engineering/and/binary/exploitation/series/2018/12/28/security-measures-by-os.html), we discussed a few security techniques that the Operating System uses to mitigate attacks. 
+In the [previous post](/reverse/engineering/and/binary/exploitation/series/2018/12/28/security-measures-by-os.html), we discussed a few powerful security techniques that the Operating System uses to mitigate attacks. 
 
-Starting from this post, the next few posts will be about exploit methods which aim at defeating each of the security techniques we discussed in the previous post. 
+Starting from this post, the next few posts will be about exploit methods which aim at **bypassing** and if possible **defeating** each of the security techniques we discussed in the previous post. 
 
-As the title of the post suggests, we will be focusing on defeating the amazing **W XOR X** security technique.
+As the title of the post suggests, we will be focusing on bypassing the amazing **W XOR X** security technique.
 
 This is the 14th post in this series. So, create a directory with name **post_14** inside **rev_eng_series**. 
 
@@ -381,7 +381,8 @@ Bingo! We got the shell. It says "executing new program: /bin/dash" . This is a 
 
 Now, let us exploit the program without gdb. 
 
-    rev_eng_series/post_14/ret2libc}=)> cat exploit.txt - | ./defeat Before calling func
+    rev_eng_series/post_14$ cat exploit.txt - | ./defeat 
+    Before calling func
 
     whoami
     adwi
@@ -449,7 +450,7 @@ But here, we did not supply anything argument. We just jumped directly to execut
 
 ## What did we just do?
 
-We just defeated the **W XOR X** security technique in the Operating System. Its celebration time !! :P
+We just **bypassed** the **W XOR X** security technique in the Operating System and got a shell. Its celebration time !! :P
 
 We did not inject even a single instruction to achieve this. All we did was find a few useful, potential shell-giving functions in **libc**, find appropriate arguments for those functions. Then use BOF to execute those functions. As we **returned** to a **libc** function, this exploit method is also known as **Ret2Libc** exploit method.
 
