@@ -483,7 +483,7 @@ I hope you learnt something out of it.
 Thank you for reading and happy hacking :)
 
 ----------------------------------------------------------
-[Go to next post: Return Oriented Programming - Part1](/reverse/engineering/and/binary/exploitation/series/2019/01/16/return-oriented-programming-part1.html)                                   
+[Go to next post: Defeating Write XOR Execute! - Ret2Libc - Part2](/reverse/engineering/and/binary/exploitation/series/2019/03/06/return-to-libc-part2.html)                                                     
 [Go to previous post: How does the Operating System defend itself?](/reverse/engineering/and/binary/exploitation/series/2018/12/28/security-measures-by-os.html)
 
 
