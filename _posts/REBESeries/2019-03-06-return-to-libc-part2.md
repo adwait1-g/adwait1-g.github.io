@@ -312,9 +312,9 @@ What we have done so far is we have not confronted these restrictions. Suppose w
 
 So, what did we do?
 
-We designed an exploit method which did not execute a single instruction in a writable address space nor did we write into an executable address space. We got around this rule to get the shell!
+We used an exploit method which did not execute a single instruction in a writable address space nor did we write into an executable address space. We got around this rule to get the shell!
 
-The OS is still guarded by the W^X rule. What we did is we designed a method to **fool** the rule and the OS. This is bypassing. Fooling the OS and getting around the rule but the rule is still there guarding the OS.
+The OS is still guarded by the W^X rule. What we did is we used a method to **fool** the rule and the OS. This is bypassing. Fooling the OS and getting around the rule but the rule is still there guarding the OS.
 
 Then what is defeating?
 
