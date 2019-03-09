@@ -20,7 +20,7 @@ title: Categories
 12. [Buffer Overflow Vulnerability - Part3](/reverse/engineering/and/binary/exploitation/series/2018/12/08/buffer-overflow-vulnerability-03.html)
 13. [How does the Operating System defend itself?](/reverse/engineering/and/binary/exploitation/series/2018/12/28/security-measures-by-os.html)
 14. [Bypassing Write XOR Execute! - Ret2Libc - Part1](/reverse/engineering/and/binary/exploitation/series/2019/03/04/return-to-libc-part1.html)
-15. [Defeating Write XOR Execute! - Ret2Libc - Part2](/reverse/engineering/and/binary/exploitation/series/2019/03/04/return-to-libc-part2.html)
+15. [Defeating Write XOR Execute! - Ret2Libc - Part2](/reverse/engineering/and/binary/exploitation/series/2019/03/06/return-to-libc-part2.html)
 16. [Return Oriented Programming - Part1](/reverse/engineering/and/binary/exploitation/series/2019/01/16/return-oriented-programming-part1.html)
 
 
