@@ -13,13 +13,15 @@ comments: false
 [Link to Reverse Engineering and Binary Exploitation Series](/reverse/engineering/and/binary/exploitation/series/2019/03/25/reverse-engineering-and-binary-exploitation-series-mainpage.html) 
 
 This is a series of articles on Reverse Engineering and Binary Exploitation. The first few articles will help you reverse engineer small programs using gdb, objdump, readelf. Most of the articles focus on Binary Exploitation. As of now, I have written about the famous Buffer Overflow vulnerability, different methods to exploit like Traditional shellcode Injection, Return-To-Libc, Return Oriented Programming in detail with hands-on examples. I am planning to write 1 or 2 more articles on Return Oriented Programming because I just finished a project related to it and I have a lot to write about. 
-Once that is done, I will be discussing different vulnerabilities like Format String vulnerability, problems with GOT and PLT(dynamic linking). I also plan to discuss how presence of more than one vulnerability can help us rip apart the Operating System's security measures against these attacks. 
+Once that is done, I will be discussing different vulnerabilities like Format String vulnerability, problems with GOT and PLT(dynamic linking). I also plan to discuss how presence of more than one vulnerability can help us rip apart the Operating System's security measures with the help of these exploits.
 
 Though these are old vulnerabilities, they are still found in embedded systems(outdated kernels), even if firmware updated, the security feature is kept off for god knows what reason. There are lot of such possibilities. Many routers lack basic security measures like ASLR, DEP, RELRO which can make them too vulnerable to exploits we discuss. 
 
 This is basically a red-team approach to Operating Systems Security.
 
+Happy pwning!
            
+
 # Packet Overflow!
 
 [Link to Packet Overflow!](/packet/overflow/2019/03/25/packet-overflow-mainpage.html)
@@ -46,3 +48,10 @@ In the first few posts, I will be introducing Network Programming and Introducti
 
 I was using WordPress for 6 months after I started my blog and then migrated to GitHub Pages. I have written 2 articles on how to completely migrate to GitHub Pages. 
 
+# Talks and Workshops
+
+[Link to Talks and Workshops](/2019/03/25/talks-and-workshops-mainpage.html)
+
+I love to give talks, workshops on topics that I am interested in. In fact, the Packet Overflow! series is a result of a mentorship I took up for my juniors on Computer Networks and Network Programming. 
+
+---------------------------------------------------
