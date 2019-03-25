@@ -6,8 +6,6 @@ layout: home
 comments: false
 ---
 
-# Why I started this blog?
-
 [Why I started this blog?](/why/i/started/this/blog2018/06/11/why-i-started-this-blog.html)
 
 # Reverse Engineering and Binary Exploitation Series
