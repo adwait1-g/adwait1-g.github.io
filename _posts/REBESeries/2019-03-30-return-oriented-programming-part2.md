@@ -1043,3 +1043,7 @@ Later, we looked at 2 examples where we discussed Control-Flow hijacking and ROP
 That is it for this post. 
 
 Thank you for reading and happy hacking :)
+
+--------------------------------
+[Go to next post: Return Oriented Programming - Part3](/404.html)                     
+[Go to previous post: Return Oriented Programming - Part1](/reverse/engineering/and/binary/exploitation/series/2019/01/16/return-oriented-programming-part1.html)

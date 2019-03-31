@@ -279,7 +279,7 @@ That is it for this post.
 Thanks for reading and happy hacking :)
 
 -------------------------------------------------
-[Go to next post: Return Oriented Programming - Part2](/404.html)       
+[Go to next post: Return Oriented Programming - Part2](/reverse/engineering/and/binary/exploitation/series/2019/03/30/return-oriented-programming-part2.html)                
 [Go to previous post: Defeating Write XOR Execute! - Ret2Libc - Part2](/reverse/engineering/and/binary/exploitation/series/2019/03/06/return-to-libc-part2.html)
 
 
