@@ -1,6 +1,5 @@
 ---
-layout: post
-commnets: false
+layout: page
 title: Packet Overflow!
 categories: Packet Overflow
 ---

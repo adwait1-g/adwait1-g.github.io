@@ -1,6 +1,5 @@
 ---
-layout: post
-comments: true
+layout: page
 title: Setting up a Blog using Jekyll
 categories: Blogging
 ---
