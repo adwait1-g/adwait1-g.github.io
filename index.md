@@ -10,7 +10,7 @@ Hello Friend!
 
 Welcome to pwnthebox!
 
-This is the place where I write about the stuff I am exploring, stuff I am interested in. Check it out!
+This is the place where I write about the stuff I am exploring, stuff I am interested in.
 
 # Reverse Engineering and Binary Exploitation Series
 
