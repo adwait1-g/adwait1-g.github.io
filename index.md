@@ -54,4 +54,10 @@ I was using WordPress for 6 months after I started my blog and then migrated to 
 
 Happy blogging!
 
+# Random Stuff
+
+[Link to Random Stuff](/random/stuff/2019/04/28/random-stuff-mainpage.html)
+
+This is literally random stuff. Just something I think about sometimes. There might be stuff which might trigger you. Read it at your own discretion. 
+
 ---------------------------------------------------
