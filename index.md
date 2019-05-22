@@ -44,6 +44,16 @@ In the first few posts, I will be introducing Network Programming and Introducti
 
 Happy Networking!
 
+# moloch
+
+[moloch](https://molo.ch) is a system which can used for large scale, indexed packet capture and search. What this means is, it can capture, store and retrieve(on search) a large number of packets. The [website](https://molo.ch) describes the system in detail. It is opensource! You can read it's sourcecode [here](https://github.com/aol/moloch). The README of the github repo is amazing. It gives a overview of the system.
+
+The following are a few articles about moloch. 
+
+1. [Installing moloch](/moloch/2019/05/22/installing-moloch.html): I spent a lot of time to get it working. So, I thought I can list the procedure and a few places I spend time figuring it out.
+
+A lot more coming up!
+
 # Blogging
 
 ### Setting up a Blog using Jekyll
