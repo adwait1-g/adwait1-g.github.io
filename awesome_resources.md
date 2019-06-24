@@ -19,6 +19,16 @@ The following is a small list of really amazing websites I have come across and 
 
 4. [crypto101.io](https://crypto101.io) - It is a introductory course on cryptography available in the form of a book. 
 
+## Linux Systems Programming
+
+I was searching for a few systems programming projects. I found these.
+
+1. [Angrave's System Programming](https://github.com/angrave/SystemProgramming/wiki): This is probably the best resource to get started with Linux systems programming. Its just too good! 
+
+2. [University of Georgia's Systems Programming Course](http://cobweb.cs.uga.edu/~rwr/CS1730/projs.html)
+
+3. [University of Wisconsin-Madison's Operating Systems course](http://pages.cs.wisc.edu/~dusseau/Classes/CS537-F07/projects.html)
+
 
 ## Computer Networks
 
