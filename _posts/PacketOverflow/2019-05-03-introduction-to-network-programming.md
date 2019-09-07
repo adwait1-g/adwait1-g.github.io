@@ -506,17 +506,10 @@ We have come to the end of this article. I hope you learnt how to write small ne
 
 With this article, we are done with 2 out of 3 pre-requisites. We have a basic idea of the networking stack and we are able to write small network programs. In the next article, we will look an amazing network tool called [Wireshark](https://www.wireshark.org/). It is used to capture packets, dissect them and read its contents and more. 
 
-Thats it for now. 
+That is it for now. 
 
 Thank you for reading and happy networking :)
 
-
-
-
-
-
-
-
-
-
-
+--------------------------------------------------------------------
+[Go to next article: Introduction to Wireshark](/404.html)              
+[Go to previous article: Operating System and Networking Stack - Part2](/packet/overflow/2019/02/01/operating-system-and-networking-stack-part2.html)     

@@ -516,5 +516,5 @@ That is it for this article.
 Thank you for reading :)
 
 ------------------------------------------------------------------------------------------
-[Go to next article: Introduction to Network Programming - Part1](/404.html)                  
+[Go to next article: Introduction to Network Programming](/packet/overflow/2019/05/03/introduction-to-network-programming.html)                  
 [Go to previous article: Operating System and Networking Stack - Part1](/packet/overflow/2019/02/01/operating-system-and-networking-stack-part1.html)                     
