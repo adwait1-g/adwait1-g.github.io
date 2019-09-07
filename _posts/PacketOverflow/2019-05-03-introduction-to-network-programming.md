@@ -8,7 +8,9 @@ Hello Friend!
 
 In the previous articles([article1](/packet/overflow/2019/02/01/operating-system-and-networking-stack-part1.html) & [article2](/packet/overflow/2019/02/01/operating-system-and-networking-stack-part2.html)), we got a rough picture of what TCP/IP stack is, where it is present, how communication happens between machines. 
 
-In this article, we will see two machines talking to each other live! We will write programs which uses the networking stack offered by the OS and then talk to each other. If you are a newbie to Computer Networks, I suggest to read through those two articles because concepts discussed there will be used here to write programs.
+In this article, we will see two machines talking to each other live! We will write programs which will make use of the OS's Networking Stack and then talk to each other. If you are a newbie to Computer Networks, I highly recommend you to read through the above mentioned articles because concepts discussed there will be used here to write programs.
+
+Make sure your machine is connected to your network via WiFi or Ethernet.
 
 Let us look at some important concepts which will help us write the programs. 
 
@@ -16,21 +18,21 @@ Let us look at some important concepts which will help us write the programs.
 
 # a. How do you use any resource offered by the Operating System?
 
-The Operating System offers an **Application Programming Interface(API)** - basically a well defined set of functions which one can use to write applications / programs. Let us look at a few examples. 
+The Operating System offers an **Application Programming Interface(API)** - basically a well-defined set of functions which one can use to write programs. Let us look at a few examples. 
 
-1. Input / Output API: **read**, **write**, **seek** etc., are functions to handle I/P operations. 
+1. Input / Output API: **read**, **write**, **seek** etc., are functions to handle I/O operations. 
 
 2. Process related API: **fork**, **wait**, **waitpid**, the **exec** function family. 
 
 3. Memory handling API: **mmap**, **munmap**, **mprotect** help in mapping files onto memory, removing the mapping, setting permissions. 
 
-Like this, there is an API which helps us use the Networking Stack. That API is specially called **Network API**. This article is about learning a few functions from that API, know what they do and use them in writing programs. 
+Like this, there is an API which helps us use the Networking Stack. That API is specially called **Network API**. This article is about learning a few functions from that API, understand what they do and use them in writing programs. 
 
 # b. What kind of programs do we write?
 
-We will be writing **network** programs - the programs which communicate with each other using a network. 
+We will be writing **network** programs - the programs which communicate with each other over a network. 
 
-When you look at the Internet, you would see a lot of machines present just to server the data you need and you would see machines like your browsers, apps etc., requesting for that data. This is formally known as the **Server-Client Network Architecture**. This is one of the most popular network architectures and is extensively used in building systems. 
+When you look at the Internet, you would see a lot of machines present just to serve the data you need and you would see machines which have applications like your browsers, apps etc., requesting for that data. This is formally known as the **Server-Client Network Architecture**. This is one of the most popular network architectures and is extensively used in building systems. 
 
 A **Client** is a process / application that requests for some data. The facebook app, google app, youtube app are all clients. 
 
@@ -42,7 +44,7 @@ In this article, we will be writing simple server and client programs which can 
 
 Linux offers an API in C programming language. Writing network programs in C might be daunting at first because there are a lot of details which we have to take care. Because we are new to Computer Networks itself, it will be difficult to make sense of all those details right in the beginning. 
 
-That is why, let us write these programs in **python**. Python offers a beautiful and a amazingly simple Network API, which is straight to the point. It abstracts all those little details. It internally takes care of all those details.
+That is why, let us write these programs in **python**. Python offers a beautiful and an amazingly simple Network API, which is straight to the point. It abstracts all those little details. It internally takes care of all those details.
 
 With that, we are done with a general details that you should be aware of before writing network programs. 
 
@@ -51,11 +53,11 @@ Let us get started by discussing about the most fundamental concept in network p
 # d. What is a socket?
 
 Before getting into what socket means in network programming, let us think what socket means in general. The one socket we all know is the **electric socket** / **plug point**. It generally has 3 / 5 holes in it and you can insert the plug in. What is this electric socket doing? What is its function?
-It is an **endpoint** where you get access to electricity when you insert that plug of say your Air cooler and switch it on.
+It is an **endpoint** where you get access to electricity when you insert that plug of your Air cooler(or any electric appliance) and switch it on.
 
 Observe what is happening. The socket is just an endpoint. There is a huge system behind it functioning at full throttle to deliver electricity at that socket. It all starts at the power station where electricity is generated. This has to be efficiently delivered to your home. How is it done? There are multiple transformers which help in stepping up and stepping down the voltage when necessary. There is a huge transmission and distribution network which helps electricity to be delivered to the electric pole which you see next to your home. From there, there is a connection to your home's main switch board. There is a complex wiring done to connect your home's main switch board and the socket. And there it is, you have electricity delivered at your socket. I just explained the whole system in a few lines. But the system is so complex and interesting that my friends in the Electrical department have multiple courses which help them understand the complete system.
 
-The point is, there is a such a big-ass system, but all you see is just a socket embedded to the wall. It is an **end-point** to which electricity is delivered. The socket has hidden (or abstracted) all those details. 
+The point is, there is a such a big-ass system, but all you see is just a socket embedded to the wall. It is an **end-point** to which electricity is delivered. The socket is successfully hiding (or abstracting) all those details. 
 
 ```
 ---------------------                                                       ---------------------
@@ -87,23 +89,23 @@ Notice the important difference between the electric socket and the network sock
 
 Now, let us talk more about that Magic Tunnel in the above diagram. You already know that every machine has a networking stack. But is that enough for those 2 machines A and B to communicate with each other? 
 
-No. There has to be a physical Computer Network(or network of networks) present between A and B to talk to each other. If that is not present, how will data travel from A to B right?
+No. There has to be a physical Computer Network present between A and B to talk to each other. If that is not present, how will data travel from A to B right?
 
 That Magic Tunnel is Internet. It is a complex network of several routers, switches, access points etc., which make communication possible. When you browse for something, do you really **feel** that such a complex, heavy system is behind it? It feels so smooth and awesome!
 
 A network socket abstracts everything. A network socket is just a hole into which you pump the data you want to reach the other socket. All the other details like **how** that data travels from A to B **hidden** from plainsight. 
 
-There are 2 amazing analogies between electric sockets and network sockets. 
+There are 2 analogies between electric sockets and network sockets. 
 
 1. **Types of sockets** 
 
-    * Consider electric sockets. There are generally 2 types of electric socket at home - one for low-power consuming appliances like tubelight, fans, your phone charger etc., and other for high-power consuming appliances like mixer, washing machine, grinder etc., They are designed to support a specific type of appliance. If you plug in your washing machine's plug into a low-power socket, the system might get burnt because washing machines draw huge current, but the low-power sockets and its wiring are not designed to support this. 
+    * Consider electric sockets. There are generally 2 types of electric socket at home - one for low-power consuming appliances like tubelight, fans, your phone charger etc., and other for high-power consuming appliances like mixer, washing machine, grinder etc., They are designed to support a specific type of appliance. If you plug in your washing machine's plug into a low-power socket, the system might get burnt because washing machines draw huge power, but the low-power sockets and its wiring are not designed to support this. 
 
-    * On the same lines, there are different types of network sockets. If network layer uses IP and transport layer uses TCP, it is a TCP/IP socket. It network layer uses IP and transport layer uses UDP, it is a UDP/IP socket. Depending on the application, you have to choose the appropriate type of socket. At this point, do not worry much about what TCP, UDP, IP are. We will discuss them in detail in the coming articles. 
+    * On the same lines, there are different types of network sockets. If network layer uses IP and transport layer uses TCP, it is a TCP/IP socket. If network layer uses IP and transport layer uses UDP, it is a UDP/IP socket. Depending on the application, you have to choose the appropriate type of socket. At this point, do not worry much about what TCP, UDP, IP are. We will discuss them in detail in the coming articles. 
 
 2. **The Generic design of a socket**
 
-    * Consider that low-power electric socket. You can literally insert **any** low-power consuming appliance into that socket. It can power up light, fan, charger etc., It is designed to support any low-power consuming appliance. That is why, it is pretty generic in nature. 
+    * Consider that low-power electric socket. You can literally insert **any** low-power consuming appliance into that socket. It can power up light, fan, charger etc., It is designed to support **any** low-power consuming appliance. That is why, it is pretty generic in nature. 
 
     * Consider the TCP/IP socket. This is the most used type of network socket in the world. It is supporting so many types of application layer protocols like HTTP, FTP, SMTP. The socket is generic in nature.
 
@@ -111,7 +113,7 @@ Look at how amazingly similar they are.
 
 That was some theory about network socket. I hope you get an idea. 
 
-Because we will be dealing with sockets, Network API is also known as **Socket API**. Network Programming is also known as **Socket Programming**. You can use whichever you want.
+Because we will be dealing with sockets, Network API is also known as **Socket API**. Network Programming is often refered to as **Socket Programming**.
 
 # e. A small note about TCP/IP stack and sockets
 
@@ -129,9 +131,9 @@ At this point, we have an idea of what sockets are and we also know what TCP/IP 
 -------------------------
 ```
 
-This is how the stack looks in theory. 
+The stack looks like above in theory. 
 
-In practice, a user / programmer who wants to write programs cannot access all the layers directly. As we have seen, we have to use the Network API. The following is a more practical diagram of the stack. 
+In practice, a programmer who wants to write programs cannot access all the layers directly. As we have seen, we have to use the Network API. The following is a more practical diagram of the stack. 
 
 ```
         -------------------------
@@ -151,7 +153,7 @@ Analyze the above diagram. When you create a socket, you can specify details lik
 
 With that, let us get into Network Programming!!
 
-## 2.Writing a simple server
+## 2. Writing a simple server
 
 Let us understand what a server is, what its functions are before writing code for it. 
 
@@ -494,15 +496,15 @@ I am currently using my home's WiFi network. So, my IP Address is **192.168.0.10
 
 Instead of using this IP Address, I used this wierd looking IP Address **127.0.0.1**. What is this IP Address?
 
-It is called the **Loopback IP Address**. Look at the  above output. We used the **lo** interface. 
+It is called the **Loopback IP Address**. Look at the above output. We used the **lo** interface. 
 
-Normally, all the Network interfaces are hardware - Network Interface Cards. These are real network hardware which help your machine get connected to a network. This Loopback Interface is a **software** interface. it doesn't connect to the internet. It is an interface which is designed for testing purposes. 
+Normally, all the Network interfaces are hardware - Network Interface Cards. These are real network hardware which help your machine get connected to a network. This Loopback Interface is a **software** interface. it doesn't connect to the internet. It is an interface designed for testing purposes. 
 
-For more details about loopback interface, you can read [this](https://askubuntu.com/questions/247625/what-is-the-loopback-device-and-how-do-i-use-it) stackoverflow answer. 
+For more details about loopback interface, you can read [this  stackoverflow answer](https://askubuntu.com/questions/247625/what-is-the-loopback-device-and-how-do-i-use-it). 
 
 ## 6. Conclusion
 
-We have come to the end of this article. I hope you learnt how to write small network programs. Network Programming is a tool we will be using in future articles in understand Network protocols better. You can visit [this repository](https://github.com/adwait1-G/How-does-the-Internet-work) where I have discussed in short how the Internet works. 
+We have come to the end of this article. I hope you learnt how to write small network programs. Network Programming is a tool we will be using in future articles in understanding Network protocols better. You can visit [this repository](https://github.com/adwait1-G/How-does-the-Internet-work) where I have discussed in short how the Internet works. 
 
 With this article, we are done with 2 out of 3 pre-requisites. We have a basic idea of the networking stack and we are able to write small network programs. In the next article, we will look an amazing network tool called [Wireshark](https://www.wireshark.org/). It is used to capture packets, dissect them and read its contents and more. 
 
@@ -511,5 +513,5 @@ That is it for now.
 Thank you for reading and happy networking :)
 
 --------------------------------------------------------------------
-[Go to next article: Introduction to Wireshark](/404.html)              
+[Go to next article: Introduction to Wireshark](/packet overflow!/2019/09/08/introduction-to-wireshark.html)                   
 [Go to previous article: Operating System and Networking Stack - Part2](/packet/overflow/2019/02/01/operating-system-and-networking-stack-part2.html)     
