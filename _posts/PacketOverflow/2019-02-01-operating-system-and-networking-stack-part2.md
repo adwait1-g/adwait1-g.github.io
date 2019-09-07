@@ -5,7 +5,7 @@ categories: Packet Overflow
 comments: true
 ---
 
-Hello everyone!
+Hello friend!
 
 In the [previous article](/packet/overflow/2019/02/01/operating-system-and-networking-stack-part1.html), we discussed basics of Computer Networks, Ethernet, Physical Layer and Data-Link Layer. 
 

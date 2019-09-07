@@ -5,7 +5,7 @@ categories: Packet Overflow
 comments: true
 ---
 
-Hello everyone!
+Hello friend!
 
 Before we start the series, there are a few really important fundamentals like how exactly 2 devices communicate, what is an IP Address and many more fundamental questions. So, in this article, we will look into all those questions. 
 
