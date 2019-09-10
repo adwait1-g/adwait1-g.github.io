@@ -44,15 +44,13 @@ In the first few posts, I will be introducing Network Programming and Introducti
 
 Happy Networking!
 
-# moloch
 
-[moloch](https://molo.ch) is a system which can used for large scale, indexed packet capture and search. What this means is, it can capture, store and retrieve(on search) a large number of packets. The [website](https://molo.ch) describes the system in detail. It is opensource! You can read it's sourcecode [here](https://github.com/aol/moloch). The README of the github repo is amazing. It gives a overview of the system.
+# Write your own .....
 
-The following are a few articles about moloch. 
+[Link to Write your own .....](/write/your/own/2019/09/10/write-your-own-xxxx-mainpage.html)
 
-1. [Installing moloch](/moloch/2019/05/22/installing-moloch.html): I spent a lot of time to get it working. So, I thought I can list the procedure and a few places I spend time figuring it out.
+I always have the thought of writing my own tools like my own debugger, file-format parser, packet-sniffer etc., I thought it'll be good to document the tool here, the exact way in which I wrote a particular tool.
 
-A lot more coming up!
 
 # Blogging
 
@@ -64,10 +62,20 @@ I was using WordPress for 6 months after I started my blog and then migrated to 
 
 Happy blogging!
 
+# moloch
+
+[moloch](https://molo.ch) is a system which can used for large scale, indexed packet capture and search. What this means is, it can capture, store and retrieve(on search) a large number of packets. The [website](https://molo.ch) describes the system in detail. It is opensource! You can read it's sourcecode [here](https://github.com/aol/moloch). The README of the github repo is amazing. It gives a overview of the system.
+
+The following are a few articles about moloch. 
+
+1. [Installing moloch](/moloch/2019/05/22/installing-moloch.html): I spent a lot of time to get it working. So, I thought I can list the procedure and a few places I spend time figuring it out.
+
+A lot more coming up!
+
 # Random Stuff
 
 [Link to Random Stuff](/random/stuff/2019/04/28/random-stuff-mainpage.html)
 
-This is literally random stuff. Just something I think about sometimes. There might be stuff which might trigger you. Read it at your own discretion. 
+This is literally random stuff. Just something I think about sometimes. Read it with a pinch of salt!
 
 ---------------------------------------------------
