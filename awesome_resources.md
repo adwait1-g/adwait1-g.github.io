@@ -19,6 +19,8 @@ The following is a small list of really amazing websites I have come across and 
 
 4. [crypto101.io](https://crypto101.io) - It is a introductory course on cryptography available in the form of a book. 
 
+5. [https://yurichev.com/mirrors/DCC_decompilation_thesis.pdf](An amazing PhD thesis which talks about Reverse-Compilation/Decompilation Techniques) - I believe there are all the details needed to write a decompiler!
+
 ## Linux Systems Programming
 
 I was searching for a few systems programming projects. I found these.
