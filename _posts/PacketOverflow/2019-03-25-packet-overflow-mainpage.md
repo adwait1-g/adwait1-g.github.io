@@ -3,6 +3,23 @@ layout: page
 title: Packet Overflow!
 categories: Packet Overflow
 ---
+Packet Overflow! is a new series of articles I am starting to understand Computer Networks better.
+
+In this series, we are going to have fun playing around with packets, capturing them, dissecting and analyzing them, understanding the different Networking Protoc
+ols used. It is going to be a hands-on series with a bit of theory.
+
+We will be doing 3 things very frequently in this series.
+
+1. Writing simple network programs
+2. Capturing packets using a tool like Wireshark which will help us analyze them.
+3. Read RFCs(Request For Comments) to understand the protocol better.
+
+Let us start with covering some important pre-requisites.
+
+In the first few posts, I will be introducing you to Computer Networks in general, then Network Programming and Introduction to Wireshark. Once it is done, we are ready to start our journey with packets!
+
+Happy Networking!
+
 
 One popular approach used while explaining the Networking Stack to someone is the **Top-Down Approach**. It starts with Application Layer - a layer everyone is familiar is with, and then goes to lower layers. I learnt it this way and  it is an amazing approach, but I felt something is missing in it. It **does not** explain the **way the networking stack evolved** which I think is very important in getting a hold on Computer Networks. The Top-Down approach though very successful in explaining the complete stack, has it's drawbacks and a few major ones. It all started with Electromagnetic signals interacting with each other(Physical Layer), then came the Data-Link Layer which helps machines to communicate inside a "network" - the concept of network comes in. The Data-Link Layer has has it's share of problems and now we want to connect multiple networks - that why Network Layer, protocols like IPv4 are invented. Then there is a need to have a reliable protocol over a unreliable Network Layer protocol, thus the Tranmission Control Protocol(TCP) Well, a layman wants to get connected to the Internet and thus came the Application Layer. So, the **Bottom-Up Approach** is the way the Networking Stack evolved. This approach gave me an opportunity to answer some of the fundamental questions and doubts I had which will help in understanding the complete stack better. This approach automatically asks the question "why do you need another layer?" which is one of the most fundamental questions because each layer comes at a cost. So, in the next two articles, I have taken the Top Down Approach to explain the **TCP/IP Networking Stack** and have tried my level best to make it as easy and intuitive as possible. It is by no means a complete reference to the ocean of Computer Networks, but I can assure that it will give you a fair understanding of the different Layers, why exactly is each layer needed and other fundamental concepts. 
 
