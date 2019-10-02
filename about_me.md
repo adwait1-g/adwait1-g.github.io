@@ -15,3 +15,7 @@ I am really excited about Operating Systems, Computer Networks, Distributed Syst
 3. [Github](https://github.com/adwait1-g)
 4. [LinkedIn](https://linkedin.com/in/adwaitgautham1998)
 
+
+# Some personal stuff I would like to share
+
+1. [I am not an Imposter!](/about me/2019/10/03/i-am-not-an-imposter.html): My fight against Imposter Syndrome.
