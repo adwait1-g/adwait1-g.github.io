@@ -1035,7 +1035,7 @@ With that, I hope you have got some clarity over how segments of an object is lo
 
 We saw how an executable's segments get mapped. Every dynamically linked executable would have used functions from various shared libraries. So, there are objects our executable depends on.
 
-So, the helper program should first make list of all these dependencies and then start loading each of the dependent libraries.
+So, the helper program should first finds out the dependencies of an object and then starts loading them.
 
 The following is the gdb-backtrace of loading ```libc.so```.
 
@@ -1084,7 +1084,9 @@ gdb-peda$
 
 * Refering to ```glibc/elf/dl-deps.c```: It says **Load the dependencies of a mapped object**.
 
-We'll talk about this in detail in one of the later posts.
+* It can be seen that from the function ```_dl_map_object``` till ```mmap```, the procedure of mapping segments of a dependent library is similar(not same) to that of mapping segments of the executable. 
+
+* The part which is unexplored is **how does the helper program gets to know all dependencies of a given executable**. This is something we need to focus on. We'll talk about this in detail in one of the later posts.
 
 ## 4. Conclusion
 
@@ -1092,7 +1094,7 @@ I hope you have got some idea on how segments from an object(executable / shared
 
 The helper program is quite a complex program to describe in a single post. 
 
-We just skimmed through how dependencies of a loaded object mapped, didn't go into detail.
+We are not clear as to how the helper program identifies all the dependencies of an object(an executable or a shared object).
 
 We came across some interesting data structures like ```struct link_map```, **Auxillary vector**, ```struct filebuf```, ```struct loadcmd``` etc., and all functions revolve around these data structures.
 
