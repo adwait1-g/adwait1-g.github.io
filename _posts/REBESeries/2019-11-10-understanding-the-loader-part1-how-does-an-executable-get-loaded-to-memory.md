@@ -637,6 +637,8 @@ Let us go to every function definition and see what each function is doing. Re-r
 **1.** **_start**:  We started with ```_start```. It is the starting point of the helper program. It is present in ```glibc/sysdeps/x86_64/dl-machine.h```.
 
 ```c
+/* SRC: glibc/sysdeps/x86_64/dl-machine.h */
+
 /* Initial entry point code for the dynamic linker.
    The C function `_dl_start' is the real entry point;
    its return value is the user program's entry point.  */
@@ -1088,7 +1090,176 @@ gdb-peda$
 
 * The part which is unexplored is **how does the helper program gets to know all dependencies of a given executable**. This is something we need to focus on. We'll talk about this in detail in one of the later posts.
 
-## 4. Conclusion
+## 4. Difference between running ld.so as a program and invoking indirectly
+
+We saw earlier that there are 2 ways to invoke the helper program. One by just running it like any other program, other is by running any dynamically linked program. 
+
+What we explored so far in this post is the first scenario. We ran the helper program like a normal program, with our hello program as an argument to it. Is the same procedure followed when the program is run directly? Let us find out.
+
+We saw that the helper program is given control first, and later the program is given control. So, Let us try breaking at ```_dl_start``` and ```_start```(This is user program's _start) and run it.
+
+```
+rev_eng_series/post_19: gdb -q -nh hello
+Reading symbols from hello...(no debugging symbols found)...done.
+(gdb) 
+(gdb) b _start
+Breakpoint 1 at 0x400430
+(gdb) b _dl_start
+Function "_dl_start" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) y
+Breakpoint 2 (_dl_start) pending.
+(gdb) 
+```
+
+* Let us run it.
+
+```
+(gdb) run ./hello
+Starting program: /home/adwi/my_projects/blog_related/rev_eng_series/post_19/hello ./hello
+warning: the debug information found in "/lib64/ld-2.23.so" does not match "/lib64/ld-linux-x86-64.so.2" (CRC mismatch).
+
+
+Breakpoint 2, _dl_start (arg=0x7fffffffdaa0) at rtld.c:353
+353	rtld.c: No such file or directory.
+```
+
+* Let us check the **maps** file. 
+
+```
+rev_eng_series/post_19: cat /proc/16240/maps
+00400000-00401000 r-xp 00000000 08:02 9441559                            /home/adwi/my_projects/blog_related/rev_eng_series/post_19/hello
+00600000-00602000 rw-p 00000000 08:02 9441559                            /home/adwi/my_projects/blog_related/rev_eng_series/post_19/hello
+7ffff7dd7000-7ffff7dfd000 r-xp 00000000 08:02 25694777                   /lib/x86_64-linux-gnu/ld-2.23.so
+7ffff7ff7000-7ffff7ffa000 r--p 00000000 00:00 0                          [vvar]
+7ffff7ffa000-7ffff7ffc000 r-xp 00000000 00:00 0                          [vdso]
+7ffff7ffc000-7ffff7ffe000 rw-p 00025000 08:02 25694777                   /lib/x86_64-linux-gnu/ld-2.23.so
+7ffff7ffe000-7ffff7fff000 rw-p 00000000 00:00 0 
+7ffffffdd000-7ffffffff000 rw-p 00000000 00:00 0                          [stack]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+```
+
+* So, even before the helper program starts to execute, the LOAD-type segments of our executable have already been mapped. After a bunch of ```mmap```s, the breakpoint at ```_start``` kicked in.
+
+```
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400430 in _start ()
+```
+
+With this, we know that there is a difference between the 2 ways of running the helper program. If the helper program is directly run, only it, stack, heap etc., are loaded onto memory by the Operating System. But when the user program is run, the Operating System loads the user program's segments, the helper program's segments, stack, heap etc., . The helper program's job is to identify the libraries the user program depends on and then load them.
+
+There is one more point to note here. Referring to the **Usage** note that the helper program threw, 
+```
+rev_eng_series/post_19: /lib64/ld-linux-x86-64.so.2 
+Usage: ld.so [OPTION]... EXECUTABLE-FILE [ARGS-FOR-PROGRAM...]
+You have invoked `ld.so', the helper program for shared library executables.
+This program usually lives in the file `/lib/ld.so', and special directives
+in executable files using ELF shared libraries tell the system's program
+loader to load the helper program from this file.  This helper program loads
+the shared libraries needed by the program executable, prepares the program
+to run, and runs it.  You may invoke this helper program directly from the
+command line to load and run an ELF executable file; this is like executing
+that file itself, but always uses this helper program from the file you
+specified, instead of the helper program file specified in the executable
+file you run.  This is mostly of use for maintainers to test new versions
+of this helper program; chances are you did not intend to run this program.
+```
+
+* Read the last part.
+> You may invoke this helper program directly from the
+command line to load and run an ELF executable file; this is like executing
+that file itself, but **always uses this helper program** from the file you
+specified, **instead of the helper program file specified in the executable**
+file you run.  This is mostly of use for maintainers to test new versions
+of this helper program; chances are you did not intend to run this program.
+
+* So, when the helper program is run directly, **IT** is used to setup the execution and **NOT** the one specified inside the **INTERP** segment of the executable. This didn't matter in the examples I took because I was using the helper program same as specified in any executable on my machine - ```/lib64/ld-linux-x86-64.so.2```. But when new versions of the helper program are written, this method is used. I think this is a very important to make note of.
+
+## 5. How exactly is control transferred from ld.so to the user program?
+
+We have seen how the control always goes to the helper program first and only then to the user program. But we didn't see how exactly the transfer of control would happen. 
+
+Let us have a look at the helper program's ```_start``` code.
+
+```c
+/* Initial entry point code for the dynamic linker.
+   The C function `_dl_start' is the real entry point;
+   its return value is the user program's entry point.  */
+#define RTLD_START asm ("\n\
+.text\n\
+        .align 16\n\
+.globl _start\n\
+.globl _dl_start_user\n\
+_start:\n\
+        movq %rsp, %rdi\n\
+        call _dl_start\n\
+_dl_start_user:\n\
+        # Save the user entry point address in %r12.\n\
+        movq %rax, %r12\n\
+        # See if we were run as a command with the executable file\n\
+        # name as an extra leading argument.\n\
+        movl _dl_skip_args(%rip), %eax\n\
+        # Pop the original argument count.\n\
+        popq %rdx\n\
+        # Adjust the stack pointer to skip _dl_skip_args words.\n\
+        leaq (%rsp,%rax,8), %rsp\n\
+        # Subtract _dl_skip_args from argc.\n\
+        subl %eax, %edx\n\
+        # Push argc back on the stack.\n\
+        pushq %rdx\n\
+        # Call _dl_init (struct link_map *main_map, int argc, char **argv, char **env)\n\
+        # argc -> rsi\n\
+        movq %rdx, %rsi\n\
+        # Save %rsp value in %r13.\n\
+        movq %rsp, %r13\n\
+        # And align stack for the _dl_init call. \n\
+        andq $-16, %rsp\n\
+        # _dl_loaded -> rdi\n\
+        movq _rtld_local(%rip), %rdi\n\
+        # env -> rcx\n\
+        leaq 16(%r13,%rdx,8), %rcx\n\
+        # argv -> rdx\n\
+        leaq 8(%r13), %rdx\n\
+        # Clear %rbp to mark outermost frame obviously even for constructors.\n\
+        xorl %ebp, %ebp\n\
+        # Call the function to run the initializers.\n\
+        call _dl_init\n\
+        # Pass our finalizer function to the user in %rdx, as per ELF ABI.\n\
+        leaq _dl_fini(%rip), %rdx\n\
+        # And make sure %rsp points to argc stored on the stack.\n\
+        movq %r13, %rsp\n\
+        # Jump to the user's entry point.\n\
+        jmp *%r12\n\
+.previous\n\
+");
+```
+
+* The code looks a little cluttered, but there are comments almost for every assembly instruction which is helpful.
+* ```_dl_start``` returns the **User program's starting address**. A return value is always stored in the ```rax``` register.
+* The Return address is stored in ```r12``` register before proceeding. You can see the following: 
+
+```c
+_dl_start_user:\n\
+        # Save the user entry point address in %r12.\n\
+        movq %rax, %r12\n\
+```
+
+* ```_dl_init``` is called - which will call the initializers. We'll see what this is in one of the future posts.
+
+* Finally, there is a ```jmp r12``` instruction and we enter the user program.
+
+## 6. How does the helper program get control in the first place?
+
+We saw that in any case, the helper program is the first entity to get control. But for that to happen, the helper program's segments need to be mapped onto memory, along with providing stack, vvar, vdso, vsyscall address-spaces. And finally control is transferred to ```_start``` of helper program.
+
+Who does this?
+
+The Operating System does. As of now, I don't have a code-level understanding of how this happens. I have read that the OS is responsible for this.
+
+As the series progresses, we'll read Linux sourcecode to understand these things.
+
+## 7. Conclusion
 
 I hope you have got some idea on how segments from an object(executable / shared object) is loaded to main memory. 
 
@@ -1099,6 +1270,8 @@ We are not clear as to how the helper program identifies all the dependencies of
 We came across some interesting data structures like ```struct link_map```, **Auxillary vector**, ```struct filebuf```, ```struct loadcmd``` etc., and all functions revolve around these data structures.
 
 We have some idea about **loading** of necessary objects. But we have not yet explored how a library function can be called from a user program. We don't know how exactly **dynamic linking** works.
+
+We also saw don't know how exactly the OS loads the helper program, stack, vvar etc., before transferring control the it.
 
 So we have a lot to explore. We'll take up all the above topics in future posts.
 
