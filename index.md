@@ -20,6 +20,18 @@ This is the place where I write about the stuff I am exploring, stuff I am inter
 
 2. [Breaking ASLR](/breaking/aslr/2019/10/30/breaking-aslr-mainpage.html): ASLR is a security technique which helps in mitigating code-reuse attacks, prevents jumping to buffers etc., It basically randomizes the addresses of a process. This is the documentation of my research on ASLR and on attempts to break it.
 
+# Write your own XXXX
+
+[Write your own XXXX: Home](/write/your/own/xxxx/2019/09/10/write-your-own-xxxx-mainpage.html)
+
+One way to understand a concept or a topic is to read about it in great detail. For example, how does a debugger work? Linux provides a system call called ```ptrace``` which helps in tracing any process. The signal ```SIGSTOP``` is used to stop a process which is essentially a break-point, ```SIGCONT``` to continue.
+
+You'll understand how a debugger works at a conceptual level, that signals are used to control the program execution, ```ptrace``` is used to get the trace process's inside information.
+
+Do you want to know how exactly something works? Then write it! Code it up!
+
+This is about the same. Writing your own **anything**. This is the place where I document them. As I write the tool, I'll write how the tool is written, piece by piece. You may use it like a tutorial, or another article about something you want to understand better.
+
 # Computer Networks
 
 1. [Packet Overflow!](/packet/overflow/2019/03/25/packet-overflow-mainpage.html): An introduction to Computer Networks, packets, wireshark, network programming!
