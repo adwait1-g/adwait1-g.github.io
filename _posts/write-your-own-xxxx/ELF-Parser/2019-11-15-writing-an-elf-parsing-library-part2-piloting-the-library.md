@@ -206,7 +206,7 @@ What are the various operations on this structure?.
 
 It is always better to define functions for each of these operations, instead of writing the code again and again.
 
-1. ```free_list_init()```: This function initializes the structure ```free_us```.
+**1.** ```free_list_init()```: This function initializes the structure ```free_us```.
 
 ```c
 int
@@ -228,7 +228,7 @@ free_list_init()
 }
 ```
 
-2. ```free_list_fini()```: Deinitializes the structure.
+**2.** ```free_list_fini()```: Deinitializes the structure.
 
 ```c
 void
@@ -245,7 +245,8 @@ free_list_fini()
 }
 ```
 
-3. ```add_addr_to_list(void *addr)```: Adds the specified address to the list.
+**3.** ```add_addr_to_list(void *addr)```: Adds the specified address to the list.
+
 ```c
 int
 add_addr_to_list(void *addr)
