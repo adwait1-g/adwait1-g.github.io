@@ -1,5 +1,5 @@
 ---
-title: Writing an ELF parsing library - Part1 - What is ELF?
+title: Writing an ELF Parsing Library - Part1 - What is ELF?
 categories: Write your own XXXX
 layout: post
 comments: true
