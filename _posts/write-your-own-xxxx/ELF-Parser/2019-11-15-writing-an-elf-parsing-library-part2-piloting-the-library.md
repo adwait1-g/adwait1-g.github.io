@@ -257,7 +257,7 @@ add_addr_to_list(void *addr)
 	
 	/* Maximum length of vector is free_us.size now. Check
 	 * if we have reached the limit */
-	if(free_us.n_addrs == free_us.size - 1) /* Yes! */
+	if(free_us.n_addrs == free_us.size) /* Yes! */
 	{	
 		/* Double the vector size */
 		free_us.addrs = realloc(free_us.addrs, free_us.size * 2);
@@ -268,8 +268,8 @@ add_addr_to_list(void *addr)
 	}
 
 	/* Now, we can add peacefully */
-	free_us.n_addrs += 1;
 	free_us.addrs[free_us.n_addrs] = addr;
+	free_us.n_addrs += 1;
 
 	return 0;
 }
