@@ -223,7 +223,6 @@ free_list_init()
 	/* Init this to 0 */
 	free_us.n_addrs = 0;
 
-
 	return 0;
 }
 ```
@@ -255,14 +254,22 @@ add_addr_to_list(void *addr)
 	if(addr == NULL)
 		return -1;
 	
+	void *new_addr = NULL;
+
 	/* Maximum length of vector is free_us.size now. Check
 	 * if we have reached the limit */
 	if(free_us.n_addrs == free_us.size) /* Yes! */
 	{	
 		/* Double the vector size */
-		free_us.addrs = realloc(free_us.addrs, free_us.size * 2);
-		if(free_us.addrs == NULL)
+		new_addr = realloc(free_us.addrs, free_us.size * 2);
+		if(new_addr == NULL)
 			return -1;
+
+		/* Read realloc's manpage to understand the following */
+		for(int i = free_us.size; i < free_us.size * 2; i++)
+			new_addr[i] = NULL;
+
+		free_us.addrs = new_addr;
 
 		free_us.size = free_us.size * 2;
 	}
@@ -279,7 +286,17 @@ So, we have 3 functions for this data structure: ```free_list_init```, ```free_l
 
 From now on, any data structure we define, it'll come with a set of functions, present specifically to interact with them - initialization, deinitialization, any operation relevant to that data structure.
 
-## 4. What are our library's features?
+## 4. Initializing every file in the library's sourcecode
+
+Every file in the library's sourcecode, be it a C sourcefile or a header file, should have the following.
+
+1. Filename
+2. Description
+3. License
+
+Header files should have the conditional compilation check which makes sure it is included once.
+
+## 5. What are our library's features?
 
 We need to be clear on what our library does - its features.
 
@@ -322,7 +339,7 @@ ELF-Parser/
 4. Name of every function / structure exposed to the user should start with ```elfp``` - ```elfp_dump_elf_header```, ```elfp_close``` etc., This avoid any namespace collisions. More importantly, you'll get a "feel" of writing a proper library :P
 
 
-## 5. Conclusion
+## 6. Conclusion
 
 I hope you now have an idea of what a library is, thing we need to consider while writing one, how our library might look like.
 
