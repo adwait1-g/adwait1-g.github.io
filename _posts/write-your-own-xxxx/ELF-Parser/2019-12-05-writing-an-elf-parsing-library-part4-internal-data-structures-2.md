@@ -11,7 +11,7 @@ In the [previous article](/write/your/own/xxxx/2019/12/02/writing-an-elf-parsing
 
 In this article, we'll be writing functions to manage these 2 data structures.
 
-## 0. **elfp_main: Per-file data structure**
+## 0. elfp_main: Per-file data structure
 
 ```elfp_main``` is a structure which has all the data related to an open ELF file. Let us take a look at it.
 
@@ -664,7 +664,7 @@ Once this is done, the only thing left is to add the ```elfp_main``` reference t
 
 I hope you have understood how the ```index``` is the ```handle```.
 
-### c. elfp_main_vec_fini: Cleaning up the main vector
+### c. elfp_main_vec_fini(): Cleaning up the main vector
 
 Cleaning up is simple.
 
