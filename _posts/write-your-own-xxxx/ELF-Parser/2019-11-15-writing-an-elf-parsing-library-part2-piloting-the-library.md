@@ -349,5 +349,5 @@ Thank you for reading!
 
 ------------------------------------------------------------
 
-[Go to next post: Writing an ELF Parsing Library - Part3 - Library Init](/write/your/own/xxxx/2019/11/15/writing-an-elf-parsing-library-part3-library-init.html)                    
+[Go to next post: Writing an ELF Parsing Library - Part3 - Internal Data Strucutures - 1](/write/your/own/xxxx/2019/12/02/writing-an-elf-parsing-library-part3-internal-data-structures-1.html)                    
 [Go to previous post: Writing an ELF Parsing Library - Part1 - What is ELF?](/write/your/own/xxxx/2019/11/15/writing-an-elf-parsing-library-part1-what-is-elf.html)                    

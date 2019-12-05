@@ -361,7 +361,7 @@ With that, I'll end this article.
 Thank you for reading!
 
 -------------------------------------------------------------------
-[Go to Home: elfp - An ELF parsing library](/write/your/own/xxxx/2019/11/15/elf-parser-home.html)                       
+[Go to Home: libelfp - An ELF parsing library](/write/your/own/xxxx/2019/11/15/elf-parser-home.html)                       
 [Go to next article: Writing an ELF Library - Part2 - Piloting the Library](/write/your/own/xxxx/2019/11/15/writing-an-elf-parsing-library-part2-piloting-the-library.html)            
 
 

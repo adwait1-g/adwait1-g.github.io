@@ -1,5 +1,5 @@
 ---
-title: Writing an ELF Parsing Library - Part3 - Internal-data-structures - 1
+title: Writing an ELF Parsing Library - Part3 - Internal Data Structures - 1
 categories: Write your own XXXX
 layout: post
 comments: true
@@ -730,5 +730,5 @@ In the next article, we'll write functions for ```elfp_main``` and ```elfp_main_
 Thank you for reading!
 
 -------------------------------------------------
-[Go to next article: Writing an ELF Parsing Library - Part4 - Internal Data Structures - 2](/404.html)                         
+[Go to next article: Writing an ELF Parsing Library - Part4 - Internal Data Structures - 2](/write/your/own/xxxx/2019/12/05/writing-an-elf-parsing-library-part4-internal-data-structures-2.html)                           
 [Go to previous article: Writing an ELF Parsing Library - Part2 - Piloting the Library](/write/your/own/xxxx/2019/11/15/writing-an-elf-parsing-library-part2-piloting-the-library.html)
