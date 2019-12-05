@@ -1,5 +1,5 @@
 ---
-title: elfp - An ELF parsing library
+title: libelfp - An ELF Parsing Library
 categories: Write your own XXXX
 layout: page
 comments: true
@@ -13,3 +13,4 @@ Goal is to add complete parsing capability for 64-bit files first.
 
 1. [Writing an ELF Parsing Library - Part1 - What is ELF?](/write/your/own/xxxx/2019/11/15/writing-an-elf-parsing-library-part1-what-is-elf.html)
 2. [Writing an ELF Parsing Library - Part2 - Piloting the Library](/write/your/own/xxxx/2019/11/15/writing-an-elf-parsing-library-part2-piloting-the-library.html)
+3. [Writing an ELF Parsing Library - Part3 - Internal Data Structures - 1](/write/your/own/xxxx/2019/12/02/writing-an-elf-parsing-library-part3-internal-data-structures-1.html)

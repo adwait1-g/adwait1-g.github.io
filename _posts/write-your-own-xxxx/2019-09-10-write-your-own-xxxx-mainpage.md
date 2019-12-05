@@ -12,7 +12,7 @@ Do you want to know how exactly something works? Then write it! Code it up!
 
 This is about the same. Writing your own **anything**. This is the place where I document them. As I write the tool, I'll write how the tool is written, piece by piece. You may use it like a tutorial, or another article about something you want to understand better.
 
-## 1. elfp: An ELF parsing library
+## 1. libelfp: An ELF Parsing Library
 
-[elfp: An ELF parsing library](/write/your/own/xxxx/2019/11/15/elf-parser-home.html): The **Executable and Linkable Format** is one of the most complex file formats I have come across till now. Every executable, library, object file in all UNIX-like systems are in this format. To understand this file format properly, I'll write a simple ELF-Parser, where I break-open a given ELF file, disect it into it's constituent components and dump them in human-readable form.
+[libelfp: An ELF Parsing Library](/write/your/own/xxxx/2019/11/15/elf-parser-home.html): The **Executable and Linkable Format** is one of the most complex file formats I have come across till now. Every executable, library, object file in almost all UNIX-like systems are in this format. To understand this file format properly, I'll write a simple ELF-Parser, where I break-open a given ELF file, disect it into it's constituent components and dump them in human-readable form.
 
