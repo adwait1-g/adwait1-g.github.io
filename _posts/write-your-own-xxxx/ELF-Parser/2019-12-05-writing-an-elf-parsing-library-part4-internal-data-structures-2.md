@@ -7,7 +7,7 @@ comments: true
 
 Hello Friend!
 
-In the [previous article](/write/your/own/xxxx/2019/12/02/writing-an-elf-parsing-library-part3-internal-data-structures-1.html), we discussed a few basic API we want to expose to the programmer, defined 2 important data structures ```elfp_main```, ```elfp_main_vector```.
+In the [previous article](/write/your/own/xxxx/2019/12/02/writing-an-elf-parsing-library-part3-internal-data-structures-1.html), we discussed a few basic API we want to expose to the programmer, defined 2 important data structures ```elfp_main``` and ```elfp_main_vector```.
 
 In this article, we'll be writing functions to manage these 2 data structures.
 
@@ -47,21 +47,21 @@ typedef struct elfp_main
 
 What all functions do we need?
 
-1. When a new file is passed to ```elfp_open()```, a new ```elfp_main``` object should be created. So, a ```create``` function is necessary.
-2. Once the processing is done, we need clean up everything related to it. So, a ```fini``` function is necessary.
+1. When a new file is passed to ```elfp_open()```, a new ```elfp_main``` object should be created. So, a ```create()``` function is necessary.
+2. Once the processing is done, we need clean up everything related to it. So, a ```fini()``` function is necessary.
 
 
 Lets get to work!
 
 ### a. elfp_main_create(): Creating a new elfp_main object for a given file
 
-Whenever we have to write a ```create``` function for an object, we have 2 ways to do it.
+Whenever we have to write a ```create()``` function for an object, we have 2 ways to do it.
 
 1. The ```create()``` function can allocate memory and return a reference to an empty object. The caller can do the hard work of populating its members - ```fd```, ```path```, ```start_addr```, ```file_size```, ```handle```.
 
 2. The ```create()``` function can take the ```file_path``` as argument and it can do the hardwork of populating its members.
 
-I can see 1 advantage of the second approach over first. We won't have to write ```update()``` functions for every member because the ```create()``` will be updating it. We'll need update functions when a function other than the data structure's set of functions tries to manipulate its values.
+I can see 1 advantage of the second approach over first. We won't have to write ```update()``` functions for every member because the ```create()``` will be updating it. We'll need update functions when a function other than the data structure's set of functions tries to manipulate its values. 
 
 Let us go with the second approach. ```elfp_main_create()``` will be taking ```file path``` as argument.
 
@@ -105,7 +105,7 @@ elfp_main_create(const char *file_path)
         unsigned char magic[4] = {'\0', '\0', '\0', '\0'};
         void *start_addr = NULL;
 ```
-* You'll know where each variables is used as we proceed.
+* You'll know where each variable is used as we proceed.
 
 
 **3.** Allocate memory for the object
@@ -143,7 +143,9 @@ Before we ```open()``` up the file, we need to know if it exists, if we have the
         }
 ```
 
-* The ```R_OK``` is a flag to check if we have read permissions. If we have, ```access()``` will return ```0```, if not a ```-1```. By doing this, we'll come to know if we are even allowed to process this file. If we don't have the permissions, we'll ```free()``` the new ```elfp_main``` object and return ```NULL```. The ```return_free``` label is the following.
+* The ```R_OK``` is a flag to check if we have read permissions. 
+
+* By doing this, we'll come to know if we are even allowed to process this file. If we don't have the permissions(or file doesn't exist), we'll ```free()``` the memory allocated for the ```elfp_main``` object and return ```NULL```. The ```return_free``` label does the same.
 
 ```c
 return_free:
@@ -151,7 +153,7 @@ return_free:
         return NULL;
 ```
 
-If we have the permissions, we'll go on to ```open()``` the file.
+If we have the permissions,lets ```open()``` the file.
 
 ```c
         /* Open the file */
@@ -198,7 +200,7 @@ If the file's first 4 characters don't match ELF's magic characters, then we cle
 
 * First ```read()``` the first 4 characters into a buffer and compare them with ```ELFMAG```.
 
-* The label ```return_close``` is the following:
+* The label ```return_close``` does the same.
 
 ```c
 return_close:
@@ -215,11 +217,11 @@ If it is an ELF file, we'll move forward.
 
 At first, I didn't know any method to find a file's size.
 
-I was thinking, I'll start with the first byte and go till I encounter an ```EOF```(End-Of-File) byte(ascii value = 0x4). But then the problem is an ELF file is a binary file. It can have the ascii value **0x4** even inside the file. So, how do we find the size?
+I was thinking, I'll start with the first byte and go till I encounter an ```EOF```(End-Of-File) byte(ascii value = 0x4). But then the problem is an ELF file is a binary file. It can have the ascii value **0x4** even inside the file. So, this method doesn't work.
 
-There is a command called ```size``` which will print the number of characters in a file, lines, words. I thought I can take that output and parse it to get only the number of characters - which is the file size.
+There is a command called ```size``` which will print the number of characters in a file, lines, words. I thought I can take that output and parse it to get only the number of characters - which is the file size. This is a hack and I was not happy with it.
 
-After a lot of time, I found out that there is a function to do that. There is a class of functions which will fetch you the ```status``` of the specified file. Let us look at its manpage.
+After a lot of time, I found out that there is a function to do that. There is a class of functions which will fetch you the ```status``` of a specified file. Let us look at its manpage.
 
 ```
 ELF-Parser/src$ man 2 stat
@@ -281,7 +283,7 @@ Suppose I do the following. What happens?
 Elf64_Ehdr *ehdr = (Elf64_Ehdr *)main->start_addr;
 printf("Entry Address: 0x%lx\n", ehdr->e_entry);
 ```
-* Here, I am accessing the ```e_entry``` member. If the file is not in memory, how do we get access to it?
+Here, I am accessing the ```e_entry``` member. If the file is not in memory, how do we get access to it?
 
 This is what happens. When we try to access some part of the file, a **page fault** is generated and that **page** which has the piece of file we requested for is loaded into memory(RAM).
 
@@ -305,7 +307,7 @@ With that, we are done updating 4 file related members.
 
 **9.** Initializing the free_vector.
 
-```elfp_main``` object has an instance of ```elfp_free_addr_vector``` in it. While processing the ELF file, many new objects are created through ```malloc```/```calloc``` which we have to clean up later. We use this free_vector to make note of all these addresses. We have written the ```init``` function for it in the previous article. Let us use it.
+```elfp_main``` object has an instance of ```elfp_free_addr_vector``` in it. While processing the ELF file, many new objects may be created through ```malloc```/```calloc``` which we have to clean up later. We use this free_vector to make note of all these addresses. We have written the ```init``` function for it in the previous article. Let us use it.
 
 ```c
         /* 
@@ -340,7 +342,7 @@ The only member left is the ```handle```. Who generates this integer? If the pro
 
 Certainly, the ```elfp_main_create()``` function cannot do it. We are yet to build a mechanism which will make the descriptor thing work.
 
-So, ```create()``` function won't be updating ```handle```. So, an external function will be updating it. We'll need an ```update()``` function for ```handle```.
+```create()``` function won't be updating ```handle```. An external function will be updating it. We'll need an ```update()``` function for ```handle```.
 
 If everything goes well, ```elfp_main_create()``` will return back the reference to the ```elfp_main``` object it worked on.
 
@@ -390,7 +392,7 @@ elfp_main_update_handle(elfp_main *main, int handle)
 
 Finally, we have to write the ```fini``` function, which will free up everything.
 
-### c. elfp_main_fini(): Clean up everything related to a given elfp_main object
+### c. elfp_main_fini(): Clean up everything related to an elfp_main object
 
 This function is the exact opposite of the ```create()``` function. What was opened there should be closed here. What was allocated there should be freed here. What was mapped there should be unmapped here.
 
@@ -778,7 +780,7 @@ With that, we have successfully completed the implementation of our second data 
 
 ## 2. Testing our implementation
 
-I want you to write a few programs which will use these 2 data structures and make sure your implementation is correct, works without any memory leaks. You can use **valgrind** to check for memory leaks.
+I want you to write a few programs which will use these 2 data structures and make sure your implementation is correct, works without any memory leaks. You can use [valgrind](http://www.valgrind.org/) to check for memory leaks.
 
 You can check out [check_elfp_main.c](https://github.com/write-your-own-XXXX/ELF-Parser/blob/master/examples/check_elfp_main.c) and [check_main_vec.c](https://github.com/write-your-own-XXXX/ELF-Parser/blob/master/examples/check_main_vec.c).
 
@@ -788,7 +790,7 @@ With that, we have come to the end of this article.
 
 We discussed a lot of stuff in this article. We implemented 2 core data structures of our library. You can get the sourcecode [here](https://github.com/write-your-own-XXXX/ELF-Parser/releases/tag/Part4).
 
-With this done, we are ready to implement the 4 basic API we discussed in the second article. We'll do the same in the next article.
+With this done, we are ready to implement the 4 basic API we discussed in the previous article. We'll do the same in the next article.
 
 I hope you enjoyed this article.
 
@@ -796,4 +798,4 @@ Thank you for reading!
 
 ---------------------------------------------
 [Go to next article: Writing an ELF Parsing Library - Part5 - Implementing the basic API](/404.html)            
-[Go to previous article: Writing an ELF Parsing Library - Part4 - Internal Data Structures - 1](/write/your/own/xxxx/2019/12/02/writing-an-elf-parsing-library-part3-internal-data-structures-1.html)
+[Go to previous article: Writing an ELF Parsing Library - Part3 - Internal Data Structures - 1](/write/your/own/xxxx/2019/12/02/writing-an-elf-parsing-library-part3-internal-data-structures-1.html)
