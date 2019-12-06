@@ -797,5 +797,5 @@ I hope you enjoyed this article.
 Thank you for reading!
 
 ---------------------------------------------
-[Go to next article: Writing an ELF Parsing Library - Part5 - Implementing the basic API](/404.html)            
+[Go to next article: Writing an ELF Parsing Library - Part5 - Implementing basic API](/write/your/own/xxxx/2019/12/06/writing-an-elf-parsing-library-part5-implementing-basic-api.html)          
 [Go to previous article: Writing an ELF Parsing Library - Part3 - Internal Data Structures - 1](/write/your/own/xxxx/2019/12/02/writing-an-elf-parsing-library-part3-internal-data-structures-1.html)
