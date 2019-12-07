@@ -461,5 +461,5 @@ That is it for now.
 Thank you for reading!
 
 ------------------------------------------------------
-[Go to next article: Writing an ELF Parsing Library - Part6 - The ELF Header](/404.html)                     
+[Go to next article: Writing an ELF Parsing Library - Part6 - The ELF Header](/write/your/own/xxxx/2019/12/07/writing-an-elf-parsing-library-part6-the-elf-header.html)                     
 [Go to previous article: Writing an ELF Parsing Library - Part4 - Internal Data Structures - 2](/write/your/own/xxxx/2019/12/05/writing-an-elf-parsing-library-part4-internal-data-structures-2.html)
