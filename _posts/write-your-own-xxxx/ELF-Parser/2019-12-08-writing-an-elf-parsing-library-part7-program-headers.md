@@ -1,5 +1,5 @@
 ---
-title: Writing an ELF Parsing Library - Part - Program Headers
+title: Writing an ELF Parsing Library - Part7 - Program Headers
 categories: write your own XXXX
 layout: post
 comments: true
