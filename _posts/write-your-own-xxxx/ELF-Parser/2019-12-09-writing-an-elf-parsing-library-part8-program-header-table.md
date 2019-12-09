@@ -239,7 +239,7 @@ elfp_pht_dump(int handle)
 
 With that, we have functions to parse the **Program Header Table**.
 
-## 6. Integrating this into the library
+## 2. Integrating this into the library
 
 Now that we have one more functionality - parsing Program Header table, we need to add it into the library.
 
@@ -256,7 +256,7 @@ build:
 
 Note that ```elfp_ehdr.c``` is also included.
 
-## 2. Extending our sample application
+## 3. Extending our sample application
 
 Extending the sample application to parse the Program Header Table is very simple.
 
@@ -411,7 +411,8 @@ There are no Program Headers in this file
 ```
 
 Note that relocatable files don't have a Program Header table.
-## 3. Analyzing the output
+
+## 4. Analyzing the output
 
 Let us write a simple hello program and run our tool on it. And then analyze the output.
 
@@ -774,7 +775,7 @@ You can see an interesting thing in the second one. Its size in memory is larger
 I found the following in ```elf```'s manpage.
 
 ```
-PT_LOAD                      The  array  element  specifies  a loadable segment, described by p_filesz and
+PT_LOAD                      The  array  element  specifies  a loadable                                  segment, described by p_filesz and
                              p_memsz.  The bytes from the file are mapped to the beginning of  the  memory
                              segment.   If  the segment's memory size p_memsz is larger than the file size
                              p_filesz, the "extra" bytes are defined to hold the value 0 and to follow the
@@ -809,7 +810,7 @@ So, this is what PHT of a typical executable looks like. PHDR to describe the PH
 
 I urge you to explore Program Headers of shared libraries, see if you find any diffrerence between its PHT and this.
 
-## 8. Conclusion
+## 5. Conclusion
 
 With this, we'll end this article.
 
