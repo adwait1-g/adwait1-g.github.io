@@ -300,9 +300,7 @@ Any information can be stored here. Normally, the **OS-ABI version** and **Build
 
 This Program Header has info related to the Program Header Table. What all is needed to parse the Program Header Table?
 
-Its **location** in the file and its **size** (which will indirectly tell us how many Program Headers are present). These two details are present in this header.
-
-Note that there is **no** segment associated with this Program Header. This is a header present to help us process the PHT properly.
+You should understand that the Program Header Table is a segment in itself. And ```PHDR``` is its header, containing all info about PHT.
 
 **6. PT_TLS**: Thread Local Storage segment
 
@@ -332,7 +330,7 @@ First, the stack belonged to the Program Interpreter and it worked with default 
 
 One point to note is, there is **no segment** corresponding to this header. It is a header specifically used to convey stack permissions and nothing more.
 
-If you want to learn more about this, you can explore this took called ```execstack```. It manipulates this Program Header to make stack executable.
+If you want to learn more about this, you can explore this took called ```execstack```. It manip/write/your/own/xxxx/2019/12/09/writing-an-elf-parsing-library-part8-program-header-table.htmlulates this Program Header to make stack executable.
 
 **9. PT_GNU_RELRO**: Read Only after relocation
 
@@ -697,7 +695,7 @@ In the next article, we'll be exploring the **Program Header Table** in detail.
 Thank you for reading!
 
 --------------------------------------------------
-[Go to next article: Writing an ELF Parsing Library - Part8 - Program Header Table](/404.html).          
+[Go to next article: Writing an ELF Parsing Library - Part8 - Program Header Table](/write/your/own/xxxx/2019/12/09/writing-an-elf-parsing-library-part8-program-header-table.html).          
 [Go to previous article: Writing an ELF Parsing Library - Part6 - The ELF Header](/write/your/own/xxxx/2019/12/07/writing-an-elf-parsing-library-part6-the-elf-header.html)
 
 

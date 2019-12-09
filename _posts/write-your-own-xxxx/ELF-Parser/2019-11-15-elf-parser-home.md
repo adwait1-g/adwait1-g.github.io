@@ -18,3 +18,4 @@ Goal is to add complete parsing capability for 64-bit files first.
 5. [Writing an ELF Parsing Library - Part5 - Implementing basic API](/write/your/own/xxxx/2019/12/06/writing-an-elf-parsing-library-part5-implementing-basic-api.html) : [src](https://github.com/write-your-own-XXXX/ELF-Parser/releases/tag/Part5)
 6. [Writing an ELF Parsing Library - Part6 - The ELF Header](/write/your/own/xxxx/2019/12/07/writing-an-elf-parsing-library-part6-the-elf-header.html) : [src](https://github.com/write-your-own-XXXX/ELF-Parser/releases/tag/Part6)
 7. [Writing an ELF Parsing Library - Part7 - Program Headers](/write/your/own/xxxx/2019/12/08/writing-an-elf-parsing-library-part7-program-headers.html) : [src](https://github.com/write-your-own-XXXX/ELF-Parser/releases/tag/Part7)
+8. [Writing an ELF Parsing Library - Part8 - Program Header Table](/write/your/own/xxxx/2019/12/09/writing-an-elf-parsing-library-part8-program-header-table.html)
