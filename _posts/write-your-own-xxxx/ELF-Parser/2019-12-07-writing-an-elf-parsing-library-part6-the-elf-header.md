@@ -952,7 +952,7 @@ That is it for this article.
 Thank you for reading!
 
 ----------------------------------------------------------
-[Go to next article: Writing an ELF Parsing Library - Part7 - Program Header Table](/404.html)              
+[Go to next article: Writing an ELF Parsing Library - Part7 - Program Headers](/write/your/own/xxxx/2019/12/08/writing-an-elf-parsing-library-part7-program-headers.html)              
 [Go to previous article: Writing an ELF Parsing Library - Part5 - Implementing basic API](/write/your/own/xxxx/2019/12/06/writing-an-elf-parsing-library-part5-implementing-basic-api.html)
 
 
