@@ -822,7 +822,7 @@ We also saw what Program Headers are present in a typical executable.
 
 You can find the code we have written so far [here](https://github.com/write-your-own-XXXX/ELF-Parser/releases/tag/Part8).
 
-Now that we have an idea of what Program Headers are, we'll do an in-depth analysis of each segment type from the next article. We discussed that **DYNAMIC** type header has dynamic linking related information. What exactly is that information? What are the data structures involved in storing that info? What exactly is a **NOTE**? What is **EH_FRAME**? and more.
+In the next few articles, we'll be exploring **Section Header Table** and different sections in detail.
 
 That is for this article. I hope you learnt something out of this.
 
