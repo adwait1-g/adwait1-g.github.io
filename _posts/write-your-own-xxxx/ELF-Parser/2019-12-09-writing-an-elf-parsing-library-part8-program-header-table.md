@@ -822,12 +822,12 @@ We also saw what Program Headers are present in a typical executable.
 
 You can find the code we have written so far [here](https://github.com/write-your-own-XXXX/ELF-Parser/releases/tag/Part8).
 
-In the next few articles, we'll be exploring **Section Header Table** and different sections in detail.
+In the next few articles, we'll be exploring each of the **segments** in detail, what role they play in running a program and of course write parse code for each segment.
 
 That is for this article. I hope you learnt something out of this.
 
 Thank you for reading!
 
 ----------------------------------------------------
-[Go to next article: Writing an ELF Parsing Library - Part9 - Understanding PHDR, INTERP, LOAD Segments](/404.html)                 
+[Go to next article: Writing an ELF Parsing Library - Part9 - Understanding PHDR, INTERP, GNU_STACK Segments](/404.html)                 
 [Go to previous article: Writing an ELF Parsing Library - Part7 - Program Headers](/write/your/own/xxxx/2019/12/08/writing-an-elf-parsing-library-part7-program-headers.html).
