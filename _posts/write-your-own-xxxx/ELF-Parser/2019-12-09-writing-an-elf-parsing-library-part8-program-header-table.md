@@ -829,5 +829,5 @@ That is for this article. I hope you learnt something out of this.
 Thank you for reading!
 
 ----------------------------------------------------
-[Go to next article: Writing an ELF Parsing Library - Part9 - Understanding PHDR, INTERP, GNU_STACK Segments](/404.html)                 
+[Go to next article: Writing an ELF Parsing Library - Part9 - PHDR, INTERP and GNU_STACK segment types](/write/your/own/xxxx/2019/01/03/writing-an-elf-parsing-library-part9-phdr-interp-gnu-stack-segments-types.html)              
 [Go to previous article: Writing an ELF Parsing Library - Part7 - Program Headers](/write/your/own/xxxx/2019/12/08/writing-an-elf-parsing-library-part7-program-headers.html).
