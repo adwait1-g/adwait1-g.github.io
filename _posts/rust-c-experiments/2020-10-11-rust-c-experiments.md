@@ -4,7 +4,12 @@ title: Rust-C-Experiments
 categories: Rust
 ---
 
-# Rust-C Experiments
+# Posts
+
+1. [Intro to rustenv](/intro-to-rustenv.html): If you don't have sudo access to install the rust toolchain or don't want to install it globally, you can use rustenv.
+2. [Rust Startup](/rust-startup.html): A vanilla introduction to the code that runs before the Rust's main function.
+
+# What is this about?
 
 Whenever C code is written, you can visualize the type of assembly code the compiler emits - unless you use some of the really aggressive optimizations out there. It gives you that transparency/visibility of how the code looks like at runtime. This way, you know the cost of certain piece of code for sure. For me, cost is the amount of assembly code emitted when certain piece of code is compiled. C generates code which just does the job - nothing more, nothing less. That is because there is no syntactic sugar hiding complex code, no hidden abstractions. What you write is what is going to run.
 
@@ -89,7 +94,3 @@ I hope you get the point. These are the type of insights I want to get out of th
 First of all, In C, there are a bunch of constructs we keep using again and again - I want to checkout those constructs in Rust. Compare them with the C emitted assembly code, see the difference, see what less/extra it is doing, reason out. In the end, I should be able to visualize the assembly code emitted by the rust compiler.
 
 
-# Posts
-
-1. [Intro to rustenv](rust/2020/10/11/intro-to-rustenv.html): If you don't have sudo access to install the rust toolchain or don't want to install it globally, you can use rustenv.
-2. [Rust Startup](rust/2020/10/11/rust-startup.html): A vanilla introduction to the code that runs before the Rust's main function.

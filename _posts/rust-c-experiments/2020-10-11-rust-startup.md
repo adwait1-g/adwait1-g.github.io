@@ -1,5 +1,5 @@
 ---
-title: Startup
+title: Rust startup
 categories: Rust
 comments: true
 layout: post
@@ -24,7 +24,7 @@ rust/Rust-C-experiments/startup > objdump -Mintel -D hello > hello.obj
 
 The complete analysis will be done by reading through the objdump output and running the program through gdb.
 
-##  Where does it all start?
+## Where does it all start?
 
 Every executable should have a starting point - an address(or an associated symbol) where the executable's first instruction is present. In C programs, the ```_start** symbol is the starting point. Let us checkout the entry-point address using readelf.
 ```
