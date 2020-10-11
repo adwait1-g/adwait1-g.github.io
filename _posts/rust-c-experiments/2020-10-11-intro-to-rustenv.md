@@ -12,6 +12,7 @@ In case you don't have sudo access on the machine you are working on or you don'
 This assumes that the [virtualenv](https://virtualenv.pypa.io/en/stable/) package is installed in your system. Generally, systems that don't give you sudo access have virtualenv installed in them - so that you can download and use any python packages you want. Similarly, there is one for rust too - the [rustenv](https://pypi.org/project/rustenv/). This is also a python package. The following are the steps to install it.
 
 1. Create a directory with name of your choice - store everything related to Rust there.
+
 ```
 > mkdir rust
 > cd rust
@@ -19,6 +20,7 @@ rust >
 ```
 
 2. Create a python virtual environment first.
+
 ```
 rust > virtualenv venv -p python3
 Running virtualenv with interpreter /usr/local/bin/python3
@@ -30,12 +32,14 @@ rust >
 ```
 
 3. Activate that environment.
+
 ```
 rust > source ./venv/bin/activate
 (venv) rust >
 ```
 
 4. In this environment, let us install rustenv.
+
 ```
 (venv) rust > pip3 install rustenv
 Collecting rustenv
@@ -46,6 +50,7 @@ Successfully installed rustenv-0.0.2
 ```
 
 5. Now create a rust environment and activate it.
+
 ```
 (venv) rust > rustenv renv
 info: downloading installer
@@ -85,6 +90,7 @@ source rust/renv/rust/env
 ```
 
 6. Activating it.
+
 ```
 (venv) rust > source renv/bin/activate 
 (renv) (venv) rust > rustc --version
@@ -98,6 +104,7 @@ Now you are ready.
 Let us run a hello program to make sure our setup works.
 
 1. Create a new project using cargo
+
 ```
 (renv) (venv) rust > cargo new hello
      Created binary (application) `hello` package
