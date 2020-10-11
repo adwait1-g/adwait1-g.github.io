@@ -10,7 +10,7 @@ Whenever C code is written, you can visualize the type of assembly code the comp
 
 Now coming to Rust.
 
-I have been using Rust for about 6-7 months(as of 11 Oct 2020) and I can say I am slowly getting used to Rust concepts like ownership, borrowing, the awesome borrow checker, the strictness of the compiler in general. Unlike C, Rust provides a lot of abstractions. Starting from the simple ```usize```, ```iter()``` for arrays/vectors to high-level abstractions like async/await where code boils down to a state machine - and a lot of other features/abstractions I don't know about. Just by looking at the code, I am finding it hard to tell what the assembly code looks like - because of the abstraction and my lack of expertise in the language. Let us give an example to make myself more clear.
+I have been using Rust for about 6-7 months(as of 11 Oct 2020) and I can say I am slowly getting used to Rust concepts like ownership, borrowing, the awesome borrow checker, the strictness of the compiler in general. Unlike C, Rust provides a lot of abstractions. Starting from the simple ```usize```, ```iter()``` for arrays/vectors to high-level abstractions like async/await where code boils down to a state machine - and a lot of other features/abstractions I don't know about. Just by looking at the code, I am finding it hard to tell what the assembly code looks like - because of the abstraction and my lack of expertise in the language. Let me give you an example to make myself more clear.
 
 Consider the example of array element access. When you say ```x = arr[index]```, let us see what happens in C and in Rust.
 
@@ -43,7 +43,15 @@ mov rax, qword[rbx + rcx * 8]
 mov qword[rdx], rax
 ```
 
-The instructions used for bound-checking is slightly different - which will be covered in one of the posts, but the above is the gist. I like the fact that the bound-checking code is clear and straight-forward. It cannot get any better.
+Yes. There is bound-checking code before you access it.
+The instructions used for bound-checking is slightly different - which will be covered in one of the posts, but the above is the gist. I like the fact that the bound-checking code is clear and straight-forward. It cannot get any better. The same code would look like the following in C.
+
+```c
+assert(index < 20);
+x = arr[index];
+```
+
+It would panic(or in C terms seg-fault) if that assertion fails. Just imagine writing that ```assert()``` for each and every array access you make. Rust does that for you. But there are a lot of obvious cases where you know for sure that you won't go beyond bounds. In C, you have a choice of not putting that assert. Is there a choice in Rust?
 
 Now an array access in Rust is deciphered for me. I know the type of code emitted when an array element is accessed. This is a piece of language internals you know now. But can you use this knowledge somewhere?
 
