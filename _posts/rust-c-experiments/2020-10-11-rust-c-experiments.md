@@ -6,8 +6,8 @@ categories: Rust
 
 # Posts
 
-1. [Intro to rustenv](/intro-to-rustenv.html): If you don't have sudo access to install the rust toolchain or don't want to install it globally, you can use rustenv.
-2. [Rust Startup](/rust-startup.html): A vanilla introduction to the code that runs before the Rust's main function.
+1. [Intro to rustenv](/rust/2020/10/11/intro-to-rustenv.html): If you don't have sudo access to install the rust toolchain or don't want to install it globally, you can use rustenv.
+2. [Rust Startup](/rust/2020/10/11/rust-startup.html): A vanilla introduction to the code that runs before the Rust's main function.
 
 # What is this about?
 
