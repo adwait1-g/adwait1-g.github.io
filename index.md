@@ -12,7 +12,9 @@ Welcome to pwnthebox!
 
 This is the place where I write about the stuff I am exploring, stuff I am interested in.
 
+# Experiments with Rust
 
+I have been tinkering with Rust from past 6-7 months. I have documented some stuff [here](/rust/c/experiments/2020/10/11/rust-c-experiments.html).
 
 # Operating Systems and Security
 
