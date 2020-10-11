@@ -87,3 +87,9 @@ There is one problem. If we use the ```iter()``` way, we can't assign values to 
 I hope you get the point. These are the type of insights I want to get out of these analyses. It is an attempt to understand the language better and use the right constructs for a task.
 
 First of all, In C, there are a bunch of constructs we keep using again and again - I want to checkout those constructs in Rust. Compare them with the C emitted assembly code, see the difference, see what less/extra it is doing, reason out. In the end, I should be able to visualize the assembly code emitted by the rust compiler.
+
+
+# Posts
+
+1. [Intro to rustenv](rust/2020/10/11/intro-to-rustenv.html): If you don't have sudo access to install the rust toolchain or don't want to install it globally, you can use rustenv.
+2. [Rust Startup](rust/2020/10/11/rust-startup.html): A vanilla introduction to the code that runs before the Rust's main function.
