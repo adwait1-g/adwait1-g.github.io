@@ -6,8 +6,11 @@ categories: Rust
 
 # Posts
 
+All the code used/written in the posts are present in [this repository]()
+
 1. [Intro to rustenv](/rust/2020/10/11/intro-to-rustenv.html): If you don't have sudo access to install the rust toolchain or don't want to install it globally, you can use rustenv.
 2. [Rust Startup](/rust/2020/10/11/rust-startup.html): A vanilla introduction to the code that runs before the Rust's main function.
+3. [Primitive Datatypes](/rust/2020/10/25/primitive-types.html): An exploratory journey into Rust's arrays, tuples and integer datatypes. 
 
 # What is this about?
 
