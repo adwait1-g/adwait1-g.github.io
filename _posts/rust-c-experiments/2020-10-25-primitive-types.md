@@ -1,10 +1,17 @@
-# Primitive Datatypes
+---
+title: Primitive Types
+categories: Rust
+comments: true
+layout: post
+---
 
 Rust offers a bunch of primitive datatypes - integer variants(signed, unsigned, 8/16/32/64/128 bit, native(i/usize)), char, boolean, string literal, array, tuple and slices.
 
 In this post, we will be exploring a few of those types - integer types, array and tuple.
 
 If you don't have rust toolchain installed in your system, you can go through [this](/rust/2020/10/11/intro-to-rustenv.html) to create a virtual environment and install the rust toolchain there.
+
+All code used/written in this post is present [here](https://github.com/adwait1-G/Rust-C-Experiments/tree/main/primitive-types).
 
 ## 0. Code optimization
 
@@ -29,8 +36,8 @@ int main()
 I am using **gcc-4.8.5**. Let us compile it with no optimization (or optimization level 0) and get its disassembly.
 
 ```
-(renv) bgl-ads-389:/nobackup/agautham/rust/Rust-C-experiments/primitive-types > gcc opt_example.c -o opt_example_c0 -O0
-(renv) bgl-ads-389:/nobackup/agautham/rust/Rust-C-experiments/primitive-types > objdump -Mintel -D opt_example_c0 > opt_example_c0.obj
+rust/Rust-C-experiments/primitive-types > gcc opt_example.c -o opt_example_c0 -O0
+rust/Rust-C-experiments/primitive-types > objdump -Mintel -D opt_example_c0 > opt_example_c0.obj
 ```
 
 The following is ```main```'s assembly code.

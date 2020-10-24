@@ -6,7 +6,7 @@ categories: Rust
 
 # Posts
 
-All the code used/written in the posts are present in [this repository]()
+All the code used/written in the posts are present in [this repository](https://github.com/adwait1-G/Rust-C-Experiments).
 
 1. [Intro to rustenv](/rust/2020/10/11/intro-to-rustenv.html): If you don't have sudo access to install the rust toolchain or don't want to install it globally, you can use rustenv.
 2. [Rust Startup](/rust/2020/10/11/rust-startup.html): A vanilla introduction to the code that runs before the Rust's main function.
