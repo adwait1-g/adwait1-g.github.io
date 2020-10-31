@@ -1,13 +1,17 @@
-# Rust calling C
+# Calling C code from Rust
 
-When integrating C libraries into Rust, there should be a way to call C functions, use C structures from Rust. This post explores how to make this happen.
+It is a common scenario where your current infra is written in one language and when you want to develop something new in a new language. Most high-performance systems are written in C/C++. When a new application needs to be written in Rust, it needs to make use of the C/C++ infra.
+
+There are a lot of possibilities here: Rust should be able to call C code or the current infra code, C might want to call Rust code - where we register a Rust function as callback etc.,
+
+In this post, we will discuss how Rust code can call C code, can use C-structures.
 
 ## 1. Simple example
 
 Lets take the following header file.
 
 ```c
-rust/Rust-C-experiments/rust-calling-c > cat word.h
+Rust-C-experiments/rust-calling-c > cat word.h
 #ifndef __WORD_H__
 #define __WORD_H__
 
@@ -31,7 +35,7 @@ bool get_validity(word_info_t *w_info);
 Just having header file doesn't work, we need to implement those two functions, put them in a **libword.so**. The C code is fairly straight-forward.
 
 ```c
-rust/Rust-C-experiments/rust-calling-c > cat word.c
+Rust-C-experiments/rust-calling-c > cat word.c
 #include <stdio.h>
 #include "word.h"
 #include <stdbool.h>
@@ -60,14 +64,14 @@ bool get_validity (word_info_t *w_info)
 Let us make a shared library out of it.
 
 ```
-rust/Rust-C-experiments/rust-calling-c > gcc -c word.c -fPIC
-rust/Rust-C-experiments/rust-calling-c > gcc word.o -o libword.so -shared
+Rust-C-experiments/rust-calling-c > gcc -c word.c -fPIC
+Rust-C-experiments/rust-calling-c > gcc word.o -o libword.so -shared
 ```
 
 Ideally, we need to make sure the library works - by writing test C programs. But we'll take it for granted and come back if there is an issue. There is one confirmation we can get using the ```readelf``` tool.
 
 ```
-rust/Rust-C-experiments/rust-calling-c > readelf -s libword.so | grep get
+Rust-C-experiments/rust-calling-c > readelf -s libword.so | grep get
      8: 00000000000006a4    32 FUNC    GLOBAL DEFAULT   11 get_validity
     10: 0000000000000685    31 FUNC    GLOBAL DEFAULT   11 get_word
     48: 00000000000006a4    32 FUNC    GLOBAL DEFAULT   11 get_validity
@@ -76,7 +80,7 @@ rust/Rust-C-experiments/rust-calling-c > readelf -s libword.so | grep get
 
 The ```GLOBAL``` indicates that these functions are exposed to the outside world and other people can call it.
 
-Goal is to able to use that structure in Rust - create new instances, manipulate them, call those functions from Rust. It is not just about using them in Rust, but when we pass an instance of ```word_info``` creating in Rust land to C(basically when we call ```get_word``` or ```get_validity```), C should be able to understand that instance as well.
+Goal is to able to use that structure in Rust - create new instances, manipulate them, call those functions from Rust. It is not just about using them in Rust, but when we pass an instance of ```word_info_t``` created in Rust land to C(when we call ```get_word``` or ```get_validity```), C should be able to understand that instance as well.
 
 Let us write a rust file which resembles the C header file.
 
@@ -91,7 +95,7 @@ Starting with the ```word_info_t``` structure,
 Let us go ahead and define the struct.
 
 ```rust
-rust/Rust-C-experiments/rust-calling-c > cat word.rs
+Rust-C-experiments/rust-calling-c > cat word.rs
 use std::os::raw::c_char;
 
 #[repr(C)]
@@ -102,7 +106,7 @@ pub struct word_info_t
 }
 ```
 
-The ```struct``` is fairly straight-forward. You need to add ```pub``` everywhere because they are all private fields by default. Now, let us go ahead and declare those two C functions in Rust form.
+The ```struct``` is fairly straight-forward. You need to add ```pub``` for every member because they are all private fields by default. Now, let us go ahead and declare those two C functions in Rust form.
 
 1. Generally, the compiler searches for the function definition. But here, we don't have it. It is present in the shared library. How do we convey this to the compiler?
     - ```extern``` keyword can be used.
@@ -168,7 +172,7 @@ Now the last part: Calling these functions.
 The following is the full listing of **main.rs**.
 
 ```rust
-rust/Rust-C-experiments/rust-calling-c > cat main.rs
+Rust-C-experiments/rust-calling-c > cat main.rs
 mod word;
 use std::ffi::CString;
 
@@ -192,13 +196,13 @@ fn main()
 With that, let us try compiling now.
 
 ```
-rust/Rust-C-experiments/rust-calling-c > rustc main.rs
+Rust-C-Experiments/rust-calling-c$ rustc main.rs
 error: linking with `cc` failed: exit code: 1
   |
-  = note: "cc" "-Wl,--as-needed" "-Wl,-z,noexecstack" "-m64" "-Wl,--eh-frame-hdr" "-L" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib" "main.main.7rcbfp3g-cgu.0.rcgu.o" "main.main.7rcbfp3g-cgu.1.rcgu.o" "main.main.7rcbfp3g-cgu.10.rcgu.o" "main.main.7rcbfp3g-cgu.11.rcgu.o" "main.main.7rcbfp3g-cgu.12.rcgu.o" "main.main.7rcbfp3g-cgu.13.rcgu.o" "main.main.7rcbfp3g-cgu.14.rcgu.o" "main.main.7rcbfp3g-cgu.15.rcgu.o" "main.main.7rcbfp3g-cgu.2.rcgu.o" "main.main.7rcbfp3g-cgu.3.rcgu.o" "main.main.7rcbfp3g-cgu.4.rcgu.o" "main.main.7rcbfp3g-cgu.5.rcgu.o" "main.main.7rcbfp3g-cgu.6.rcgu.o" "main.main.7rcbfp3g-cgu.7.rcgu.o" "main.main.7rcbfp3g-cgu.8.rcgu.o" "main.main.7rcbfp3g-cgu.9.rcgu.o" "-o" "main" "main.4s37gsrti678ik8u.rcgu.o" "-Wl,--gc-sections" "-pie" "-Wl,-zrelro" "-Wl,-znow" "-nodefaultlibs" "-L" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib" "-Wl,--start-group" "-Wl,-Bstatic" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd-f14aca24435a5414.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libpanic_unwind-48d342a8b48d1d01.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libminiz_oxide-14bc0820888c8eb3.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libadler-9cbd9e217bff06bc.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libobject-31826136df98934e.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libaddr2line-075976a117c8fd5d.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libgimli-2d5cbedfbf17a011.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_demangle-0474372ff08c5319.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libhashbrown-d437c34460d2315a.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_alloc-fb61ed1b8cc4de79.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libunwind-bf76d1b643bfc9f0.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcfg_if-a1b53aa7fddcf418.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liblibc-28585e57fac45c73.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liballoc-64801769bc15ab28.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_core-541997b56bb98660.rlib" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcore-cdea3c81adab3d12.rlib" "-Wl,--end-group" "/nobackup/agautham/rust/renv/rust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-cd9f15a39fb65cbc.rlib" "-Wl,-Bdynamic" "-ldl" "-lrt" "-lpthread" "-lgcc_s" "-lc" "-lm" "-lrt" "-lpthread" "-lutil" "-ldl" "-lutil"
-  = note: main.main.7rcbfp3g-cgu.1.rcgu.o: In function `main::main::h2d6c3d678af9e020':
-          main.7rcbfp3g-cgu.1:(.text._ZN4main4main17h2d6c3d678af9e020E+0xbb): undefined reference to `get_word'
-          main.7rcbfp3g-cgu.1:(.text._ZN4main4main17h2d6c3d678af9e020E+0xd1): undefined reference to `get_validity'
+  = note: "cc" "-Wl,--as-needed" "-Wl,-z,noexecstack" "-m64" "-Wl,--eh-frame-hdr" "-L" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib" "main.main.7rcbfp3g-cgu.0.rcgu.o" "main.main.7rcbfp3g-cgu.1.rcgu.o" "main.main.7rcbfp3g-cgu.10.rcgu.o" "main.main.7rcbfp3g-cgu.11.rcgu.o" "main.main.7rcbfp3g-cgu.12.rcgu.o" "main.main.7rcbfp3g-cgu.13.rcgu.o" "main.main.7rcbfp3g-cgu.14.rcgu.o" "main.main.7rcbfp3g-cgu.15.rcgu.o" "main.main.7rcbfp3g-cgu.2.rcgu.o" "main.main.7rcbfp3g-cgu.3.rcgu.o" "main.main.7rcbfp3g-cgu.4.rcgu.o" "main.main.7rcbfp3g-cgu.5.rcgu.o" "main.main.7rcbfp3g-cgu.6.rcgu.o" "main.main.7rcbfp3g-cgu.7.rcgu.o" "main.main.7rcbfp3g-cgu.8.rcgu.o" "main.main.7rcbfp3g-cgu.9.rcgu.o" "-o" "main" "main.4s37gsrti678ik8u.rcgu.o" "-Wl,--gc-sections" "-pie" "-Wl,-zrelro" "-Wl,-znow" "-nodefaultlibs" "-L" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib" "-Wl,--start-group" "-Wl,-Bstatic" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd-cf0f33af3a901778.rlib" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libpanic_unwind-daf8c2d692e6eca4.rlib" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libhashbrown-24e8f97647425e48.rlib" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_alloc-85ed7d2b484c05a9.rlib" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libbacktrace-89de2c581262ec09.rlib" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libbacktrace_sys-3b0db98e62ed7d75.rlib" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_demangle-c60847f9a163de82.rlib" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libunwind-0bb9b63424f4fc5d.rlib" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcfg_if-3f74d829e37fa40e.rlib" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liblibc-0e9d83ff06f1a7ad.rlib" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liballoc-2c8c904efaf7c40b.rlib" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_core-cbfb51de52131460.rlib" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcore-97497c26fddb7882.rlib" "-Wl,--end-group" "/home/dell/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-f1a9d8c443e20b5e.rlib" "-Wl,-Bdynamic" "-ldl" "-lrt" "-lpthread" "-lgcc_s" "-lc" "-lm" "-lrt" "-lpthread" "-lutil" "-ldl" "-lutil"
+  = note: main.main.7rcbfp3g-cgu.0.rcgu.o: In function `main::main':
+          main.7rcbfp3g-cgu.0:(.text._ZN4main4main17h2d6c3d678af9e020E+0xb8): undefined reference to `get_word'
+          main.7rcbfp3g-cgu.0:(.text._ZN4main4main17h2d6c3d678af9e020E+0x10b): undefined reference to `get_validity'
           collect2: error: ld returned 1 exit status
           
 
@@ -210,7 +214,7 @@ It says ```undefined reference``` to ```get_word``` and ```get_validity```. Does
 Rust just knows where it is declared. It is defined elsewhere(in **libword.so**) which Rust is not aware of. How do we tell the compiler that it needs to look for these functions in **libword.so**? it is exactly how we can specify in **gcc**. The ```-L``` and ```-l``` options can be used.
 
 ```
-rust/Rust-C-experiments/rust-calling-c > rustc -L. -lword main.rs
+Rust-C-experiments/rust-calling-c > rustc -L. -lword main.rs
 ```
 
 The ```-L``` option can be used to specify the directory where the compiler needs to search for shared libraries. By default, it search certain paths, but here, we need to search the current directory - thats why we passed a **.** along with ```-L```. The ```-l``` is used to specify the name of the shared object. It should proceed without any errors.
@@ -218,11 +222,11 @@ The ```-L``` option can be used to specify the directory where the compiler need
 Let us run **main**.
 
 ```
-rust/Rust-C-experiments/rust-calling-c > ./main
+Rust-C-experiments/rust-calling-c > ./main
 word: 0x5566d8142170, validity: false
 ```
 
-Nice! We are almost there I feel. It is printing the address. Instead we need it to print the string content. Let us see how it can be done.
+Nice! We are almost there. It is printing the address. Instead we need it to print the string content. Let us see how it can be done.
 
 When we had to send the string from Rustland to Cland, we used ```CString```. Here, when we need to use a Cland string in Rust, we use ```CStr```. I hope you got the difference. This is how you do it.
 
@@ -235,11 +239,11 @@ When we had to send the string from Rustland to Cland, we used ```CString```. He
 }
 ```
 
-This code speaks a lot. Notice that ```cstr2``` is a reference. It is a **borrowed reference**. We are borrowing it from Cland, although we know that Rustland owns the string. then we print it. Lets compile and run it.
+This code speaks a lot. Notice that ```cstr2``` is a reference. It is a **borrowed reference**. We are borrowing it from Cland, although in our case we know that Rustland owns the string. then we print it. Lets compile and run it.
 
 ```
-rust/Rust-C-experiments/rust-calling-c > rustc -L. -lword main.rs
-rust/Rust-C-experiments/rust-calling-c > ./main
+Rust-C-experiments/rust-calling-c > rustc -L. -lword main.rs
+Rust-C-experiments/rust-calling-c > ./main
 word: "Cisco!", validity: false
 ```
 
@@ -257,30 +261,7 @@ That was a very simple example - one structure, two functions. We wrote the Rust
 
 Enter [bindgen](https://github.com/rust-lang/rust-bindgen)!!
 
-This tool takes header files.
-
-Not just that, we need a better way to link Rust executables against C libraries. For a project, we will be using **cargo** and it should offer some way to do it.
-
-Now, let us do it the standard way using the available tools.
-
-Start with creating a new project - **word**.
-
-```
-rust/Rust-C-experiments/rust-calling-c > cargo new word
-     Created binary (application) `word` package
-```
-
-Copy only the **main.rs** into the ```src``` directory. It should look like this.
-
-```
-rust/Rust-C-experiments/rust-calling-c/word > tree .
-.
-├── Cargo.toml
-└── src
-    ├── main.rs
-
-1 directory, 3 files
-```
+This tool takes header files and generates rust files.
 
 You can install bindgen in the following manner.
 
@@ -291,29 +272,52 @@ $ cargo install bindgen
 That should install it. To generate bindings, the following command can be used.
 
 ```
-rust/Rust-C-experiments/rust-calling-c > bindgen word.h -o word.rs                                                                                                                                   
-thread 'main' panicked at 'Unable to find libclang: "the `libclang` shared library at /usr/lib64/clang-private/libclang.so.7 could not be opened: libclangAST.so.7: cannot open shared object file: No such file or directory"', /nobackup/
+Rust-C-Experiments/rust-calling-c$ bindgen word.h -o word.rs
 ```
 
+It should ideally go through and give the file **word.rs**. The following is the ```word_info``` structure definition.
 
-I kept getting this error. After some digging, I found out that the ```libclang``` is used by bindgen. And it is loaded using [clang-sys](https://github.com/KyleMayes/clang-sys). clang-sys searches for clang-related libraries in the following places: ```LD_LIBRARY_PATH``` and ```LIBCLANG_PATH```. In my system, clang libraries are found at ```/usr/lib64/clang-private```. Setting ```LIBCLANG_PATH``` didn't help, but setting ```LD_LIBRARY_PATH``` helped. Put them in bashrc file. Run it again.
-
-```
-t/Rust-C-experiments/rust-calling-c > bindgen word.h -o word.rs
-word.h:4:10: fatal error: 'stdbool.h' file not found
-word.h:4:10: fatal error: 'stdbool.h' file not found, err: true
-thread 'main' panicked at 'Unable to generate bindings: ()', /nobackup/agautham/rust/renv/rust/registry/src/github.com-1ecc6299db9ec823/bindgen-0.55.1/src/main.rs:54:36
-stack backtrace:
-   0: rust_begin_unwind
-             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/std/src/panicking.rs:475
-   1: core::panicking::panic_fmt
-             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/core/src/panicking.rs:85
-   2: core::option::expect_none_failed
-             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/core/src/option.rs:1221
-   3: std::panicking::try
-   4: bindgen::main
-note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+```rust
+pub const true_: u32 = 1;
+pub const false_: u32 = 0;
+pub const __bool_true_false_are_defined: u32 = 1;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct word_info {
+    pub word: *mut ::std::os::raw::c_char,
+    pub validity: bool,
+}
 ```
 
-It doesn't know where stdbool.h is present. How do we specify it?
+The ```*mut``` is present because we didn't specify ```const``` in the C definition.
 
+The following are the function declarations.
+
+```rust
+pub type word_info_t = word_info;
+extern "C" {
+    pub fn get_word(w_info: *mut word_info_t) -> *mut ::std::os::raw::c_char;
+}
+extern "C" {
+    pub fn get_validity(w_info: *mut word_info_t) -> bool;
+}
+```
+
+We should have specified ```const``` everywhere - because that is what we need. The C functions are anyway not changing anything. Make the changes and get the updated **word.rs**.
+
+With that, let us compile **main.rs** and see what happens.
+
+```
+Rust-C-Experiments/rust-calling-c$ rustc -L. -lword main.rs
+```
+
+Got a couple of warnings on identifiers present in non-camel case. They can be ignored.
+
+Run it.
+
+```
+Rust-C-Experiments/rust-calling-c$ ./main
+word: "Cisco!", validity: false
+```
+
+So this was an introduction to calling C code from Rust. Out of all the datatypes, string was chosen in the above example because there is a stark difference between a C-string and a Rust-string.
