@@ -1,4 +1,9 @@
-# Calling C code from Rust
+---
+title: Calling C code from Rust
+categories: Rust
+comments: true
+layout: post
+---
 
 It is a common scenario where your current infra is written in one language and when you want to develop something new in a new language. Most high-performance systems are written in C/C++. When a new application needs to be written in Rust, it needs to make use of the C/C++ infra.
 
@@ -320,4 +325,10 @@ Rust-C-Experiments/rust-calling-c$ ./main
 word: "Cisco!", validity: false
 ```
 
-So this was an introduction to calling C code from Rust. Out of all the datatypes, string was chosen in the above example because there is a stark difference between a C-string and a Rust-string.
+## 3. Conclusion
+
+So this was an introduction to calling C code from Rust. Out of all the datatypes, string was chosen in the above example because there is a stark difference between a C-string and a Rust-string. I would urge you to explore [CString](https://doc.rust-lang.org/std/ffi/struct.CString.html) and [CStr](https://doc.rust-lang.org/std/ffi/struct.CStr.html).
+
+We will explore the next possibility - of C code calling Rust in one of the future posts.
+
+There is a fine line that separates Rustland and Cland. We can cross this line from one side to another almost seamlessly and I believe this is true power :P
