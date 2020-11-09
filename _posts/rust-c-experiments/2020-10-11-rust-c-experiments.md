@@ -8,11 +8,20 @@ categories: Rust
 
 All the code used/written in the posts are present in [this repository](https://github.com/adwait1-G/Rust-C-Experiments).
 
-1. [Intro to rustenv](/rust/2020/10/11/intro-to-rustenv.html): If you don't have sudo access to install the rust toolchain or don't want to install it globally, you can use rustenv.
-2. [Rust Startup](/rust/2020/10/11/rust-startup.html): A vanilla introduction to the code that runs before the Rust's main function.
-3. [Primitive Datatypes](/rust/2020/10/25/primitive-types.html): An exploratory journey into Rust's arrays, tuples and integer datatypes. 
-4. [Calling C code from Rust](/rust/2020/10/31/rust-calling-c.html): It is common to have an existing infra written in C/C++ and wanting to write new code in Rust. In such cases, Rust code will have to call C code. This post gives an intro on how it can be done.
-5. [Deciphering Rust's no_mangle](/rust/2020/11/01/deciphering-no-mangle.html): The #[no_mangle] shows some interesting behavior when I was playing around with Rust FFI. Some of it is documented here.
+1 -- [Intro to rustenv](/rust/2020/10/11/intro-to-rustenv.html): If you don't have sudo access to install the rust toolchain or don't want to install it globally, you can use rustenv.
+2 -- [Rust Startup](/rust/2020/10/11/rust-startup.html): A vanilla introduction to the code that runs before the Rust's main function.
+3 -- [Primitive Datatypes](/rust/2020/10/25/primitive-types.html): An exploratory journey into Rust's arrays, tuples and integer datatypes. 
+4 -- [Calling C code from Rust](/rust/2020/10/31/rust-calling-c.html): It is common to have an existing infra written in C/C++ and wanting to write new code in Rust. In such cases, Rust code will have to call C code. This post gives an intro on how it can be done.
+5 -- [Deciphering Rust's no_mangle](/rust/2020/11/01/deciphering-no-mangle.html): The #[no_mangle] shows some interesting behavior when I was playing around with Rust FFI. Some of it is documented here.
+
+From quite some time, I have wanted to explore Rust's async/await feature, the [tokio](https://tokio.rs/) runtime, [Futures](https://docs.rs/futures/0.3.7/futures/), the [async-std](https://github.com/async-rs/async-std) - basically the whole asynchronous part of Rust.
+
+A lot of keywords like synchronous, asynchronous, blocking, non-blocking, promises, futures, event, waiting etc., keep floating around and I am having a hard time understanding it. I have some really stupid doubts like if I don't wait for the I/O I issued, who will wait? Is there someone else waiting for me while I do something else? How will I get notified when that I/O is done? Is a callback registered or is it signal based? Is a new thread spawned which waits for that I/O to happen and joins back once it is done? and many more questions like these. Basically, I have absolutely no clarity over these concepts.
+
+Because of that, I am planning to start with the first time I encountered the word non-blocking I/O - the [O_NONBLOCK](https://www.gnu.org/software/libc/manual/html_node/Open_002dtime-Flags.html) flag which can be passed to the [open()](https://man7.org/linux/man-pages/man2/open.2.html) and eventually reach Rust's async/await concept. In these posts, we will be exploring some interesting system calls like [select](https://man7.org/linux/man-pages/man2/select.2.html), [poll](https://man7.org/linux/man-pages/man2/poll.2.html), [epoll](https://man7.org/linux/man-pages/man7/epoll.7.html), what event-driven means, how it works, does threading play any role etc., I am not sure of the list of things that we might go through because I just know the starting point as of writing this post. Hope is that we will understand what direction we need to go in order to reach Rust's async/await.
+
+6 -- [What does blocking mean?](/rust/2020/11/08/what-does-blocking-mean.html): Gives an introduction to blocking I/O. Introduces the reader to two problems: Can we serve multiple client connections at the same time? Can we somehow bypass the blocking nature of I/O and use that time to do some useful work?
+
 
 # What is this about?
 
