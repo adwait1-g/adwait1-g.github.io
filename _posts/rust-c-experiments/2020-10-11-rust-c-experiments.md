@@ -28,6 +28,8 @@ Because of that, I am planning to start with the first time I encountered the wo
 6 -- [What does blocking mean?](/rust/2020/11/08/what-does-blocking-mean.html): Gives an introduction to blocking I/O. Introduces the reader to two problems: Can we serve multiple client connections at the same time? Can we somehow bypass the blocking nature of I/O and use that time to do some useful work?
 <br/>
 
+7 -- [Multithreading and multiprocessing](/rust/2020/11/09/multithreading-and-multiprocessing.html): This post explores the first problem introduced in (6) - Can we serve multiple client connections at the same time?
+
 # What is this about?
 
 Whenever C code is written, you can visualize the type of assembly code the compiler emits - unless you use some of the really aggressive optimizations out there. It gives you that transparency/visibility of how the code looks like at runtime. This way, you know the cost of certain piece of code for sure. For me, cost is the amount of assembly code emitted when certain piece of code is compiled. C generates code which just does the job - nothing more, nothing less. That is because there is no syntactic sugar hiding complex code, no hidden abstractions. What you write is what is going to run.
