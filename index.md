@@ -12,9 +12,11 @@ Welcome to pwnthebox!
 
 This is the place where I write about the stuff I am exploring, stuff I am interested in.
 
-# Experiments with C and Rust
+# C, Rust and more!
 
-I have been tinkering with Rust from past 6-7 months. I have documented some stuff [here](/rust/2020/10/11/rust-c-experiments.html). 
+I have been playing around with rust from past 8-9 months. Some topics which interested me are C and Rust interoperability, calling C from Rust, calling Rust from C, ABI etc., Along with that, I am trying to understand Rust's async/await feature. I realized that my foundation is quite weak - don't exactly know what asynchronous, non-blocking, event-loop etc., are. So, I have taken up a bottom-up approach: Started by writing a simple server, with blocking system calls. Later used multithreading/multiprocessing to offload the blocking problems to separate threads. Then use select/poll/epoll and try to do the whole thing in one, single thread. That has been the journey so far. Goal is to build a good foundation and slowly reach Rust's async/await and to be able to understand every word, every concept there.
+ 
+I have documented all these things [here](/rust/2020/10/11/rust-c-experiments.html).
 
 # Operating Systems and Security
 
