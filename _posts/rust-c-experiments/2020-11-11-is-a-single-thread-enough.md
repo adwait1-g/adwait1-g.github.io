@@ -348,6 +348,8 @@ With that, I would like to end this post.
 
 I hope you got an idea of of what exactly the blocking problem is, how select is used to solve it, how it all happens in a single thread, what an event loop is. I really hope the door-bell example or any of those real-life like examples helped you in someway to get the concept.
 
+As an exercise, try writing an echo server using ```select```. An echo server is a type of server which simply sends back the data client sends to it. Suppose client sends "Hello, how are you doing?", the server simply sends the same string back to the server - basically **echo** it back. There are a couple of extra things you need to care about when writing an echo server - as compared to the simple one request-response server we wrote today. For example, the client might never disconnect - you need to keep serving it whenever it sends some data, or the client might randomly disconnect - when that happens, you need to stop monitoring it. But how would you know when or if the client disconnected it? These things make it very interesting. You can find my implementation [here](https://github.com/adwait1-G/Rust-C-Experiments/blob/main/sync-async/echo_server_v1.c). From the next post, we will be using the echo server for all exploring and leave this simple server behind.
+
 In the next post, we will explore the [poll](https://man7.org/linux/man-pages/man2/poll.2.html) system call. Let us see how to use it, what facilities it provides and rewrite our server using **poll**.
 
 Is this a complete replacement to multithreading? Which one is better? These are very interesting questions and let us comeback to them once we have a firm grip on basic event-driven concepts.

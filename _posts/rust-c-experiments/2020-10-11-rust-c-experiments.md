@@ -34,7 +34,7 @@ One thing about these posts: These posts are not really refined blog posts. They
 1 -- [What does blocking mean?](/rust/2020/11/08/what-does-blocking-mean.html): Gives an introduction to blocking I/O. Introduces the reader to two problems: Can we serve multiple client connections at the same time? Can we somehow bypass the blocking nature of I/O and use that time to do some useful work?
 <br/>
 
-2 -- [Multithreading and multiprocessing](/rust/2020/11/09/multithreading-and-multiprocessing.html): This post explores the first problem introduced in (6) - Can we serve multiple client connections at the same time?
+2 -- [Multithreading and multiprocessing](/rust/2020/11/09/multithreading-and-multiprocessing.html): This post explores the first problem introduced in (1) - Can we serve multiple client connections at the same time?
 <br/>
 
 3 -- [Is a single thread enough? - Events, Notifications and Event Loop](/rust/2020/11/11/is-a-single-thread-enough.html): Explores the idea of a single thread doing literally everything! We rewrite the server using the select system call and discuss some other concepts like events, notification and event-loop.
