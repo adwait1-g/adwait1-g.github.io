@@ -342,17 +342,27 @@ We took the example of the door-bell. The door-bell is a event notification mech
 
 Those are examples of event-driven things happening around you. But surprising thing is, you also would have behaved in an event-driven manner. Waking up for that alarm is one example. Suppose you and your friends are going out somewhere. Your friend is picking you up and asks you to wait at some landmark. My reaction would be this: Let me know once you are 10 minutes away from the landmark, I will be there. Here, you don't want to go there and wait. Your friend being 10 minutes away from the landmark is the event. Your friend calls/messages you that he is 10 minutes away - you are being notified of the event here. You then start walking towards that landmark where you had to wait. By the time your friend comes to that landmark, you would have been there (that is the idea). Observing these things has helped me understand the nature of event-driven paradigm better.
 
-## 6. Conclusion
+## 6. Echo server using select
+
+As an exercise, try writing an an echo server using ```select```. An echo server is a type of server which simply sends back the data client sends to it. Suppose client sends "Hello, how are you doing?", the server simply sends the same string back to the server - basically **echo** it back. There are a couple of extra things you need to care about when writing an echo server - as compared to the simple one request-response server we wrote today. For example, the client might never disconnect - you need to keep serving it whenever it sends some data, or the client might randomly disconnect - when that happens, you need to close the connection socket on the server and stop monitoring it. But how would you know when or if the client disconnected it? Also the server should be able to echo back all the data sent by the client. We are calling ```recv``` on 10,000 bytes. Is that enough to handle (say) 100,000 bytes of data?
+
+Converting the server we have written now into an echo server requires no major changes - just minor tweaks. All the information required to write it are present in relevant manpages.
+
+My implementation is present [here](https://github.com/adwait1-G/Rust-C-Experiments/blob/main/sync-async/echo_server_v1.c).
+
+Note that we will be using this echo server from now onwards for our exploration. We will be dropping the simple server at this post.
+
+## 7. Conclusion
 
 With that, I would like to end this post.
 
 I hope you got an idea of of what exactly the blocking problem is, how select is used to solve it, how it all happens in a single thread, what an event loop is. I really hope the door-bell example or any of those real-life like examples helped you in someway to get the concept.
 
-There is an obvious vulnerability in the select-server we wrote today. It is because of a not-handling a limitation of the select system call properly. Try finding it out. Reading the manpage thoroughly is enough to figure out.
+In this post, we explored how using an event-notification mechanism like ```select``` was helpful in solving the blocking problem. Note that we had just one thread and we were in no position to block.
 
-In the next post, let us write an echo server using ```select```. An echo server is a type of server which simply sends back the data client sends to it. Suppose client sends "Hello, how are you doing?", the server simply sends the same string back to the server - basically **echo** it back. There are a couple of extra things you need to care about when writing an echo server - as compared to the simple one request-response server we wrote today. For example, the client might never disconnect - you need to keep serving it whenever it sends some data, or the client might randomly disconnect - when that happens, you need to stop monitoring it. But how would you know when or if the client disconnected it? Let us make the server realistic by removing the hardcoded request-response buffers in the ```serve_connection``` function. The server should be able to process as much data sent by the client. Think about how you want to do this. These things make it very interesting.
+In the **next post**, we will be exploring **polling**. According to our discussion in Section 1, polling can be completely implemented by us because we are the only actor. We ideally won't need kernel's help. **polling** will open up a lot of new, interesting things.
 
-Is this a complete replacement to multithreading? Which one is better? These are very interesting questions and let us comeback to them once we have a firm grip on basic event-driven concepts.
+**XXX**: There is an obvious vulnerability in the select-server we wrote today. It is because of a not-handling a limitation of the select system call properly. Try finding it out. Reading the manpage thoroughly is enough to figure out.
 
 I learnt a lot while writing this post, hope you did too.
 
