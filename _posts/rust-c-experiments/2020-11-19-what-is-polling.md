@@ -565,7 +565,7 @@ With that, I am ending this post.
 
 I hope you have an idea about polling and non-blocking calls. Non-blocking calls are extremely useful and not just to implement polling. We will explore a lot of interesting things around non-blocking calls.
 
-All the posts in this series revolve around events and event-driven paradigm - like having an event loop, using an event notification mechanism, taking action. I decided to write this post for two reasons: One is it would give a good idea of polling - where you proactively do work(sometimes useless work) to check if any events have happened in contrast to the lazy event driven style. Other is that I felt that this is the natural place to introduce non-blocking calls. Polling requires non-blocking calls - there was a purpose. So, introducing it was easier.
+All the posts in this series revolve around events and event-driven paradigm - like having an event loop, using an event notification mechanism, taking action. I decided to write this post for two reasons: One is it would give a good idea of polling - where you initiate to do work(sometimes useless work) to check if any events have happened in contrast to the lazy event driven style. Other is that I felt that this is the natural place to introduce non-blocking calls. Polling requires non-blocking calls - there was a purpose. So, introducing it was easier.
 
 Now that we have an single-threaded event-driven server using select and a single-threaded polling-based server, play around with them. Think about which one is more responsive, which one does more work, which one is lazy, which does how much of useless work etc., These are the things we have not discussed and we will in one of the future posts.
 
