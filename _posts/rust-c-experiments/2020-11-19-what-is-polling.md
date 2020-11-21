@@ -569,7 +569,7 @@ All the posts in this series revolve around events and event-driven paradigm - l
 
 Now that we have an single-threaded event-driven server using select and a single-threaded polling-based server, play around with them. Think about which one is more responsive, which one does more work, which one is lazy, which does how much of useless work etc., These are the things we have not discussed and we will in one of the future posts.
 
-In the next post, we will explore the [poll](https://man7.org/linux/man-pages/man2/poll.2.html) system call. This is also an I/O event notifier like select, but there are differences. It is better in a bunch of ways.
+In the next post, we will explore the [epoll](https://man7.org/linux/man-pages/man7/epoll.7.html) system call. This is also an I/O event notification facility, but a lot better than select.
 
 I hope you learnt something out of this post.
 
