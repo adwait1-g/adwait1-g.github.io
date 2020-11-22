@@ -4,8 +4,6 @@ title: C, Rust and more!
 categories: Rust
 ---
 
-# Posts
-
 All the code used/written in the posts are present in [this repository](https://github.com/adwait1-G/Rust-C-Experiments).
 
 ## 1. General posts about C and Rust
