@@ -39,6 +39,21 @@ One thing about these posts: These posts are not really refined blog posts. They
 <br/>
 
 4 -- [What is polling?](/rust/2020/11/19/what-is-polling.html): Explores the idea of polling. Introduces the concept of **non-blocking** calls along the way. In the end, we implement a single-threaded polling-based server.
+<br/>
+
+5 -- [Is a single thread enough? - Exploring the epoll system call](/rust/2020/11/20/is-a-single-thread-enough-epoll.html): TODO
+<br/>
+
+6 --[Writing a callback-based event notification library](/rust/2020/11/21/writing-a-callback-based-event-notification-library.html): TODO
+<br/>
+
+In the last couple of posts, we explored a lot of things in C. Started with a single request-response server, then made it into a multithreaded server. Then we explored event notification mechanisms like select and poll - wrote an echo server using them. We saw how multiple connections can be handled with a single thread.
+
+With that, we come to the end of event-driven in C. I hope you have a fair idea of what an event is, what an event-loop looks like, what all happens in it. We started off with understanding the blocking problem and then tried to solve or work around it in a number of ways.
+
+The next couple of posts will revolve around Rust. We will again start by implementing an echo server which uses blocking calls, then slowly build on it in the same way we did in C.
+
+7 -- [Simple echo server in Rust](/rust/2020/11/29/simple-echo-server-in-rust.html): An echo server which serves one connection at a time - makes uses of blocking calls.
 
 # What is this about?
 
