@@ -14,6 +14,12 @@ This is the place where I write about the stuff I am exploring, stuff I am inter
 
 [List of all posts](/2020/11/22/list-of-all-posts.html).
 
+# 8. Papers I love
+
+I am planning to read a few papers on Control Flow Integrity, Control Flow Hijacking, Binary Analysis etc., You can find articles related to that here.
+
+1. [Understanding clang's SafeStack](/papers/2021/03/10/understanding-clang-safestack.html): My attempt to understand the SafeStack security mechanism. I have tried to understand what the mechanism is, what it does and how it is implemented. An emphasis is given on how the mechanism looks like at assembly level. I believe that this is the first step to understand [Code Pointer Integrity](https://www.usenix.org/conference/osdi14/technical-sessions/presentation/kuznetsov).
+
 # 7. Exploring Rust
 
 ## 1. General posts about C and Rust
