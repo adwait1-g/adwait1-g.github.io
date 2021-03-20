@@ -3,6 +3,10 @@ layout: page
 title: All posts
 ---
 
+51 -- 2021, March 19: [Writing simple LLVM Passes](/papers/2021/03/19/writing-simple-llvm-passes.html)
+<br/>
+50 -- 2021, March 10: [Understanding clang's SafeStack](/papers/2021/03/10/understanding-clang-safestack.html)
+<br/>
 49 -- 2020, November 30: [Simple echo server in Rust](/rust/2020/11/29/simple-echo-server-in-rust.html)
 <br/>
 48 -- 2020, November 19: [What is polling?](/rust/2020/11/19/what-is-polling.html)

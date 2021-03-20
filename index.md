@@ -14,11 +14,13 @@ This is the place where I write about the stuff I am exploring, stuff I am inter
 
 [List of all posts](/2020/11/22/list-of-all-posts.html).
 
-# 8. Papers I love
+# 8. Systems Security papers and more!
 
-I am planning to read a few papers on Control Flow Integrity, Control Flow Hijacking, Binary Analysis etc., You can find articles related to that here.
+I am planning to read a few papers on Control Flow Integrity, Control Flow Hijacking, Binary Analysis etc., All work related to that will be listed below.
 
 1. [Understanding clang's SafeStack](/papers/2021/03/10/understanding-clang-safestack.html): My attempt to understand the SafeStack security mechanism. I have tried to understand what the mechanism is, what it does and how it is implemented. An emphasis is given on how the mechanism looks like at assembly level. I believe that this is the first step to understand [Code Pointer Integrity](https://www.usenix.org/conference/osdi14/technical-sessions/presentation/kuznetsov).
+
+2. [Writing simple LLVM Passes](/papers/2021/03/19/writing-simple-llvm-passes.html): There are multiple compiler-based security mechanisms out there - StackGuard, SafeStack etc., which are all compiler passes. I had never explored the LLVM project nor had written a pass before. In this article, I try to a few simple passes which read the IR and prints stuff - function names, its return-type, arguments etc.,
 
 # 7. Exploring Rust
 
