@@ -14,13 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: PWNTHEBOX!
-email: adwait.gautham@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome all! This is a Systems and Security Blog. I will probably be writing on topics related to Operating Systems, Computer Networks, Parallel Computing, Reverse Engineering, Binary Analysis, Cryptography etc., 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.pwnthebox.net" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
-github_username:  adwait1-g
 linkedin_username: adwaitgautham1998
 
 # Build settings
