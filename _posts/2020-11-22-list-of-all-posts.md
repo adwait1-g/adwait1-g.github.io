@@ -31,6 +31,9 @@ title: All posts
 <br/>
 39 -- 2020, October 11: [Intro to rustenv](/rust/2020/10/11/intro-to-rustenv.html)
 <br/>
+
+In this gap, I worked on a book about Binary Exploitation. Goal was to build the basics necessary to understand Binary Exploitation and then jump into different Vulnerabilities, Exploit methods etc., [Here is the repository](https://github.com/adwait1-g/TheBEBook). It is work in progress.
+
 38 -- 2020, February 23: [Bullshiting Myself](/about/me/2020/02/23/bullshiting-myself.html)
 <br/>
 37 -- 2020, January 03: [Writing an ELF Parsing Library - Part9 - PHDR, INTERP and GNU_STACK segment types](/write/your/own/xxxx/2020/01/03/writing-an-elf-parsing-library-part9-phdr-interp-gnu-stack-segment-types.html)
