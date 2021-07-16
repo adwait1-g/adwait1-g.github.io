@@ -6,10 +6,39 @@ permalink: /awesome_resources/
 
 These are a few resources I have used to explore various fields in Computer Science. Hope it helps :)
 
-1. [Reverse Engineering for Beginners(RE4B)](https://beginners.re/) : This book is the best if you want to get started with Reverse Engineering. Loads of examples related multiple Architectures like x86, ARM, mips, multiple Compilers - gcc, MSVC. 
+## TPM, Firmware, BIOS, UEFI, BootLoaders etc.,
 
+Here are a few interesting resources which explore the Pre-OS state of a box.
+
+1. UEFI
+	1. [EDK2](https://github.com/tianocore/edk2): Firmware development environment for UEFI specifications. In short, one can build a virtual firmware, run it on VM, write UEFI applications, run and test them in that VM.
+	2. [EDK2 documents](https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Documents): Lists all the documents related to EDK2. It has everything from getting started to writing hello-world UEFI programs to training/courses on UEFI.
+	3. [Introduction to EFI programming](http://www.rodsbooks.com/efi-programming/) by Roderick Smith.
+	4. [x86asm.net - Introduction to UEFI](http://x86asm.net/articles/introduction-to-uefi/index.html)
+	5. [EFI Tutorial](https://github.com/safayetahmedatge/efitutorial)
+	6. Books on UEFI by its creators: [Harnessing the UEFI Shell](/assets/firmware-security/Harnessing-the-UEFI-shell-Moving-the-platform-beyond-DOS.pdf), [Beyond BIOS](/assets/firmware-security/Beyond-BIOS-Developing-with-the-UEFI.pdf). The first book is an amazing starter. Second one does a deep dive.
+	7. [osdev.org UEFI wiki](https://wiki.osdev.org/UEFI)
+
+2. Firmware-Security, Reversing etc.,
+	1. [www.firmwaresecurity.com](https://firmwaresecurity.com/)
+	2. [The BIOS blog by Darmawan Salihun](http://bioshacking.blogspot.com/): Insane blog, extremely rich.
+	3. [Pinczakko's blog](https://sites.google.com/site/pinczakko/): Another crazy blog
+	4. [Vincent Zimmer's blog on firmware, UEFI etc.,](http://vzimmer.blogspot.com/2015/06/firmware-related-blogs.html)
+
+3. TPM
+	1. [TCG's summary on TPM](https://trustedcomputinggroup.org/resource/trusted-platform-module-tpm-summary/)
+	2. [SWTPM](https://github.com/stefanberger/swtpm)
+	3. [tpm2 software](https://tpm2-software.github.io/)
+
+3. Other related stuff
+	1. [Coreboot](https://github.com/coreboot/coreboot): An opensource alternative to proprietary BIOS used by various vendors.
+	2. [LinuxBoot](https://www.linuxboot.org/): Linux as firmware.
+	3. [System Management BIOS (SMBIOS)](https://www.dmtf.org/standards/smbios/)
+	4. [SeaBIOS](https://github.com/coreboot/seabios): Opensource implementation of x86 legacy BIOS.
 
 The following is a small list of really amazing websites I have come across and have worked on a few things present in those websites. 
+
+1. [Reverse Engineering for Beginners(RE4B)](https://beginners.re/) : This book is the best if you want to get started with Reverse Engineering. Loads of examples related multiple Architectures like x86, ARM, mips, multiple Compilers - gcc, MSVC. 
 
 1. [challenges.re](https://challenges.re) - If you want to get started with Reverse Engineering and Binary Exploitation, this website is the best way to start!
 
