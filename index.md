@@ -15,5 +15,6 @@ Hello friend, welcome to pwnthebox!
 6. [Packet Overflow!](/packet/overflow/2019/03/25/packet-overflow-mainpage.html): An introduction to Computer Networks, packets, wireshark, network programming - hands-on style.
 7. [Setting up a Blog using Jekyll](/blogging/2019/03/25/setting-up-a-blog-using-jekyll-mainpage.html): Steps to setup a simple Github Pages site like this one.
 8. Miscellaeous:
-    1. [Non-technical, random](/write/your/own/xxxx/2019/11/15/elf-parser-home.html)
+    - [Non-technical, random](/write/your/own/xxxx/2019/11/15/elf-parser-home.html)
 ---------------------------------------------------
+       
