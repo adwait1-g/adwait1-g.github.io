@@ -14,7 +14,7 @@ I explored offensive security to start with - vulnerabilities, exploit methods, 
 
 All the opinions expressed here is my own and does not represent my employer or anyone else.
 
-1. [My Resume](/assets/about_me/AdwaithGautham.pdf)
+1. [My Resume](/assets/about_me/Adwaith-V-Gautham-resume.pdf)
 2. I love playing CTFs. My college team is [ReasonablySuspiciousActivity](https://ctftime.org/team/62190). Now defunct :(
 3. [Github](https://github.com/adwait1-g)
 4. [LinkedIn](https://linkedin.com/in/adwaitgautham1998)
