@@ -1,7 +1,7 @@
 ---
-layout: home
+layout: default
 comments: false
-list_title: ' '
+order: 1
 ---
 
 Hello friend, welcome to pwnthebox!
