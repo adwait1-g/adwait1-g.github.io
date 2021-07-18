@@ -13,13 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: PWNTHEBOX.NET
+title: pwnthebox.net
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome all! This is a place where I document my independent exploration and research. If you are interested in Computer Security, specifically Systems security, you might find something of your interest here.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.pwnthebox.net" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
-linkedin_username: adwaitgautham1998
 
 # Build settings
 markdown: kramdown
@@ -29,7 +28,6 @@ plugins:
 
 
 header_pages: 
-  - categories.md
   - awesome_resources.md
   - about_this_site.md
   - about_me.md
