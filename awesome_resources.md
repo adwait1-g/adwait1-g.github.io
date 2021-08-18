@@ -6,7 +6,26 @@ permalink: /awesome_resources/
 
 These are a few resources I have used to explore various fields in Computer Science. Hope it helps :)
 
-## TPM, Firmware, BIOS, UEFI, BootLoaders etc.,
+## 1. Binary Analysis, Traslation, Rewriting, Disassembly, Decompilation etc.,
+
+# 1.1 Theses, Surveys
+
+1. [Robust Low-Overhead Binary Rewriting: Design, Extensibility and Customizability - 2021](https://drum.lib.umd.edu/handle/1903/27241). [(backup)](/assets/papers/robust-low-overhead-binary-rewriting-design-extensibility-and-customizability-2021-university-of-maryland.pdf).
+2. [From Hack to Elaborate Technique - A Survey on Binary Rewriting - 2019](https://doi.org/10.1145/3316415). [(backup)](/assets/papers/from-hack-to-elaborate-technique-a-survey-on-binary-rewriting-june-2019.pdf).
+3. [Type Inference on Executables - 2016](https://dl.acm.org/doi/10.1145/2896499): A survey on the type inference problem in binaries. [(backup)](/assets/papers/type-inference-on-executables-2016.pdf).
+4. [Analyzing and Securing Binaries Through Static Disassembly - 2017](https://mistakenot.net/): PhD Thesis of Daniel Andriesse at VU Amsterdam. [(backup)](/assets/papers/analyzing-and-securing-binaries-through-static-disassembly-2017-daniel-andriesse-vu-amsterdam.pdf).
+5. [Static Analysis of x86 Executables - 2010](https://infoscience.epfl.ch/record/167546?ln=en): PhD Thesis of Johannes Kinder at TU Darmstadt. [(backup)](/assets/papers/static-analysis-of-x86-executables-johannes-kinder-2010-tu-darmstadt.pdf).
+6. [Reverse Compilation Techniques - 1994](https://yurichev.com/mirrors/DCC_decompilation_thesis.pdf): PhD Thesis of Christina Cifuentes. An amazing thesis to understand decompilation in detail. [(backup)](/assets/papers/reverse-compilation-techniques-christina-cifuentes-1994.pdf).
+
+
+## 2. Reversing, Malware Analysis, Exploit dev etc.,
+
+### 2.1 Books, websites and other resources
+
+1. [Reverse Engineering for Beginners(RE4B)](https://beginners.re/) : This book is the best if you want to get started with Reverse Engineering. Loads of examples related multiple Architectures like x86, ARM, mips, multiple Compilers - gcc, MSVC. 
+2. [challenges.re](https://challenges.re) - If you want to get started with Reverse Engineering and Binary Exploitation, this website is the best way to start!
+
+## 3. TPM, Firmware, BIOS, UEFI, BootLoaders etc.,
 
 Here are a few interesting resources which explore the Pre-OS state of a box.
 
@@ -38,46 +57,31 @@ Here are a few interesting resources which explore the Pre-OS state of a box.
 	2. [LinuxBoot](https://www.linuxboot.org/): Linux as firmware.
 	3. [System Management BIOS (SMBIOS)](https://www.dmtf.org/standards/smbios/)
 	4. [SeaBIOS](https://github.com/coreboot/seabios): Opensource implementation of x86 legacy BIOS.
+	5. [Linux from scratch's About firmware](https://www.linuxfromscratch.org/blfs/view/svn/postlfs/firmware.html): This article has links to several amazing articles/github repositories in it.
+	6. [Intel's repository of processor microcode](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files)
 
 5. Firmware, BIOS samples
 	1. [Dell downloads](https://www.dell.com/support/home/en-in?app=drivers): Dell publishes System BIOS for a variety of its products. Gold Mine
 	2. [HP software downloads](https://support.hp.com/in-en/drivers): Firmware for a bunch of HP products can be downloaded from here.
 
-The following is a small list of really amazing websites I have come across and have worked on a few things present in those websites. 
 
-1. [Reverse Engineering for Beginners(RE4B)](https://beginners.re/) : This book is the best if you want to get started with Reverse Engineering. Loads of examples related multiple Architectures like x86, ARM, mips, multiple Compilers - gcc, MSVC. 
+## 4. Crypto, Math
 
-1. [challenges.re](https://challenges.re) - If you want to get started with Reverse Engineering and Binary Exploitation, this website is the best way to start!
-
-2. [cryptopals.com](http://cryptopals.com) - Best Crypto site I have come across. Has programming exercises related to different cryptographic algorithms, different attacks on those algorithms. 
-
+1. [cryptopals.com](http://cryptopals.com) - Best Crypto site I have come across. Has programming exercises related to different cryptographic algorithms, different attacks on those algorithms. 
+2. [crypto101.io](https://crypto101.io) - It is a introductory course on cryptography available in the form of a book. 
 3. [projecteuler.net](https://projecteuler.net/) - If you are into Number Theory, Math, Programming, this is one of the best websites to go to!
 
-4. [crypto101.io](https://crypto101.io) - It is a introductory course on cryptography available in the form of a book. 
-
-5. [https://yurichev.com/mirrors/DCC_decompilation_thesis.pdf](An amazing PhD thesis which talks about Reverse-Compilation/Decompilation Techniques) - I believe there are all the details needed to write a decompiler!
-
-6. [Reverse Engineering using the Linux Operating System](http://reverse.lostrealm.com/)
-
-## Linux Systems Programming
-
-I was searching for a few systems programming projects. I found these.
+## 5. Linux Systems Programming
 
 1. [Angrave's System Programming](https://github.com/angrave/SystemProgramming/wiki): This is probably the best resource to get started with Linux systems programming. Its just too good! 
-
 2. [University of Georgia's Systems Programming Course](http://cobweb.cs.uga.edu/~rwr/CS1730/projs.html)
-
 3. [University of Wisconsin-Madison's Operating Systems course](http://pages.cs.wisc.edu/~dusseau/Classes/CS537-F07/projects.html)
 
-
-## Computer Networks
-
-### Network Programming
+## 6. Computer Networks
 
 1. [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/) - One of the best guides for Network Programming in C. 
 
-
-### Kernel Bypass Techniques
+## 7. Kernel Bypass Techniques
 
 These articles (in this order) helped me understand Kernel Bypass techniques better
 
