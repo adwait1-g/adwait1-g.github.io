@@ -10,12 +10,18 @@ These are a few resources I have used to explore various fields in Computer Scie
 
 # 1.1 Theses, Surveys
 
+Caching a few theses which I am interesting in understanding.
+
 1. [Robust Low-Overhead Binary Rewriting: Design, Extensibility and Customizability - 2021](https://drum.lib.umd.edu/handle/1903/27241). [(backup)](/assets/papers/robust-low-overhead-binary-rewriting-design-extensibility-and-customizability-2021-university-of-maryland.pdf).
-2. [From Hack to Elaborate Technique - A Survey on Binary Rewriting - 2019](https://doi.org/10.1145/3316415). [(backup)](/assets/papers/from-hack-to-elaborate-technique-a-survey-on-binary-rewriting-june-2019.pdf).
-3. [Type Inference on Executables - 2016](https://dl.acm.org/doi/10.1145/2896499): A survey on the type inference problem in binaries. [(backup)](/assets/papers/type-inference-on-executables-2016.pdf).
-4. [Analyzing and Securing Binaries Through Static Disassembly - 2017](https://mistakenot.net/): PhD Thesis of Daniel Andriesse at VU Amsterdam. [(backup)](/assets/papers/analyzing-and-securing-binaries-through-static-disassembly-2017-daniel-andriesse-vu-amsterdam.pdf).
-5. [Static Analysis of x86 Executables - 2010](https://infoscience.epfl.ch/record/167546?ln=en): PhD Thesis of Johannes Kinder at TU Darmstadt. [(backup)](/assets/papers/static-analysis-of-x86-executables-johannes-kinder-2010-tu-darmstadt.pdf).
-6. [Reverse Compilation Techniques - 1994](https://yurichev.com/mirrors/DCC_decompilation_thesis.pdf): PhD Thesis of Christina Cifuentes. An amazing thesis to understand decompilation in detail. [(backup)](/assets/papers/reverse-compilation-techniques-christina-cifuentes-1994.pdf).
+2. [Scalable Validation of Binary Lifters - 2020](https://www.ideals.illinois.edu/handle/2142/107968). [(backup)](/assets/papers/scalable-validation-of-binary-lifters-2020-sandeep-dasgupta-uiuc.pdf)
+3. [From Hack to Elaborate Technique - A Survey on Binary Rewriting - 2019](https://doi.org/10.1145/3316415). [(backup)](/assets/papers/from-hack-to-elaborate-technique-a-survey-on-binary-rewriting-june-2019.pdf).
+4. [Type Inference on Executables - 2016](https://dl.acm.org/doi/10.1145/2896499): A survey on the type inference problem in binaries. [(backup)](/assets/papers/type-inference-on-executables-2016.pdf).
+5. [Analyzing and Securing Binaries Through Static Disassembly - 2017](https://mistakenot.net/): PhD Thesis of Daniel Andriesse at VU Amsterdam. [(backup)](/assets/papers/analyzing-and-securing-binaries-through-static-disassembly-2017-daniel-andriesse-vu-amsterdam.pdf).
+6. [Building a Base towards Cyber-autonomy - 2017](https://escholarship.org/uc/item/2gt7v61r): Prof. Yan's PhD Thesis. [(backup)](/assets/papers/building-a-base-for-cyber-autonomy-2017-prof-yan-ucsb.pdf).
+7. [Abstraction Recovery for Scalable Static Binary Analysis - 2014](https://figshare.com/articles/thesis/Abstraction_Recovery_for_Scalable_Static_Binary_Analysis/6714434/1). [(backup)](/assets/papers/abstraction-recovery-for-scalable-static-binary-analysis-2014-ej-schwartz-cmu.pdf).
+8. [Deep Analysis of Binary Code to Recover Program Structure - 2014](https://drum.lib.umd.edu/handle/1903/15449). [(backup)](/assets/papers/deep-analysis-of-binary-code-to-recover-program-structure-el-2014-el-wazeer-uni-of-maryland.pdf).
+9. [Static Analysis of x86 Executables - 2010](https://infoscience.epfl.ch/record/167546?ln=en): PhD Thesis of Johannes Kinder at TU Darmstadt. [(backup)](/assets/papers/static-analysis-of-x86-executables-johannes-kinder-2010-tu-darmstadt.pdf).
+10. [Reverse Compilation Techniques - 1994](https://yurichev.com/mirrors/DCC_decompilation_thesis.pdf): PhD Thesis of Christina Cifuentes. An amazing thesis to understand decompilation in detail. [(backup)](/assets/papers/reverse-compilation-techniques-christina-cifuentes-1994.pdf).
 
 
 ## 2. Reversing, Malware Analysis, Exploit dev etc.,
