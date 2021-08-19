@@ -4,36 +4,47 @@ title: Awesome Resources
 permalink: /awesome_resources/
 ---
 
-These are a few resources I have used to explore various fields in Computer Science. Hope it helps :)
+Some resources I found interesting. Actively updated.
 
 ## 1. Binary Analysis, Traslation, Rewriting, Disassembly, Decompilation etc.,
 
 # 1.1 Theses, Surveys
 
-Caching a few theses which I am interesting in understanding.
-
 1. [Robust Low-Overhead Binary Rewriting: Design, Extensibility and Customizability - 2021](https://drum.lib.umd.edu/handle/1903/27241). [(backup)](/assets/papers/robust-low-overhead-binary-rewriting-design-extensibility-and-customizability-2021-university-of-maryland.pdf).
 2. [Scalable Validation of Binary Lifters - 2020](https://www.ideals.illinois.edu/handle/2142/107968). [(backup)](/assets/papers/scalable-validation-of-binary-lifters-2020-sandeep-dasgupta-uiuc.pdf)
-3. [From Hack to Elaborate Technique - A Survey on Binary Rewriting - 2019](https://doi.org/10.1145/3316415). [(backup)](/assets/papers/from-hack-to-elaborate-technique-a-survey-on-binary-rewriting-june-2019.pdf).
-4. [Type Inference on Executables - 2016](https://dl.acm.org/doi/10.1145/2896499): A survey on the type inference problem in binaries. [(backup)](/assets/papers/type-inference-on-executables-2016.pdf).
-5. [Analyzing and Securing Binaries Through Static Disassembly - 2017](https://mistakenot.net/): PhD Thesis of Daniel Andriesse at VU Amsterdam. [(backup)](/assets/papers/analyzing-and-securing-binaries-through-static-disassembly-2017-daniel-andriesse-vu-amsterdam.pdf).
-6. [Building a Base towards Cyber-autonomy - 2017](https://escholarship.org/uc/item/2gt7v61r): Prof. Yan's PhD Thesis. [(backup)](/assets/papers/building-a-base-for-cyber-autonomy-2017-prof-yan-ucsb.pdf).
-7. [Abstraction Recovery for Scalable Static Binary Analysis - 2014](https://figshare.com/articles/thesis/Abstraction_Recovery_for_Scalable_Static_Binary_Analysis/6714434/1). [(backup)](/assets/papers/abstraction-recovery-for-scalable-static-binary-analysis-2014-ej-schwartz-cmu.pdf).
-8. [Deep Analysis of Binary Code to Recover Program Structure - 2014](https://drum.lib.umd.edu/handle/1903/15449). [(backup)](/assets/papers/deep-analysis-of-binary-code-to-recover-program-structure-el-2014-el-wazeer-uni-of-maryland.pdf).
-9. [Static Analysis of x86 Executables - 2010](https://infoscience.epfl.ch/record/167546?ln=en): PhD Thesis of Johannes Kinder at TU Darmstadt. [(backup)](/assets/papers/static-analysis-of-x86-executables-johannes-kinder-2010-tu-darmstadt.pdf).
-10. [Reverse Compilation Techniques - 1994](https://yurichev.com/mirrors/DCC_decompilation_thesis.pdf): PhD Thesis of Christina Cifuentes. An amazing thesis to understand decompilation in detail. [(backup)](/assets/papers/reverse-compilation-techniques-christina-cifuentes-1994.pdf).
+3. [Increasing the Performance of Symbolic Execution by compiling Symbolic Handling into Binaries - 2020](https://www.eurecom.fr/en/publication/6331). [(backup)](/assets/papers/increasing-the-performance-of-symbolic-execution-by-compiling-symbolic-handling-into-binaries-2020-poeplau-eurecom.pdf).
+4. [From Hack to Elaborate Technique - A Survey on Binary Rewriting - 2019](https://doi.org/10.1145/3316415). [(backup)](/assets/papers/from-hack-to-elaborate-technique-a-survey-on-binary-rewriting-june-2019.pdf).
+5. [Type Inference on Executables - 2016](https://dl.acm.org/doi/10.1145/2896499): A survey on the type inference problem in binaries. [(backup)](/assets/papers/type-inference-on-executables-2016.pdf).
+6. [Analyzing and Securing Binaries Through Static Disassembly - 2017](https://mistakenot.net/): PhD Thesis of Daniel Andriesse at VU Amsterdam. [(backup)](/assets/papers/analyzing-and-securing-binaries-through-static-disassembly-2017-daniel-andriesse-vu-amsterdam.pdf).
+7. [Building a Base towards Cyber-autonomy - 2017](https://escholarship.org/uc/item/2gt7v61r): Prof. Yan's PhD Thesis. [(backup)](/assets/papers/building-a-base-for-cyber-autonomy-2017-prof-yan-ucsb.pdf).
+8. [Abstraction Recovery for Scalable Static Binary Analysis - 2014](https://figshare.com/articles/thesis/Abstraction_Recovery_for_Scalable_Static_Binary_Analysis/6714434/1). [(backup)](/assets/papers/abstraction-recovery-for-scalable-static-binary-analysis-2014-ej-schwartz-cmu.pdf).
+9. [Deep Analysis of Binary Code to Recover Program Structure - 2014](https://drum.lib.umd.edu/handle/1903/15449). [(backup)](/assets/papers/deep-analysis-of-binary-code-to-recover-program-structure-el-2014-el-wazeer-uni-of-maryland.pdf).
+10. [Static Analysis of x86 Executables - 2010](https://infoscience.epfl.ch/record/167546?ln=en): PhD Thesis of Johannes Kinder at TU Darmstadt. [(backup)](/assets/papers/static-analysis-of-x86-executables-johannes-kinder-2010-tu-darmstadt.pdf).
+11. [Reverse Compilation Techniques - 1994](https://yurichev.com/mirrors/DCC_decompilation_thesis.pdf): PhD Thesis of Christina Cifuentes. An amazing thesis to understand decompilation in detail. [(backup)](/assets/papers/reverse-compilation-techniques-christina-cifuentes-1994.pdf).
 
+## 2. Reversing, Malware Analysis, Memory Forensics, Exploit Dev etc.,
 
-## 2. Reversing, Malware Analysis, Exploit dev etc.,
+### 2.1 Theses, Surveys
 
-### 2.1 Books, websites and other resources
+1. [Binary Analysis for Linux and IoT Malware - 2020](https://www.eurecom.fr/en/publication/6364). [(backup)](/assets/papers/binary-analysis-of-linux-and-iot-malware-2020-cozzi-eurecom.pdf).
+2. [Advances in Memory Forensics - 2019](https://www.eurecom.fr/en/publication/5967). [(backup)](/assets/papers/advances-in-memory-forensics-2019-fabio-pagani-eurecom.pdf).
+3. [Advances in Modern Malware and Memory Analysis - 2015](https://www.eurecom.fr/en/publication/4686). [(backup)](/assets/papers/advances-in-modern-malware-and-memory-analysis-2015-mariano-eurecom.pdf).
+
+### 2.2 Books, websites and other resources
 
 1. [Reverse Engineering for Beginners(RE4B)](https://beginners.re/) : This book is the best if you want to get started with Reverse Engineering. Loads of examples related multiple Architectures like x86, ARM, mips, multiple Compilers - gcc, MSVC. 
 2. [challenges.re](https://challenges.re) - If you want to get started with Reverse Engineering and Binary Exploitation, this website is the best way to start!
 
 ## 3. TPM, Firmware, BIOS, UEFI, BootLoaders etc.,
 
-Here are a few interesting resources which explore the Pre-OS state of a box.
+### 3.1 Theses, Surveys
+
+1. [Towards System-wide Dynamic Analysis of Embedded Systems - 2020](https://www.eurecom.fr/en/publication/6284). [(backup)](/assets/papers/towards-system-wide-security-analysis-of-embedded-systems-2020-nassim-eurecom.pdf).
+2. [Dynamic Binary Firmware Analysis - Challenges and Solutions - 2019](https://www.eurecom.fr/en/publication/5969). [(backup)](/assets/papers/dynamic-binary-firmware-analysis-challenges-and-solutions-2019-marius-muench-eurecom.pdf).
+3. [Large Scale Security Analysis of Embedded Devices' Firmware - 2015](https://www.eurecom.fr/en/publication/4685). [(backup)](/assets/papers/large-scale-security-analysis-of-embedded-devices-firmware-2015-andrei-costin-eurecom.pdf).
+4. [Development of novel Dynamic Binary Analysis techniques for Security Analysis of Embedded Devices - 2015](). [(backup)](/assets/papers/dev-of-novel-dynamic-binary-analysis-techniques-for-the-security-analysis-of-embedded-devices-2015-jonas-eurecom.pdf).
+
+### 3.2 Books and other resources
 
 1. UEFI
 	1. [UEFI-EDK2 Training](https://github.com/tianocore-training/Tianocore_Training_Contents/wiki): In-depth training on UEFI. Best way to get started with UEFI.
@@ -69,7 +80,6 @@ Here are a few interesting resources which explore the Pre-OS state of a box.
 5. Firmware, BIOS samples
 	1. [Dell downloads](https://www.dell.com/support/home/en-in?app=drivers): Dell publishes System BIOS for a variety of its products. Gold Mine
 	2. [HP software downloads](https://support.hp.com/in-en/drivers): Firmware for a bunch of HP products can be downloaded from here.
-
 
 ## 4. Crypto, Math
 
