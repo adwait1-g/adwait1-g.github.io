@@ -11,6 +11,7 @@ Some resources I found interesting. Actively updated.
 # 1.1 Theses, Surveys
 
 1. [Robust Low-Overhead Binary Rewriting: Design, Extensibility and Customizability - 2021](https://drum.lib.umd.edu/handle/1903/27241). [(backup)](/assets/papers/robust-low-overhead-binary-rewriting-design-extensibility-and-customizability-2021-university-of-maryland.pdf).
+2. [Dynamic Binary Lifting and Recompilation - 2020](https://escholarship.org/uc/item/4gd0b9ht). [(backup)](dynamic-binary-lifting-and-recompilation-2020-anil-uci.pdf).
 2. [Scalable Validation of Binary Lifters - 2020](https://www.ideals.illinois.edu/handle/2142/107968). [(backup)](/assets/papers/scalable-validation-of-binary-lifters-2020-sandeep-dasgupta-uiuc.pdf)
 3. [Increasing the Performance of Symbolic Execution by compiling Symbolic Handling into Binaries - 2020](https://www.eurecom.fr/en/publication/6331). [(backup)](/assets/papers/increasing-the-performance-of-symbolic-execution-by-compiling-symbolic-handling-into-binaries-2020-poeplau-eurecom.pdf).
 4. [From Hack to Elaborate Technique - A Survey on Binary Rewriting - 2019](https://doi.org/10.1145/3316415). [(backup)](/assets/papers/from-hack-to-elaborate-technique-a-survey-on-binary-rewriting-june-2019.pdf).
