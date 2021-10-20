@@ -3,6 +3,8 @@ layout: page
 title: All posts
 ---
 
+54 -- 2021, Oct 20: [Workshop on BOF and a variety of related exploits](https://github.com/adwait1-G/bof-and-exploits)
+<br/>
 53 -- 2021, June 22: [Statelessness - Rootcause of many Security Vulnerabilities](/general/2021/06/19/statelessness-a-rootcause-for-security-vulnerabilities.html)
 <br/>
 52 -- 2021, May 09: [Sigreturn Oriented Programming - An Introduction](/reverse/engineering/and/binary/exploitation/series/2021/05/09/sigreturn-oriented-programming.html)
