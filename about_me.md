@@ -18,8 +18,3 @@ All the opinions expressed here is my own and does not represent my employer or 
 2. I love playing CTFs. My college team is [ReasonablySuspiciousActivity](https://ctftime.org/team/62190). Now defunct :(
 3. [Github](https://github.com/adwait1-g)
 4. [LinkedIn](https://linkedin.com/in/adwaitgautham1998)
-
-# Some personal stuff I would like to share
-
-1. [I am not an Imposter!](/about me/2019/10/03/i-am-not-an-imposter.html): Imposter Syndrome and how I handled it.
-2. [Bullshiting Myself](/about/me/2020/02/23/bullshiting-myself.html): Some learnings in my final semester.
