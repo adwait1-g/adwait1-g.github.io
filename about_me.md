@@ -12,5 +12,5 @@ Prior to my professional experience, I graduated from National Institute of Tech
 
 I am at the moment quite interested in Product Management, Consulting and Strategy. This is what I am pursuing at the moment, and I have revamped my website accordingly. I'll be writing about the business side of things for some time now. In case you want to checkout the old contents of the website, which is full blown technical content on various niche topics of Cybersecurity, you can take a look [here](/archive/).
 
-Cheers,
+Cheers,    
 Adwaith
