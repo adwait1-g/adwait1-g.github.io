@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: agautham's spce
+title: agautham's space
 description: >- # this means to ignore newlines until "baseurl:"
   Hello, Friend! This is the place where I document my readings, my research, my ramblings on random subjects. These days, I am into the business side of things, particularly Product Management and Consulting/Strategy and a bit of others. So if you are into it, you might find something interesting here.
 baseurl: "/" # the subpath of your site, e.g. /blog
