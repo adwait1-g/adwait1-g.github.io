@@ -6,15 +6,11 @@ permalink: /about_me/
 
 Hello everyone!
 
-I am Adwaith Gautham. I am a software engineer at Cisco Systems, Bangalore. I am part of the Cisco's MIG(Mass-Scale Infrastructure Group) security team. I did my BTech in Computer Science and Engineering from National Institute of Technology Karnataka, batch of 2020.
+I am Adwaith. I am currently pursuing a dual-degree MBA with a Post-Graduate Diploma in Management(PGDM) from Management Development Institute(MDI), Gurgaon and an Master in Management(MiM) from ESCP Business School, Europe. I previously worked for Cisco Systems, Bengaluru as a Software Engineer for about 4 years. I was part of the Router Security team(XR Security) at Cisco. My role was mainly focused on Research, Design and Development of Network Security protocols and other facets of Router Security. As part of the role, I have contributed to R&D, D&D of multiple projects that have improved the overall security posture of our products.
 
-Got introduced to Systems security in my first year of college through a workshop conducted by my seniors. Have been fascinated about it ever since.
+Prior to my professional experience, I graduated from National Institute of Technology Karnataka(NITK) with a Bachelor of Technology from Computer Science and Engineering. During my undergrad, I headed the Systems and Security Research Group, headed the Computer Science committee of Engineer, our annual technology fest along with heading the Marketing committee of the cultural club at NITK for an year.
 
-I explored offensive security to start with - vulnerabilities, exploit methods, binary analysis. Currently, I am exploring stuff related to Pre-OS state - BIOS, UEFI, Firmware, Firmware security and analysis, Reversing firmware etc., Apart from this, I have also spent some time understanding TPM, concept of Root-of-Trust, Formal logic and Solvers.
+I am at the moment quite interested in Product Management, Consulting and Strategy. This is what I am pursuing at the moment, and I have revamped my website accordingly. I'll be writing about the business side of things for some time now. In case you want to checkout the old contents of the website, which is full blown technical content on various niche topics of Cybersecurity, you can take a look [here](/archive/).
 
-All the opinions expressed here is my own and does not represent my employer or anyone else.
-
-1. [My Resume](/assets/about_me/Adwaith-V-Gautham-resume.pdf)
-2. I love playing CTFs. My college team is [ReasonablySuspiciousActivity](https://ctftime.org/team/62190). Now defunct :(
-3. [Github](https://github.com/adwait1-g)
-4. [LinkedIn](https://linkedin.com/in/adwaitgautham1998)
+Cheers,
+Adwaith
