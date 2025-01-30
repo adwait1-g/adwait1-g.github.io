@@ -4,6 +4,8 @@ title: About Me
 permalink: /about_me/
 ---
 
+![Adwaith's Photo](/Adwaith-Venkatesh-Gautham-photo.jpg/)
+
 Hallo!
 
 I am Adwaith. I am a business student at the ESCP Business School, Europe. I am part of the PGDM-IB programme at the Management Development Institute, Gurgaon, India. At the moment, a few fields that interest me are Operations Management, Logistics, Supply Chain Management, Aviation & Airport Management and Finance. I am interested/intend to understand and solve interesting business problems in these fields using Operations Research, Quantitative Methods, Machine Learning.
