@@ -4,7 +4,7 @@ comments: false
 order: 1
 ---
 
-Hello friend, welcome to my space!
+Hello! Welcome to my website!
 
-[About me](/about_me/)    
-[Archive](/archive/)
+Cheers!   
+Adwaith
