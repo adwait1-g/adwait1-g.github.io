@@ -4,7 +4,7 @@ title: About Me
 permalink: /about_me/
 ---
 
-![Adwaith's Photo](/Adwaith-Venkatesh-Gautham-photo.jpg/)
+![Adwaith's Photo](/Adwaith-Venkatesh-Gautham-photo.jpg/ = 120x100)
 
 Hallo!
 
