@@ -18,7 +18,7 @@ This is one field that I find absolutely fascinating these days. In its operatio
 
 ## 1.2 Research Papers
 
-Not even close to reading a research paper on aviation. Miles to cover before I fill anything here.
+1. [A Survey on Reinforcement Learning in Aviation Applications](https://arxiv.org/abs/2211.02147): November 2022.
 
 ## 1.3 Interesting Links
 
@@ -34,9 +34,24 @@ Not even close to reading a research paper on aviation. Miles to cover before I 
 2. [Supply Chain Management: Strategy, Planning and Operation by Chopra and Meindl](https://www.researchgate.net/profile/Abdelkader-Bouaziz/post/Can_I_request_if_someone_can_help_me_with_pearson_instructor_manual_for_Supply_chain_management_strategy_planning_and_operation_2016/attachment/5f09e009ceab7c0001366546/AS%253A912140693143553%25401594482696611/download/Supply%2BChain%2BManagement%2BStrategy%252C%2BPlanning%252C%2Band%2BOperation.pdf): A detailed introduction to Supply Chain management and logistics. This is the book my Operations professor recommended when I asked him what I had to do in order to deep dive.
 3. [DHL: From Startup to Global Upstart](https://www.amazon.de/-/en/DHL-Startup-Upstart-Po-Chung/dp/1501515926): DHL is a well-known logistics company and this book is about its story. DHL is a California based start-up which is acquired by Deutsche Post in the early 2000s, then it goes on to become the world leader in logistics service. Its not really a technical book, but if one is fascinated by Logistics, they might end up liking it. Book is available on libgen.
 
+## 2.2 Research Papers
+
+1. [On the use of machine learning in supply chain management: A systematic review](https://academic.oup.com/imaman/article/36/1/21/7849817#496853006): Published in October 2024, has reviewed research from 2000-2023. This is my starting point to understand what is going on with ML and Supply Chain Management - what ML methods are used to solve what kind of Supply Chain problems.
+2. An end-to-end Approach to Reinforcement Learning in Transport Logistics](https://ris.utwente.nl/ws/portalfiles/portal/328039267/An_end-to-end_Approach_to_a_Reinforcement_Learning_in_Transport_Logistics.pdf)
+3. [A review of reinforcement learning algorithms and applications in supply chain management](https://www.tandfonline.com/doi/full/10.1080/00207543.2022.2140221): by the MIT Scale Network
+4. [A literature review on machine learning in supply chain management](https://www.econstor.eu/bitstream/10419/209380/1/hicl-2019-27-413.pdf)
+5. [Some Studies in Machine Learning Using the Game of Checkers, by Prof. Arthur L. Samuel](https://people.csail.mit.edu/brooks/idocs/Samuel.pdf): One of first papers on Reinforcement Learning
+6. [Reinforcement learning for logistics and supply chain management: Methodologies, state of the art, and future opportunities](https://www.sciencedirect.com/science/article/abs/pii/S136655452200103X)
+
+## 2.3 Interesting Links
+
+1. [Reinforcement Learning for Logistics, by Microsoft](https://www.microsoft.com/en-us/research/project/reinforcement-learning-for-logistics/)
+2. [Reinforcement Learning to manage the Logistics and resources of a warehouse](https://github.com/andresbecker/RL_for_logistics): A Github Project
+3. [MIT Center for Transportation and Logistics](https://ctl.mit.edu/pub?keys=&field_publication_date_value%5Bmin%5D=&field_publication_date_value%5Bmax%5D=): The MIT Scale Network
+
 # 3. Operations Research, Decision Sciences, Quantitative Methods
 
-When it comes to Quantitative Methods, I am purely a wanna-be who knows almost nothing. Whatever I know (Graph Theory, Optimization, Transportation Problems etc.,) are all very rusty in my mind and are of little use. And today, these fields include the behemoth that is AI-ML which I have no clue about. Partly why I took up a Big Data Analytics specialization at my B-School. Anyway, this will contain the most number of books/papers(this is how I bookmark them), but I have mostly not read it or hardly read it simply because I can't understand.
+When it comes to OR/DS/QM, you can say I am a wanna-be. The stuff I had learnt (Graph Theory, Optimization, Transportation problems etc.,) are all very pertinent to the field but its all very rusty in my mind given it was a while ago I studied them. And today AI-ML is also included here which I have no clue about. So I plan to brush up on the old stuff I had learnt and learn atleast the simple stuff in AI-ML. Partly why I took up a Big Data Analytics specialization.
 
 ## 3.1 Books
 
@@ -46,22 +61,4 @@ When it comes to Quantitative Methods, I am purely a wanna-be who knows almost n
 4. [Basic Queuing Theory](https://yzr95924.github.io/pdf/book/Basic-Queueing-Theory.pdf)
 5. [Machine Learning - A Probabilistic Perspective, by Kevin P. Murphy](https://raw.githubusercontent.com/kerasking/book-1/master/ML%20Machine%20Learning-A%20Probabilistic%20Perspective.pdf): A book my professor suggested for better understanding ML
 6. [Grokking Deep Reinforcement Learning, by Miguel Morales](https://www.manning.com/books/grokking-deep-reinforcement-learning): Honestly the only book in this section I have braved to open and understand first few chapters well. Even though I don't have a mathematical understanding of (D)RL as of now, I have a hunch that it is well-suited for many problems in Supply Chain Management and overall the field of Operations in general. Which is why I want to get my understanding right when it comes to (D)RL. Book available on libgen.
-7. [Reinforcement Learning: An Introduction, by Robert S. Sutton and Andrew G. Barto](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf): I believe these are people who defined RL and shaped it up. It'll take some time and acumen to read this book for me.
-
-## 3.2 Research Papers
-
-At this point, I am not looking at "pure" OR/DS/QM papers at all. They are all insanely mathematical and with the meagre math I know, I won't be able to grasp it, and as a professor rather honestly told, its late to get into that path. Instead, my interest lies in using some of these techniques to solve management problems - How Linear Programming and Optimization is used in every other problem in Operations or how Machine Learning is used to solve problems in Supply Chain Management. So I am interested in understanding the methods present today, interested in the various business problems at hand and see if they can be solved in any manner.
-
-1. [On the use of machine learning in supply chain management: A systematic review](https://academic.oup.com/imaman/article/36/1/21/7849817#496853006): Published in October 2024, has reviewed research from 2000-2023. This is my starting point to understand what is going on with ML and Supply Chain Management - what ML methods are used to solve what kind of Supply Chain problems.
-2. [A Survey on Reinforcement Learning in Aviation Applications](https://arxiv.org/abs/2211.02147): November 2022.
-4. An end-to-end Approach to Reinforcement Learning in Transport Logistics](https://ris.utwente.nl/ws/portalfiles/portal/328039267/An_end-to-end_Approach_to_a_Reinforcement_Learning_in_Transport_Logistics.pdf)
-5. [A review of reinforcement learning algorithms and applications in supply chain management](https://www.tandfonline.com/doi/full/10.1080/00207543.2022.2140221): by the MIT Scale Network
-6. [A literature review on machine learning in supply chain management](https://www.econstor.eu/bitstream/10419/209380/1/hicl-2019-27-413.pdf)
-7. [Some Studies in Machine Learning Using the Game of Checkers, by Prof. Arthur L. Samuel](https://people.csail.mit.edu/brooks/idocs/Samuel.pdf): One of first papers on Reinforcement Learning
-8. [Reinforcement learning for logistics and supply chain management: Methodologies, state of the art, and future opportunities](https://www.sciencedirect.com/science/article/abs/pii/S136655452200103X)
-
-## 3.3 Interesting Links
-
-1. [Reinforcement Learning for Logistics, by Microsoft](https://www.microsoft.com/en-us/research/project/reinforcement-learning-for-logistics/)
-2. [Reinforcement Learning to manage the Logistics and resources of a warehouse](https://github.com/andresbecker/RL_for_logistics): A Github Project
-3. [MIT Center for Transportation and Logistics](https://ctl.mit.edu/pub?keys=&field_publication_date_value%5Bmin%5D=&field_publication_date_value%5Bmax%5D=): The MIT Scale Network
+7. [Reinforcement Learning: An Introduction, by Robert S. Sutton and Andrew G. Barto](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
