@@ -42,6 +42,7 @@ This is one field that I find absolutely fascinating these days. In its operatio
 4. [A literature review on machine learning in supply chain management](https://www.econstor.eu/bitstream/10419/209380/1/hicl-2019-27-413.pdf)
 5. [Some Studies in Machine Learning Using the Game of Checkers, by Prof. Arthur L. Samuel](https://people.csail.mit.edu/brooks/idocs/Samuel.pdf): One of first papers on Reinforcement Learning
 6. [Reinforcement learning for logistics and supply chain management: Methodologies, state of the art, and future opportunities](https://www.sciencedirect.com/science/article/abs/pii/S136655452200103X)
+7. [The adoption of reinforcement learning in the logistics industry: A case study at a large international retailer](https://essay.utwente.nl/80122/1/Gemmink_MA_EEMCS1.pdf): A Master's thesis on the topic.
 
 # 2.3 Interesting Links
 
