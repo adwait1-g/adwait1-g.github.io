@@ -6,15 +6,15 @@ permalink: /archive/
 
 Hello!
 
-I started this blog in the summer of 2018, just before my third year of engineering. I had no internship, I decided to stay at home for no particular reason, I was reading a bunch of stuff and I wanted to showcase it to the world in one way or the other, an starting a blog seemed like the best option. So I started a blog on computer systems and security. I named it "pwnthenet" - a name overflowing with hacker jargon, pwn simply own, it means "owning the network" - something hackers do. I was very excited and passionate about this. This was a huge feat for me. If I remember correctly, my dad was first skeptical about this and the possible outcomes of this blog but a couple of months in, he was very happy to see me being so fascinated about something. This was an extremely active space. Personal experiments and research, research paper summaries and implementations, CTF challenges' writeups, group projects and even a half-complete book on Binary Exploitation and more - it has all of it. This blog is one of the reasons for me to get an internship at Cisco Systems. I remember one of my interviews fully based on my interest in computer security. In 2020, I joined Cisco System's Router Security team as a software engineer and worked on some really interesting stuff - both from technology and business point of view. I owe me getting the internship and then a pre-placement offer there largely to this blog and whatever it is motivated me keep learning and writing this blog. Then I got immersed in work. I believe I wrote my last proper post in the end of 2021, a couple of months into work. I tried to maintain this blog until early 2022, but I couldn't manage. So I left it untouched. I lost the ownership of the domain. Almost forgot about the blog.
+A bit of history of this blog before getting into the archive.
 
-Its 2024-25, I am back as a student, oddly pursuing an MBA and would mostly pursue a career in management. So I decided to bring this blog back to life. A lot is happening and I plan to blog about it.
+I started this blog in the summer of 2018, just before my third year of engineering. I had no internship, I decided to stay at home for no particular reason, I was reading a bunch of stuff and I wanted to showcase it to the world in one way or the other, an starting a blog seemed like the best option. So I started a blog on computer systems and security. I named it "pwnthenet" - a name overflowing with hacker jargon, pwn simply own, it means "owning the network" - something hackers do. I was very excited and passionate about this. This was a huge feat for me. If I remember correctly, my dad was first skeptical about this and the possible outcomes of this blog but a couple of months in, he was very happy to see me being so fascinated about something. This was an extremely active space. Personal experiments and research, research paper summaries and implementations, CTF challenges' writeups, group projects and even a half-complete book on Binary Exploitation and more - it has all of it. This blog is one of the reasons for me to get an internship at Cisco Systems. I remember one of my interviews fully based on my interest in computer security. In 2020, I joined Cisco System's Router Security team as a software engineer and worked on some really interesting stuff - both from technology and business point of view. I owe me getting the internship and then a pre-placement offer there largely to this blog and whatever it is motivated me keep learning and writing this blog. Then I got immersed in work. I believe I wrote my last proper post in the end of 2021, a year and a half into work. I tried to maintain this blog until early 2022, but I couldn't manage. So I left it untouched. I lost the ownership of the domain. Almost forgot about the blog.
 
-I do not wish to remove the old content just because I changed paths (you never know, I might come back). The old shit I did is just too important to erase from this website. Apart from my personal feelings, I do get DMs from computer security enthusiasts saying my blog was a good starting point asking for more resources. I am proud of what I have built here, however small it might be, it is helping interested people. So I thought the best thing to do is to archive it.
+Its 2024-25, I am back as a student, I am pursuing an MBA at the moment. So I decided to bring this blog back to life. A lot is happening and I plan to blog about it.
 
-The archive is not really organized, I have essentially dumped everything in one place. But you will find ALL the stuff here.
+I have tried my best to organize all the old stuff in one place.
 
-# About Me
+# About Me (old)
 
 I am Adwaith Gautham. I am a software engineer at Cisco Systems, Bangalore. I am part of the Cisco's MIG(Mass-Scale Infrastructure Group) security team. I did my BTech in Computer Science and Engineering from National Institute of Technology Karnataka, batch of 2020. Got introduced to Systems security in my first year of college through a workshop conducted by my seniors. Have been fascinated about it ever since.
 
@@ -27,9 +27,9 @@ All the opinions expressed here is my own and does not represent my employer or 
 3. [Github](https://github.com/adwait1-g)
 4. [LinkedIn](https://linkedin.com/in/adwaithgautham)
 
-# Index Page
+# Index Page (old)
 
-1. [List of all posts](/2020/11/22/list-of-all-posts.html)
+1. [List of all posts](/2020/11/22/list-of-all-posts.html): This list is something I am quite proud of.
 2. [Reverse Engineering and Binary Exploitation series](/reverse/engineering/and/binary/exploitation/series/2019/03/25/reverse-engineering-and-binary-exploitation-series-mainpage.html): My attempt to introduce the reader to OS security, x86 assembly programming, ELF file format, Buffer-Overflow vulnerability, writing Shellcode, understanding ASLR-W^X-StackCanary, Return-to-Libc, ROP, SROP etc., Most of these posts are hands-on in nature. They involve writing sample vulnerable programs, understanding the problem, understanding a particular exploit method and constructing the exploit by hand.
 3. [Personal projects](2021/07/18/personal-projects.html): Documentation of malware analysis, tools to understand certain concept better.
 4. [Systems Security papers, summaries and posts](/2021/07/18/systems-security.html): Has some stuff I have done related to Systems security.
@@ -38,7 +38,7 @@ All the opinions expressed here is my own and does not represent my employer or 
 6. [Packet Overflow!](/packet/overflow/2019/03/25/packet-overflow-mainpage.html): An introduction to Computer Networks, packets, wireshark, network programming - hands-on style.
 7. [Setting up a Blog using Jekyll](/blogging/2019/03/25/setting-up-a-blog-using-jekyll-mainpage.html): Steps to setup a simple Github Pages site like this one.
 
-# Awesome Resources
+# Awesome Resources (old)
 
 Some resources I found interesting. Actively updated.
 
