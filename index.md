@@ -8,7 +8,7 @@ Hello there!
 
 I am Adwaith, welcome to my space. I am a first year management student currently studying at ESCP Business School in Berlin. I am broadly into Information Systems and Operations Management, along with mathematical modelling and optimization. I wrote about niche cybersecurity stuff earlier, you can find them [here](/archive/). You can find more about me [here](/about-me/).
 
-## 2. Interest Areas
+## 1. Interest Areas
 
 I am in the exploration phase, and interested in multiple areas.
 
@@ -33,7 +33,7 @@ Apart from these, the aviation and energy industries fascinate me, especially gi
 
 I intend to write about all these things here in near future.
 
-## 3. Important Links
+## 2. Important Links
 
 You can find me on different social media.
 
@@ -41,15 +41,15 @@ You can find me on different social media.
 2. [Twitter](https://twitter.com/adwaithgautham/)
 3. [GitHub](https://github.com/adwait1-g)
 
-## 4. Latest Posts
+## 3. Latest Posts
 
 56 -- 2025, Mar 01: [On the spring semester with AI & Big Data specialization](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html)
 <br/>
 55 -- 2025, Feb 28: [On the MDI PGDM-IB Program & details about the exchange year](/mdi/2025/02/28/on-the-mdi-pgdm-ib-program.html)       
 
-## 5. What is in it for you?
+## 4. What is in it for you?
 
-Well, if you find any of these or some of the archived stuff interesting, then you might want to keep an eye on this space.
+Well, if you find any of these or some of the archived stuff interesting, then you might want to keep an eye on this space. Or if you want to discuss something, feel free to ping me on any of the above social media platforms.
 
 Cheers,   
 Adwaith
