@@ -3,6 +3,8 @@ layout: page
 title: All posts
 ---
 
+56 -- 2025, Mar 01: [On the spring semester with AI & Big Data specialization](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html)
+<br/>
 55 -- 2025, Feb 28: [On the MDI PGDM-IB Program & details about the exchange year](/mdi/2025/02/28/on-the-mdi-pgdm-ib-program.html)       
 
 ### A break of close to three and a half years ###
