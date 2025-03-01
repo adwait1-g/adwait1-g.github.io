@@ -213,9 +213,11 @@ You will have to find an internship in Germany, for April to August. Post that, 
 
 # 8. Conclusion
 
-Alright, so this is all I wanted to cover. I will update in case something comes to my mind. Basically all the steps we went through, potential pitfalls and problems which I badly want my junior batches to avoid, and some info on how on-boarding in Berlin. Once you are on-boarded, your home, bank account, SIM etc., are set, you are good to go. I personally felt that if I had known the entire process like this, I would have done things better. So hopefully the next incoming batches gain something from this. I intentionally didn't give just a timeline and list of events that happen (that would be a simple one A4-page article), but I wanted to give more info, something which we had to research on our own, something we got to know at a later point of time. It helps to know all these at the beginning.
+Alright, so this is all I wanted to cover. Intention is that students who take up the IB program should know before hand what the end-to-end processes look like so they can be better prepared, something that did not happen in my case. There can be variations in these processes every year, but this will probably be the general skeleton. I didn't want to give just the timelines and list of events, I wanted to describe it how it happens. I feel it helps to know all this in the very beginning. I wanted to add all the relevant documents as well, necessary at every process, I will update the article with that in some time.
 
-This is hopefully the first of many articles. I want to write in detail about ESCP, my specialization, departments and professors here and so on.
+As of 28 Feb 2025, I am just 1.5 months into my European journey. I have a lot of time left here. This article will be updated and I intend to cover all the relevant details. Goal is to let the future incoming batches before hand what they will be doing from exchange year point of view.
+
+I will be writing a couple of more articles on the lines of this one, one on specializations at ESCP, a deep-dive into my spec and overall life here.
 
 Until then, take care.
 
