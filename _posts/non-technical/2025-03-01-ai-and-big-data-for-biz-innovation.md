@@ -62,11 +62,15 @@ This is the perfect course for people who want to be product managers, who want 
 
 Evalution has a group assignment and an individual assignment, there are no examinations.
 
-## 2. On the core courses
+## 2. Schedule
+
+This spec, that too this year was scheduled in an weird manner I think. Most of the other specializations have classes on 3-4 days a week, and that goes on till 10/15 April 2025. But ours is not like that. The AI & ML and Big Data for Biz Intelligence courses got over (30 h + 30 h) by 08 Feb 2025. We had the final examination for AI & ML on 10 Feb 2025 and for Big Data course on 17 Feb 2025. Our spec was pretty hectic until 23 Feb 2025 - we had classes 6 days a week. But post that, now (it is 01 March 2025) we hardly have any classes. So the sessions distribution is very uneven unlike other specs where its evenly distributed over time. This shouldn't really matter in any decision making, but thought of sharing for the sake of completeness.
+
+## 3. On the core courses
 
 Each core course has 8 2-hour sessions. Well, there is nothing much to share about these. All three are interesting courses, the professors are quite interactive and make the classes interesting. The Advanced Management course just has a group and an individual assignment and no exams, whereas Sustainability and Business Law have a group assignment and a closed book exam.
 
-## 3. Conclusion
+## 4. Conclusion
 
 This is about the AI and Big Data specialization, this is how a typical spec is structured. This specialization is for folks who are interested in product management,  Information Systems/Enterprise Resource Planning, Business Processes Management, Operations Management, Business Intelligence/BI and Analytics, Data Science  - it is essentially a tech-based management specialization. I have a background in computer science and I am interested in processes, optimization and analytics - which is why I ended up taking this.
 
@@ -77,7 +81,7 @@ Feel free to contact me in case you have any more questions about this spec or a
 Cheers,   
 Adwaith
 
-## 4. References
+## 5. References
 
 1. AI and Big Data spec official page: https://ent.escpeurope.eu/Syllabus/SylView/view/11767361/2   
 2. Prof. Markus Bick: https://www.linkedin.com/in/lehmanndavid
