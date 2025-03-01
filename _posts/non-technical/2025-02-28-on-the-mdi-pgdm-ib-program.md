@@ -1,6 +1,6 @@
 ---
 title: On the MDI PGDM-IB Program - Details about the exchange year
-categories: non-technical
+categories: mdi
 comments: true
 layout: post
 ---
