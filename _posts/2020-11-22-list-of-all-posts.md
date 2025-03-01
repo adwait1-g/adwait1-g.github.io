@@ -3,7 +3,7 @@ layout: page
 title: All posts
 ---
 
-55 -- 2025, Feb 28: [On the MDI PGDM-IB Program & details about the exchange year](/non-technical/2025/02/28/on-the-mdi-pgdm-ib-program.html)       
+55 -- 2025, Feb 28: [On the MDI PGDM-IB Program & details about the exchange year](/mdi/2025/02/28/on-the-mdi-pgdm-ib-program.html)       
 
 ### A break of close to three and a half years ###
 
