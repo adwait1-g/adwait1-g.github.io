@@ -2,13 +2,9 @@
 layout: page
 title: All posts
 ---
-<br/>
-55 -- 2025, Feb 28: [On the MDI PGDM-IB Program & details about the exchange year](/non-technical/2025/02/28/on-the-mdi-pgdm-ib-program.html)     
-<br/>
-<br/>
-#### A break of close to three and a half years
-<br/>
-<br/>
+
+55 -- 2025, Feb 28: [On the MDI PGDM-IB Program & details about the exchange year](/non-technical/2025/02/28/on-the-mdi-pgdm-ib-program.html)       
+
 54 -- 2021, Oct 20: [Workshop on BOF and a variety of related exploits](https://github.com/adwait1-G/bof-and-exploits)
 <br/>
 53 -- 2021, June 22: [Statelessness - Rootcause of many Security Vulnerabilities](/general/2021/06/19/statelessness-a-rootcause-for-security-vulnerabilities.html)
