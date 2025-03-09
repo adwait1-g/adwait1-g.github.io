@@ -218,6 +218,8 @@ This is a vague article on how the Digital Internet works, and what characterist
 
 The points in sub-section 3.2 should tell you what particularly interests me. I would like to focus on the functionality aspects of PI first and then go to the revenue and business model aspects of it. So focus would be on basic structure of PI, sorting out transportation and routing in PI, then thinking about standardized vendor associations in PI, then comes a bunch of capacity & forecasting problems, hub management. Later comes several interesting problems of revenue/business model/adaptability of PI, and ofcourse a number of other problems I have not listed here or I have no idea about.
 
+I find it poetic that an article on a subject like PI is my first technical post as a management student. The transition from the engineer in me to management student in me could not have been smoother.
+
 So in the articles to come, I will attempt to write more about transportation problems in logistics, routing protocols, and related work happening in PI.
 
 Thanks for reading.
