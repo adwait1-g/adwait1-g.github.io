@@ -63,7 +63,7 @@ So far, we have seen how traffic of a particular region is aggregated. It should
 
 Each aggregation router is further physically connected to a number of **Core Routers**[[11]](https://www.cisco.com/c/en/us/products/routers/product-listing.html#ServiceProviderEdgeRouters). These Core Routers are massive in size and can handle massive amounts of data (at the order of Pbps/Petabits per second). I have personally worked with one of these platforms and these are absolute beasts when it comes to network processing. Now comes the interesting part. There is a huge inter-network of core routers which form the **backbone** of the internet. Take a look at the below diagram.
 
-![core-router-network](./../../assets/physical-internet/core-router-network.webp)
+![core-router-network](/assets/physical-internet/core-router-network.webp)
 
 The image has jut 4 core routers for the sake of demonstration. In reality, there are tens of thousands of core routers, spread across geographies that form the backbone of the Digital Internet. It won't be wrong if I say the backbone (or the inter-network of core routers) is where true routing happens and packets travel massive geographies, moving from one core router to the next based on the routes made up by the routing algorithms.
 
@@ -81,7 +81,7 @@ Atleast as a thought exercise, this analogy is interesting given the sheer numbe
 
 Until now, we discussed only in terms of devices and hierarchy of devices. But there is another way of seeing it - through the hierarchy of Internet Service Providers (ISPs). Consider the following image:
 
-![isp-hierarchy](../../assets/physical-internet/isp-hierarchy.png)
+![isp-hierarchy](/assets/physical-internet/isp-hierarchy.png)
 Figure 2
 
 This hierarchy is something many of us have witnessed. There are a number of ISPs who offer end customers with home/office broadband, wired internet connections, optical fiber connections apart from the big players, and they are taking care of only a part of the entire system. In India, the big players/National ISPs today are Reliance Jio, Airtel and BSNL. There are a ton of regional and local ISPs. Many of these regional/local ISPs are whole subsidiaries of National ISPs (just some trivia).
@@ -120,7 +120,7 @@ From a physical architecture perspective, Internet is simply a huge inter-networ
 
 > Imagine an AS as being like a town's post office. Mail goes from post office to post office until it reaches the right town, and that town's post office will then deliver the mail within that town. Similarly, data packets cross the Internet by hopping from AS to AS until they reach the AS that contains their destination Internet Protocol (IP) address. Routers within that AS send the packet to the IP address.
 
-![internet as a network of ASs](../../assets/physical-internet/internet-as-network-of-as.png)
+![internet as a network of ASs](/assets/physical-internet/internet-as-network-of-as.png)
 
 Our previous view was that the data packets travel through a number of routers from source to destination. While that statement still holds good, it can also be said that a packet starts at an autonomous system (to which the source machine belongs to), it travels through a number of autonomous systems and finally reaches the autonomous system that has the destination machine. Each of these autonomous systems is owned and managed by various organizations - there is an element of autonomy inside an autonomous system (hence the name) and an element of collaboration among orgs where these ASs are inter-connected. From routing point of view, each of these ASs can have their own routing policy (their own routing protocols) but there are standard protocols which **glue** all these ASs together, which forms the Internet.
 
@@ -146,7 +146,7 @@ Now, your server is physically located in Bengaluru, India. You talk to your fri
 
 At a logical level, your friend's machine is part of an Autonomous System in Berlin (possibly owned by a local/Tier-3 ISP). The packet will probably be **punted** to an regional/Tier-2 ISP AS, then to a National/Tier-1 ISP AS (someone like Deutsche Telekom). One of these Tier-1 ISPs would own the submarine cables, the packet will be routed to Tier-1 ASs. The packet reaches a Tier-1 AS here in India, then the packet trickles down through various ASs and finally the autonomous system which contains the web-server - It can be seen as a number of AS-hops - BGP is what makes this happen - it ensures the shortest/highly efficient route is taken. The closest I could get on the internet is the following:
 
-![as-hops-ber-to-blr](../../assets/physical-internet/as-hops.jpg)
+![as-hops-ber-to-blr](/assets/physical-internet/as-hops.jpg)
 
 This is the image of AS-hops from somewhere in UK to a website in Bengaluru. I used an online version of traceroute[[23]](https://traceroute.to/) to generate it. THe long hops across continents happen because of the submarine cables. I am guessing the hop seen from UK to somewhere in USA is mostly because a hop was done to an AS managed by a USA company(?). I will be ignoring this for now and continuing. It has had a couple of AS-hops inside UK, then the packet reaches Hong Kong via the submarine cables. From there to Singapore and finally to Maharashtra, India. From here, it it has a couple of AS-hops and finally to the website/target AS. It is seen that it enters India through an AS managed by Airtel (one of India's Tier-1 ISPs), then to a BSNL AS (another Indian Tier-1 ISP) and finally to the web-server.
 
