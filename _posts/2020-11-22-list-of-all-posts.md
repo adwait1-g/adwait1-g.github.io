@@ -3,7 +3,7 @@ layout: page
 title: All posts
 ---
 
-57 -- 2025, Mar 09: [Understanding PI Part 1 - A Peak into Digital Internet Architecture](/pi/2025/03/09/understanding-pi-part-1-a-peak-into-di-architecture.md)
+57 -- 2025, Mar 09: [Understanding PI Part 1 - A Peak into Digital Internet Architecture](/pi/2025/03/09/understanding-pi-part1-a-peak-into-digital-internet-architecture.html)
 <br/>
 56 -- 2025, Mar 01: [On the spring semester with AI & Big Data specialization](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html)
 <br/>
