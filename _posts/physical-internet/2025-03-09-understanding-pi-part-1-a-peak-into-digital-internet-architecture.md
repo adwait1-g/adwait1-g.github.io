@@ -1,5 +1,5 @@
 ---
-title: Physical Internet Part 1 - A Peak into Digital Internet Architecture
+title: Understanding PI Part 1 - A Peak into Digital Internet Architecture
 categories: pi
 comments: true
 layout: post
