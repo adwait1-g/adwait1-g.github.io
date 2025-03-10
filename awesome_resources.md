@@ -4,6 +4,6 @@ title: Awesome Resources
 permalink: /awesome_resources/
 ---
 
-1. [Transportation and Logistics](/ops-scm/transportation-and-logistics)
-2. [Operations Research, Management Science and Quantitative Methods](/ops-scm/ops-research-mgmt-science-quants/)
-3. [Aviation Management and Airport Operations](/ops-scm/aviation-and-airport-ops/)  
+1. [Transportation and Logistics](/ops-scm/2025-03-10-transportation-and-logistics.html/)
+2. [Operations Research, Management Science and Quantitative Methods](/ops-scm/2025-03-10-ops-research-mgmt-science-quants.html/)
+3. [Aviation Management and Airport Operations](/ops-scm/2025-03-10-aviation-and-airport-ops.html/)  
