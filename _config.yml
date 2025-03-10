@@ -34,9 +34,9 @@ header_pages:
   - awesome_resources.md
   - about_me.md
 
-permalink: /transportation-and-logistics/
-permalink: /ops-research-mgmt-science-quants/
-permalink: /aviation-and-airport-ops/
+#permalink: /transportation-and-logistics/
+#permalink: /ops-research-mgmt-science-quants/
+#permalink: /aviation-and-airport-ops/
 
 defaults: 
     values: 
