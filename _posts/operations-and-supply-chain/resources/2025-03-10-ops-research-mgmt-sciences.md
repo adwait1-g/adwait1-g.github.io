@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Operations Research, Management Science, Quantitative Methods
-permalink: /ops-research-mgmt-science-quants/
+category: ops-scm
+comments: False
 ---
 
 When it comes to OR/DS/QM, you can say I am a wanna-be. The stuff I had learnt (Graph Theory, Optimization, Transportation problems etc.,) are all very pertinent to the field but its all very rusty in my mind given it was a while ago I studied them. And today AI-ML is also included here which I have no clue about. So I plan to brush up on the old stuff I had learnt and learn atleast the simple stuff in AI-ML. Partly why I took up a Big Data Analytics specialization.
