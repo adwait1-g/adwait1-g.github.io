@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resources on Aviation Management and Airport Operations
-permalink: /ops-scm/aviation-and-airport-ops/
+permalink: /aviation-and-airport-ops/
 ---
 
 This is one field that I find absolutely fascinating these days. In its operations (be it an airline or an airport), it has every type of management problem and I think each facet of its operations is its own field of research.
