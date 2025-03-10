@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Resources on Transportation and Logistics
-permalink: /transportation-and-logistics/
+category: ops-scm
+comments: False
 ---
 
 Off-late (10 March 2025), I have been reading about and working on the concept of Physical Internet. It is an alternate paradigm of logistics network inspired from the Digital Internet. As part of that, I come across lot of interesting books, papers, articles etc., on PI and related stuff. I will be putting all of them here.
