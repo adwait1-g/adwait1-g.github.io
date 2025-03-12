@@ -6,11 +6,11 @@ order: 1
 
 Hello there!
 
-I am Adwaith, welcome to my space. I am a first year management student currently studying at ESCP Business School in Berlin. I am broadly into Information Systems, IT Management, Operations & Logistics and Management Science. Any aspect of a firm's operations is of interest to me.
+I am Adwaith, welcome to my space. I am a first year management student currently studying at ESCP Business School in Berlin.
 
-## 1. Interest Areas
+## 1. What interests me?
 
-I am in the exploration phase, and interested in multiple areas.
+Any aspect of a firm's operations is of interest to me. To be a bit more specific, the following are the fields I am exploring.
 
 1. Information Systems, IT Management and Strategy, Cyber-Risk Management, Cybersecurity in Finance. Previously, I wrote quite a bit on cybersecurity, [take a look](/cybersecurity/) if it interests you.
 2. Operations and Logistics Management
