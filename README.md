@@ -1,3 +1,3 @@
-# adwait1-g.github.io/agautham.io
+# Personal Website Repository
 
-My personal website: [https://agautham.io](agautham.io)
+Link: [https://agautham.io](https://agautham.io)
