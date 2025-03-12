@@ -30,8 +30,8 @@ plugins:
   # - jekyll-feed
 
 header_pages: 
-  - cybersecurity.md
   - management.md
+  - cybersecurity.md
   - about_me.md
 
 defaults: 
