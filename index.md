@@ -6,7 +6,7 @@ order: 1
 
 Hello there!
 
-I am Adwaith, welcome to my space. I am a first year management student currently studying at ESCP Business School in Berlin. I am broadly into Information Systems, IT Management, Operations & Logistics and Management Science.
+I am Adwaith, welcome to my space. I am a first year management student currently studying at ESCP Business School in Berlin. I am broadly into Information Systems, IT Management, Operations & Logistics and Management Science. Any aspect of a firm's operations is of interest to me.
 
 ## 1. Interest Areas
 
