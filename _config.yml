@@ -30,13 +30,9 @@ plugins:
   # - jekyll-feed
 
 header_pages: 
-  - archive.md
-  - awesome_resources.md
+  - cybersecurity.md
+  - management_sciences_and_systems.md
   - about_me.md
-
-#permalink: /transportation-and-logistics/
-#permalink: /ops-research-mgmt-science-quants/
-#permalink: /aviation-and-airport-ops/
 
 defaults: 
     values: 
