@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Awesome Resources
-permalink: /awesome_resources/
+title: On Management
+permalink: /management/
 ---
 
 1. [Transportation and Logistics](/ops-scm/2025-03-10-transportation-and-logistics.html/)
