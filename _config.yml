@@ -31,7 +31,7 @@ plugins:
 
 header_pages: 
   - cybersecurity.md
-  - management_sciences_and_systems.md
+  - management.md
   - about_me.md
 
 defaults: 
