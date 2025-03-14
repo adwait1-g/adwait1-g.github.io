@@ -9,7 +9,7 @@ Off-late (10 March 2025), I have been reading about and working on the concept o
 
 ## 1. PI, Transportation and Logistics
 
-[Link](/ops-scm/2025/03/09/physical-internet.html)
+[Link](/ops-scm/2025/03/14/physical-internet.html) to the page.
 
 ## 2. Relevant Theoretical CS (Algorithms, Graph Theory, NP-Complete problems, Approximation Algorithms etc.,)
 
