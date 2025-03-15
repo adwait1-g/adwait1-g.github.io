@@ -70,7 +70,15 @@ First and foremost, checkout the proceedings of all the International Physical I
 
 ## 3. Transportation Networks (Case Studies, Practical)
 
+**UPS**
+
 1. [UPS Optimizes Delivery Routes](https://www.semanticscholar.org/paper/UPS-Optimizes-Delivery-Routes-Holland-Levis/c09dde9eedd6073944a5576d5ba61799aae924f9): An great paper describing UPS' ORION system that was built to optimize its delivery routes.
+2. [UPS and Agentic AI](https://cdotimes.com/2025/01/06/ups-and-agentic-ai-a-case-study-in-logistics-innovation/)
+
+**DHL**
+
+1. [Innovative Integer Programming Software and Methods for
+Large-Scale Routing at DHL Supply Chain](https://courses.ie.bilkent.edu.tr/ie479/wp-content/uploads/sites/16/2024/11/Innovative-Integer-Programming-Software-and-Methods-forLarge-Scale-Routing-at-DHL-Supply-Chain.pdf)
 2. [Network Mode Optimization for DHL Supply Chain](https://courses.ie.bilkent.edu.tr/ie479/wp-content/uploads/sites/16/2022/03/Network-Mode-Optimization-for-the-DHL-Supply-Chain.pdf)
 
 ## 4. Logistics
@@ -80,6 +88,7 @@ First and foremost, checkout the proceedings of all the International Physical I
 1. [Operations Management, by Russel and Taylor](http://jtelen.free.fr/0MARINE%20bouquins/%5BRoberta_S._Russell,_Bernard_W._Taylor%5D_Operations(Bookos.org).pdf): My first book on Operations Management, an excellent introductory book. Gives a taste of the various facets of Operations (Inventory, Facility Location, Facility Design, Resource Planning, Supply Chain Management and so on).
 2. [Supply Chain Management: Strategy, Planning and Operation by Chopra and Meindl](https://www.researchgate.net/profile/Abdelkader-Bouaziz/post/Can_I_request_if_someone_can_help_me_with_pearson_instructor_manual_for_Supply_chain_management_strategy_planning_and_operation_2016/attachment/5f09e009ceab7c0001366546/AS%253A912140693143553%25401594482696611/download/Supply%2BChain%2BManagement%2BStrategy%252C%2BPlanning%252C%2Band%2BOperation.pdf): A detailed introduction to Supply Chain management and logistics. This is the book my Operations professor recommended when I asked him what I had to do in order to deep dive.
 3. [DHL: From Startup to Global Upstart](https://www.amazon.de/-/en/DHL-Startup-Upstart-Po-Chung/dp/1501515926): DHL is a well-known logistics company and this book is about its story. DHL is a California based start-up which is acquired by Deutsche Post in the early 2000s, then it goes on to become the world leader in logistics service. Its not really a technical book, but if one is fascinated by Logistics, they might end up liking it. Book is available on libgen.
+4. [Quantitative Approaches in Logistics and Supply Chain Management](http://ndl.ethernet.edu.et/bitstream/123456789/34084/1/179.Hans-J%C3%BCrgen%20Sebastian.pdf)
 
 # 4.2 Research Papers
 
