@@ -62,6 +62,13 @@ First and foremost, checkout the proceedings of all the International Physical I
 4. [Synchromodality in the Physical Internet - dual sourcing and real-time switching between transport nodes](https://etrr.springeropen.com/articles/10.1186/s12544-019-0357-5): Apr 2019 (pdf yes)
 5. [Synchromodality in the Physical Internet: Real-time switching in a multimodal network with stochastic transit times](https://mobi.research.vub.be/sites/default/files/2021-07/IPIC2019-processing-paper-poster-publication_FL-v190902.03-dragged.pdf): Jul 2019 (pdf yes)
 
+
+### 1.4.1 Synchromodal Transport
+
+1. [The Design of a Synchromodal Freight Transport System](https://repository.tudelft.nl/record/uuid:ed9d790c-73bd-4afa-9401-04748a5c8ddf): 2013 - Master's thesis that described the idea or synchromodal transport arguably for the first time.
+2. [Multimodal Schedule Design for synchromodal freight transport systems](https://repub.eur.nl/pub/90611/): 2014
+3. [Intermodality vs. Synchromodality](https://www.taylorfrancis.com/chapters/edit/10.4324/9781315601540-16/intermodality-synchromodality-l%C3%B3r%C3%A1nt-tavasszy-behzad-behdani-rob-konings): 2015 (pdf yes): Foundational paper on Synchromodal transport
+
 ## 2. Transportation Networks (Theory, Engineering)
 
 1. [Transportation Network Analysis by Prof. Stephen D. Boyles](https://sboyles.github.io/book.pdf): Currently reading this one (10 March 2025)
