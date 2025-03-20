@@ -69,6 +69,16 @@ First and foremost, checkout the proceedings of all the International Physical I
 2. [Multimodal Schedule Design for synchromodal freight transport systems](https://repub.eur.nl/pub/90611/): 2014
 3. [Intermodality vs. Synchromodality](https://www.taylorfrancis.com/chapters/edit/10.4324/9781315601540-16/intermodality-synchromodality-l%C3%B3r%C3%A1nt-tavasszy-behzad-behdani-rob-konings): 2015 (pdf yes): Foundational paper on Synchromodal transport
 
+# 1.5 Simulations & PI
+
+Most of the work that has been done on PI involves simulations - be it routing, work on PI containers and so on. The following are papers that entail simulation frameworks for PI.
+
+1. [Simulating a physical internet enabled mobility web: The case of mass distribution in France](https://hal.science/hal-00728584/): 2012, (pdf yes)
+2. [Simulation of a Physical Internet-based Transportation Network](https://www.researchgate.net/profile/Pedro-Furtado-2/publication/258360274_Simulation_of_a_Physical_Internet-Based_Transportation_Network/links/004635280f0f59dd01000000/Simulation-of-a-Physical-Internet-Based-Transportation-Network.pdf): 2014, (pdf yes)
+3. [Perspectives of Inventory Control models in the Physical Internet: A simulation study](https://www.sciencedirect.com/science/article/pii/S036083521400415X?casa_token=qaRfRy-dYXcAAAAA:yLHHWekvUPLWDcBrqQHLLAVIGjy8YhsSfLwA-NZIN8HqjoP6xbN0Yhzj0E3Qla83y4G2rVaaYA): June 2015, (pdf, yes)
+4. [Questioning the relevance of using Physical Internet for managing autonomous train shuttles in rural areas](https://www.sciencedirect.com/science/article/pii/S2352146524003697?ref=cra_js_challenge&fr=RR-1): July 2023, (pdf yes)
+5. [Towards Automated Physical Internet System: Simulations of Two Privacy-Protecting Routing Protocols](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5079472): Jan 2025, (pdf yes)
+
 ## 2. Transportation Networks (Theory, Engineering)
 
 1. [Transportation Network Analysis by Prof. Stephen D. Boyles](https://sboyles.github.io/book.pdf): Currently reading this one (10 March 2025)
