@@ -75,9 +75,16 @@ Most of the work that has been done on PI involves simulations - be it routing, 
 
 1. [Simulating a physical internet enabled mobility web: The case of mass distribution in France](https://hal.science/hal-00728584/): 2012, (pdf yes)
 2. [Simulation of a Physical Internet-based Transportation Network](https://www.researchgate.net/profile/Pedro-Furtado-2/publication/258360274_Simulation_of_a_Physical_Internet-Based_Transportation_Network/links/004635280f0f59dd01000000/Simulation-of-a-Physical-Internet-Based-Transportation-Network.pdf): 2014, (pdf yes)
-3. [Perspectives of Inventory Control models in the Physical Internet: A simulation study](https://www.sciencedirect.com/science/article/pii/S036083521400415X?casa_token=qaRfRy-dYXcAAAAA:yLHHWekvUPLWDcBrqQHLLAVIGjy8YhsSfLwA-NZIN8HqjoP6xbN0Yhzj0E3Qla83y4G2rVaaYA): June 2015, (pdf, yes)
-4. [Questioning the relevance of using Physical Internet for managing autonomous train shuttles in rural areas](https://www.sciencedirect.com/science/article/pii/S2352146524003697?ref=cra_js_challenge&fr=RR-1): July 2023, (pdf yes)
-5. [Towards Automated Physical Internet System: Simulations of Two Privacy-Protecting Routing Protocols](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5079472): Jan 2025, (pdf yes)
+3. [A model to take advantage of Physical Internet for vendor inventory management](A Simulation-Optimization Approach for Two-Way Scheduling/Grouping in a Road-Rail Physical Internet Hub): 2015, (pdf yes)
+4. [Perspectives of Inventory Control models in the Physical Internet: A simulation study](https://www.sciencedirect.com/science/article/pii/S036083521400415X?casa_token=qaRfRy-dYXcAAAAA:yLHHWekvUPLWDcBrqQHLLAVIGjy8YhsSfLwA-NZIN8HqjoP6xbN0Yhzj0E3Qla83y4G2rVaaYA): June 2015, (pdf, yes)
+5. [Inventory Control Models towards Phyical Internet: Lateral Transshipment Policy Determination by Simulation](https://www.researchgate.net/profile/Anil-Akpunar/publication/332633133_Inventory_Control_Models_towards_Physical_Internet_Lateral_Transshipment_Policy_Determination_by_Simulation/links/5cc186a092851c8d22031c11/Inventory-Control-Models-towards-Physical-Internet-Lateral-Transshipment-Policy-Determination-by-Simulation.pdf): Jul 2018, IPIC, (pdf yes)
+6. [Multiagent Modelling and Simulation of a Physical Internet Enabled Rail-Road Intermodal Transport System](https://link.springer.com/article/10.1007/s40864-018-0086-4): August 2018, (pdf yes)
+7. [A Simulation-Optimization Approach for Two-Way Scheduling/Grouping in a Road-Rail Physical Internet Hub](A Simulation-Optimization Approach for Two-Way Scheduling/Grouping in a Road-Rail Physical Internet Hub): 2019, (pdf yes)
+8. [Modelling and Simulation of a Physical Internet of Transportation Hubs](https://www.sciencedirect.com/science/article/pii/S1877050919304673): May 2019, (pdf yes)
+9. [Knowledge mapping of digital twin and physical internet in Supply Chain Management: A systematic literature review](https://www.sciencedirect.com/science/article/pii/S0925527321003571?casa_token=53tXUm6heOwAAAAA:HuAaaduOeaMa8kKXMr5Xg0zO4dW-w_SL0y1pRN1cw9migyP6hn2mAgMg7Wd48Ddc7rR8ck2EnQ): Feb 2022, (pdf yes)
+10. [A dynamic routing protocol with payments for the Physical Internet: A Simulation with learning agents](https://www.sciencedirect.com/science/article/pii/S1366554522002824?casa_token=JlkDmXW3JmsAAAAA:DWL04dnrjdRr7AQLhsAwLFFroqx3HpvmiNRRjVxQdEFuIVBKUzB60F4UCdvcSWC30Y8i1Y9SPg): Oct 2022, (pdf yes)
+11. [Questioning the relevance of using Physical Internet for managing autonomous train shuttles in rural areas](https://www.sciencedirect.com/science/article/pii/S2352146524003697?ref=cra_js_challenge&fr=RR-1): July 2023, (pdf yes)
+12. [Towards Automated Physical Internet System: Simulations of Two Privacy-Protecting Routing Protocols](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5079472): Jan 2025, (pdf yes)
 
 ## 2. Transportation Networks (Theory, Engineering)
 
