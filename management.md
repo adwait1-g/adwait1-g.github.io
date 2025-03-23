@@ -15,6 +15,7 @@ permalink: /management/
 
 ## 2. List of good resources
 
-1. [Transportation and Logistics](/ops-scm/2025/03/09/transportation-and-logistics.html)
-2. [Operations Research, Management Science and Quantitative Methods](/ops-scm/2025/03/09/ops-research-mgmt-sciences.html)
-3. [Aviation Management and Airport Operations](/ops-scm/2025/03/09/aviation-and-airport-ops.html)
+1. [IT Architecture and Strategy](/it/2025/03/23/it-systems-arch-strategy.html/)
+2. [Transportation and Logistics](/ops-scm/2025/03/09/transportation-and-logistics.html)
+3. [Operations Research, Management Science and Quantitative Methods](/ops-scm/2025/03/09/ops-research-mgmt-sciences.html)
+4. [Aviation Management and Airport Operations](/ops-scm/2025/03/09/aviation-and-airport-ops.html)
