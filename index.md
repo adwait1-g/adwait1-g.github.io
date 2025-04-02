@@ -12,9 +12,10 @@ I am Adwaith, welcome to my space. I am a first year management student currentl
 
 Any aspect of a firm's operations is of interest to me. To be a bit more specific, the following are the fields I am exploring.
 
-1. Information Systems, IT Management and Strategy, Cyber-Risk Management, Cybersecurity in Finance. Previously, I wrote quite a bit on cybersecurity, [take a look](/cybersecurity/) if it interests you.
-2. Operations and Logistics Management
-3. Management Science and Operations Research
+1. Machine Learning, Artificial Intelligence and its applications in solving Operations and Logistics problems.   
+2. Information Systems, IT Management and Strategy, Cyber-Risk Management, Cybersecurity in Finance. Previously, I wrote quite a bit on cybersecurity, [take a look](/cybersecurity/) if it interests you.
+3. Operations and Logistics Management
+4. Management Science and Operations Research
 
 Along with that, I find the Aviation & Airport Industry, and the Energy Industry very interesting. I do some light reading on these.
 
