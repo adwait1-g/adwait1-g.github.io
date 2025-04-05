@@ -5,9 +5,9 @@ comments: true
 layout: post
 ---
 
-It is 20:20, 28 February 2025, I am here in my flat in Berlin, Germany. The entire week was a holiday week for most of us studying at the ESCP Business School. I got some time to think about my time in the MBA program I have enrolled in. I had a chat with my peers yesterday about how the interviews for this academic year has started at MDI. I was in this exact position an year ago. My interview at MDI was on 14 March 2024, and I choose to give an offline interview on purpose, so I would get a chance to see Delhi, Gurgaon and I had plans to go to Mussoorie that week. So it all went well, I got admission for all the programs at MDI - the flagship PGDM program (also called "core" which is going out of usage now-a-days), PGDM-IB (PGDM-International Business), PGDM-HR and the PGDM-BAN (Business-Analytics) programs. I decided to go for the IB program, mostly because I would get to spend an year in Europe because I had never been outside India before. Many don't believe me when I say this, but this is the reason and there is no bigger reasoning than this. Okay, just to satisfy a few people who repeatedly ask me this question in expectation of a better answer, let me say I took IB program for "better exposure", "international connections", "great networking opportunities", "exposure leads to career growth" and so on :P. I am sure I will get all these but I didn't have these in my mind when I made the decision.
+(Updated on 05 April 2025)
 
-So I got some time to think about the last 9-10 months since I started my management program. I think I would like to share my thoughts on my program. It can seem like a boring guidance book, but that is the intention. As an outsider, one has very less details about a program, but as an insider I believe I can share some details. Intention is to help out the further batches, my juniors and ensure they make informed decisions and are well-prepared. I won't be talking a lot about my B-School experience, that is something you can find on linked-in, and I don't think I can write anything with full honesty at this point, that is a task for a later day.
+So I got some time to think about the last 9-10 months since I started my management program. I think I would like to share my thoughts on my program. It can seem like a boring guidance book, well, that is the intention. As an outsider, one has very less details about a program, but as an insider I believe I can share some details. Intention is to help out the further batches, my juniors and ensure they make informed decisions and are well-prepared. I won't be talking a lot about my B-School experience, that is something you can find on linked-in, and I don't think I can write anything with full honesty at this point, that is a task for a later day.
 
 # 0. June 2024: Init
 
@@ -207,19 +207,19 @@ The Public Transport is quite good here. With a single monthly ticket (known as 
 
 So many supermarket chains everywhere. ALDE, Lidl, REWE, DM, Rossman, TEDi - huge chains which sell different consumer products. You can explore around and decide which suits you. There are a number of Asian/Indian stores spread across Berlin, so find one if you want spices etc.,
 
+# 8. The Spring Semester
+
+Well, if you would like to know how a typical spring semester looks like, you may read [this](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html) article.
+
 # 8. What after Berlin?
 
-You will have to find an internship in Germany, for April to August. Post that, fall semester in Paris. We'll have to apply for France visa as well while in Germany. Details on that later.
+You will have to find an internship in Germany, for April to August. Post that, fall semester in Paris. We'll have to apply for France visa as well while in Germany. Details on that later (once I get clarity on it)
 
 # 8. Conclusion
 
-Alright, so this is all I wanted to cover. Intention is that students who take up the IB program should know before hand what the end-to-end processes look like so they can be better prepared, something that did not happen in my case. There can be variations in these processes every year, but this will probably be the general skeleton. I didn't want to give just the timelines and list of events, I wanted to describe it how it happens. I feel it helps to know all this in the very beginning. I wanted to add all the relevant documents as well, necessary at every process, I will update the article with that in some time.
+Alright, so this is all I wanted to cover. Intention is that students who take up the IB program should know before hand what they are getting into. Processes can vary each year, but I would say this will probably be the general skeleton. I personally felt that knowing all this as a new IB student would have helped me much better in planning things.
 
-As of 28 Feb 2025, I am just 1.5 months into my European journey. I have a lot of time left here. This article will be updated and I intend to cover all the relevant details. Goal is to let the future incoming batches before hand what they will be doing from exchange year point of view.
-
-I will be writing a couple of more articles on the lines of this one, one on specializations at ESCP, a deep-dive into my spec and overall life here.
-
-Until then, take care.
+As of 05 April 2025, I am 3 months into my european experience. I have about 7-8 months left here. This article will be updated time and again and I intend to cover all the relevant details. Goal is to let the future incoming batches before hand what they will be doing from an exchange year point of view.
 
 Cheers,   
 Adwaith
