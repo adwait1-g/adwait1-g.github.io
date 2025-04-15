@@ -200,11 +200,14 @@ This initiative will provide folks with datasets, compute and such resources to 
 
 After all this, let us come back to our original question. Who funds deep-tech innovation?
 
-Well, if India was in a similar situation as the USA, private companies would have funded it automatically. But we lack such large private companies. So in my opinion, the Indian government has to do to AI what US government did to Operations Research, Semiconductors and Internet - be the primary investor and driver of innovation. Government officials criticizing businesses and business owners might just be a gimick to absolve themselves of their obvious responsibilities when it comes to AI (which is much more than what IndiaAI is trying to do today). But by looking at the government policy on Generative AI and LLMs, at this point, I am not sure if they want to fund the type of deep-tech innovation other countries (its own rival, China) are doing.
+Well, if India was in a similar situation as the USA, large private corporations would have funded
+it automatically. But we lack such companies. It is through repeated cycles of government support for several previous deep-tech innovations that today these private corporations are able to fund AI, and the government has also pitched in with President Trump announcing the Stargate initiative. These cycles of innovation - where there are small companies with break-through ideas (take Intel or Texas Instruments), the government funds it, becomes their primary customer throughout its formative years, and finally the technology is mature enough to sustain through non-government consumer markets. India did not have these repeated cycles of deep-tech innovation, it is a relatively new country and is still trying to get its house in order. So, today if we are asked the question on who should fund AI or any such deep-tech innovation in India, no VCs, no IT service companies, no such entities can/will do it. The cycle should start with the Indian government - it is the only entity with such huge risk appetite and at times even vision for such technology.
+
+If the Indian government starts the cycle of innovation today which the governments of developed countries have done for decades or even close to 2 centuries now, one day we will have Indian private corporations big enough to fund deep-tech innovation possibly without government support.
 
 # 2.6 Conclusion
 
-With that, we come to the conclusion. In India's case, if we expect ChatGPT style Generative AI, it has to come through government funding. There is no other way to fund real AI Research in India.
+To conclude, I think it is very clear that if we want India to develope and train foundational models, have its own ChatGPT, it has to come through government funding. There is no other way to fund REAL AI Research in India.
 
 Cheers,    
 Adwaith
@@ -227,4 +230,3 @@ Adwaith
 14. Mohandas Pai on LLMs: https://analyticsindiamag.com/it-services/mohandas-pai-explains-why-india-doesnt-have-a-mistral-ai-yet/    
 15. Mr. S Krishnan on LLMs: https://www.moneycontrol.com/technology/indias-ai-llm-path-may-lie-in-adaption-not-building-from-scratch-suggests-meity-secretary-s-krishnan-article-12859599.html   
 16. India AI: https://indiaai.gov.in/   
-17. 
