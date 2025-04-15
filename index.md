@@ -23,6 +23,8 @@ I intend to write about these in near future.
 
 ## 2. Latest Posts
 
+58 -- 2025, April 08: [Who funds deep-tech Innovation?](https://www.agautham.io/non-technical/2025/04/07/who-funds-innovation.html)
+</br>
 57 -- 2025, Mar 09: [Understanding PI Part 1 - A Peak into Digital Internet Architecture](/pi/2025/03/09/understanding-pi-part1-a-peak-into-digital-internet-architecture.html)
 <br/>
 56 -- 2025, Mar 01: [On the spring semester with AI & Big Data specialization](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html)
