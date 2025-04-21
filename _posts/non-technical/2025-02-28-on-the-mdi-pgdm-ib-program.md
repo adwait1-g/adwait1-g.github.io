@@ -5,7 +5,8 @@ comments: true
 layout: post
 ---
 
-(Updated on 05 April 2025)
+Update 1: 05 April 2025   
+Update 2: 21 April 2025
 
 So I got some time to think about the last 9-10 months since I started my management program. I think I would like to share my thoughts on my program. It can seem like a boring guidance book, well, that is the intention. As an outsider, one has very less details about a program, but as an insider I believe I can share some details. Intention is to help out the further batches, my juniors and ensure they make informed decisions and are well-prepared. I won't be talking a lot about my B-School experience, that is something you can find on linked-in, and I don't think I can write anything with full honesty at this point, that is a task for a later day.
 
@@ -140,7 +141,7 @@ I am happy with my case because I atleast got the visa well before my flight and
 
 ## 7. What after landing in Berlin?
 
-I will cover only the relevant aspects, not going into the college related details.
+I will cover only the aspected related to living in the city and adjusting to it. For academics, you can refer to [this article](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html).
 
 ## 7.1 Home and "Anmeldung"
 
@@ -203,23 +204,41 @@ Either ways, it is easy to get SIM here and get it working.
 
 The Public Transport is quite good here. With a single monthly ticket (known as the Deutscheland Ticket), you can essentially roam anywhere in Germany. Inside Berlin, there are Buses, Trams, U-Bahn (Underground-Rail) and S-Bahn (SubUrban-Rail). S-Bahn connects major locations in the city, U-Bahn connects sub-locations in particular routes, Buses and Trams are mostly for last-mile connectivity. You can buy the Deutscheland Ticket on many apps, I would suggest you to go with the DB Navigator application[15](https://int.bahn.de/en). One advantage of using DB app is that it provides very reliable info on the routes, which bus/Train is scheduled when and so on. As of Jan 2025, the Deutscheland Ticket per month costs 58 EUR. Google Maps is excellent for Intra-city routes (inside Berlin, its great), so you may use that.
 
-## 7.7 Where to buy stuff?
+## 7.7 Around Berlin
 
-So many supermarket chains everywhere. ALDE, Lidl, REWE, DM, Rossman, TEDi - huge chains which sell different consumer products. You can explore around and decide which suits you. There are a number of Asian/Indian stores spread across Berlin, so find one if you want spices etc.,
+If you want good tourist spots in Berlin, then Internet is your friend. I will just write about my experience in Berlin (as of 21 April 2025).
+
+1. Berlin is filled with large supermarket chains. EDEKA, ALDI, Lidl, REWE, DM, Rossmann, TEDi, Woolworth and so many other stores - huge chains that sell different consumer products. In that for everyday groceries, ALDI/Lidl/EDEKA should suffice. There are a number of Asian stores across Berlin, you will mostly get Indian spices and powders there. I used to go to [Spice Junction](https://g.co/kgs/FPgmR4Z), this was 7-8 UBahn stops from my home. Here, you get chats as well (stuff like aloo-chole, samosa-chole etc.,) and on Saturdays, you get Pav Bhaji, Masala Dose and so on.    
+2. If you want badly want Indian food, you can go to these: [Spice Junction](https://g.co/kgs/FPgmR4Z), [Chutney](https://g.co/kgs/4RfXApJ), [Lotus Restaurant Berlin](https://g.co/kgs/tDWtj3y), [Prema Restaurant](https://g.co/kgs/Fgy8HY8), [Saravana Bhavan](https://g.co/kgs/Kbw8TMT), [Amrit](https://g.co/kgs/YFbT7u4), [Mumbai Local](https://g.co/kgs/SUDyCTZ), [Zusshu](https://g.co/kgs/GCBuQ4M). Ofcourse, there are many more, but these are the ones I tried at.   
+3. There are excellent libraries across the city. My personal favorite is the [TU Berlin Library](https://g.co/kgs/e9ZgwUe) - this is open from 9am till 12 in the midnight, and it was very close to my home. There is a [Berlin city library](https://g.co/kgs/brFfViw) in Potsdamer Platz, there are many across the city - you can get a library card done for free (take your passport/ID) and use the library resources.   
+4. Some good spots in Berlin: [Reichtag/Bundestag](https://g.co/kgs/B9xuRh4) - German Parliament, [Brandenburg Gate](https://g.co/kgs/fQucLY8), [The Jewish Memorial](https://g.co/kgs/8BHzbmo), [Victory Column](https://g.co/kgs/E5AtXA7), [Museuminsel](https://whc.unesco.org/en/list/896/), [AlexanderPlatz](https://g.co/kgs/EjySRSQ) & [PotsdamerPlatz] - these are huge city squares of Central Berlin, [TierPark](https://g.co/kgs/8ojeuXJ), [Zoological Garden](https://g.co/kgs/6jm7xiv) -these are the places I remember going to.   
+5. My favorite places:
+    1. [& Coffee](https://g.co/kgs/yAdj8LL): Where it all started. I was at a BnB in [Nehringstrasse](https://g.co/kgs/BpA3pNn) for the first week in Berlin. This cafe is a cozy breakfast and snack place. I particularly liked the Hot Chocolate and their blueberry pancakes.
+    2. [Zoologicher Garten](https://g.co/kgs/pxLmTyW): This is a huge hub just 4 stops away from my place. You have places where you can buy stuff (like [Primark](https://g.co/kgs/XpMxZAe) for clothes), it has a [Burgermeister](https://g.co/kgs/8D15ABg) - I was a regular here, I used to finish up at the TU Berlin Library at 12, come down walking to have fries here and then go home. You can find a McDonalds here, as well as Chutney, an Indian restaurant.    
+    3. [Bandy Brooks](https://g.co/kgs/Zh1uYhS): This is a bakery and a curry-wurst joint. You get excellent fries here. Their ice-creams, apple-pie and waffles are amazing. This is in [Museuminsel](https://g.co/kgs/Zh1uYhS) - great place to relax. You can sit in front of the alt-museum (old-museum) in the lawn and chill with friends. There is a ferry as well you can go to - I would recommend it. Post mid-March, Berlin enters the spring-summer era, its beautiful everywhere, especially here near Bandy Brooks/Museuminsel. Lot of people come out and chill in the garden ([Lustgarten](https://g.co/kgs/DmsSocD) - this is something I loved to see so I went there now and then).
+    4. [TU Berlin Library](https://g.co/kgs/aLVDeGV): I was a regular here. If you don't like ESCP Berlin's Library, TU-B's Library is the closest (about 20 min in Bus/M45).    
+    5. For me, apart from Indian food, Pizza/Italian food is the only cuisine which vaguely suited my palette. Because of this, I ended up trying Italian (Pizza/Pasta) in a number of places, in fact wherever I go in Berlin. [Fior Di Margherita](https://g.co/kgs/z3Y4Vnc) is a great Pizza place, its a bit high-priced, but great pizzas. Apart from that, you'll find dominos and a number of local Pizza joints here and there.   
+    6. [Frittenwerk](https://g.co/kgs/FC5eoCP): Great place if you want to have fries and related dishes (like Canadian Poutine) - I frequented the one at AlexanderPlatz.   
+    7. I ended up frequenting Dunkin as well, especially the ones in Zoologicher Garten and Potsdamer Platz. The Hot Chocolate is fine.   
+    8. Berlin is known for its nightlife, there are a number of clubs, night cafes, pubs you should check out if you are into it. And ofcourse, hot drinks (alcoholic drinks) are very cheap here.
+
+I went to a lot of places, these are the ones that will stay in mind for a while mostly because they were roughly part of my routine or they were my places to chill.
 
 # 8. The Spring Semester
 
-Well, if you would like to know how a typical spring semester looks like, you may read [this](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html) article.
+This post is mainly about the city and such details. If you would like to know about the spring semester at ESCP Berlin, on academics, you may read [this](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html) article. I have attempted to cover details about the internship as well in it.
 
 # 8. What after Berlin?
 
-You will have to find an internship in Germany, for April to August. Post that, fall semester in Paris. We'll have to apply for France visa as well while in Germany. Details on that later (once I get clarity on it)
+After the spring semester, you will have to find an internship in Germany, in between April and August. Post this, fall semester will be in Paris (our semester is starting from 15 September 2025), and it will be a free-track semester (which means no specialization, just individual courses and we need to complete 120 hours). So for this, we will have to apply for France visa while in Germany (Details on this later once I get clarity over it).
 
 # 8. Conclusion
 
-Alright, so this is all I wanted to cover. Intention is that students who take up the IB program should know before hand what they are getting into. Processes can vary each year, but I would say this will probably be the general skeleton. I personally felt that knowing all this as a new IB student would have helped me much better in planning things.
+Alright, so this is all I wanted to cover. Intention is that students who take up the IB program, and especially ESCP Berlin Campus should know before hand what they are getting into. Processes can vary each year, but I would say this will probably be the general skeleton. I personally felt that knowing all this as a new IB student would have helped me much better in planning things.
 
-As of 05 April 2025, I am 3 months into my european experience. I have about 7-8 months left here. This article will be updated time and again and I intend to cover all the relevant details. Goal is to let the future incoming batches before hand what they will be doing from an exchange year point of view.
+Update 1: As of 05 April 2025, I am 3 months into my european experience. I have about 7-8 months left here. 
+
+Update 2: As of 21 April 2025, I am 3.5 months into my european experience. I have about 7 months left here. A lot has happened in the last one month - my semester ended, I am in the lookout for internships and so on. I intend to update this a number of times in order to share all my experiences with folks and particularly our Juniors.
 
 Cheers,   
 Adwaith
