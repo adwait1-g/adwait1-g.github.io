@@ -8,6 +8,7 @@ layout: post
 Hey folks,
 
 (Updated on 05 April 2025)
+(Updated on 21 April 2025)
 
 I have been meaning to write about this specialization for a while now, for various reasons. Firstly I just want to share my experience and all the things we learned, we got to do, the people I met, the connections I made and so on. Secondly I want it to be a good starting point for anyone who plans to take up this specialization and want to know what the spec entails. I am an MDI PGDM-IB student, who is here at ESCP-Berlin Campus on an exchange. So some parts of it is directed to future PGDM-IB cohort who are looking for some clarity or information on how the ESCP-Berlin spring semester is going to be.
 
