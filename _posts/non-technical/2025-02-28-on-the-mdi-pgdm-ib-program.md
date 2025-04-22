@@ -131,7 +131,7 @@ It was a simple document submission procedure, nothing more than that. But note 
 
 Once the submission is done, it ended up costing about 12k Rs (about 9k Rs for the appointment, close to 3k Rs for premium access). Sometimes UPI may not work, or card may not work on that particular day. So please withdraw enough cash so that you are good to go even without UPI/Card (this actually happened with my friend, he relied fully on UPI and it simply didn't work for him, he had to ask someone to pay 12k Rs and so on, so just be careful about these things).
 
-# 6. When do we get the VISA?
+## 6. When do we get the VISA?
 
 Once the appointment is done, we wait. Do some travel prep or whatever, but we wait. One detail I had not put in the order is booking flight tickets. Tickets become insanely expensive as you approach December-January. So its always better to book it well in advance, possibly a flexi-ticket so that you can change the dates in case. I actually book it pretty late. On 11 Nov 2024, I booked a flight from Abu Dhabi to Berlin for 09 Jan 2025. My parents live in Abu Dhabi, and I wanted to visit them before to come to Europe. I had not booked the ticket from Bengaluru to Abu Dhabi though, I wanted to wait for the german visa (with that passport).
 
@@ -139,7 +139,7 @@ You'll get a message from VFS saying your passport has been dispatched - that is
 
 I am happy with my case because I atleast got the visa well before my flight and my specialization. Many of them came to Berlin in Feb 2025, 2-3 weeks ago. They missed a bunch of classes, would have lost quite a bit of mental peace and so on. People who applied on or before 28 Nov 2025 got their visas before the semester officially start (that was 13 Jan 2025 this year). Whoever applied post this, even 02 Dec 2025 (that is a difference of 2 working days) ended up coming in February. This is why I consider myself lucky in this aspect. These are delays which are not in our control. Some say they embassy folks take a christmas-new year break which is why the delay, some say it is just the volume of applications. No one knows the exact reason, the sooner you get these things done, the better it is.
 
-# 7. What after landing in Berlin?
+## 7. What after landing in Berlin?
 
 I will cover only the aspected related to living in the city and adjusting to it. For academics, you can refer to [this article](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html).
 
