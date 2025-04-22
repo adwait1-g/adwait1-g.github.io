@@ -8,13 +8,13 @@ layout: post
 Update 1: 05 April 2025   
 Update 2: 21 April 2025
 
-So I got some time to think about the last 9-10 months since I started my management program. I think I would like to share my thoughts on my program. It can seem like a boring guidance book, well, that is the intention. As an outsider, one has very less details about a program, but as an insider I believe I can share some details. Intention is to help out the further batches, my juniors and ensure they make informed decisions and are well-prepared. I won't be talking a lot about my B-School experience, that is something you can find on linked-in, and I don't think I can write anything with full honesty at this point, that is a task for a later day.
+I got some time to think about the last 9-10 months since I started my management program. I think I would like to share my thoughts on my program. It can seem like a boring guidance book, well, that is the intention. As an outsider, one has very less details about a program, you just see what is marketed, but as an insider I believe I can share some details. Intention is to help out future batches, juniors and ensure they make informed decisions and are well-prepared. I won't be talking about my B-School experience, that is something you can find on linked-in, and I don't think I can write anything with full honesty at this point, that is a task for a later day.
 
-# 0. June 2024: Init
+## 0. June 2024: Init
 
 The college officially started on 21 June 2024, with a week-long orientation. Regular classes started the very next monday.
 
-# 1. Which specialization to choose?
+## 1. Which specialization to choose?
 
 Only study suggestion I have for folks is this - study hard, study well, learn a lot and at every opportunity, classes are an extremely easy to way to learn things, and some professors are actually good at what they do. Pay attention in the class irrespective of what your peers and the environment tells. I personally think everyone should do that, especially if you are like me - an out and out technical guy who had absolutely no idea about management, and almost every word you hear is new to you, let alone topics and subjects. Adding to that, grades at MDI do matter, especially for IB students, so don't get carried away with whatever people might tell.
 
@@ -30,7 +30,7 @@ I believe it was around 2nd week of July 2024 (that is just 4 weeks from the fir
 
 Anyway, you will be asked to choose a spec 3 weeks into college, so be mindful of it. Take a good look at the ESCP Website, it has essentially all the details about potential specializations and free-track electives too. If certain spec interests you, search for people who took it up on linkedin(that may be an MDI student or a regular ESCP MiM student, you may ask either, there is no difference in treatment once you are part of a specialization) and talk with them - I would say this is a must because this is the only way to know what exactly is taught in these specializations. In essence, do your due diligence.
 
-# 2. How good is my English?
+## 2. How good is my English?
 
 I ended up getting the AI and Big Data for Business Innovation specialization in the Berlin campus. The processes of going to different campuses are different. The processes related to Paris campus are quite straightforward. From here onwards, things will get a lot more Berlin-Germany centric.
 
@@ -40,7 +40,7 @@ The first one I believe was the English language test - which happens in the fir
 
 3rd week of September (2024) was the 1st trimester's end-term examinations. During September, October, you'll get emails from ESCP, you'll get access to their e-library and most of the virtual resources an MiM student gets.
 
-# 3. What is a Blocked Account?
+## 3. What is a Blocked Account?
 
 How will you sustain once you come to Europe? For France, if you show a certain sufficient bank balance, it is sufficient for the visa folks and authorities. In Germany, that is not the case. They want a confirmation from your side. Enter the concept of blocked account. It is a german bank account to which you transfer certain amount of money. Once you are here in Germany, that account gets "activated" and you will receive a certain portion of the entire amount every month. I believe the standard amount to transfer for 12 months is 11904 EUR, so one will receive 992 EUR per month (conditions apply :P). The money is initially blocked and parts of it get unblocked/released every month once you come here.
 
@@ -57,7 +57,7 @@ But to my bad luck, for some technical reasons, I couldn't open an account on Ex
 
 Anyway, this opening of account, transfering money will take some time, so please keep this in mind.
 
-# 4. APS Document verification
+## 4. APS Document verification
 
 This is a good time to describe the entire germany visa procedure in short. This is how it goes:
 
@@ -99,17 +99,17 @@ Here, there are a few points to note:
 
 We got the APS certificate between 15 and 20 Nov 2024. You'll have to pay the final fee installment around this time, so ensure to do that as soon as possible because based on that a fees-paid certificate is issued which will have to submitted as part of the visa application.
 
-# 5. Getting the VFS Appointment
+## 5. Getting the VFS Appointment
 
 This is simply document submission procedure. You go to a VFS Center and submit all the documents they have asked for. Atleast for our year, there was no interview or anything of that sort. I was told all this is becoming online now, but I don't know much about it.
 
 Although we had started the documentation needed as part of the visa application, we were still trying to get a visa appointment.
 
-## 5.1 Where to get the VISA appointment?
+# 5.1 Where to get the VISA appointment?
 
 Since most of us are not from Delhi, we didn't know if we need to get an appointment at the VFS Delhi Center or VFS Center closest to our home (mine would have been VFS Bengaluru, a bunch of friends' would have been VFS Mumbai, some VFS Calcutta and so on). Can we apply at any center? It seems there is a rule that if you have to apply at a particular center, you need to stay in its "jurisdiction" for atleast 6 months. Here is the jurisdiction list[8](https://visa.vfsglobal.com/ind/en/deu/attend-centre/what-to-bring). I came to Delhi on 19 June 2024, and the date now was around 25 Nov 2024, so it had been just over 5 months in Delhi-NCR for me. So should I apply at the Delhi VFS Center? Or at the Bengaluru center back home? After some quick back and forths, it was decided that we all apply at the Delhi VFS Center only, and that we would get a proof of residence as well from the college.
 
-## 5.2 When do we get the appointment?
+# 5.2 When do we get the appointment?
 
 It became very clear that getting a visa appointment at the VFS Center is not easy (not just at Delhi but at that time Bengaluru and Mumbai centers also had no slots in the forseeable future. I believe Chennai, Hyderabad, Calcutta had a few). Me being a Bengalurian, I wouldn't want to apply even in Hyderabad/Chennai due to fear of rejection (because BLR/Karnataka don't come under Chennai/Hyderabad jurisdiction). Even though we did verbal back and forths, we were set on applying in Delhi VFS. We all had applied for an appointment at Delhi VFS, and we were obviously on the waitlist - this was probably during the 3rd/4th week of November. We started doubting if we will reach Germany in time (that is before 01 Jan 2025).
 
@@ -119,19 +119,19 @@ I had almost no contacts, I had to depend on luck that is all. And I guess most 
 
 See how lot of delays that are beyond your control creep in - only way out is to get things done in your control as soon as possible. There is a rule that one can apply for VISA 6 months before he enters European Union, so you can apply even in September/October if the documents are sorted. Please be mindful of this.
 
-## 5.3 What documents to take?
+# 5.3 What documents to take?
 
 You can find the list of documents for the application here[9](https://india.diplo.de/resource/blob/2667080/85ccf154e38cd7c5c36721503a49774c/infostudents-data.pdf). Ensure you have everything, starting from photo (which you will have to get it clicked at a local photo-studio called Bathra studios, so get this done well in advance now that you know this. Don't want till the appointment stage).
 
 One suggestion at this point would be that if you get a document as a soft-copy, get one/two color printouts of that and keep it. In case you get a physical document, get it scanned (not docscanner, not camscanner or any of those mobile-apps, go to a normal printer-scanner shop) and keep the soft-copy with you. This habit came in handy quite a bit.
 
-## 5.4 Appointment Day
+# 5.4 Appointment Day
 
 It was a simple document submission procedure, nothing more than that. But note this: VFS offers two kind of appointments - regular and premium. ALWAYS go for the premium - people listen to you when you speak, if you have any concerns they consider it, they spend enough time on every application they receive and so on. I can't stress on the premium appointment enough. So either while booking an appointment, you can choose premium then and there (my peers did that). I had not chosen it but went to the VFS Center and told I would like to buy the premium one and that is also a perfectly valid option. Either ways, go for premium. Along with that, choose the passport courier service too - I applied in VFS Delhi but I live in Bengaluru, so I want the passport to be courier to my place, this applies for most people.
 
 Once the submission is done, it ended up costing about 12k Rs (about 9k Rs for the appointment, close to 3k Rs for premium access). Sometimes UPI may not work, or card may not work on that particular day. So please withdraw enough cash so that you are good to go even without UPI/Card (this actually happened with my friend, he relied fully on UPI and it simply didn't work for him, he had to ask someone to pay 12k Rs and so on, so just be careful about these things).
 
-## 6. When do we get the VISA?
+# 6. When do we get the VISA?
 
 Once the appointment is done, we wait. Do some travel prep or whatever, but we wait. One detail I had not put in the order is booking flight tickets. Tickets become insanely expensive as you approach December-January. So its always better to book it well in advance, possibly a flexi-ticket so that you can change the dates in case. I actually book it pretty late. On 11 Nov 2024, I booked a flight from Abu Dhabi to Berlin for 09 Jan 2025. My parents live in Abu Dhabi, and I wanted to visit them before to come to Europe. I had not booked the ticket from Bengaluru to Abu Dhabi though, I wanted to wait for the german visa (with that passport).
 
@@ -139,11 +139,11 @@ You'll get a message from VFS saying your passport has been dispatched - that is
 
 I am happy with my case because I atleast got the visa well before my flight and my specialization. Many of them came to Berlin in Feb 2025, 2-3 weeks ago. They missed a bunch of classes, would have lost quite a bit of mental peace and so on. People who applied on or before 28 Nov 2025 got their visas before the semester officially start (that was 13 Jan 2025 this year). Whoever applied post this, even 02 Dec 2025 (that is a difference of 2 working days) ended up coming in February. This is why I consider myself lucky in this aspect. These are delays which are not in our control. Some say they embassy folks take a christmas-new year break which is why the delay, some say it is just the volume of applications. No one knows the exact reason, the sooner you get these things done, the better it is.
 
-## 7. What after landing in Berlin?
+# 7. What after landing in Berlin?
 
 I will cover only the aspected related to living in the city and adjusting to it. For academics, you can refer to [this article](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html).
 
-## 7.1 Home and "Anmeldung"
+# 7.1 Home and "Anmeldung"
 
 You need to find a home and register yourself to that address (Anmeldung is the german word for Registration, nothing more). Once you come to your home, you will have to get the registration done within 14 days. Here is a short description of how to get it done:
 
@@ -151,10 +151,10 @@ You need to find a home and register yourself to that address (Anmeldung is the 
 2. Your landlord would give you your proof-of-residence, also called Woh­nungs­ge­ber­be­stä­ti­gung[10](https://allaboutberlin.com/docs/wohnungsgeberbestatigung). It is simply a proof that the landlord gives to the tenant that the tenant has moved in on so and so date and he actually lives at that address. Ensure you receive this proof-of-residence as soon as possible, this is the primary document needed for registration/anmeldung.   
 3. You will typically need to go to a city corporation office (known as Bürgeramt) to get the registration done. You'll need to take an appointment for it. You may take it here[10](https://service.berlin.de/dienstleistung/120686/). Select all the districts and go for book an appointment. Take a suitable but earliest possible appointment. Special Note: Start looking for appointments at 7am in the morning. 7am is when the schedule is updated and if any appointments are cancelled, they are freed and we get to take those slots. So start at 7am and take the earliest.    
 4. 2 Documents: The proof-of-residence/Woh­nungs­ge­ber­be­stä­ti­gung and your Passport. You go there, enquire at the receptionist and confirm your appointment. You go in when your time arrives, the documents will be checked and a printed piece of paper with that corporation office's seal will be given back to you - that is the Anmeldung. High chance they will take the proof-of-residence for themselves, so don't worry on that. It is a 10-15 minute process.   
-5. Anmeldung/Registration is done with that. Ensure the post-box at your home has your name (especially your last name) on it. That is essential. In a week or two, you'll receive your Tax-ID (which is needed when you get an internship and you get paid in Germany).
+5. Anmeldung/Registration is done with that. Ensure the post-box at your home has your name (especially your last name) on it. That is essential. In a week or two, you'll receive your Tax-ID (which is needed when you get an internship and you get paid in Germany) and Insurance Number Certificate.
 6. Some time later, you might get a post on something called "Radio-Tax" as well. You'll have to pay that too.
 
-## 7.2 Some tips on House-hunt
+# 7.2 Some tips on House-hunt
 
 A sub-group in our Berlin group had already found home on AirBnB in December itself, and the owner was ready for Anmeldungs for all the individuals in the group, so that group was set when it comes to housing.
 
@@ -164,11 +164,11 @@ Some advice at personal level: As much as possible, find a home as close to the 
 
 I found a private room in spotahome. If at all you decide to stay in a private room, you can check homes at housinganywhere, spotahome etc., they seem to be reliable. All the procedures will be done in 2 working days, 2nd day evening I had checked-in.
 
-## 7.3 Working capital for Initial days
+# 7.3 Working capital for Initial days
 
 Theoretically, you are entitled to 842 EUR starting Jan 2025. But when you arrive here in Jan 2025, you have no home, no bank account, nothing. So you need some cash in hand and a forex card (or any international card you can use to transact in EUR) with you until you activate your blocked account and set up proper bank account where you can receive that 842 EUR per month. I can't stress on this enough because I faced a massive issue, I got saved because I had enough cash in hand. My suggestion is keep 500 EUR in cash, 500 EUR in forex card.
 
-## 7.4 Activating the Blocked Account
+# 7.4 Activating the Blocked Account
 
 Although you are entitled to 842 EUR starting Jan 2025, when you arrive in Berlin, you don't have a bank account to which this 842 EUR can be deposited. The blocked account is just a repository, it cannot be used as a regular bank account. You'll have to receive that 842 EUR on a regular current/savings account and then it can be used.
 
@@ -184,7 +184,7 @@ But I struggled with Fintiba. Fintiba does not offer any such current account. S
 
 A note on Deutsche Bank's Giro Card: I hope none of you who are reading has to go through this stupid hassle, but in case you end up in this situation for whatever reason, this might help you. When a bank account is opened, Deutsche Bank sends you a card yes, and they call it "Debit Card". It has a special name called Giro Card. Try googling it. It is not the normal Debit Card with 16 digits that we use in India. It is just some weird card that can be used for tap-transfers and withdrawing cash (that too at certain ATMs). One cannot make online payments with it. So I ended up ordering a regular Debit Card for an extra 18 EUR per year. So there is quite a bit of unwanted hassle with Fintiba. So as much as possible, go with Expatrio. If not, follow these steps, you will be fine.
 
-## 7.5 Indian and German SIM Cards
+# 7.5 Indian and German SIM Cards
 
 ### 7.5.1 Keeping Indian SIMs alive
 
@@ -200,11 +200,11 @@ A bunch of friends bought actual vodafone SIMs, and oddly itseems they have to g
 
 Either ways, it is easy to get SIM here and get it working.
 
-## 7.6 Transport in Berlin
+# 7.6 Transport in Berlin
 
 The Public Transport is quite good here. With a single monthly ticket (known as the Deutscheland Ticket), you can essentially roam anywhere in Germany. Inside Berlin, there are Buses, Trams, U-Bahn (Underground-Rail) and S-Bahn (SubUrban-Rail). S-Bahn connects major locations in the city, U-Bahn connects sub-locations in particular routes, Buses and Trams are mostly for last-mile connectivity. You can buy the Deutscheland Ticket on many apps, I would suggest you to go with the DB Navigator application[15](https://int.bahn.de/en). One advantage of using DB app is that it provides very reliable info on the routes, which bus/Train is scheduled when and so on. As of Jan 2025, the Deutscheland Ticket per month costs 58 EUR. Google Maps is excellent for Intra-city routes (inside Berlin, its great), so you may use that.
 
-## 7.7 Around Berlin
+# 7.7 Around Berlin
 
 If you want good tourist spots in Berlin, then Internet is your friend. I will just write about my experience in Berlin (as of 21 April 2025).
 
@@ -224,26 +224,30 @@ If you want good tourist spots in Berlin, then Internet is your friend. I will j
 
 I went to a lot of places, these are the ones that will stay in mind for a while mostly because they were roughly part of my routine or they were my places to chill.
 
-# 8. The Spring Semester
+## 8. The Spring Semester
 
-This post is mainly about the city and such details. If you would like to know about the spring semester at ESCP Berlin, on academics, you may read [this](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html) article. I have attempted to cover details about the internship as well in it.
+The intention of this post is to share all the meta-details about the program. If you want to know the actual details of the spring semester at ESCP Berlin, you may read [this](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html) article. I have attempted to cover details about the internship as well in it.
 
-# 8. What after Berlin?
+## 9. What after Berlin?
 
 After the spring semester, you will have to find an internship in Germany, in between April and August. Post this, fall semester will be in Paris (our semester is starting from 15 September 2025), and it will be a free-track semester (which means no specialization, just individual courses and we need to complete 120 hours). So for this, we will have to apply for France visa while in Germany (Details on this later once I get clarity over it).
 
-# 8. Conclusion
+## 10. Conclusion
 
 Alright, so this is all I wanted to cover. Intention is that students who take up the IB program, and especially ESCP Berlin Campus should know before hand what they are getting into. Processes can vary each year, but I would say this will probably be the general skeleton. I personally felt that knowing all this as a new IB student would have helped me much better in planning things.
 
 Update 1: As of 05 April 2025, I am 3 months into my european experience. I have about 7-8 months left here. 
 
-Update 2: As of 21 April 2025, I am 3.5 months into my european experience. I have about 7 months left here. A lot has happened in the last one month - my semester ended, I am in the lookout for internships and so on. I intend to update this a number of times in order to share all my experiences with folks and particularly our Juniors.
+Update 2: As of 21 April 2025, I am 3.5 months into my european experience. I have about 7 months left here. A lot has happened in the last one month - my semester ended, I am in the lookout for internships and so on. I intend to update this a number of times in order to share all my experiences with folks and particularly our juniors.
 
 Cheers,   
 Adwaith
 
-# 9. References
+## 11. PS: Documents list
+
+Throughout the process, there is a lot of form-filling, document-issuing, verification and so on. I have prepared an exhaustive list of documents which you can use as reference during your prep. I cannot share it here out in the public because it contains lot of personal information. If you are an IB student of any batch and want that list, please feel free to ping me, I will share it with you.
+
+## 12. References
 
 1. ESCP MiM Page: https://escp.eu/programmes/master-in-management     
 2. AI and Big Data for Business Innovation: https://ent.escpeurope.eu/Syllabus/SylView/view/11760857/2      
