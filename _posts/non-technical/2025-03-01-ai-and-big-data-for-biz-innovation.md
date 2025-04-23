@@ -175,4 +175,3 @@ Adwaith
 10. Prof. Carolin Waldner: https://escp.eu/waldner-carolin   
 11. Prof. Thomas Gigant: https://www.thomasgigant.com/     
 12. BLISS: https://bliss.berlin/   
-13. 
