@@ -141,7 +141,7 @@ I am happy with my case because I atleast got the visa well before my flight and
 
 ## 7. What after landing in Berlin?
 
-I will cover only the aspected related to living in the city and adjusting to it. For academics, you can refer to [this article](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html).
+I will cover only the aspected related to living in the city and adjusting to it. For academics and internship details, you can read [this article](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html).
 
 # 7.1 Home and "Anmeldung"
 
