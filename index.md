@@ -23,6 +23,8 @@ I intend to write about these in near future.
 
 ## 2. Latest Posts
 
+59 -- 2025, May 15: [PGDM-IB programme - Fall Semester at ESCP Paris Campus](/mdi/2025/05/15/escp-mdi-fall-semester.html)
+<br/>
 58 -- 2025, April 08: [Who funds deep-tech Innovation?](/non-technical/2025/04/07/who-funds-innovation.html)
 <br/>
 57 -- 2025, Mar 09: [Understanding PI Part 1 - A Peak into Digital Internet Architecture](/pi/2025/03/09/understanding-pi-part1-a-peak-into-digital-internet-architecture.html)
