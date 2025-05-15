@@ -232,6 +232,22 @@ The intention of this post is to share all the meta-details about the program. I
 
 After the spring semester, you will have to find an internship in Germany, in between April and August. Post this, fall semester will be in Paris (our semester is starting from 15 September 2025), and it will be a free-track semester (which means no specialization, just individual courses and we need to complete 120 hours). So for this, we will have to apply for France visa while in Germany (Details on this later once I get clarity over it).
 
+# 10. The Summer
+
+Summer officially starts in April, and goes on till September. For us, it was from 15 April 2025 to 15 September 2025. During this period, we are to find internships of atleast 8 - 10 weeks long, according to MDI requirement. For details on that, you may look around [here](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html).
+
+The Summer can be a time filled with uncertainties. My rental contract came to an end on 30 April 2025, but I had not gotten an internship yet, so I did not know where to stay after 30, same was the case with most of us. Fortunately, I had a friend in Dresden, a city that is just 3 hours away from Berlin, so I stayed in his home for a while before I came back to Berlin once my internship got confirmed. Most folks do something like this - they try to extend the contracts by a month or so, or find some temporary accommodation, so be aware of this.
+
+# 10.1 For Internships
+
+Once the location of your internship is confirmed, you shift to that place. There are a number of options - there are student dorms, student apartments or there are private rooms and apartments anyways. I am not at liberty to name folks here, so if you are to go to a certain city, let me know and I will help you get in touch with the right person (there are people who went to Berlin, Hamburg, Dusseldorf, Magdeburg, Stuttgart and neighboring cities).
+
+Apart from settling down, you will have to re-register (Anmeldung) wherever you go. Some people are of the opinion that re-registration is not necessary, some say it is needed. My opinion is that if you are working, it is better to have registration. Re-registation is a simple process anyway, identical to that of registration (just take the proof of residence to the city corporation office and it'll be done within 15 minutes).
+
+# 10.1 Preperation for Fall Semester
+
+Summer is also when you start preparing for the fall semester, that generally starts in September. This is a long enough post already, so I will be writing all the details pertaining to the fall semester [here](/mdi/2025/05/15/escp-mdi-fall-semester.html).
+
 ## 10. A short note on other campuses
 
 This post is largely ESCP Berlin campus oriented because that is the experience I have had. I will request some folks from Paris and Madrid campus to write something like this - atleast about the Madrid campus because every year a maximum of 5 people go to Madrid for spring semester and I know for a fact that their process is a bit more complicated than ours. 3/4th of the class goes to Paris, so the processes are streamlined and there are no surprises/uncertainty - but that is not the case with Berlin and Madrid campuses.
