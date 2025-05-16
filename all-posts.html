@@ -6,10 +6,10 @@ comments: False
 ---
 
 <ol>
-  {% for post in site.posts reversed %}
+  {% for post in site.posts %}
     <li>
+      <span> {{ post.date | date: "%Y, %B %d" }} - </span>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <span> – {{ post.date | "%Y, %B %d" }}</span>
     </li>
   {% endfor %}
 </ol>
