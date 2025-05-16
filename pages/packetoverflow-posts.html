@@ -1,0 +1,30 @@
+---
+layout: page
+title: Packet Overflow!
+permalink: /packetoverflow-posts/
+comments: False
+---
+
+<p>Packet Overflow! is a new series of articles I am starting to understand Computer Networks better.</p>
+<p>In this series, we are going to have fun playing around with packets, capturing them, dissecting and analyzing them, understanding the different Networking Protoc
+ols used. It is going to be a hands-on series with a bit of theory.</p>
+<p>We will be doing 3 things very frequently in this series.</p>
+<ol>
+<li>Writing simple network programs</li>
+<li>Capturing packets using a tool like Wireshark which will help us analyze them.</li>
+<li>Read RFCs(Request For Comments) to understand the protocol better.</li>
+</ol>
+<p>Let us start with covering some important pre-requisites.</p>
+<p>In the first few posts, I will be introducing you to Computer Networks in general, then Network Programming and Introduction to Wireshark. Once it is done, we are ready to start our journey with packets!</p>
+<p>One popular approach used while explaining the Networking Stack to someone is the <strong>Top-Down Approach</strong>. It starts with Application Layer - a layer everyone is familiar is with, and then goes to lower layers. I learnt it this way and  it is an amazing approach, but I felt something is missing in it. It <strong>does not</strong> explain the <strong>way the networking stack evolved</strong> which I think is very important in getting a hold on Computer Networks. The Top-Down approach though very successful in explaining the complete stack, has it&#39;s drawbacks and a few major ones. It all started with Electromagnetic signals interacting with each other(Physical Layer), then came the Data-Link Layer which helps machines to communicate inside a &quot;network&quot; - the concept of network comes in. The Data-Link Layer has has it&#39;s share of problems and now we want to connect multiple networks - that why Network Layer, protocols like IPv4 are invented. Then there is a need to have a reliable protocol over a unreliable Network Layer protocol, thus the Tranmission Control Protocol(TCP) Well, a layman wants to get connected to the Internet and thus came the Application Layer. So, the <strong>Bottom-Up Approach</strong> is the way the Networking Stack evolved. This approach gave me an opportunity to answer some of the fundamental questions and doubts I had which will help in understanding the complete stack better. This approach automatically asks the question &quot;why do you need another layer?&quot; which is one of the most fundamental questions because each layer comes at a cost. So, in the next two articles, I have taken the Top Down Approach to explain the <strong>TCP/IP Networking Stack</strong> and have tried my level best to make it as easy and intuitive as possible. It is by no means a complete reference to the ocean of Computer Networks, but I can assure that it will give you a fair understanding of the different Layers, why exactly is each layer needed and other fundamental concepts. </p>
+<p>The whole idea of the first two articles is to give an overview of the stack. The complete series will help you get a better insight into Computer Networks.</p>
+
+{% assign total = site.categories.packetoverflow | size %}
+  {% for post in site.categories.packetoverflow %}
+    <li>
+      <strong>{{ total | minus: forloop.index0 }}</strong>.
+      <span>{{ post.date | date: "%Y, %B %d" }} - </span>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      
+    </li>
+  {% endfor %}
