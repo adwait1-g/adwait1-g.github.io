@@ -4,38 +4,22 @@ comments: false
 order: 1
 ---
 
-Hello there!
+Hello!
 
-I am Adwaith, welcome to my space. I am a first year management student currently studying at ESCP Business School in Berlin.
+I am Adwaith. I am a business student at the [ESCP Business School](https://escp.eu/programmes/master-in-management), Europe. I am part of the [PGDM-IB](https://www.mdi.ac.in/programmes/post-graduate-diploma-in-management-international-business-pgdm-ib) programme at the [Management Development Institute, Gurgaon](https://www.mdi.ac.in/), India. I recently finished my spring semester at ESCP's Berlin campus and currently spending the summer interning as an Analyst at a business consulting startup.
 
-## 1. What interests me?
+I spent my first two semesters spending time exploring different fields in management. In the previous semester, I spent some time understanding that a lot of IT, AI, ML, Information Systems is used in the field of management, this was through a specialization I took at ESCP Berlin. There seems to be bunch of topics that are a neat intersection of Computer Science, Mathematics and Management. There is a lot of efforts going into using technology and building better management systems. For example, highly sophisticated Decision Support Systems used by today's managers are purely an innovation at this intersection, Quality Control is a facet of Operations Management, Industrial Image Processing and Computer Vision is a great field to explore in the field of Quality Control in Manufacturing, or how Business Process Management is part of Information and Operations Management, Process Mining is a leading way to work with Business Processes, or the proposal of the idea of Physical Internet, which is based on the design and architecture of Digital Internet. I can go on and on about this beautiful intersection, and I would like to explore something on these lines. This is what interests me these days. I plan to write about this in near future.
 
-Any aspect of a firm's operations is of interest to me. To be a bit more specific, the following are the fields I am exploring.
+## Latest Posts
 
-1. Machine Learning, Artificial Intelligence and its applications in solving Operations and Logistics problems.   
-2. Information Systems, IT Management and Strategy, Cyber-Risk Management, Cybersecurity in Finance. Previously, I wrote quite a bit on cybersecurity, [take a look](/cybersecurity/) if it interests you.
-3. Operations and Logistics Management
-4. Management Science and Operations Research
-
-Along with that, I find the Aviation & Airport Industry, and the Energy Industry very interesting. I do some light reading on these.
-
-I intend to write about these in near future.
-
-## 2. Latest Posts
-
-59 -- 2025, May 15: [PGDM-IB programme - Fall Semester at ESCP Paris Campus](/mdi/2025/05/15/escp-mdi-fall-semester.html)
-<br/>
-58 -- 2025, April 08: [Who funds deep-tech Innovation?](/non-technical/2025/04/07/who-funds-innovation.html)
-<br/>
-57 -- 2025, Mar 09: [Understanding PI Part 1 - A Peak into Digital Internet Architecture](/pi/2025/03/09/understanding-pi-part1-a-peak-into-digital-internet-architecture.html)
-<br/>
-56 -- 2025, Mar 01: [On the spring semester with AI & Big Data specialization](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html)
-<br/>
-55 -- 2025, Feb 28: [On the MDI PGDM-IB Program & details about the exchange year](/mdi/2025/02/28/on-the-mdi-pgdm-ib-program.html)       
-
-## 3. What is in it for you?
-
-Well, if you find any of these or some of the archived stuff interesting, then you might want to keep an eye on this space. Or if you want to discuss something, feel free to ping me on any of the social media platforms (check footer of this page).
-
-Have a great day!   
-Adwaith
+<ol>
+{% assign total = site.posts | size %}
+  {% for post in site.posts %}
+    <li>
+      <strong>{{ total | minus: forloop.index0 }}</strong>.
+      <span>{{ post.date | date: "%Y, %B %d" }} - </span>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      
+    </li>
+  {% endfor %}
+</ol>
