@@ -1,17 +1,15 @@
 ---
 layout: page
-title: All Posts
+title: All posts
 permalink: /all-posts/
 comments: False
 ---
 
-
-<h1>All Blog Posts</h1>
-
-<ul>
-  {% for post in site.posts %}
+<ol>
+  {% for post in site.posts reversed %}
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span> – {{ post.date | "%Y, %B %d" }}</span>
     </li>
   {% endfor %}
-</ul>
+</ol>
