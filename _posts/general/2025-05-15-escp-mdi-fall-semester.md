@@ -1,8 +1,8 @@
 ---
 title: On the ESCP Paris Fall Semester
 categories: mdi
-comments: true
 layout: post
+comments: true
 ---
 
 Hallo folks!
