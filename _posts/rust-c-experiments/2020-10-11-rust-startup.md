@@ -1,6 +1,6 @@
 ---
 title: Rust startup
-categories: Rust
+categories: rust
 comments: true
 layout: post
 ---

@@ -1,6 +1,6 @@
 ---
 title: Intro to rustenv
-categories: Rust
+categories: rust
 comments: true
 layout: post
 ---

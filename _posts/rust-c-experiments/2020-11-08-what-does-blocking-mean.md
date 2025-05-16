@@ -1,6 +1,6 @@
 ---
 title: What does blocking mean?
-categories: Rust
+categories: rust
 comments: true
 layout: post
 ---

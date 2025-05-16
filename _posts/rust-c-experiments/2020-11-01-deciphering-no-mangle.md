@@ -1,6 +1,6 @@
 ---
 title: Deciphering Rust's no_mangle
-categories: Rust
+categories: rust
 comments: true
 layout: post
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: C, Rust and more!
-categories: Rust
+categories: rust
 ---
 
 All the code used/written in the posts are present in [this repository](https://github.com/adwait1-G/Rust-C-Experiments).

@@ -1,6 +1,6 @@
 ---
 title: Primitive Types
-categories: Rust
+categories: rust
 comments: true
 layout: post
 ---

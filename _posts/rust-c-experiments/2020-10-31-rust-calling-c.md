@@ -1,6 +1,6 @@
 ---
 title: Calling C code from Rust
-categories: Rust
+categories: rust
 comments: true
 layout: post
 ---

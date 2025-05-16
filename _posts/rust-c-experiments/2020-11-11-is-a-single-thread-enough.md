@@ -1,6 +1,6 @@
 ---
 title: Is a single thread enough? - Events, Notifications and Event Loop
-categories: Rust
+categories: rust
 comments: true
 layout: post
 ---

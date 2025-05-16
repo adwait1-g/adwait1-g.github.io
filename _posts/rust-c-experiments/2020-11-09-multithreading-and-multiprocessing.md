@@ -1,6 +1,6 @@
 ---
 title: Multithreading and multiprocessing
-categories: Rust
+categories: rust
 comments: true
 layout: post
 ---
