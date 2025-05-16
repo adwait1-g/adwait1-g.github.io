@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Packet Overflow!
-categories: Packet Overflow
+permalink: /packetoverflow-posts/
+comments: False
 ---
+
 Packet Overflow! is a new series of articles I am starting to understand Computer Networks better.
 
 In this series, we are going to have fun playing around with packets, capturing them, dissecting and analyzing them, understanding the different Networking Protoc
@@ -18,18 +20,16 @@ Let us start with covering some important pre-requisites.
 
 In the first few posts, I will be introducing you to Computer Networks in general, then Network Programming and Introduction to Wireshark. Once it is done, we are ready to start our journey with packets!
 
-Happy Networking!
-
-
 One popular approach used while explaining the Networking Stack to someone is the **Top-Down Approach**. It starts with Application Layer - a layer everyone is familiar is with, and then goes to lower layers. I learnt it this way and  it is an amazing approach, but I felt something is missing in it. It **does not** explain the **way the networking stack evolved** which I think is very important in getting a hold on Computer Networks. The Top-Down approach though very successful in explaining the complete stack, has it's drawbacks and a few major ones. It all started with Electromagnetic signals interacting with each other(Physical Layer), then came the Data-Link Layer which helps machines to communicate inside a "network" - the concept of network comes in. The Data-Link Layer has has it's share of problems and now we want to connect multiple networks - that why Network Layer, protocols like IPv4 are invented. Then there is a need to have a reliable protocol over a unreliable Network Layer protocol, thus the Tranmission Control Protocol(TCP) Well, a layman wants to get connected to the Internet and thus came the Application Layer. So, the **Bottom-Up Approach** is the way the Networking Stack evolved. This approach gave me an opportunity to answer some of the fundamental questions and doubts I had which will help in understanding the complete stack better. This approach automatically asks the question "why do you need another layer?" which is one of the most fundamental questions because each layer comes at a cost. So, in the next two articles, I have taken the Top Down Approach to explain the **TCP/IP Networking Stack** and have tried my level best to make it as easy and intuitive as possible. It is by no means a complete reference to the ocean of Computer Networks, but I can assure that it will give you a fair understanding of the different Layers, why exactly is each layer needed and other fundamental concepts. 
 
 The whole idea of the first two articles is to give an overview of the stack. The complete series will help you get a better insight into Computer Networks.
 
-1. [Operating System and Networking Stack - Part1](/packet/overflow/2019/02/01/operating-system-and-networking-stack-part1.html)
-
-2. [Operating System and Networking Stack - Part2](/packet/overflow/2019/02/01/operating-system-and-networking-stack-part2.html)
-
-3. [Introduction to Network Programming](/packet/overflow/2019/05/03/introduction-to-network-programming.html): In this article, the fundamental concept of a socket is introduced. Simple server and client programs are written using python's Network API - that way, you get introduced to different socket-related functions. 
-
-4. [Introduction to Wireshark](/packet overflow!/2019/09/08/introduction-to-wireshark.html): In this article, a very interesting tool called Wireshark is introduced. It is a packet sniffer and comes very handy while understanding different protocols.
-
+{% assign total = site.categories.packetoverflow | size %}
+  {% for post in site.categories.packetoverflow %}
+    <li>
+      <strong>{{ total | minus: forloop.index0 }}</strong>.
+      <span>{{ post.date | date: "%Y, %B %d" }} - </span>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      
+    </li>
+  {% endfor %}

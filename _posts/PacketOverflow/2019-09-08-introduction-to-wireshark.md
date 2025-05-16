@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction to Wireshark
-category: Packet Overflow!
+category: packetoverflow
 comments: true
 ---
 
