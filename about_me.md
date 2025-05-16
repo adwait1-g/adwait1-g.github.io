@@ -8,7 +8,7 @@ permalink: /about_me/
 
 Hallo!
 
-I am Adwaith. I am a business student at the ESCP Business School, Europe. I am part of the PGDM-IB programme at the Management Development Institute, Gurgaon, India. At the moment, a few fields that interest me are Operations Management, Logistics, Supply Chain Management, Aviation & Airport Management and Finance. I am interested/intend to understand and solve interesting business problems in these fields using Operations Research, Quantitative Methods, Machine Learning.
+I am Adwaith. I am a business student at the [ESCP Business School](https://escp.eu/programmes/master-in-management), Europe. I am part of the [PGDM-IB](https://www.mdi.ac.in/programmes/post-graduate-diploma-in-management-international-business-pgdm-ib) programme at the [Management Development Institute, Gurgaon](https://www.mdi.ac.in/), India. I recently finished my spring semester at ESCP's Berlin campus and currently spending the summer interning as an Analyst at a Business consulting startup.
 
 Previously, I worked at Cisco Systems Bangalore as a software engineer for about 4 years. I was part of Cisco's MIG (Mass-Scale Infrastructure Group) security team. It was a router security team for the MIG vertical which sold carrier grade routers (routers for service-providers like Airtel, Jio, AT&T, Verizon etc., and data-center customers like Google, Facebook, Amazon etc.,). I graduated with a Bachelor in Technology in Computer Science and Engineering from the National Institute of Technology Karnataka, batch of 2020.
 
@@ -16,15 +16,11 @@ Back then, I was absolutely fascinated with Computer Systems and Security. I spe
 
 Fast forward to June 2024, I joined the dual degree PGDM-IB programme at the Management Development Institute in Gurgaon In June 2024. Luckily, I found most of what I learnt very interesting. The curriculum was Finance heavy along with quite a bit of mathematics like business statistics. I ended up liking a bunch of "theory" subjects too like Organization, Strategy and so on. I found Logistics, Operations Management, Supply Chain Management and Finance most interesting.
 
-As of January 2025, I am at the ESCP Business School, Europe for my MiM year. Here, I am specializing in AI and Big Data for Business Innovation. In short, this specialization is about using AI and Big Data Analytics to solve business/management problems. I will be learning a quite a bit of math, good amount of programming and most of all, applying them to solve interesting business problems - like how do you have optimal inventory, can you get an accurate forecast on the next year's customer demand, or can you optimize that supply chain and cut your costs and so on. I am interested in both facets of it - the foundational mathematics involved in analytics and its usage on business problems.
+As of January 2025, I am at the ESCP Business School, Europe for my MiM year. Here at the Berlin campus, I am specializing in [AI and Big Data for Business Innovation](https://ent.escpeurope.eu/Syllabus/SylView/view/11760857/2). It is a techno-managerial [specialization](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html) which uses technology to solve interesting business problems.
 
-While those are the about the techniques and methods, there are a few industries I have been fascinated about.
+For some time, I am interested in AI, ML and using it to solve business problems, which is also why I took up the said specialization. I intend to write about this in the near future.
 
-The first would be the petroleum and energy industry. It started off with a small coursera course on the Oil and Gas Industry and its operations. Post that, I understood that this industry relies on very complex logistics and operations - starting from extraction to distribution of fuel. Cutting-edge technologies, predictive analytics and process optimization play an essential role in improving the efficiency, minimizing risks and meeting global demands.
-
-Another industry I find wonderful is the aviation industry. I have been into aviation management, airport operations and analytics for a while now. I find every function of the aviation industry fasinating - the route scheduling to fuel planning to revenue management, crew management and so on. In my free time, I spend time on reading and mathematically modeling problems pertinent to this industry.
-
-Well, this blog was dead for a while now. The last time I wrote something of meaning here was sometime in 2021 or early 2022 I believe. After 3+ years, I am revamping this blog and want to do something with this yet again. I plan to do what I did back then - read interesting articles and research papers, business cases and write about them, write summaries, implementations and other experiments and learning I will take part in.
+This blog was dead for quite some time. The last time I wrote something of meaning here was sometime in late 2021 I believe. After close to 4 years, I am revamping this blog and want to do something with this yet again. I plan to do what I did back then - read interesting articles and research papers, business cases and write about them, write summaries, perform experiments and learning I will take part in.
 
 Cheers!    
 Adwaith
