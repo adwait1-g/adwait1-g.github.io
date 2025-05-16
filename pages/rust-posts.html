@@ -1,0 +1,16 @@
+---
+layout: page
+title: The Rust Programming Language
+permalink: /rust-posts/
+comments: False
+---
+
+{% assign total = site.categories.rust | size %}
+  {% for post in site.categories.rust %}
+    <li>
+      <strong>{{ total | minus: forloop.index0 }}</strong>.
+      <span>{{ post.date | date: "%Y, %B %d" }} - </span>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      
+    </li>
+  {% endfor %}
