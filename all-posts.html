@@ -5,11 +5,14 @@ permalink: /all-posts/
 comments: False
 ---
 
+{% assign total = site.posts | size %}
 <ol>
   {% for post in site.posts %}
     <li>
-      <span> {{ post.date | date: "%Y, %B %d" }} - </span>
+      <strong>{{ total | minus: forloop.index0 }}</strong>.
+      <span> – {{ post.date | date: "%Y, %B %d" }} - </span>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      
     </li>
   {% endfor %}
 </ol>
