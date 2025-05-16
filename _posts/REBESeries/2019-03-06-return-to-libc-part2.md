@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Defeating Write XOR Execute! - Ret2Libc - Part2
-categories: Reverse Engineering and Binary Exploitation Series
+categories: rebeseries
 comments: true
 ---
 

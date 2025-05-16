@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Statelessness - Rootcause of many Security Vulnerabilities
-categories: general
+categories: rebeseries
 comments: true
 ---
 

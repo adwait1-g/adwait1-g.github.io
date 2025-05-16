@@ -1,7 +1,7 @@
 ---                                                                             
 title: Sigreturn Oriented Programming - An Introduction
 layout: post
-categories: Reverse Engineering and Binary Exploitation Series
+categories: rebeseries
 comments: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding clang's SafeStack
-categories: Papers
+categories: rebeseries
 comments: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bypassing Write XOR Execute! - Ret2Libc - Part1
-categories: Reverse Engineering and Binary Exploitation Series
+categories: rebeseries
 comments: true
 ---
 

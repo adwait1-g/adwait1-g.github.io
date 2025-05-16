@@ -1,7 +1,7 @@
 ---
 title: Understanding the Loader - Part1 - How does an executable get loaded to memory?
 layout: post
-categories: Reverse Engineering and Binary Exploitation Series
+categories: rebeseries
 comments: true
 ---
 

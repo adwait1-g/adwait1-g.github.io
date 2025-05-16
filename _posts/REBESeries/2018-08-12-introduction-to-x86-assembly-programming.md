@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction to x86 Assembly Programming
-categories: Reverse Engineering and Binary Exploitation series
+categories: rebeseries
 comments: true
 ---
 

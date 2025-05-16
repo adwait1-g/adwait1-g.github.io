@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Internals of Compiling - Journey from C/C++ program to an Executable
-categories: Reverse Engineering and Binary Exploitation series
+categories: rebeseries
 comments: true
 ---
 

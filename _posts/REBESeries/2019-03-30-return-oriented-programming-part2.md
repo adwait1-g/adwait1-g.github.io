@@ -2,7 +2,7 @@
 layout: post
 comments: false
 title: Return Oriented Programming - Part2
-categories: Reverse Engineering and Binary Exploitation Series
+categories: rebeseries
 ---
 
 Hello fellow pwners!

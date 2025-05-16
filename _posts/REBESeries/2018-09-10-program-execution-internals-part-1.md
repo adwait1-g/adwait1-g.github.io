@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Program Execution Internals - Part1
-categories: Reverse Engineering and Binary Exploitation series
+categories: rebeseries
 comments: true
 ---
 

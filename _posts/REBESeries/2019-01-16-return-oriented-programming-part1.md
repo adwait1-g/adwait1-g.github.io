@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Return Oriented Programming - Part1
-categories: Reverse Engineering and Binary Exploitation Series
+categories: rebeseries
 comments: true
 ---
 

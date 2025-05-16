@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Memory Layout of a Process
-categories: Reverse Engineering and Binary Exploitation series
+categories: rebeseries
 comments: true
 --- 
 

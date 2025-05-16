@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How does the Operating System defend itself?
-categories: Reverse Engineering and Binary Exploitation Series
+categories: rebeseries
 comments: true
 ---
 
