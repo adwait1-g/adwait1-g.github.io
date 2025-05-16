@@ -63,39 +63,44 @@ PS: Back in the time, I had collected some resources in systems security. You wi
 # 3.2 Books and other resources
 
 ## 4. UEFI
-	1. [UEFI-EDK2 Training](https://github.com/tianocore-training/Tianocore_Training_Contents/wiki): In-depth training on UEFI. Best way to get started with UEFI.
-	2. [EDK2](https://github.com/tianocore/edk2): Firmware development environment for UEFI specifications. In short, one can build a virtual firmware, run it on VM, write UEFI applications, run and test them in that VM.
-	3. [EDK2 documents](https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Documents): Lists all the documents related to EDK2. It has everything from getting started to writing hello-world UEFI programs to training/courses on UEFI.
-	4. [Introduction to EFI programming](http://www.rodsbooks.com/efi-programming/) by Roderick Smith.
-	5. [x86asm.net - Introduction to UEFI](http://x86asm.net/articles/introduction-to-uefi/index.html)
-	6. [EFI Tutorial](https://github.com/safayetahmedatge/efitutorial)
-	7. Books on UEFI by its creators: [Harnessing the UEFI Shell](/assets/firmware-security/Harnessing-the-UEFI-shell-Moving-the-platform-beyond-DOS.pdf), [Beyond BIOS](/assets/firmware-security/Beyond-BIOS-Developing-with-the-UEFI.pdf). The first book is an amazing starter. Second one does a deep dive.
-	8. [osdev.org UEFI wiki](https://wiki.osdev.org/UEFI)
-	9. [Remote debugging UEFI programs with gdb](https://wiki.osdev.org/Debugging_UEFI_applications_with_GDB)
+
+1. [UEFI-EDK2 Training](https://github.com/tianocore-training/Tianocore_Training_Contents/wiki): In-depth training on UEFI. Best way to get started with UEFI.
+2. [EDK2](https://github.com/tianocore/edk2): Firmware development environment for UEFI specifications. In short, one can build a virtual firmware, run it on VM, write UEFI applications, run and test them in that VM.
+3. [EDK2 documents](https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Documents): Lists all the documents related to EDK2. It has everything from getting started to writing hello-world UEFI programs to training/courses on UEFI.
+4. [Introduction to EFI programming](http://www.rodsbooks.com/efi-programming/) by Roderick Smith.
+5. [x86asm.net - Introduction to UEFI](http://x86asm.net/articles/introduction-to-uefi/index.html)
+6. [EFI Tutorial](https://github.com/safayetahmedatge/efitutorial)
+7. Books on UEFI by its creators: [Harnessing the UEFI Shell](/assets/firmware-security/Harnessing-the-UEFI-shell-Moving-the-platform-beyond-DOS.pdf), [Beyond BIOS](/assets/firmware-security/Beyond-BIOS-Developing-with-the-UEFI.pdf). The first book is an amazing starter. Second one does a deep dive.
+8. [osdev.org UEFI wiki](https://wiki.osdev.org/UEFI)
+9. [Remote debugging UEFI programs with gdb](https://wiki.osdev.org/Debugging_UEFI_applications_with_GDB)
 
 ## 5. Firmware-Security, Reversing etc.,
-	1. [www.firmwaresecurity.com](https://firmwaresecurity.com/)
-	2. [The BIOS blog by Darmawan Salihun](http://bioshacking.blogspot.com/): Insane blog, extremely rich.
-	3. [Pinczakko's blog](https://sites.google.com/site/pinczakko/): Another crazy blog
-	4. [Vincent Zimmer's blog on firmware, UEFI etc.,](http://vzimmer.blogspot.com/2015/06/firmware-related-blogs.html)
-	5. [Satoshi's note](http://standa-note.blogspot.com)
+
+1. [www.firmwaresecurity.com](https://firmwaresecurity.com/)
+2. [The BIOS blog by Darmawan Salihun](http://bioshacking.blogspot.com/): Insane blog, extremely rich.
+3. [Pinczakko's blog](https://sites.google.com/site/pinczakko/): Another crazy blog
+4. [Vincent Zimmer's blog on firmware, UEFI etc.,](http://vzimmer.blogspot.com/2015/06/firmware-related-blogs.html)
+5. [Satoshi's note](http://standa-note.blogspot.com)
 
 ## 6. TPM
-	1. [TCG's summary on TPM](https://trustedcomputinggroup.org/resource/trusted-platform-module-tpm-summary/)
-	2. [SWTPM](https://github.com/stefanberger/swtpm)
-	3. [tpm2 software](https://tpm2-software.github.io/)
+
+1. [TCG's summary on TPM](https://trustedcomputinggroup.org/resource/trusted-platform-module-tpm-summary/)
+2. [SWTPM](https://github.com/stefanberger/swtpm)
+3. [tpm2 software](https://tpm2-software.github.io/)
 
 ## 7. Other related stuff
-	1. [Coreboot](https://github.com/coreboot/coreboot): An opensource alternative to proprietary BIOS used by various vendors.
-	2. [LinuxBoot](https://www.linuxboot.org/): Linux as firmware.
-	3. [System Management BIOS (SMBIOS)](https://www.dmtf.org/standards/smbios/)
-	4. [SeaBIOS](https://github.com/coreboot/seabios): Opensource implementation of x86 legacy BIOS.
-	5. [Linux from scratch's About firmware](https://www.linuxfromscratch.org/blfs/view/svn/postlfs/firmware.html): This article has links to several amazing articles/github repositories in it.
-	6. [Intel's repository of processor microcode](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files)
+
+1. [Coreboot](https://github.com/coreboot/coreboot): An opensource alternative to proprietary BIOS used by various vendors.
+2. [LinuxBoot](https://www.linuxboot.org/): Linux as firmware.
+3. [System Management BIOS (SMBIOS)](https://www.dmtf.org/standards/smbios/)
+4. [SeaBIOS](https://github.com/coreboot/seabios): Opensource implementation of x86 legacy BIOS.
+5. [Linux from scratch's About firmware](https://www.linuxfromscratch.org/blfs/view/svn/postlfs/firmware.html): This article has links to several amazing articles/github repositories in it.
+6. [Intel's repository of processor microcode](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files)
 
 ## 8. Firmware, BIOS samples
-	1. [Dell downloads](https://www.dell.com/support/home/en-in?app=drivers): Dell publishes System BIOS for a variety of its products. Gold Mine
-	2. [HP software downloads](https://support.hp.com/in-en/drivers): Firmware for a bunch of HP products can be downloaded from here.
+
+1. [Dell downloads](https://www.dell.com/support/home/en-in?app=drivers): Dell publishes System BIOS for a variety of its products. Gold Mine
+2. [HP software downloads](https://support.hp.com/in-en/drivers): Firmware for a bunch of HP products can be downloaded from here.
 
 ## 9. Crypto, Math
 
