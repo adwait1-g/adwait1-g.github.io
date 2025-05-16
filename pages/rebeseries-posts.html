@@ -5,8 +5,8 @@ permalink: /rebeseries-posts/
 comments: False
 ---
 
-{% assign rebeseries = site.posts | where: "category", "rebeseries" %}
-  {% for post in site.tutorials %}
+{% assign rebeseries = site.posts | where_exp: "post" "post.categories contains 'rebeseries'" %}
+  {% for post in site.series %}
     <li>
       <strong>{{ total | minus: forloop.index0 }}</strong>.
       <span>{{ post.date | date: "%Y, %B %d" }} - </span>
