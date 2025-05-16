@@ -5,7 +5,7 @@ permalink: /rebeseries-posts/
 comments: False
 ---
 
-{% assign rebeseries = site.posts | where: "categories", "rebeseries" %}
+{% assign rebeseries = site.posts | where: "category", "rebeseries" %}
   {% for post in site.rebeseries %}
     <li>
       <strong>{{ total | minus: forloop.index0 }}</strong>.
