@@ -15,21 +15,8 @@ I worked on a range of subjects - starting from hardware/firmware security to OS
 2. The Rust Programming Language interested me a lot. I ended up writing quite a bit about the language internals, lots of code and analysis, particularly on the Event-Driven Programming paradigm. You can find them [here](/rust-posts/).    
 3. Network Packet Analysis: As a vowed network security enthusiast, I wrote an amateur network packet analysis tool to understanding various network protocols [here](/packetoverflow-posts/).    
 4. In my ever continuing pursuit of understanding Operation Systems better, I wrote an ELF Parser, you can find it [here](/elfparser-posts/).   
-6. I did a number of projects on malware analysis, cyber-intelligence, workshops and competitions in the field of computer security. You can find them all [here]().
-
-
-5. Wrote 2 simple posts on how to setup a simple blog like this one. You can find them here: [Part1](/blogging/2018/11/27/setting-up-a-blog-using-jekyll-Part1.html), [Part2](/blogging/2018/11/27/setting-up-a-blog-using-jekyll-Part2.html).   
-
-
-
-3. Malware Analysis, Cyber-Intelligence: I had a number of personal projects from analyzing pieces of malware(like a virus or a trojanhorse), to writing tools (based on concepts explained in various articles, research papers). You can find them [here](/2021/07/18/personal-projects.html).
-4. There are some generic articles on computer systems and security [here](/2019/03/25/talks-and-workshops-mainpage.htm).
-
-At one point, I decided to pursue an MBA, so I have switched to the management stream, and have a variety of interests in IT: Information Systems, IT Strategy for Businesses, Cyber-Risk Management, Cybersecurity in Finance and E-Commerce.
-Follow this space if these topics interest you.
-
-Cheers,   
-Adwaith
+5. I did a number of projects on malware analysis, cyber-intelligence, workshops and competitions in the field of computer security. You can find them all [here](/2021/07/18/personal-projects.html).    
+6. Wrote two simple posts on how to setup a simple blog like this one. You can find them here: [Part1](/blogging/2018/11/27/setting-up-a-blog-using-jekyll-Part1.html), [Part2](/blogging/2018/11/27/setting-up-a-blog-using-jekyll-Part2.html).   
 
 -----------------------------------------------------------------------------------------------
 PS: Back in the time, I had collected some resources in systems security. You will find a vaguely categorized list below. Hope it helps.
