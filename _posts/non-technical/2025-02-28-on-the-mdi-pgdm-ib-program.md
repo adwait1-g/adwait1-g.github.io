@@ -1,8 +1,8 @@
 ---
 title: On the MDI PGDM-IB Program - Details about the exchange year
 categories: mdi
-comments: true
 layout: post
+comments: true
 ---
 
 Update 1: 05 April 2025   

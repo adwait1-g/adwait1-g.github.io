@@ -1,5 +1,5 @@
 ---
-title: On the spring semester with AI & Big Data specialization
+title: On the ESCP Berlin spring semester with AI & Big Data specialization
 categories: mdi
 comments: true
 layout: post
@@ -138,7 +138,7 @@ All that said and done, I am in no position to give suggestions and advice to fo
 
 As of 23 April 2025, the numbers in France/ESCP Paris campus are also not great - 90/118 of them went to Paris, out of which about 1/3rd of them have secured internships. Out of the 4 people who went to Madrid campus, 2/4 of them secure one. Along with that, it is disheartening to see folks losing hope and going back to India in search of opportunities.
 
-As of 15 May 2025, I think 11/24 of us have gotten internships here in Germany, 3 of them in India, 10 more are left. Probably 2/4 folks in Madrid got their internships, I don't know exact numbers on Paris campus - aboout 45/90 might have gotten, looking at the linkedin posts and such. Overall not a great situation for the batch to be in.
+As of 15 May 2025, I think 12/24 of us have gotten internships here in Germany, 3 of them in India, 10 more are left. Probably 2/4 folks in Madrid got their internships, I don't know exact numbers on Paris campus - aboout 45/90 might have gotten, looking at the linkedin posts and such. Overall not a great situation for the batch to be in.
 
 Point is that this is the kind of variability you are dealing with when you come to Europe. So if you decide to search for an internship here, take all the necessary steps to hedge against risks.
 

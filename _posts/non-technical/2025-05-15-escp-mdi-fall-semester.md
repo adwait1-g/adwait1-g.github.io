@@ -1,5 +1,5 @@
 ---
-title: PGDM-IB programme - Fall Semester at ESCP Paris Campus
+title: On the ESCP Paris Fall Semester
 categories: mdi
 comments: true
 layout: post
