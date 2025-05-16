@@ -5,7 +5,7 @@ permalink: /rebeseries-posts/
 comments: False
 ---
 
-{% assign total = site.categories.rebeseries | rebeseries %}
+{% assign total = site.categories.rebeseries | size %}
   {% for post in site.categories.rebeseries %}
     <li>
       <strong>{{ total | minus: forloop.index0 }}</strong>.
