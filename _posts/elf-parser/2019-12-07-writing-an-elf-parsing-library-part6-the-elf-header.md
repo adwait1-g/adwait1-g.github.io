@@ -1,6 +1,6 @@
 ---
 title: Writing an ELF Parsing Library - Part6 - The ELF Header
-categories: write your own XXXX
+categories: elfparser
 layout: post
 comments: true
 ---

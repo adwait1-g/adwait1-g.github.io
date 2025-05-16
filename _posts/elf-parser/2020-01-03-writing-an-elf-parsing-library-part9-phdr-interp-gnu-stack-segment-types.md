@@ -1,6 +1,6 @@
 ---
 title: Writing an ELF Parsing Library - Part9 - PHDR, INTERP and GNU_STACK segment types
-categories: write your own XXXX
+categories: elfparser
 layout: post
 comments: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: Writing an ELF Parsing Library - Part2 - Piloting the Library
-layout: page
-categories: Write your own XXXX
+layout: post
+categories: elfparser
 comments: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Writing an ELF Parsing Library - Part1 - What is ELF?
-categories: Write your own XXXX
+categories: elfparser
 layout: post
 comments: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: Writing an ELF Parsing Library - Part3 - Internal Data Structures - 1
-categories: Write your own XXXX
+categories: elfparser
 layout: post
 comments: true
 ---

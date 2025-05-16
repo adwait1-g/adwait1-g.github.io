@@ -1,6 +1,6 @@
 ---
 title: Writing an ELF Parsing Library - Part5 - Implementing basic API
-categories: write your own XXXX
+categories: elfparser
 layout: post
 comments: true
 ---
