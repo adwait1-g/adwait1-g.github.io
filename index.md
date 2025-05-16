@@ -12,7 +12,7 @@ I spent my first two semesters spending time exploring different fields in manag
 
 ## Latest Posts
 
-<p>
+<ul>
 {% assign total = site.posts | size %}
   {% for post in site.posts %}
     <li>
@@ -22,4 +22,4 @@ I spent my first two semesters spending time exploring different fields in manag
       
     </li>
   {% endfor %}
-</p>
+</ul>
