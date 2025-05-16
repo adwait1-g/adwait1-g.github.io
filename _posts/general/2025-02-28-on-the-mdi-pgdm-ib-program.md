@@ -232,7 +232,7 @@ The intention of this post is to share all the meta-details about the program. I
 
 After the spring semester, you will have to find an internship in Germany, in between April and August. Post this, fall semester will be in Paris (our semester is starting from 15 September 2025), and it will be a free-track semester (which means no specialization, just individual courses and we need to complete 120 hours). So for this, we will have to apply for France visa while in Germany (Details on this later once I get clarity over it).
 
-# 10. The Summer
+## 10. The Summer
 
 Summer officially starts in April, and goes on till September. For us, it was from 15 April 2025 to 15 September 2025. During this period, we are to find internships of atleast 8 - 10 weeks long, according to MDI requirement. For details on that, you may look around [here](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html).
 
@@ -244,19 +244,19 @@ Once the location of your internship is confirmed, you shift to that place. Ther
 
 Apart from settling down, you will have to re-register (Anmeldung) wherever you go. Some people are of the opinion that re-registration is not necessary, some say it is needed. My opinion is that if you are working, it is better to have registration. Re-registation is a simple process anyway, identical to that of registration (just take the proof of residence to the city corporation office and it'll be done within 15 minutes).
 
-# 10.1 Preperation for Fall Semester
+# 10.2 Preperation for Fall Semester
 
 Summer is also when you start preparing for the fall semester, that generally starts in September. This is a long enough post already, so I will be writing all the details pertaining to the fall semester [here](/mdi/2025/05/15/escp-mdi-fall-semester.html).
 
-## 10. A short note on other campuses
+## 11. A short note on other campuses
 
 This post is largely ESCP Berlin campus oriented because that is the experience I have had. I will request some folks from Paris and Madrid campus to write something like this - atleast about the Madrid campus because every year a maximum of 5 people go to Madrid for spring semester and I know for a fact that their process is a bit more complicated than ours. 3/4th of the class goes to Paris, so the processes are streamlined and there are no surprises/uncertainty - but that is not the case with Berlin and Madrid campuses.
 
-## 11. Documents list
+## 12. Documents list
 
 Throughout the process, there is a lot of form-filling, document-issuing by different authorities, verification and so on. I have prepared an exhaustive list of documents which you can use as reference during your prep. I cannot share it here out in the public because it contains lot of personal information. If you are an IB student of any batch and want that list, please feel free to ping me, I will share it with you.
 
-## 12. Conclusion
+## 13. Conclusion
 
 Alright, this is all I wanted to cover. Intention is that students who take up the IB program, and especially ESCP Berlin Campus should know before hand what they are getting into. Processes can vary each year, but I would say this will probably be the general skeleton. I personally felt that knowing all this as a whole as an IB student would have helped me much better in planning things.
 
@@ -267,7 +267,7 @@ Update 2: As of 21 April 2025, I am 3.5 months into my european experience. I ha
 Cheers,   
 Adwaith
 
-## 13. References
+## 14. References
 
 1. ESCP MiM Page: https://escp.eu/programmes/master-in-management     
 2. AI and Big Data for Business Innovation: https://ent.escpeurope.eu/Syllabus/SylView/view/11760857/2      
