@@ -12,14 +12,14 @@ I spent my first two semesters spending time exploring different fields in manag
 
 ## Latest Posts
 
-<ol>
+<p>
 {% assign total = site.posts | size %}
   {% for post in site.posts %}
     <li>
-      <strong>{{ total | minus: forloop.index0 }}</strong>.
+      <strong>{{ total | : forloop.index0 }}</strong>.
       <span>{{ post.date | date: "%Y, %B %d" }} - </span>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       
     </li>
   {% endfor %}
-</ol>
+</p>
