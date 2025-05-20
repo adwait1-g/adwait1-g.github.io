@@ -24,12 +24,12 @@ Process Mining started off as an academic endevour in the 1990s and with time it
 1. [Process Mining Handbook](https://library.oapen.org/bitstream/id/e9c5f431-eb92-45dc-a4ab-3f7ecbf91426/978-3-031-08848-3.pdf): By Prof. Will van der Aalst   
 2. [Prof. Will van der Aalst's Website](https://www.vdaalst.com/)   
 3. [Process Mining: Data Science in Action](http://repo.darmajaya.ac.id/4319/1/Process%2520Mining_%2520Data%2520Science%2520in%2520Action%2520%2528%2520PDFDrive%2520%2529.pdf)
-4. [Process Discovery using Graph Neural Networks](https://arxiv.org/abs/2109.05835)   
-5. [Supervised Learning of Process Discovery techniques using Graph Neural Networks](https://www.sciencedirect.com/science/article/pii/S0306437923000455)   
 
 # 2.1 Process Discovery
 
 1. [Foundations of Process Discovery](https://www.vdaalst.rwth-aachen.de/publications/p1330.pdf) by Prof. Will van der Aalst   
+2. [Process Discovery using Graph Neural Networks](https://arxiv.org/abs/2109.05835)   
+3. [Supervised Learning of Process Discovery techniques using Graph Neural Networks](https://www.sciencedirect.com/science/article/pii/S0306437923000455)   
 
 ## 3. Anomaly Detection
 
