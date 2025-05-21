@@ -33,10 +33,7 @@ Process Mining started off as an academic endevour in the 1990s and with time it
 
 ## 3. Anomaly Detection
 
-1. [A Systematic Review of Anomaly Detection for Business Process Event Logs](https://link.springer.com/article/10.1007/s12599-023-00794-y)    
-2. [Enhancing Business Process Anomaly Detection with Neo4j and Graph Neural Networks](https://www.youtube.com/watch?v=qFDTF_mSnMY)    
-3. [Systematic Literature Review on Anomaly Detection in Business Process Runtime Behavior](http://eprints-dev5.cs.univie.ac.at/5220/1/paper.pdf)    
-4. [Detecting Anamolous Events in Object-Centric Business Processes via Graph Neural Networks](https://link.springer.com/chapter/10.1007/978-3-031-56107-8_14)   
+Please check [here](/bp-anomaly-detection/).
 
 ## 4. Next Activity Prediction
 
