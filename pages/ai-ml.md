@@ -10,10 +10,11 @@ comments: false
 
 1. [Dive into Deep Learning](https://d2l.ai/)   
 2. [Neural Networks: Zero to Hero](https://youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&si=XhjSpxeVGG_fb_k_) by Andrej Karpathy: This is how I got started with AI-ML.
-3. [Deep Learning](https://www.deeplearningbook.org/)   
-4. [Pattern Recognition and Machine Learning](https://libgen.is/book/index.php?md5=B616EF565E2D48AE23EE2E19D7B0ADD2)   
-5. [On the opportunities and risks of Foundation Models](https://arxiv.org/abs/2108.07258)   
-6. [A cookbook of Self-Supervised Learning](https://arxiv.org/abs/2304.12210)
+3. [UV-A Deep Learning Course](https://uvadlc.github.io/)    
+4. [Deep Learning](https://www.deeplearningbook.org/)   
+5. [Pattern Recognition and Machine Learning](https://libgen.is/book/index.php?md5=B616EF565E2D48AE23EE2E19D7B0ADD2)   
+6. [On the opportunities and risks of Foundation Models](https://arxiv.org/abs/2108.07258)   
+7. [A cookbook of Self-Supervised Learning](https://arxiv.org/abs/2304.12210)
 
 # 1. Graph Neural Networks
 
