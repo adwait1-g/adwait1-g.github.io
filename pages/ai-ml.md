@@ -34,7 +34,10 @@ I am a management/analytics guy, and even today most of the data I work with is 
 6. [Introduction to Graph Neural Networks](https://web.media.mit.edu/~xdong/teaching/aims/lecture-slides/MT21/AIMS_CDT_SP_MT21_D4.pdf): Lecture @ EPFL    
 7. [Introduction to Graph Neural Networks](https://cs.stanford.edu/~jiaxuan/files/Intro_to_Graph_Neural_Networks.pdf): Lecture @ Stanford     
 8. [Graph Foundation Models: Concepts, Opportunities & Challenges](https://arxiv.org/pdf/2310.11829): March 2025   
-9. [Position: Graph Foundation Models are Already Here](https://arxiv.org/abs/2402.02216)
+9. [Position: Graph Foundation Models are Already Here](https://arxiv.org/abs/2402.02216)    
+10. [A Comprehensive Survey on Graph Neural Networks](https://arxiv.org/pdf/1901.00596): August 2019     
+11. [A Comprehensive Survey on Deep Graph Representation Learning](https://arxiv.org/abs/2304.05055)    
+12. [Deep Learning on Graphs: A Survey](https://arxiv.org/abs/1812.04202): 2020   
 
 # 2. Tabular Data
 
@@ -44,8 +47,15 @@ I am a management/analytics guy, and even today most of the data I work with is 
 4. [Is Deep Learning finally better than Decision Trees on Tabular Data](https://arxiv.org/pdf/2402.03970v2): Feb 2025
 5. [Towards Foundation Models for Learning Tabular Data](https://openreview.net/pdf?id=hz2zhaZPXm): 2024    
 6. [TabICL: A Tabular Foundation Model for In-Context Learning on Large Data](https://arxiv.org/abs/2502.05564)   
-7. [Language Models are Realistic Tabular Data Generators](https://arxiv.org/abs/2210.06280): Another paper whose aim I am interested in. Business Processes are my domain of interest, and from what I understand there is not a single large, standard dataset. Old datasets of BPI Challenges (2012-2022) are generally used even today. I think generating realistic synthetic datasets based on features of those smaller, old datasets might help research, just a vague idea.
+7. [Language Models are Realistic Tabular Data Generators](https://arxiv.org/abs/2210.06280): Another paper whose aim I am interested in. Business Processes are my domain of interest, and from what I understand there is not a single large, standard dataset. Old datasets of BPI Challenges (2012-2022) are generally used even today. I think generating realistic synthetic datasets based on features of those smaller, old datasets might help research, just a vague idea.    
+8. [Deep Learning within Tabular Data: Foundations, Challenges, Advances & Future Directions](https://arxiv.org/abs/2501.03540): 2025
+9. [A Survey on Deep Tabular Learning](https://arxiv.org/abs/2410.12034): Oct 2024   
+10. 
 
 # 3. Time-Series Data
+
+1. [Time Series Data Augmentation for Deep Learning: A Survey](https://arxiv.org/abs/2002.12478): March 2022
+2. [Deep Learning for Time Series Forecasting: A Survey](https://arxiv.org/abs/2503.10198)    
+3. [TIme Series Forecasting with Deep Learning: A Survey](https://arxiv.org/abs/2004.13408)   
 
 1. [From Tables to Time: How TabPFN-v2 Outperforms Specialized Time Series Forecasting Models](https://arxiv.org/abs/2501.02945): This is kind of thing I am looking for. I am working on data that can be interpreted as Tabular Data, Graph Data or Time-Series Data - all 3 are deterministic transformations of one another. So this kind of work where a Tabular Foundation Model works better for a certain Time Series data than a specialized Time Series model itself enthuses me.
