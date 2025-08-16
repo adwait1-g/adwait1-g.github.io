@@ -1,5 +1,5 @@
 ---
-title: "Necessary is not Sufficient" by Eliyahu Goldratt
+title: Necessary is not Sufficient - book by Eliyahu Goldratt
 categories: it
 comments: true
 layout: post
