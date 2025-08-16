@@ -5,9 +5,6 @@ layout: post
 comments: true
 ---
 
-Update 1: 05 April 2025   
-Update 2: 21 April 2025
-
 I got some time to think about the last 9-10 months since I started my management program. I think I would like to share my thoughts on my program. It can seem like a boring guidance book, well, that is the intention. As an outsider, one has very less details about a program, you just see what is marketed, but as an insider I believe I can share some details. Intention is to help out future batches, juniors and ensure they make informed decisions and are well-prepared. I won't be talking about my B-School experience, that is something you can find on linked-in, and I don't think I can write anything with full honesty at this point, that is a task for a later day.
 
 ## 0. June 2024: Init
@@ -206,7 +203,7 @@ The Public Transport is quite good here. With a single monthly ticket (known as 
 
 # 7.7 Around Berlin
 
-If you want good tourist spots in Berlin, then Internet is your friend. I will just write about my experience in Berlin (as of 21 April 2025).
+If you want good tourist spots in Berlin, then Internet is your friend. I will just write about my experience in Berlin.
 
 1. Berlin is filled with large supermarket chains. EDEKA, ALDI, Lidl, REWE, DM, Rossmann, TEDi, Woolworth and so many other stores - huge chains that sell different consumer products. In that for everyday groceries, ALDI/Lidl/EDEKA should suffice. There are a number of Asian stores across Berlin, you will mostly get Indian spices and powders there. I used to go to [Spice Junction](https://g.co/kgs/FPgmR4Z), this was 7-8 UBahn stops from my home. Here, you get chats as well (stuff like aloo-chole, samosa-chole etc.,) and on Saturdays, you get Pav Bhaji, Masala Dose and so on.    
 2. If you want badly want Indian food, you can go to these: [Spice Junction](https://g.co/kgs/FPgmR4Z), [Chutney](https://g.co/kgs/4RfXApJ), [Lotus Restaurant Berlin](https://g.co/kgs/tDWtj3y), [Prema Restaurant](https://g.co/kgs/Fgy8HY8), [Saravana Bhavan](https://g.co/kgs/Kbw8TMT), [Amrit](https://g.co/kgs/YFbT7u4), [Mumbai Local](https://g.co/kgs/SUDyCTZ), [Zusshu](https://g.co/kgs/GCBuQ4M). Ofcourse, there are many more, but these are the ones I tried at.   
