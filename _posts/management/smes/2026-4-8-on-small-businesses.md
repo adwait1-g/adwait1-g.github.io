@@ -54,34 +54,34 @@ Adwaith
 
 # References
 
-1. Entrerpreneurship through Acquisition: https://hbr.org/2017/01/buying-your-way-into-entrepreneurship   
-2. HBR Guide to Buying a Small Business: https://www.amazon.in/HBR-Guide-Buying-Small-Business-ebook/dp/B01KP33K4Y   
-3. Think Big Buy Small podcast: https://www.hbs.edu/news/podcasts/think-big-buy-small   
-4. Prof. A. J. Wasserstein's profile: https://som.yale.edu/faculty-research/faculty-directory/aj-wasserstein   
-5. On the nature of Economic Characteristics - Selection criteria to consider when acquiring a Business: https://som.yale.edu/sites/default/files/2025-04/On%20the%20Nature%20of%20Economic%20Characteristics.pdf   
-6. Economic Empowerment through Coir Industry: https://www.jebi-academic.org/index.php/jebi/article/download/116/46   
-7. Strategic Insights into the Challenges facing Japan's Small and Medium-sized Enterprises: https://drive.google.com/file/d/1APKucrjBhytMYvyLK1UiWQmryCdh5icQ/view?usp=sharing   
-8. A Study of the challenges of the Indian MSME Sector: https://drive.google.com/file/d/1cWnjcLOp5GMbnU6c2z6wXPWoYZcdluN4/view?usp=sharing   
-9. MSME Annual Report of 2024-2025, India: https://msme.gov.in/sites/default/files/MSME-ANNUAL-REPORT-2024-25-ENGLISH.pdf    
-10. Press Release: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2142170&reg=3&lang=2    
-11. The impact of COVID-19 containment lockdowns on MSMEs in India and resilience of exporting firms: https://pmc.ncbi.nlm.nih.gov/articles/PMC10106832/    
-12. MSME Schemes, Government of India: https://msme.gov.in/sites/default/files/MSME_Schemes_English_0.pdf   
-13. Strategic Action Plan of Ministry of Micro, Small and Medium Enterprises: https://msme.gov.in/sites/default/files/MSME-Strategic-Action-Plan.pdf    
-14. Enhancing MSMEs Competitiveness in India: https://niti.gov.in/sites/default/files/2025-05/Enhancing_Competitiveness_of_MSMEs_in_India.pdf    
-15. A Small Business is not a Little Big Business: https://drive.google.com/file/d/1jiuLu8jYMu4bvGgLE4d7pft0HqWTkMbz/view?usp=sharing   
-16. Financial Management of Smaller Firms: https://www.hbs.edu/coursecatalog/1452.html   
-17. What do Small Businesses do? by Eric Hurst and Benjamin Wild Pugsley: https://www.nber.org/system/files/working_papers/w17041/w17041.pdf    
-18. The Management of Small and Medium Businesses: https://nibmehub.com/opac-service/pdf/read/The%20management%20of%20small%20and%20medium%20enterprises.pdf   
-19. Journal of Small Business Management: https://www.tandfonline.com/journals/ujbm20    
-20. The Five Stages of Small Business Growth: https://www.hayekcollege.com/sites/default/files/ebooks/The_Five_Stages_Of_Small_Business_Growth.pdf    
-21. Routledge Library Editions: Small Business: https://www.routledge.com/Routledge-Library-Editions-Small-Business/book-series/RLESB   
-22. Formal definition of an MSME: https://msme.gov.in/know-about-msme   
-23. US SBA: https://www.sba.gov/    
-24. Micro-entrepreneurship Development in the Handloom Industry: An empirical analysis among the tribal women of Assam: https://doi.org/10.1177/0973005218754437   
-25. Gender, technology and innovation: The role of women in Indian micro, small and medium enterprises: https://www.inderscienceonline.com/doi/abs/10.1504/WREMSD.2022.123766    
-26. How do small businesses pursue sustainability? The role of collective agency for integrating planned and emergent strategy making: https://onlinelibrary.wiley.com/doi/pdf/10.1002/bse.2808    
-27. How MSMEs can come up with localised solutions towards sustainability: https://www.iimb.ac.in/sites/default/files/2025-12/How-MSME-localised-solutions-towards-sustainability.pdf
-28. US SBA Size Standards tool: https://www.sba.gov/federal-contracting/contracting-guide/size-standards/size-standards-tool
-29. Navigating Choppy Waters: How US Trade Policy Uncertainty Affects Small Businesse: https://www.hbs.edu/ris/Publication%20Files/25-048_e893b303-b254-45bb-8d31-9ede8a6e9e65.pdf
-30. The role of small and medium-sized enterprises in development: What can be learned from the German experience?: https://www.econstor.eu/bitstream/10419/189840/1/GLU-WP-No53.pdf     
-31. Sustainability Practices and Performance in European Small and Medium Enterprises: Insights from Multiple Case Studies: https://link.springer.com/article/10.1007/s43615-022-00224-3
+1. [Entrerpreneurship through Acquisition](https://hbr.org/2017/01/buying-your-way-into-entrepreneurship)   
+2. [HBR Guide to Buying a Small Business](https://www.amazon.in/HBR-Guide-Buying-Small-Business-ebook/dp/B01KP33K4Y)   
+3. [Think Big Buy Small podcast](https://www.hbs.edu/news/podcasts/think-big-buy-small)   
+4. [Prof. A. J. Wasserstein's profile](https://som.yale.edu/faculty-research/faculty-directory/aj-wasserstein)   
+5. [On the nature of Economic Characteristics - Selection criteria to consider when acquiring a Business](https://som.yale.edu/sites/default/files/2025-04/On%20the%20Nature%20of%20Economic%20Characteristics.pdf)   
+6. [Economic Empowerment through Coir Industry](https://www.jebi-academic.org/index.php/jebi/article/download/116/46)   
+7. [Strategic Insights into the Challenges facing Japan's Small and Medium-sized Enterprises](https://drive.google.com/file/d/1APKucrjBhytMYvyLK1UiWQmryCdh5icQ/view?usp=sharing)   
+8. [A Study of the challenges of the Indian MSME Sector](https://drive.google.com/file/d/1cWnjcLOp5GMbnU6c2z6wXPWoYZcdluN4/view?usp=sharing)   
+9. [MSME Annual Report of 2024-2025, India](https://msme.gov.in/sites/default/files/MSME-ANNUAL-REPORT-2024-25-ENGLISH.pdf)    
+10. [Press Release](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2142170&reg=3&lang=2)    
+11. [The impact of COVID-19 containment lockdowns on MSMEs in India and resilience of exporting firms](https://pmc.ncbi.nlm.nih.gov/articles/PMC10106832/)    
+12. [MSME Schemes, Government of India](https://msme.gov.in/sites/default/files/MSME_Schemes_English_0.pdf)   
+13. [Strategic Action Plan of Ministry of Micro, Small and Medium Enterprises](https://msme.gov.in/sites/default/files/MSME-Strategic-Action-Plan.pdf)    
+14. [Enhancing MSMEs Competitiveness in India](https://niti.gov.in/sites/default/files/2025-05/Enhancing_Competitiveness_of_MSMEs_in_India.pdf)    
+15. [A Small Business is not a Little Big Business](https://drive.google.com/file/d/1jiuLu8jYMu4bvGgLE4d7pft0HqWTkMbz/view?usp=sharing)   
+16. [Financial Management of Smaller Firms](https://www.hbs.edu/coursecatalog/1452.html)   
+17. [What do Small Businesses do? by Eric Hurst and Benjamin Wild Pugsley](https://www.nber.org/system/files/working_papers/w17041/w17041.pdf)    
+18. [The Management of Small and Medium Businesses](https://nibmehub.com/opac-service/pdf/read/The%20management%20of%20small%20and%20medium%20enterprises.pdf)   
+19. [Journal of Small Business Management](https://www.tandfonline.com/journals/ujbm20)    
+20. [The Five Stages of Small Business Growth](https://www.hayekcollege.com/sites/default/files/ebooks/The_Five_Stages_Of_Small_Business_Growth.pdf)    
+21. [Routledge Library Editions: Small Business](https://www.routledge.com/Routledge-Library-Editions-Small-Business/book-series/RLESB)   
+22. [Formal definition of an MSME](https://msme.gov.in/know-about-msme)   
+23. [US SBA (Small Business Administration)](https://www.sba.gov/)    
+24. [Micro-entrepreneurship Development in the Handloom Industry: An empirical analysis among the tribal women of Assam](https://doi.org/10.1177/0973005218754437)   
+25. [Gender, technology and innovation: The role of women in Indian micro, small and medium enterprises](https://www.inderscienceonline.com/doi/abs/10.1504/WREMSD.2022.123766)    
+26. [How do small businesses pursue sustainability? The role of collective agency for integrating planned and emergent strategy making](https://onlinelibrary.wiley.com/doi/pdf/10.1002/bse.2808)    
+27. [How MSMEs can come up with localised solutions towards sustainability](https://www.iimb.ac.in/sites/default/files/2025-12/How-MSME-localised-solutions-towards-sustainability.pdf)    
+28. [US SBA Size Standards tool](https://www.sba.gov/federal-contracting/contracting-guide/size-standards/size-standards-tool)   
+29. [Navigating Choppy Waters: How US Trade Policy Uncertainty Affects Small Businesses](https://www.hbs.edu/ris/Publication%20Files/25-048_e893b303-b254-45bb-8d31-9ede8a6e9e65.pdf)    
+30. [The role of small and medium-sized enterprises in development: What can be learned from the German experience?](https://www.econstor.eu/bitstream/10419/189840/1/GLU-WP-No53.pdf)     
+31. [Sustainability Practices and Performance in European Small and Medium Enterprises: Insights from Multiple Case Studies](https://link.springer.com/article/10.1007/s43615-022-00224-3)   
