@@ -1,5 +1,5 @@
 ---
-title: Small Businesses: An Introduction
+title: Small Businesses - An Introduction
 categories: strategy
 comments: true
 layout: post
