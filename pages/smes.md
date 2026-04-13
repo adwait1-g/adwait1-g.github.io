@@ -91,7 +91,31 @@ Two papers that gave somewhat of a structure for organizational development and 
 
 Alright, now that I think about it, the idea of state machine for short-term strategies do not seem to be viable - because to improve revenues, I can come up with a 100 ideas and one of them will be executed. All I was looking for was a predictable framework for a given business that can be used as a foundation to cover risks/challenges/uncertainty. But I think it is alright. I will go back to reading about risks/challenges/uncertainty in small businesses.
 
+## Risks & Challenges
 
+1. 2016 - [Major Challenges Facing Small and Medium-sized Enterprises in Asia and Solutions for Mitigating Them](https://www.adb.org/sites/default/files/publication/182532/adbi-wp564.pdf)
+2. 2025 - Predicting viability of small businesses in the edge of failure - https://www.tandfonline.com/doi/full/10.1080/00472778.2024.2435506
+3. Business risk management in the context of small and medium-sized enterprises - https://doi.org/10.1080/1331677X.2020.1844588
+4. Risk Management in SMEs: A systematic review and future directions - https://www.sciencedirect.com/science/article/abs/pii/S0263237319300751
+5. Sometimes smaller is better: Small businesses and community banks - https://www.tandfonline.com/doi/full/10.1080/26437015.2025.2549446
+
+
+## International Small businesses
+
+1. 2023 - https://www.tandfonline.com/doi/full/10.1080/26437015.2023.2193348 - What is the secret of international high-growth small businesses?
+2. 2023 - International high-growth of early internationalizing firms - https://www.tandfonline.com/doi/full/10.1080/00472778.2023.2169705
+3. 2025 - Internationalization of SMEs in developing economies - https://jsbs.scholasticahq.com/article/124045-internationalization-of-smes-in-a-developing-economy-a-triangulation-approach
+4. Entering international market for small businesses - https://rpajournals.com/wp-content/uploads/2024/07/JIBM-2021-05-6522.pdf
+5. Strategies for companies to enter International Markets - https://hal.science/hal-05195939v1/file/Strategies-for-Companies-to-Enter-International-Markets-Literature-Review-and-Conceptualization%20%281%29.pdf
+6. Entrepreneurs and Small Businesses: International Expansion Strategies - https://oda.uni-obuda.hu/bitstream/handle/20.500.14044/33770/978-963-449-175-0%20_%2013.pdf?sequence=1&isAllowed=y
+7. Internationalization of Small and Medium-sized Enterprises - https://www.mdpi.com/2076-3387/14/8/159
+8. SMEs in Global Markets? - https://www.oecd.org/content/dam/oecd/en/publications/reports/2014/09/small-and-medium-sized-enterprises-in-global-markets-a-differential-approach-for-services_g17a24e8/5jz17jtfkmzt-en.pdf
+9. International Business in the digital age - Global Strategies in a world of national institutions - https://pmc.ncbi.nlm.nih.gov/articles/PMC10072045/
+10. https://www.europarl.europa.eu/RegData/etudes/BRIE/2021/653629/EXPO_BRI(2021)653629_EN.pdf
+11. https://www.tandfonline.com/doi/full/10.1080/00036846.2024.2337777
+12. Barrier to enter into emerging markets - https://eprints.whiterose.ac.uk/id/eprint/92194/1/Barriers%20to%20Enter%20into%20Foreign%20Markets_9.pdf
+13. https://www.researchgate.net/profile/Marjorie-Lyles/publication/43294810_The_Choice_of_International_Strategies_By_Small_Businesses/links/55e0678308aede0b572df401/The-Choice-of-International-Strategies-By-Small-Businesses.pdf
+14. 
 
 
 
