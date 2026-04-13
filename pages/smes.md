@@ -73,3 +73,18 @@ I came across a statement that says - "Small businesses are generally suppliers 
 10. Managing customer-supplier relationship between big businesses and SMEs in South Africa - https://journals.co.za/doi/pdf/10.10520/EJC187791
 11. Integrating SMEs into Global Value Chains - Challenges and Policy Actions in Asia - https://www.adb.org/sites/default/files/publication/175295/smes-global-value-chains.pdf#page=43
 12. Supply Chain management in SMEs - development of constructs and propositions - https://www.emerald.com/apjml/article-pdf/20/1/97/104436/13555850810844896.pdf?__cf_chl_tk=aIBoeOPGk0oSGp6BdelG37cdWCEBLGoGHDRu5w.1lgE-1776056123-1.0.1.1-Vu.C_vSuCqetxZt9kXv_9YrIGBPCqM2jLNLQ_qQeLcg
+
+
+# Risks, Challenges and Uncertainty in Small Businesses
+
+I will be listing resources related to risks, challenges and uncertainty in small businesses - goal is to study them well and then see how to manage them 
+and ensure the business stays alive. In order to do that, it'll be better if I have a framework on which state a particular small business is in - is it
+just starting up, how mature is the business, how are the customers and so on. If there is like a state machine small businesses follow, business strategy
+and planning is that which takes the business from one state to another - either the strategy works and we go to a better state (whatever that means), 
+the strategy fails and we go back to an older state (or worse, go to the state of bankruptcy to never return) or you maintain status quo. okkk, so before
+even going to understand the risks etc., let me check if there is such a state machine analogy for small businesses that can help. Or we will make one
+with time and write about it.
+
+
+
+
