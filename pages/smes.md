@@ -78,12 +78,14 @@ I came across a statement that says - "Small businesses are generally suppliers 
 # Risks, Challenges and Uncertainty in Small Businesses
 
 I will be listing resources related to risks, challenges and uncertainty in small businesses - goal is to study them well and then see how to manage them 
-and ensure the business stays alive. In order to do that, it'll be better if I have a framework on which state a particular small business is in - is it
-just starting up, how mature is the business, how are the customers and so on. If there is like a state machine small businesses follow, business strategy
-and planning is that which takes the business from one state to another - either the strategy works and we go to a better state (whatever that means), 
-the strategy fails and we go back to an older state (or worse, go to the state of bankruptcy to never return) or you maintain status quo. okkk, so before
-even going to understand the risks etc., let me check if there is such a state machine analogy for small businesses that can help. Or we will make one
-with time and write about it.
+and ensure the business stays alive. I think every business has (or ideally should have) predictable states to go to on executing a particular action - there can be many number of states, but we need to know them all - so essentially we have a neat state machine for a given business - at what level does this state machine exist? At tactical decision level or at strategy level? I think it is better to have a state machine at strategy level - that way we can focus on the big decisions (and not operational decisions). Eg: We are in a particular state, a strategy is made by the owner-manager and it is executed - the strategy works and we go to a better state (whatever it means), the strategy fails and we go back to a worse state (or worst state - point of no return is bankruptcy), or you maintain status quo (this hardly happens, even if the business does not move forward, the business would have lost money for sure). So I think before going to understand risks, challenges and uncertainty, we need to have a broad picture, a state machine for a typical small business that can help us bring more predictability into the picture. Or we will make one with time using current literature and new knowledge and write about it.
+
+
+
+
+
+
+
 
 
 
