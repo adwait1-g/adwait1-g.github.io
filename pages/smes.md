@@ -115,7 +115,14 @@ Alright, now that I think about it, the idea of state machine for short-term str
 11. https://www.tandfonline.com/doi/full/10.1080/00036846.2024.2337777
 12. Barrier to enter into emerging markets - https://eprints.whiterose.ac.uk/id/eprint/92194/1/Barriers%20to%20Enter%20into%20Foreign%20Markets_9.pdf
 13. https://www.researchgate.net/profile/Marjorie-Lyles/publication/43294810_The_Choice_of_International_Strategies_By_Small_Businesses/links/55e0678308aede0b572df401/The-Choice-of-International-Strategies-By-Small-Businesses.pdf
-14. 
+14. Internationalisation of small and medium enterprises - insights from literature: https://ideas.repec.org/a/avo/emipdu/v33y2024i2p585-603.html
+15. Internationalisation of small and medium enterprises - a course at the Copenhagen Business School - https://www.cbs.dk/en/study-programmes/courses/internationalization-small-and-medium-sized-enterprises
+16. Small businesses internationalisation - in the cintext of asian countries - https://www.emerald.com/apjba/article-abstract/10/1/50/13434/Small-businesses-internationalizationInternational?redirectedFrom=fulltext
+17. Internationalisation of SMEs - best prqctices and the emerging concept of foreign champion - https://www.mdpi.com/2076-3387/14/8/159
+18. Key success fqctors of SME Internationalisation- a cross country perepective - https://annas-archive.gl/md5/415d14590a556a96f77aafe90477200c
+19. The internationalizarion of small firms - a strategic entrepreneurship perspective - https://annas-archive.gl/md5/9101b81f951ee570f8263c923d561d23
+20. Ownership and internationalisation of smqll firms - https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=5671&context=lkcsb_research
+21. |
 
 
 
