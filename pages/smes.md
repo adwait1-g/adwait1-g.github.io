@@ -122,7 +122,8 @@ Alright, now that I think about it, the idea of state machine for short-term str
 18. Key success fqctors of SME Internationalisation- a cross country perepective - https://annas-archive.gl/md5/415d14590a556a96f77aafe90477200c
 19. The internationalizarion of small firms - a strategic entrepreneurship perspective - https://annas-archive.gl/md5/9101b81f951ee570f8263c923d561d23
 20. Ownership and internationalisation of smqll firms - https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=5671&context=lkcsb_research
-21. |
+21. Internationalization of SMEs: A systematic review of 20 years of research - https://www.researchgate.net/profile/Vivian-Steinhaeuser/publication/339595249_Internationalization_of_SMEs_a_systematic_review_of_20_years_of_research/links/5e78f1df92851c3091388b46/Internationalization-of-SMEs-a-systematic-review-of-20-years-of-research.pdf?_sg%5B0%5D=started_experiment_milestone&_sg%5B1%5D=started_experiment_milestone&origin=journalDetail&_rtd=e30%3D
+22. 
 
 
 
