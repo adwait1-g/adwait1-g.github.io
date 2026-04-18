@@ -123,7 +123,11 @@ Alright, now that I think about it, the idea of state machine for short-term str
 19. The internationalizarion of small firms - a strategic entrepreneurship perspective - https://annas-archive.gl/md5/9101b81f951ee570f8263c923d561d23
 20. Ownership and internationalisation of smqll firms - https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=5671&context=lkcsb_research
 21. Internationalization of SMEs: A systematic review of 20 years of research - https://www.researchgate.net/profile/Vivian-Steinhaeuser/publication/339595249_Internationalization_of_SMEs_a_systematic_review_of_20_years_of_research/links/5e78f1df92851c3091388b46/Internationalization-of-SMEs-a-systematic-review-of-20-years-of-research.pdf?_sg%5B0%5D=started_experiment_milestone&_sg%5B1%5D=started_experiment_milestone&origin=journalDetail&_rtd=e30%3D
-22. 
+
+# Strategic Management for Small Businesses
+
+1. https://ifotechpoly.edu.ng/elibrary/elibrary/accountancy/Strategic%20Management.pdf - Strategic Management of crisis in SMEs
+2. 
 
 
 
