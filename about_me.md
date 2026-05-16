@@ -4,23 +4,15 @@ title: About Me
 permalink: /about_me/
 ---
 
-![Adwaith's Photo](/Adwaith-Venkatesh-Gautham-photo2.jpg/)
+![Adwaith's Photo](/assets/about_me/Adwi-photo.jpg/)
 
 Hallo!
 
-I am Adwaith. I am a business student at the [ESCP Business School](https://escp.eu/programmes/master-in-management), Europe. I am part of the [PGDM-IB](https://www.mdi.ac.in/programmes/post-graduate-diploma-in-management-international-business-pgdm-ib) programme at the [Management Development Institute, Gurgaon](https://www.mdi.ac.in/), India. I recently finished my spring semester at ESCP's Berlin campus and currently spending the summer interning as an Analyst at a Business consulting startup.
+I am Adwaith. I just finished my mba from MDI/ESCP in 2026. I have a background in computer science (NITK 2020 batch). I worked at Cisco systems for four years as a software engineer. I mostly worked on L2 security protocols like [802.1x](https://en.wikipedia.org/wiki/IEEE_802.1X), [MACsec](https://1.ieee802.org/security/802-1ae/), [MAB](https://networklessons.com/cisco/ccie-routing-switching-written/mac-authentication-bypass-mab) and some interesting research projects. I will be joining American Express as an analyst in some time.
 
-Previously, I worked at Cisco Systems Bangalore as a software engineer for about 4 years. I was part of Cisco's MIG (Mass-Scale Infrastructure Group) security team. It was a router security team for the MIG vertical which sold carrier grade routers (routers for service-providers like Airtel, Jio, AT&T, Verizon etc., and data-center customers like Google, Facebook, Amazon etc.,). I graduated with a Bachelor in Technology in Computer Science and Engineering from the National Institute of Technology Karnataka, batch of 2020.
+I got interested in cybersecurity early on during my bachelors, all from a workshop conducted by 2 of my favorite seniors. My interest in it got me an internship at Cisco, then a job there. So did computer security for good 6-7 years. Post that, I decided to pursue an mba, ended up doing the craziest course there is, the PGDM-IB program from MDI. I was/am a newbie to the world of management, so everything fascinated me - I started off with information systems, business process management because they were technology-adjacent and was easiest to grasp. Then spent some time studying operations research, operations management, logistics. With time, my interest towards "big picture" slowly grew, so now just read stuff on economics, strategy, organizational behavior, management control. I regret not taking finance and accounting seriously ;) These days, I just call myself an analyst because it sounds cool (but it sounds utterly cliched too, every second person is an analyst these days :/).
 
-Back then, I was absolutely fascinated with Computer Systems and Security. I spent a solid 6 years of my life in that field, 2 as a student exploring the field, building a good community around it at my college, and 4 years working in the industry as a software engineer working on core network security protocols and more. I have blogged on various subjects in Computer Security extensively back in the day, you can find them [here](/archive/), in case you are interested.
-
-Fast forward to June 2024, I joined the dual degree PGDM-IB programme at the Management Development Institute in Gurgaon In June 2024. Luckily, I found most of what I learnt very interesting. The curriculum was Finance heavy along with quite a bit of mathematics like business statistics. I ended up liking a bunch of "theory" subjects too like Organization, Strategy and so on. I found Logistics, Operations Management, Supply Chain Management and Finance most interesting.
-
-As of January 2025, I am at the ESCP Business School, Europe for my MiM year. Here at the Berlin campus, I am specializing in [AI and Big Data for Business Innovation](https://ent.escpeurope.eu/Syllabus/SylView/view/11760857/2). It is a techno-managerial [specialization](/mdi/2025/03/01/ai-and-big-data-for-biz-innovation.html) which uses technology to solve interesting business problems.
-
-For some time, I am interested in AI, ML and using it to solve business problems, which is also why I took up the said specialization. I intend to write about this in the near future.
-
-This blog was dead for quite some time. The last time I wrote something of meaning here was sometime in late 2021 I believe. After close to 4 years, I am revamping this blog and want to do something with this yet again. I plan to do what I did back then - read interesting articles and research papers, business cases and write about them, write summaries, perform experiments and learning I will take part in.
+This blog was dead for quite some time. I wrote nothing late 2021 to early 2025. Thought of revamping this again because I felt like writing something again. Keep visiting if this interests you.
 
 Cheers!    
 Adwaith
