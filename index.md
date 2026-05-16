@@ -6,9 +6,7 @@ order: 1
 
 Hello!
 
-I am Adwaith. I am a business student at the [ESCP Business School](https://escp.eu/programmes/master-in-management), Europe. I am part of the [PGDM-IB](https://www.mdi.ac.in/programmes/post-graduate-diploma-in-management-international-business-pgdm-ib) programme at the [Management Development Institute, Gurgaon](https://www.mdi.ac.in/), India. I recently finished my spring semester at ESCP's Berlin campus and currently spending the summer interning as an Analyst at a business consulting startup.
-
-I spent my first two semesters spending time exploring different fields in management. In the previous semester, I spent some time understanding that a lot of IT, AI, ML, Information Systems is used in the field of management, this was through a specialization I took at ESCP Berlin. There seems to be bunch of topics that are a neat intersection of Computer Science, Mathematics and Management. There is a lot of efforts going into using technology and building better management systems. For example, highly sophisticated Decision Support Systems used by today's managers are purely an innovation at this intersection, Quality Control is a facet of Operations Management, Industrial Image Processing and Computer Vision is a great field to explore in the field of Quality Control in Manufacturing, or how Business Process Management is part of Information and Operations Management, Process Mining is a leading way to work with Business Processes, or the proposal of the idea of Physical Internet, which is based on the design and architecture of Digital Internet. This intersection, which also comes under Information Systems is what I plan to explore in near future.
+I am Adwaith. Welcome to my space. I am an aspiring management researcher/analyst. There are many subjects that have caught my attention - cybersecurity and computer systems during my bachelors, I rode that wave for good 6-7 years with all my excitment, have written quite a bit on it [here](/cybersecurity/). These days I am into all things management. Small businesses are my latest fascination.
 
 ## Latest Posts
 
