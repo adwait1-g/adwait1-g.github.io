@@ -35,9 +35,9 @@ The paper [14] is named "The Rise of China in the ITN: A Community Core Detectio
 
 ![2. 1995 - ITN Diagram](/assets/2026-07-12-analysis-of-itns-community-detection/2%20-%20ITN%20diagram%201995.jpg)
 
-It is a simple representation of the international trade network (ITN) in the year 1995. It has 3 communities (denoted by different colors): Americas, Europe and Asia-Oceania. Each community has different nations in it, some nations with trade flows with multiple other nations (who have many linkages), some at the periphery with trade linkages with only a few nations. Intuitively speaking, it is easy to tell who is the **leader** of the community. For example, in the Asia-Oceania community (Blue), Japan (JPN) seems to have trade linkages with many nations, whereas China (CHN) has a couple of linkages (with Korea/KOR, Hong Kong/HKG and USA). In the community of Americas (Yellow), USA clearly emerges as the leader. In the Europe community (Red), Germany (Deutschland/DEU) seems like the leader immediately followed by France (FRA) and Great Britain (GBR). This is a snapshot of the ITN on the year 1995. Now consider the following diagram.
+It is a simple representation of the international trade network (ITN) in the year 1995. It has 3 communities (denoted by different colors): Americas, Europe and Asia-Oceania. Each community has different nations in it, some nations with trade flows with multiple other nations (who have many linkages), some at the periphery with trade linkages with only a few nations. Intuitively speaking, it is easy to tell who is the **leader** of the community. For example, in the Asia-Oceania community (Blue), Japan (JPN) seems to have trade linkages with many nations, whereas China (CHN) has a couple of linkages (with Korea/KOR, Hong Kong/HKG and USA). In the community of Americas (Yellow), USA clearly emerges as the leader. In the Europe community (Red), Germany (Deutschland/DEU) seems like the leader immediately followed by France (FRA) and Great Britain (GBR). Now consider the following diagram.
 
-![2. 1995 - ITN Diagram](/assets/2026-07-12-analysis-of-itns-community-detection/2%20-%20ITN%20diagram%201995.jpg)
+![3. ITN evolution](/assets/2026-07-12-analysis-of-itns-community-detection/3%20-%20ITN%20evolution.jpg)
 
 We now have snapshots of ITN for 3 years: 1995, 2002 and 2011. One can observe how the ITN has changed/evolved with time. Interestingly, the Asia-Oceania community (Blue) seems to have disappeared in the 2002 ITN and has merged with the Americas (Yellow). But fast forward 2011, Asia-Oceania community (Blue) reemerges with a new contender for the leadership, China. And apart from that, it can be seen how trade linkages has grown among nations.
 
@@ -57,7 +57,7 @@ First of all, Inter-Community Trade is the trade that happens across communities
 
 2003 seems to be the tipping point where the strengths of the 4 trade flows are almost the same. Post 2003, China's trade flows (both inter and intra community) are stronger than those of Japan's and the gap has only increased. And this tipping point is around the time the leadership change inside the Asia-Oceania community has happened. We can evaluate this too.
 
-The authors not only looks at ITNs and analysis on them, but also have looked at different trade agreements for these nations (especially China's agreements with nations inside and outside its community) to corroborate with the information we have.
+The authors not only look at ITNs and analysis on them, but also have looked at different trade agreements for these nations (especially China's agreements with nations inside and outside its community) to corroborate with the information we have.
 
 The abstract is a good one paragraph summary of the paper.
 
@@ -93,7 +93,7 @@ If you run the algorithm a couple of times, you might end up seeing a different 
 
 ![10. after louvain - output 2](/assets/2026-07-12-analysis-of-itns-community-detection/10.%20after%20louvain%20-%20output%202.jpg)
 
-Similar to how we can get different clusters in K-means clustering, it can be told that Louvain is quite similar that way. The paper gives some explanation as to why it this way. You can find the jupyter notebook used above here[21].
+Different factors like starting point, order in which the nodes are processed by the algorithm decide how the partition looks like. It is in a way similar to K-means clustering. The paper gives some explanation as to why it is this way. You may find here[21] the jupyter notebook for code used above.
 
 ## 3. Implementation Plan
 
