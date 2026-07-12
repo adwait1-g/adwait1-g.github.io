@@ -113,7 +113,9 @@ Now that we broadly know what the paper does and what community detection is, we
 
 4. **Linkage between global and regional dynamics**: Step 2 should help us observe the global phenomenon of disappearance and reemergence of Asia-Oceania region as a community during 1997-2003. Step 3 should help us observe the regional phenonemon leadership change of Asia-Oceania community from Japan to China during the same time period. But those are observations. In this step, we conduct the analysis necessary to forge the linkage between the two (Section V in its entirety). We will look at the inter-community trade vs. intra-community trade we saw earlier and other details necessary to understand this link.
 
-5. **Understanding agreements and policies**: The paper looks just at China's trade agreements inside and outside of its community to corroborate with the analysis performed earlier. We should go further and look at not just China's but other nations' as well.
+5. **Understanding agreements and policies**: The paper looks just at China's trade agreements inside and outside of its community to corroborate with the analysis performed earlier. Below is a table from the paper. We should go further and look at not just China's but other nations' as well.
+
+![11 - china's RTA](/assets/2026-07-12-analysis-of-itns-community-detection/11%20-%20chinas%20rta.jpg)
 
 This should ideally cover all aspects of the paper, but we can have one more section to tie up the loose ends in case.
 
