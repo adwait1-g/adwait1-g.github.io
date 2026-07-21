@@ -422,11 +422,11 @@ The ITN is essentially constructed, but let us visualize it to get a better pict
 
 There are 226 countries in total (which are in the trade flows graph), there can be a maximum of ```226*(226-1)/2 = 25425``` edges. We have a total of 16249 edges, density is 64%. This is a highly dense graph and hard to make any sense out of it. There are a couple of options here. First is we take the top 200-300 trade flows/edges and prune all other graphs - this way, we would be covering all the major trade flows (among the largest of the economies in the world). Another is we just use the list of countries the publication seems to demonstrate in their diagrams. Let us take up the first option and see if we can arrive at the diagram the paper has produced. Considering the top 300 trade flows, we see that 70 countries are participating in it and it looks like the following:
 
-![itn of top 300](14 - itn300.png)
+![itn of top 300](/assets/2026-07-12-analysis-of-itns-community-detection/14 - itn300.png)
 
 It is slowly starting to look like the ITNs in the paper. After experimenting with couple of top N trade flows, I think 150 trade flows gives a clear picture we are looking for.
 
-![itn150](15 - itn150.png)
+![itn150](/assets/2026-07-12-analysis-of-itns-community-detection/15 - itn150.png)
 
 The cores are very clearly visible: China, USA, Germany. For analytical purposes, let us create the exact amount of trade each nation here is involved in. Below is the list we get for all the 49 countries involved in ITN-150.
 
