@@ -484,11 +484,11 @@ The cores are very clearly visible: China, USA, Germany. For analytical purposes
 
 In the context of the top 150 trade flows as of the year 2024, China tops the list with $4.8 Trillion worth trade, followed by US with $4.4 trillion and then a distant third is Germany with $2.4 trillion worth trade.
 
-You can find all the code and results [here](https://github.com/adwait1-g/economics-papers/tree/main/1.%20Analysis%20of%20ITN%20%26%20Community%20Detection). You are free to download the notebook and play around with the dataset/code.
+You can find all the code and results [here](https://github.com/adwait1-g/economics-papers/tree/main/1.%20Analysis%20of%20ITN%20%26%20Community%20Detection). You are free to download the notebook and experiment with the dataset/code.
 
 The next 4 phases will be implemented and discussion will be updated here.
 
-## 4. Future Work and Conclusion
+## 5. Future Work and Conclusion
 
 This post is the foundation article of the paper implementation [11]. It sets the skeleton in place. The actual implementation, analysis and discussion will be updated in parts inside the same article in due time. Thank you for reading.
 
