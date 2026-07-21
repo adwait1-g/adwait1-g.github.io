@@ -5,7 +5,9 @@ comments: true
 layout: post
 ---
 
-TLDR: **12 July 2026, Sunday**:  This is the foundation/1st part of the article on an interesting paper implementation I am working on. The article will be updated as and when I implement more parts of it. Do go ahead and read the progress so far. Cheers!
+TLDR:
+1. **12 July 2026, Sunday**:  This is the foundation/1st part of the article on an interesting paper implementation I am working on. The article will be updated as and when I implement more parts of it. Do go ahead and read the progress so far. Cheers!    
+2. **22 July 2026, Wednesday**: The implementation is divided into 5 phases. The first phase is done and the relevant code and discussion are updated.
 
 -----------------------------------------------
 
@@ -29,7 +31,7 @@ This article is an attempt to take a serious stab at understanding international
 
 ## 1. What is the paper about?
 
-Let us take a look at the paper [14] in a bit more detail in this section.
+Let us take a look at the paper [11] in a bit more detail in this section.
 
 There is quite a bit of research on the phenomena of globalization and regionalization, on questions like "has the world globalized or regionalized?", are the two contradictory and so on. The paper re-looks at the relationship between globalization and regionalization with the example of China. Consider the following diagram from the paper.
 
@@ -127,6 +129,365 @@ Now that we broadly know what the paper does and what community detection is, we
 
 This should ideally cover all aspects of the paper, but we can have one more section to tie up the loose ends in case.
 
+Let us start with the implementation.
+
+## 4. Implementation, Analysis & Discussion
+
+# 4.1 ITN Construction from Datasets
+
+### 4.1.1 The BACI Dataset
+
+Let us first take a good look at the dataset used in the paper. The paper uses the CEPII-BACI data
+
+The CEPII [23](Centre d'Études Prospectives et d'Informations Internationales, in English it is "Center for Prospective Studies and International Information) is a French research institute for international economics with a focus on globalization, trade, macroeconomics and international finance. It offers a number of high quality datasets related to international trade and economics (tariffs & duties, bilateral trade flows, trade flows - balance of payments - world revenues to name a few). This publication makes use of the bilateral trade flows dataset called BACI [22] (```Base pour l'Analyse du Commerce International```, french for "Database for the Analysis of International Trade). As the description suggests,
+
+> BACI provides data on bilateral trade flows for 200 countries at the product level (5000 products). Products correspond to the "Harmonized System" nomenclature (6 digit code).
+
+This dataset has been updated and maintained from 1995 till date. It is a simple dataset with 3 items.
+
+1. A country metadata file that maps country codes used in the dataset to country full names and ISO codes.   
+2. A product metadata file that maps product codes to product names.   
+3. The trade flow files which is the main data file.
+
+Let us look at the dataset in a bit more detail. We will be using python for data analysis and visualization in this post. Lets start with country metadata file.
+
+```python
+# Nations
+nations = pd.read_csv('BACI_HS22_V202601/country_codes_V202601.csv')
+nations
+```
+
+| country_code | country_name                              | country_iso2 | country_iso3 |
+|--------------|-------------------------------------------|--------------|--------------|
+| 4            | Afghanistan                               | AF           | AFG          |
+| 8            | Albania                                   | AL           | ALB          |
+| 12           | Algeria                                   | DZ           | DZA          |
+| 16           | American Samoa                            | AS           | ASM          |
+| 20           | Andorra                                   | AD           | AND          |
+| ...          | ...                                       | ...          | ...          |
+| 876          | Wallis and Futuna Isds                    | WF           | WLF          |
+| 882          | Samoa                                     | WS           | WSM          |
+| 887          | Yemen                                     | YE           | YEM          |
+| 891          | Serbia and Montenegro (...2005)           | CS           | SCG          |
+| 894          | Zambia                                    | ZM           | ZMB          |
+
+There are a total of 238 nations in this dataset. Looking at the products,
+
+```python
+# Let us look at the products first.
+products = pd.read_csv('./BACI_HS22_V202601/product_codes_HS22_V202601.csv')
+products
+```
+
+| code | description |
+|------|-------------|
+| 10121 | Horses: live, pure-bred breeding animals |
+| 10129 | Horses: live, other than pure-bred breeding animals |
+| 10130 | Asses: live |
+| 10190 | Mules and hinnies: live |
+| 10221 | Cattle: live, pure-bred breeding animals |
+| ... | ... |
+| 970531 | Collections and collectors' pieces: of numismatic interest |
+| 970539 | Collections and collectors' pieces: of numismatic interest, other |
+| 970610 | Antiques: of an age exceeding 250 years |
+| 970690 | Antiques: of an age exceeding 100 years but not exceeding 250 years |
+| 999999 | Commodities not specified according to kind |
+
+There are a total of 5609 products. It feels like an exhaustive list of products, and each product with a variety of categories.
+
+In the international trade network, the nations are the nodes, products are what flows from one nation to another in different quantities. Next is the main data file that gives data on those quantities, in graph terms, the edges between these nations.
+
+```python
+trade_flows = pd.read_csv('BACI_HS22_V202601/BACI_HS22_Y2024_V202601.csv')
+trade_flows = trade_flows.rename(columns = {'t': 'year', 'i': 'exporter', 'j': 'importer', 'k': 'product', 'v': 'value', 'q': 'quantity'})
+trade_flows
+```
+
+| year | exporter | importer | product | value | quantity |
+|------|---------:|---------:|--------:|------:|---------:|
+| 2024 | 4 | 24 | 80810 | 0.176 | 0.100 |
+| 2024 | 4 | 24 | 330499 | 2.295 | 0.230 |
+| 2024 | 4 | 24 | 732510 | 5.617 | 0.038 |
+| 2024 | 4 | 24 | 848330 | 2.420 | 0.004 |
+| 2024 | 4 | 24 | 853610 | 0.605 | 0.011 |
+| ... | ... | ... | ... | ... | ... |
+| 2024 | 894 | 858 | 610429 | 0.585 | 0.003 |
+| 2024 | 894 | 858 | 848490 | 0.048 | 0.001 |
+| 2024 | 894 | 858 | 870810 | 0.020 | 0.001 |
+| 2024 | 894 | 860 | 60420 | 0.415 | 0.115 |
+| 2024 | 894 | 860 | 120991 | 0.130 | 0.001 |
+
+The exporter and importer are simply nation codes, there is the product code, value in thousand USD and quantity in metric tons. Essentially these are the edges in our international trade network, but the dataset provides it at a product level (not nation-level aggregate). There are 11250411 trade flows in total in this table.
+
+And such a dataset is available for all years from 1995-2024.
+
+This is a basic description of the dataset. You can find a detailed description in the paper that introduces the BACI dataset [24].
+
+### 4.1.2 How do we use this dataset?
+
+Certain preprocessing is necessary before we use dataset. First of all, the dataset provides data at product level granularity, but the publication talks about things at an aggregate level. Second is each entry in the trade flows dataset is directional in nature, where products are flowing from the exporter to the importer nation. But what would help us is to have the aggregate exchange of products between two nations. In other words, the graph currently is directional in nature, we need to make it an undirected graph. Once these are done, we will have to preprocess the dataset in such a way that python's louvain can consume it.
+
+Coming to the preprocessing, let us first aggregate all the product-level flows to get nation-level flows. At the end of that transformation, we should have atmost 2 entries for two nations, one where the first nation is the exporter and another where the second nation is the exporter (two entries per two nations is not mandatory, it is possible that there is absolutely no trade between two nations, or a trade where one nation is a sole importer from another nation and so on). All in all, we should go from ```11250411``` entries to a maximum of ```238 * 238 * 2 = 113288``` entries. The table now looks like this:
+
+| year | exporter | importer | product | value | quantity |
+|------|---------:|---------:|--------:|------:|---------:|
+| 2024 | 4 | 24 | 80810 | 0.176 | 0.100 |
+| 2024 | 4 | 24 | 330499 | 2.295 | 0.230 |
+| 2024 | 4 | 24 | 732510 | 5.617 | 0.038 |
+| 2024 | 4 | 24 | 848330 | 2.420 | 0.004 |
+| 2024 | 4 | 24 | 853610 | 0.605 | 0.011 |
+| ... | ... | ... | ... | ... | ... |
+| 2024 | 894 | 858 | 610429 | 0.585 | 0.003 |
+| 2024 | 894 | 858 | 848490 | 0.048 | 0.001 |
+| 2024 | 894 | 858 | 870810 | 0.020 | 0.001 |
+| 2024 | 894 | 860 | 60420 | 0.415 | 0.115 |
+| 2024 | 894 | 860 | 120991 | 0.130 | 0.001 |
+
+Moving forward, we won't need the ```product``` and ```quantity``` columns because we want to aggregate at the nation level and will do it in dollar terms. We also know the data is for the year 2024, so we won't need the ```year``` column too. After dropping those columns, it now looks like the following.
+
+```python
+trade_flows.drop(columns=['year', 'product', 'quantity'], inplace=True)
+trade_flows
+```
+
+| exporter | importer | value |
+|----------:|----------:|------:|
+| 4 | 24 | 0.176 |
+| 4 | 24 | 2.295 |
+| 4 | 24 | 5.617 |
+| 4 | 24 | 2.420 |
+| 4 | 24 | 0.605 |
+| ... | ... | ... |
+| 894 | 858 | 0.585 |
+| 894 | 858 | 0.048 |
+| 894 | 858 | 0.020 |
+| 894 | 860 | 0.415 |
+| 894 | 860 | 0.130 |
+
+with 11,250,411 entries.
+
+Now aggregating it at the exporter-importer pair level, we get,
+
+```python
+nation_trade_flows = (trade_flows.groupby(['exporter', 'importer'], as_index=False)
+                                 .agg({'value': 'sum'}))
+nation_trade_flows
+```
+
+| exporter | importer | value |
+|----------:|----------:|------:|
+| 4 | 24 | 11.577 |
+| 4 | 31 | 34.561 |
+| 4 | 32 | 5.943 |
+| 4 | 36 | 1002.584 |
+| 4 | 40 | 3056.578 |
+| ... | ... | ... |
+| 894 | 834 | 195830.184 |
+| 894 | 842 | 183284.967 |
+| 894 | 854 | 238.998 |
+| 894 | 858 | 617.297 |
+| 894 | 860 | 0.545 |
+
+This table has 28909 entries. This is still directional in nature. What we want is a full aggregation at a nation-pair level. We have the following after bringing it all together.
+
+```python
+# Create an undirected pair key
+nation_trade_flows[["nation1", "nation2"]] = pd.DataFrame(
+    nation_trade_flows[["exporter", "importer"]].apply(lambda row: sorted(row), axis=1).tolist(),
+    index=nation_trade_flows.index
+)
+
+undi_trade_flows = (nation_trade_flows.groupby(['nation1', 'nation2'], as_index=False)
+                                     .agg({'value': 'sum'}))
+undi_trade_flows
+```
+
+
+| nation1 | nation2 | value |
+|---------:|---------:|------:|
+| 4 | 24 | 11.577 |
+| 4 | 31 | 548.289 |
+| 4 | 32 | 5.943 |
+| 4 | 36 | 1248.395 |
+| 4 | 40 | 20832.847 |
+| ... | ... | ... |
+| 858 | 894 | 2182.142 |
+| 860 | 862 | 344.482 |
+| 860 | 887 | 182.167 |
+| 860 | 894 | 4510.703 |
+| 862 | 894 | 19.489 |
+
+There are 16,249 entries in total. We now have a database of undirectional edges between nations at large, with edge-weights being the value of the trade between the two nations. Before moving forward, let us create a list of nations in this database, which will denote the exhaustive list of nodes we are dealing with.
+
+```python
+nations_list = pd.unique(undi_trade_flows[['nation1', 'nation2']].to_numpy().ravel())
+nations_list = pd.DataFrame(nations_list, columns=['nation_name'])
+nations_list
+```
+
+| nation_name |
+|------------:|
+| 4 |
+| 24 |
+| 31 |
+| 32 |
+| 36 |
+| ... |
+| 86 |
+| 534 |
+| 535 |
+| 652 |
+| 660 |
+
+There are 226 nations in total.
+
+### 4.1.3 Constructing the ITN
+
+We have nodes and edges, let us construct the international trade network. Let us build a ```networkx``` out of the data we have. You can find the basic API for ```networkx``` here [25].
+
+```python
+import networkx as nx
+
+# Creating an empty graph first
+itn = nx.Graph()
+```
+
+Then add the nodes. The country code can be the official node value, but let us add other data attributes present in the ```nations``` dataframe.
+
+```python
+# Add nodes
+for i in range(len(nations_list)):
+    nation_code = int(nations_list.iloc[i]['nation_name'])
+    nation_data = nations[nations['country_code'] == nation_code]
+    nation_name = str(nation_data['country_name']).split('\n')[0].split()[1]
+    nation_iso2 = str(nation_data['country_iso2']).split('\n')[0].split()[1]
+    nation_iso3 = str(nation_data['country_iso3']).split('\n')[0].split()[1]
+    itn.add_node(nation_code, nation_name = nation_name,
+                  nation_iso2 = nation_iso2,
+                  nation_iso3 = nation_iso3)
+
+list(itn.nodes(data=True))[:10]itn.nodes()
+```
+
+It looks like this.
+
+```json
+[(4,
+  {'nation_name': 'Afghanistan', 'nation_iso2': 'AF', 'nation_iso3': 'AFG'}),
+ (24, {'nation_name': 'Angola', 'nation_iso2': 'AO', 'nation_iso3': 'AGO'}),
+ (31,
+  {'nation_name': 'Azerbaijan', 'nation_iso2': 'AZ', 'nation_iso3': 'AZE'}),
+ (32, {'nation_name': 'Argentina', 'nation_iso2': 'AR', 'nation_iso3': 'ARG'}),
+ (36, {'nation_name': 'Australia', 'nation_iso2': 'AU', 'nation_iso3': 'AUS'}),
+ (40, {'nation_name': 'Austria', 'nation_iso2': 'AT', 'nation_iso3': 'AUT'}),
+ (44, {'nation_name': 'Bahamas', 'nation_iso2': 'BS', 'nation_iso3': 'BHS'}),
+ (48, {'nation_name': 'Bahrain', 'nation_iso2': 'BH', 'nation_iso3': 'BHR'}),
+ (51, {'nation_name': 'Armenia', 'nation_iso2': 'AM', 'nation_iso3': 'ARM'}),
+ (52, {'nation_name': 'Barbados', 'nation_iso2': 'BB', 'nation_iso3': 'BRB'})]
+```
+
+Similarly, we add the edges too.
+
+```python
+# Adding the edges
+for i in range(len(undi_trade_flows)):
+    # Get the edge and its attributes
+    edge = i    # Edge no
+    edge_data = undi_trade_flows.iloc[i]
+    itn.add_edge(int(str(int(edge_data[0]))), # nation1
+                 int(str(int(edge_data[1]))),   # nation2
+                 trade_value = float(edge_data[2]))
+
+list(itn.edges(data=True))[:10]itn.edges(data=True)
+```
+
+It looke like the following.
+
+```json
+[(4, 24, {'trade_value': 11.577}),
+ (4, 31, {'trade_value': 548.289}),
+ (4, 32, {'trade_value': 5.943}),
+ (4, 36, {'trade_value': 1248.395}),
+ (4, 40, {'trade_value': 20832.847}),
+ (4, 44, {'trade_value': 76.15700000000001}),
+ (4, 48, {'trade_value': 1544.8110000000001}),
+ (4, 51, {'trade_value': 36.365}),
+ (4, 52, {'trade_value': 60.861}),
+ (4, 56, {'trade_value': 52433.845})]
+```
+
+The ITN is essentially constructed, but let us visualize it to get a better picture.
+
+![itn-visualization-v1](/assets/2026-07-12-analysis-of-itns-community-detection/13 - itnv1.png)
+
+There are 226 countries in total (which are in the trade flows graph), there can be a maximum of ```226*(226-1)/2 = 25425``` edges. We have a total of 16249 edges, density is 64%. This is a highly dense graph and hard to make any sense out of it. There are a couple of options here. First is we take the top 200-300 trade flows/edges and prune all other graphs - this way, we would be covering all the major trade flows (among the largest of the economies in the world). Another is we just use the list of countries the publication seems to demonstrate in their diagrams. Let us take up the first option and see if we can arrive at the diagram the paper has produced. Considering the top 300 trade flows, we see that 70 countries are participating in it and it looks like the following:
+
+![itn of top 300](14 - itn300.png)
+
+It is slowly starting to look like the ITNs in the paper. After experimenting with couple of top N trade flows, I think 150 trade flows gives a clear picture we are looking for.
+
+![itn150](15 - itn150.png)
+
+The cores are very clearly visible: China, USA, Germany. For analytical purposes, let us create the exact amount of trade each nation here is involved in. Below is the list we get for all the 49 countries involved in ITN-150.
+
+```
+('CHN', 4798279287.078001)
+('USA', 4487609923.554)
+('DEU', 2415394561.369)
+('JPN', 1072025161.5209999)
+('MEX', 968143679.3289999)
+('FRA', 897999387.957)
+('KOR', 889200719.9139999)
+('CAN', 849597475.4979999)
+('NLD', 822123945.0260003)
+('GBR', 755682593.678)
+('ITA', 746157101.2390001)
+('HKG', 624137024.1249999)
+('S19', 613908694.772)
+('VNM', 575692824.076)
+('IND', 566569229.636)
+('ESP', 492003994.87299997)
+('BEL', 490606129.27)
+('SGP', 476474793.52000004)
+('POL', 443061573.81799996)
+('CHE', 396281432.99300003)
+('MYS', 392326873.45400006)
+('RUS', 376892554.656)
+('AUS', 361462986.964)
+('ARE', 333028487.618)
+('SAU', 290971817.236)
+('IDN', 282710686.621)
+('THA', 259042823.949)
+('BRA', 250458588.829)
+('CZE', 232183949.797)
+('TUR', 195854721.737)
+('IRL', 180585268.891)
+('AUT', 130558256.537)
+('CHL', 89360562.035)
+('IRQ', 87378594.561)
+('SWE', 78136326.15900001)
+('NOR', 72728563.514)
+('SVK', 72540769.847)
+('HUN', 70390445.298)
+('KAZ', 65047795.519999996)
+('PRT', 56675453.524000004)
+('PHL', 56512534.34199999)
+('ZAF', 49514061.236)
+('ROU', 45007143.859)
+('DNK', 40906774.96)
+('PER', 40036449.126)
+('SVN', 38684634.689)
+('OMN', 36696104.64)
+('ISR', 31977374.733000003)
+('COL', 31487152.472)
+```
+
+In the context of the top 150 trade flows as of the year 2024, China tops the list with $4.8 Trillion worth trade, followed by US with $4.4 trillion and then a distant third is Germany with $2.4 trillion worth trade.
+
+You can find all the code and results [here](https://github.com/adwait1-g/economics-papers/tree/main/1.%20Analysis%20of%20ITN%20%26%20Community%20Detection). You are free to download the notebook and play around with the dataset/code.
+
+The next 4 phases will be implemented and discussion will be updated here.
+
 ## 4. Future Work and Conclusion
 
 This post is the foundation article of the paper implementation [11]. It sets the skeleton in place. The actual implementation, analysis and discussion will be updated in parts inside the same article in due time. Thank you for reading.
@@ -156,4 +517,8 @@ Adwaith
 18. [python-louvain](https://github.com/taynaud/python-louvain)   
 19. [Leiden Algorithm Explained: A Smarter Way to Detect Communities in Networks - Video](https://www.youtube.com/watch?v=hIQM0XLyQiQ)   
 20. [leidenalg - python package](https://leidenalg.readthedocs.io/en/stable/)   
-21. [Louvain - Example](/assets/2026-07-12-analysis-of-itns-community-detection/Louvain-sample.ipynb)   
+21. [Louvain - Example](/assets/2026-07-12-analysis-of-itns-community-detection/Louvain-sample.ipynb)  
+22. [The CEPII-BACI dataset](https://www.cepii.fr/DATA_DOWNLOAD/baci/doc/baci_webpage.html)   
+23. [CEPII](https://www.cepii.fr/cepii/en/bdd_modele/bdd_modele.asp)   
+24. [BACI publication](https://www.cepii.fr/pdf_pub/wp/2010/wp2010-23.pdf)   
+25. [Networkx documentation page](https://networkx.org/documentation/networkx-1.7/tutorial/tutorial.html)   
