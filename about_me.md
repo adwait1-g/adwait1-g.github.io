@@ -14,7 +14,7 @@ I have a B.Tech in Computer Science from the National Institute of Technology Ka
 
 I got interested in cybersecurity early on during my bachelors, all from a workshop conducted by 2 of my favorite seniors. My interest in it got me an internship at Cisco, then a job there. So did computer security for good 6-7 years. Post that, I decided to pursue an education in management and landed at the PGDM-IB/MiM dual-degree program at MDI Gurgaon/ESCP Business School. I started off with fields I had some familiarity with - information systems, operations management given my background in computer science. With time, my interest towards the "big picture" grew, so today, I am mostly into corporate strategy and economics.
 
-These days, I call myself an analyst because it sounds cool (but it sounds utterly cliched too, every other person is an analyst these days lmao). I'll ride with that for time being ;)
+These days, I call myself an analyst because it sounds cool (but it sounds utterly cliched too, every other person is an analyst these days lol). I'll ride with that for time being ;)
 
 ![analyst meme](/assets/about_me/meme-analyst.jpeg/)
 
