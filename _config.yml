@@ -30,6 +30,7 @@ plugins:
   # - jekyll-feed
 
 header_pages: 
+  - economics.md
   - management.md
   - cybersecurity.md
   - about_me.md
