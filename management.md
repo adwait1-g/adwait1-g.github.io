@@ -1,6 +1,6 @@
 ---
 layout: page
-title: On Management
+title: Management
 permalink: /management/
 ---
 
