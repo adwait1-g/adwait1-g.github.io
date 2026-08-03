@@ -1,6 +1,6 @@
 ---
 layout: page
-title: On Cybersecurity
+title: Cybersecurity
 permalink: /cybersecurity/
 comments: False
 ---
