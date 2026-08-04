@@ -6,9 +6,9 @@ order: 1
 
 Hello!
 
-I am Adwaith. Welcome to my space. I am an aspiring management researcher/analyst. There are many subjects that have caught my attention - cybersecurity and computer systems during my bachelors, I rode that wave for good 6-7 years with all my excitment, have written quite a bit on it [here](/cybersecurity/). These days I am into all things management. Small businesses are my latest fascination.
+Welcome to my space. I am Adwaith, I am an aspiring researcher/analyst. There are many subjects that have caught my attention - cybersecurity and computer systems during my bachelors, I rode that wave for good 6-7 years with all my excitment, have written quite a bit on it [here](/cybersecurity/). I have been interested in management and economics in the last 2-3 years. These days I try to read interesting economics publications and reports, write summaries of it, reproduce/implement the results, do comparisons and so on.
 
-All
+You may find all the posts below.
 
 ## Latest Posts
 
