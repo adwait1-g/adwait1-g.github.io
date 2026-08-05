@@ -8,6 +8,7 @@ layout: post
 TLDR:
 1. **12 July 2026, Sunday**:  This is the foundation/1st part of the article on an interesting paper implementation I am working on. The article will be updated as and when I implement more parts of it. Do go ahead and read the progress so far. Cheers!    
 2. **22 July 2026, Wednesday**: The implementation is divided into 5 phases. The first phase is done and the relevant code and discussion are updated.
+3. **05 August 2026, Wednesday**: The second phase of understanding the evolution of international trade network and the global dynamics described in the paper is complete.
 
 -----------------------------------------------
 
@@ -484,13 +485,214 @@ The cores are very clearly visible: China, USA, Germany. For analytical purposes
 
 In the context of the top 150 trade flows as of the year 2024, China tops the list with $4.8 Trillion worth trade, followed by US with $4.4 trillion and then a distant third is Germany with $2.4 trillion worth trade.
 
-You can find all the code and results [here](https://github.com/adwait1-g/economics-papers/tree/main/1.%20Analysis%20of%20ITN%20%26%20Community%20Detection). You are free to download the notebook and experiment with the dataset/code.
+The final step in the construction of ITN is the creation of communities. Instead of the algorithm used in the paper (Girvan-Newmann), we'll use the Leiden algorithm, which is supposed to be better at partitioning graphs than all its predecessors. Note that the communities that get generated are purely based on the edge weights (total bilateral trade flows between two countries, it has nothing to do with their geographical proximity). Post applying the algorithm, we get the below partition.
 
-The next 4 phases will be implemented and discussion will be updated here.
+![leiden on itn150](/assets/2026-07-12-analysis-of-itns-community-detection/17%20-%20leiden%20on%20itn150.png)
+
+There are 3 communities: Green, Orange and Blue. The Green community, centered around China can be classified as the Asia-Oceania community, the Orange centered around USA is the Americas community and the Blue around Germany (DEU/Deutschland) is the Europe community. Note that this is as of 2025. Interesting to see Canada and Mexico classified as Green, showing they are closer to Asia-Oceania/China, and Japan part of the Americas. Listing down the actual country names for each community.
+
+| Partition 0 | Partition 1 | Partition 2 |
+|--------------|--------------|--------------|
+| Germany | USA | Mexico |
+| Netherlands | China (Hong Kong SAR) | Canada |
+| France | Japan | China |
+| Poland | Republic of Korea | Russian Federation |
+| Italy | Viet Nam | Brazil |
+| Belgium | Australia | India |
+| United Kingdom | Other Asia | Chile |
+| Austria | Malaysia | Philippines |
+| Czechia | Indonesia | Iraq |
+| Switzerland | Thailand | South Africa |
+| Ireland | Saudi Arabia | Türkiye |
+| Spain | United Arab Emirates | Peru |
+| Hungary | Singapore | Kazakhstan |
+| Portugal | Israel | Oman |
+| Sweden | Colombia | |
+| Romania | | |
+| Slovakia | | |
+| Denmark | | |
+| Slovenia | | |
+| Norway | | |
+
+Leiden algorithm just like other modularity optimization algorithms can generate different communities each time you run, but the most important countries in each community (the **cores**) should generally remain in their own communities.
+
+With that, we have come to the end of phase 1 of the paper implementation, which was constructing ITNs. We now have some tools to construct ITNs of any year, of any size based on top N trade flows, visualize them, parititon them into communities based on trade flows.
+
+You can find all the code and results [here](https://github.com/adwait1-g/economics-papers/tree/main/1.%20Analysis%20of%20ITN%20%26%20Community%20Detection).
+
+## 4.2 Global Dynamics & Evolution of ITNs
+
+With the capability built in the first phase, the ITN can quickly be generated for any given year. Let us create the ITNs for the years 1995, 2002 and 2011.
+
+Starting with the ITN for the year 1995, a total of 213 countries are seen to be part of the overall international trade, with 11104 undirected trade flows among countries. The below is a sample of how the ITN looks like, for the top 150 trade flows.
+
+![1995 - itn](/assets/2026-07-12-analysis-of-itns-community-detection/18 - 1995itn.png)
+
+Listing the top 10 countries involved in the above ITN:
+
+```
+('USA', 1267441610.0029998)
+('DEU', 845381728.0379999)
+('JPN', 697906557.0060002)
+('FRA', 415733189.817)
+('GBR', 393903759.00499994)
+('ITA', 296053186.88000005)
+('CAN', 289490686.69900006)
+('CHN', 288280919.39)
+('NLD', 249594114.124)
+('BEL', 232726153.036)
+```
+
+The visualization of the top 50 flows gives a very clear picture, like the one in the publication.
+
+![1995-top50-itn](/assets/2026-07-12-analysis-of-itns-community-detection/19%20-%201995-top50-itn.png)
+
+For this instance, USA, Japan, Germany, France and Great Britain (UK) seem like the important countries. This is how the countries get divided into different communities on partitioning.
+
+![1995itn-partition-viz](/assets/2026-07-12-analysis-of-itns-community-detection/20%20-%201995itn-partition-viz.png)
+
+There are predominantly 3 communities: Europe, Americas and Asia-Oceania. Please note that these were partitioned solely based on trade-flows (and no geographical data was fed). Germany and France seem to be the cores of the Europe community, USA of the Americas and clearly Japan in the Asia-Oceania community.
+
+It should be noted that this is one of the partitions obtained, that looked like the one in the publication. The fact of the matter is there is quite a bit of variability in community creation due to Leiden algorithm, Japan and USA were part of the same community in a large number of partition instances, like the one below.
+
+![1995itn-partition-viz2](/assets/2026-07-12-analysis-of-itns-community-detection/21%20-%201995itn-partition-viz2.png)
+
+The authors note that this merging of the Asia-Oceania community with the Americas community (or the disappearance of the Asia-Oceania community) is observed in the year 2002, but this is actually seen in 1995 itself. It is possible that the 'merge' phenomenon isn't very pronounced because certain partitions do end up in the creation of a separate Asia-Oceania community.
+
+Moving on to the year 2002, a total of 223 countries are seen to have participated in the international trade, pointing to the fact that more number of countries have now become a part of the international trade community. There are a total of 15823 undirected trade flows (as opposed to 11104 in 1995) pointing to the fact that the existing countries might have increased their trade participation. Below is how the ITN looks for the top 50 flows.
+
+![2002itn-50flows](/assets/2026-07-12-analysis-of-itns-community-detection/22%20-%202002itn-50flows.png)
+
+The below are the top 10 countries when top 50 flows are considered.
+
+```
+('USA', 1428677122.105)
+('DEU', 747406523.304)
+('CHN', 489630747.911)
+('JPN', 477672991.3000001)
+('FRA', 391843364.82600003)
+('GBR', 371428068.07900006)
+('CAN', 338624765.696)
+('MEX', 240412948.6)
+('ITA', 226547860.706)
+('NLD', 211670321.191)
+```
+
+China has grown to become one of the top 5 countries in international trade. Just considering the top 50 trade flows might lead to a flawed inference in the sense that China is still behind Japan when it comes to overall trade flows (as of 2002), and that can be confirmed by taking a large number of flows and checking the top 10 nations.
+
+```
+('USA', 1840899021.1840007)
+('DEU', 1042399455.8)
+('JPN', 755591477.996)
+('CHN', 718149257.2589998)
+('FRA', 592703112.003)
+('GBR', 592549973.5419998)
+('ITA', 457016341.92100024)
+('CAN', 428959024.347)
+('NLD', 353296419.8600001)
+('BEL', 338405131.4190001)
+```
+
+This shows that considering the top 50 flows for making inferences is not the best thing to do. Total trade in dollar value also seems to change drastically if more flows are added. The total trade for each country seems to stabilize at around 500 flows (USA has a total trade of $1.8T and it remains between $1.8T to $1.9T from 500 to 5000 flows).
+
+That aside, China rising in positions in international trade now creates a very pronounced Asia-Oceania community when the ITN is partitioned.
+
+![2002itn-150flows-partition-viz](/assets/2026-07-12-analysis-of-itns-community-detection/23%20-%202002itn-150flows-partition-viz.png)
+
+Of all the partitions I created, I saw the Asia-Oceania community clearly emerging as an independent entity. The paper declares that China has emerged as the core/leader of the Asia-Oceania community by 2002. But going by the trade flows (in dollar value), Japan is still ahead of China. Consider the following table.
+
+```
+| Country | 1995 | 2002 |
+| ------- | ---: | ---: |
+| China   |  196 |  206 |
+| Japan   |  207 |  215 |
+```
+
+As of 2002, Japan is still ahead of China, but by a very small margin (both in terms of trade volumes and number of countries with trade relations). China has grown tremendously in 7 years, both in terms of trade volumes and making new trade relations.
+
+The paper observes that disappearance of the Asia-Oceania community in the year 2002, but it seems that the Asia-Oceania community has already re-emerged as an independent community as of 2002. I did not see any partition (out of the 50 leiden runs) where the Asia-Oceania community was merged with the Americas. The observations made in the paper are seen here but with certain lead time (the disappearance of Asia-Oceania community was observed in 1995 opposed to 2002 as mentioned in the paper).
+
+In 2011, a total of 225 countries participated in global trade with 17886 trade flows among countries. Considering the top 150 flows, the below is how the ITN looks.
+
+![2011itn-150flows](/assets/2026-07-12-analysis-of-itns-community-detection/24%20-%202011itn-150flows.png)
+
+The below are the top 10 based on 150 flows.
+
+```
+('USA', 3121803764.526001)
+('CHN', 3045747469.6909995)
+('DEU', 2112043863.6500003)
+('JPN', 1344853748.792)
+('FRA', 849666658.3690001)
+('GBR', 744932803.554)
+('KOR', 709152873.6930001)
+('NLD', 685046452.9330001)
+('CAN', 676857837.951)
+('ITA', 642599215.5579998)
+```
+
+China has grown leaps and bounds in terms of international trade, leaving behind Japan in the 4th place by a large margin. The below is how the partition looks.
+
+![2011itn-150flows-partition](/assets/2026-07-12-analysis-of-itns-community-detection/25%20-%202011itn-150flows-partition.png)
+
+The positions have become more pronounced in 2011. Along with that, a large number of countries (like Australia, Saudi Arabia etc.,) who were all part of the Americas community, largely in trade with USA are now conducting high volume trade with China as well, and is depicted by them being part of the Asia-Oceania community (orange).
+
+Just to check the latest status, let us look at the ITN as of 2024. There are 226 countries participating in international trade with 16871 trade flows among them. Below is the ITN for top 50 flows.
+
+![2024itn-50flows](/assets/2026-07-12-analysis-of-itns-community-detection/26%20-%202024itn-50flows.png)
+
+This conveys that China, USA and Germany seem to be the countries of importance in their communities. The below are the top 10 countries based on the ITN build using top 50 trade flows.
+
+```
+('CHN', 4036426167.428001)
+('USA', 3637987468.9399996)
+('DEU', 1831118181.109)
+('MEX', 854581165.039)
+('FRA', 685469721.656)
+('CAN', 658125853.738)
+('KOR', 586908713.681)
+('JPN', 525871727.586)
+('VNM', 492621991.83000004)
+('NLD', 431939633.14500004)
+```
+
+Coming to India, it has grown with time as well. As of 2024, it stands in the 11th position in this list.
+
+Looking at the communities,
+
+![2024itn-50flows-partition](/assets/2026-07-12-analysis-of-itns-community-detection/27%20-%202024itn-50flows-partition.png)
+
+More realistic picture would be taking the top 150 flows for the ranking and partition.
+
+![2024itn-150flows-partition](/assets/2026-07-12-analysis-of-itns-community-detection/28%20-%202024itn-150flows-partition.png)
+
+I see this particular partition getting created consistently across leiden executions. Japan and India are part of the Americas community (orange), Brazil, Canada and Mexico who were previously part of the Americas are now part of the Asia-Oceania community (green).
+
+From the paper implementation standpoint, we have observed the global dynamics the authors discuss in Section-IV-A. We did see the disappearance and clear re-emergence of the Asia-Oceania community, with it getting merged into the Americas community for a short time period. It was also observed that China and Japan over different years and how China with time rose to the top of the international trade rankings (in terms of dollar value).
+
+## 4.3 Regional Dynamics and Community Core Detection
+
+By studying the evolution of ITNs with time, we observed certain aspects of global trade dynamics, specifically the phenomenon of the Asia-Oceania community disappearing and re-emerging as a distinct community over time. In this section, we will look at the concept of leader/core of a community in a more formal sense, and observe possible change in leadership in communities with time. The paper specifically talks about the change in leadership of the Asia-Oceania community from Japan to China. The paper uses very specific time instances (1995, 2002, 2011) to make a point, but we would be more flexible and just see if this particular phenomenon is observed.
+
+Before going into the paper, let us conduct some analysis on Japan and China and how their stature has changed over time in the international trade network.
+
+Let us look at 4 data points for each country for a given time instance:
+
+1. Total international trade volume (in $)   
+2. Total number of countries across globe with which trade relation was present
+3. Total regional trade volume (in $)
+4. Total number of countries in the region with which trade relation was present
+
+So far, even though we called the communities based on the actual region, it could contain a country which is not from that region. For example, Japan was part of the Americas community in 1995 as per our observation, India as of 2024 is part of the Americas community. So the community generated from data did not coincide with the actual region. But now, we specifically want to look at trade a country has with countries of that particular region. The focus is the Asia-Oceania region, so we make a list of all countries in this region and check the trade relations China and Japan has had over the years.
+
+Starting 1995, we can look at these data points for every 5 years for both Japan and China. This should give a cursory idea of how Japan and China has changed globally and regionally.
+
+**To be continued**.
+
 
 ## 5. Future Work and Conclusion
 
-This post is the foundation article of the paper implementation [11]. It sets the skeleton in place. The actual implementation, analysis and discussion will be updated in parts inside the same article in due time. Thank you for reading.
+This post is the foundation article of the paper implementation [11]. The first 2 phases of implementation and analysis are complete with the initial analysis on the third. Rest will be updated inside the same article in due time. Thank you for reading.
 
 Cheers!   
 Adwaith
