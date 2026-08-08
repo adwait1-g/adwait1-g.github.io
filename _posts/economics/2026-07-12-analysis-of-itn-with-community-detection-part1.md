@@ -1,16 +1,9 @@
 ---
-title: Analysis of the International Trade Network (ITN) with Community Detection
+title: Analysis of the International Trade Network (ITN) with Community Detection - Part 1
 categories: economics
 comments: true
 layout: post
 ---
-
-TLDR:
-1. **12 July 2026, Sunday**:  This is the foundation/1st part of the article on an interesting paper implementation I am working on. The article will be updated as and when I implement more parts of it. Do go ahead and read the progress so far. Cheers!    
-2. **22 July 2026, Wednesday**: The implementation is divided into 5 phases. The first phase is done and the relevant code and discussion are updated.
-3. **05 August 2026, Wednesday**: The second phase of understanding the evolution of international trade network and the global dynamics described in the paper is complete.
-
------------------------------------------------
 
 Hello,
 
@@ -670,29 +663,16 @@ I see this particular partition getting created consistently across leiden execu
 
 From the paper implementation standpoint, we have observed the global dynamics the authors discuss in Section-IV-A. We did see the disappearance and clear re-emergence of the Asia-Oceania community, with it getting merged into the Americas community for a short time period. It was also observed that China and Japan over different years and how China with time rose to the top of the international trade rankings (in terms of dollar value).
 
-## 4.3 Regional Dynamics and Community Core Detection
+# 5. Conclusion & Next Steps
 
-By studying the evolution of ITNs with time, we observed certain aspects of global trade dynamics, specifically the phenomenon of the Asia-Oceania community disappearing and re-emerging as a distinct community over time. In this section, we will look at the concept of leader/core of a community in a more formal sense, and observe possible change in leadership in communities with time. The paper specifically talks about the change in leadership of the Asia-Oceania community from Japan to China. The paper uses very specific time instances (1995, 2002, 2011) to make a point, but we would be more flexible and just see if this particular phenomenon is observed.
+This post is the foundation article of the paper implementation [11]. This article start with a discussion of the publication, the dataset used, outlines a plan for reproducing the paper. Post the planning, the international trade network (ITN) is constructed out of the dataset, which can be used to construct the ITN for any given year. We also looked at how to partition the ITN into meaningful communities and using all these, we were able to study the evolution of ITN over time and clearly observe the global dynamics described in the paper. All this was part of the first 2 phases of implementation outlined in Section 3 of this article.
 
-Before going into the paper, let us conduct some analysis on Japan and China and how their stature has changed over time in the international trade network.
-
-Let us look at 4 data points for each country for a given time instance:
-
-1. Total international trade volume (in $)   
-2. Total number of countries across globe with which trade relation was present
-3. Total regional trade volume (in $)
-4. Total number of countries in the region with which trade relation was present
-
-So far, even though we called the communities based on the actual region, it could contain a country which is not from that region. For example, Japan was part of the Americas community in 1995 as per our observation, India as of 2024 is part of the Americas community. So the community generated from data did not coincide with the actual region. But now, we specifically want to look at trade a country has with countries of that particular region. The focus is the Asia-Oceania region, so we make a list of all countries in this region and check the trade relations China and Japan has had over the years.
-
-Starting 1995, we can look at these data points for every 5 years for both Japan and China. This should give a cursory idea of how Japan and China has changed globally and regionally.
-
-**To be continued**.
+The paper and code (jupyter notebook) for the same can be found [here](https://github.com/adwait1-g/economics-papers/tree/main/1.%20Analysis%20of%20ITN%20%26%20Community%20Detection).
 
 
-## 5. Future Work and Conclusion
+Because this article has grown longer than I imagined, the rest of this exercise will be continued in a separate post.
 
-This post is the foundation article of the paper implementation [11]. The first 2 phases of implementation and analysis are complete with the initial analysis on the third. Rest will be updated inside the same article in due time. Thank you for reading.
+Thank you for reading.
 
 Cheers!   
 Adwaith
