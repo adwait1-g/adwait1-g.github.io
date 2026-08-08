@@ -21,7 +21,7 @@ While searching for publications that can be good starting points for this endev
 
 Identifying communities in a given trade network seems to be a niche research field in itself where researchers and economists have spent good part of their lives improving the methods to do it and to gain better insights post analysis. One interesting publication I came across in this genre is "The Rise of China in the ITN" [11] from 2014, which discusses the rise of China in the ITN over the last few decades. China's rise as a trade superpower has been a hot topic of discussion atleast in the last two decade if not more, so it will be interesting to take a closer look at it. The paper is fairly simple, it is understandable, and most importantly, the datasets and methods used for analysis are all available for public use. And the analysis can be extended (and I am sure it has already been extended) in many directions once we get a hold of the paper.
 
-This article is an attempt to take a serious stab at understanding international trade. It will be about understanding and implementing that paper. The goal is to first reproduce the results in the paper, document the learnings thus far and then see in which direction we can go.
+This article is my first attempt to observe and study international trade. It will be about understanding and implementing that paper. The goal is to first reproduce the results in the paper, document the learnings thus far and then see in which direction we can go.
 
 ## 1. What is the paper about?
 
@@ -515,7 +515,20 @@ You can find all the code and results [here](https://github.com/adwait1-g/econom
 
 ## 4.2 Global Dynamics & Evolution of ITNs
 
-With the capability built in the first phase, the ITN can quickly be generated for any given year. Let us create the ITNs for the years 1995, 2002 and 2011.
+Before looking at how the ITN has evolved and changes at community level, let us just look at a summary of how countries, their total trades and total trade relations (with other countries) has evolved with time.
+
+| Country |          1995 |          2000 |          2005 |          2010 |          2015 |          2020 |          2024 |
+| ------- | ------------: | ------------: | ------------: | ------------: | ------------: | ------------: | ------------: |
+| CHN     |   364,285,443 |   597,293,645 | 1,540,091,754 | 3,044,170,004 | 3,711,505,651 | 4,367,215,770 | 5,751,508,341 |
+| DEU     |   935,348,574 |   992,407,531 | 1,678,306,875 | 2,156,323,438 | 2,232,900,199 | 2,399,998,338 | 2,827,469,851 |
+| FRA     |   555,379,433 |   615,028,394 |   926,550,102 | 1,117,868,683 | 1,072,857,642 | 1,065,111,759 | 1,374,599,086 |
+| GBR     |   494,750,248 |   639,441,339 |   871,652,346 |   965,067,395 | 1,009,349,367 |   975,188,725 | 1,127,014,120 |
+| JPN     |   794,853,108 |   883,088,852 | 1,149,817,864 | 1,494,277,002 | 1,293,077,515 | 1,316,881,697 | 1,479,694,881 |
+| USA     | 1,379,244,623 | 2,001,798,376 | 2,583,139,119 | 3,116,578,993 | 3,622,683,802 | 3,643,487,514 | 5,036,075,430 |
+
+This is a snapshot of the total trade for the top 6 nations every 5 years. While its seen that USA has consistently grown, China has grown rather disproportionately between the years 2000 and 2010. This also gives an idea of what to look for when we look at the ITNs more closely.
+
+Coming back, with the capability built in the first phase, the ITN can quickly be generated for any given year. Let us create the ITNs for the years 1995, 2002 and 2011.
 
 Starting with the ITN for the year 1995, a total of 213 countries are seen to be part of the overall international trade, with 11104 undirected trade flows among countries. The below is a sample of how the ITN looks like, for the top 150 trade flows.
 
