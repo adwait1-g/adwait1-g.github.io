@@ -682,8 +682,7 @@ This post is the foundation article of the paper implementation [11]. This artic
 
 The paper and code (jupyter notebook) for the same can be found [here](https://github.com/adwait1-g/economics-papers/tree/main/1.%20Analysis%20of%20ITN%20%26%20Community%20Detection).
 
-
-Because this article has grown longer than I imagined, the rest of this exercise will be continued in a separate post.
+This article has grown longer than I imagined, hence it is split into two parts. You may find the continuation article here [26].
 
 Thank you for reading.
 
@@ -717,3 +716,4 @@ Adwaith
 23. [CEPII](https://www.cepii.fr/cepii/en/bdd_modele/bdd_modele.asp)   
 24. [BACI publication](https://www.cepii.fr/pdf_pub/wp/2010/wp2010-23.pdf)   
 25. [Networkx documentation page](https://networkx.org/documentation/networkx-1.7/tutorial/tutorial.html)   
+26. [Analysis of the International Trade Network (ITN) with Community Detection - Part 2](https://www.agautham.io/economics/2026/07/12/analysis-of-itn-with-community-detection-part2.html)   
