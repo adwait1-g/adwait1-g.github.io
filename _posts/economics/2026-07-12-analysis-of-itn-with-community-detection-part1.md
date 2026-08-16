@@ -716,4 +716,4 @@ Adwaith
 23. [CEPII](https://www.cepii.fr/cepii/en/bdd_modele/bdd_modele.asp)   
 24. [BACI publication](https://www.cepii.fr/pdf_pub/wp/2010/wp2010-23.pdf)   
 25. [Networkx documentation page](https://networkx.org/documentation/networkx-1.7/tutorial/tutorial.html)   
-26. [Analysis of the International Trade Network (ITN) with Community Detection - Part 2](https://www.agautham.io/economics/2026/07/12/analysis-of-itn-with-community-detection-part2.html)   
+26. [Analysis of the International Trade Network (ITN) with Community Detection - Part 2](https://www.agautham.io/economics/2026/08/15/analysis-of-itn-with-community-detection-part2.html)   
