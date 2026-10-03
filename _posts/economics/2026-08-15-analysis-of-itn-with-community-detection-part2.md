@@ -407,7 +407,13 @@ With that, we have come to the end of this paper implementation. We got a good l
 
 You may find all the code here [3]. The code too is divided into 5 phases used in this 2-part article. Feel free to download and use the code as you may wish to.
 
-Moving forward, I plan to write about the Mundell-Fleming Trilemma [4]. This is a very interesting phenomenon in economics on the monetary policy of a country, exchange rates and freedom of capital flows. Final goal of this next exercise would be to implement an NBER paper from 2008 [5] which is on how the Trilemma pans out in the real-world and how different types of nations manage it. This requires quite a bit of pre-requisites to get a good hold of it. So next couple of articles will be about some fundamentals like GDP, fiscal policy, monetary policy/interest rates, exchange rates, capital investment to list a few, post which we will be in a better position to take on that paper.
+There are two research directions I am interested at the moment.
+
+1. **Network Models and International Trade**: There is a line of research which looks at international trade, global supply chains and production networks using network models (one of the most intuitive ways to look at trade). I am interested in how well network models can describe different economic phenomena and can help make policy prescriptions. This article and the previous one supposed to be in line with this, these articles are of the descriptive kind.    
+
+2. **Nation's Monetary Policy and Supply Shocks**: This is about monetary policy and how it can be made more accurate by taking global factors into account, there is already a good body of literature on this. The specific case I have been pondering upon is from the COVID-19 time period. COVID-19 pandemic led to the disruption of global supply chains and production networks. It takes real work and significant amount of time to fix it, and at times, the supply chains cannot be fixed and alternatives will have to be built. On the demand side, the pandemic caused a clear recession, a contraction in aggregate demand. The natural monetary policy response of nations was to reduce the interest rates in order to increase the aggregate demand. But what seems to have happened is that the aggregate demand and inflation picked up faster than the supply, which led to a clear tightening of monetary policy in 2022-23. "Could the interest rates be reduced according to the rate of recovery of the supply chains and production networks?" is a question I want to research on.
+
+Moving forward, I would like to take up reports and publications on these topics and discuss them here.
 
 Thank you for coming this far and reading this article. See you in the next one.
 
