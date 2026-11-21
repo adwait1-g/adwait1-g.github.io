@@ -83,6 +83,10 @@ The law enforcement agencies have analysts and case officers who have methods an
 
 I think this is where most of the action lies for analysts.
 
+# 3. Scope of the 'The Money Trail'
+
+Financial Crimes and Financial Intelligence is a really vast field. Financial Crimes can range from fundamental crimes like presence of money laundering services, usage of licit money for illicit activities like terrorism to white collar corporate crimes like tax fraud, accounting fraud, insider trading, stock manipulation and so on - all these are essentially financial crimes. This is why I intend to define a clear scope for this journal. 'The Money Trail' focuses on fundamental financial crimes like money laundering, financing of terrorism, sanctions violations etc. To formally put it, it includes all activities monitored by the US Department of the Treasury's Terrorism and Financial Intelligence [19] arm.
+
 # 3. Conclusion
 
 With that, we come to the end of the inauguratory article of 'The Money Trail', the fortnightly financial intelligence journal. Feel free to follow if you find this interesting.
@@ -112,3 +116,5 @@ Adwaith
 16. [Mulehunter.ai, by RBI Innovation Hub](https://docs.rbihub.in/mule-hunter)   
 17. [Money Laundering: The Importance of International Countermeasures, 1998](https://www.imf.org/en/news/articles/2015/09/28/04/53/sp021098)    
 18. [UNODC: Estimating Illicit Financial Flows Resulting From Drug Trafficking & Other Transnational Organized Crimes, 2011](https://www.unodc.org/documents/data-and-analysis/Studies/Illicit_financial_flows_2011_web.pdf)   
+19. [US Department of Treasury's Terrorism and Financial Intelligence, Website](https://home.treasury.gov/about/offices/terrorism-and-financial-intelligence)    
+20. 
