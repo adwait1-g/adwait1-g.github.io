@@ -87,7 +87,7 @@ I think this is where most of the action lies for analysts.
 
 Financial Crimes and Financial Intelligence is a really vast field. Financial Crimes can range from fundamental crimes like presence of money laundering services, usage of licit money for illicit activities like terrorism to white collar corporate crimes like tax fraud, accounting fraud, insider trading, stock manipulation and so on - all these are essentially financial crimes. This is why I intend to define a clear scope for this journal. 'The Money Trail' focuses on fundamental financial crimes like money laundering, financing of terrorism, sanctions violations etc. To formally put it, it includes all activities monitored by the US Department of the Treasury's Terrorism and Financial Intelligence [19] arm.
 
-# 3. Conclusion
+# 4. Conclusion
 
 With that, we come to the end of the inauguratory article of 'The Money Trail', the fortnightly financial intelligence journal. Feel free to follow if you find this interesting.
 
